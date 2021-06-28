@@ -1,0 +1,91 @@
+baseURL = "http://10degres.net/"
+googleAnalytics = "UA-61485350-1"
+languageCode = "en-us"
+title = "10degres"
+theme = "coder"
+
+defaultcontentlanguage = "en"
+
+paginate = 2000
+canonifyurls = true
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClassic = false
+
+disqusShortname = ""
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+    author = "Gwendal Le Coguic"
+    title = "10degres"
+    twitter = "gwendallecoguic"
+    info = "bug bounty advisor"
+    description = "Gwendal Le Coguic, web developer and bug hunter"
+    keywords = "development,security,researcher,bugbounty,tools,php,python"
+    avatarurl = "/assets/img/avatar.jpg"
+    images = ["/assets/img/header-background.jpg"]
+
+    favicon_32 = "/assets/img/favicon-32x32.png"
+    favicon_16 = "/assets/img/favicon-16x16.png"
+
+    footercontent = ""
+
+    hidecredits = true
+    hidecopyright = true
+
+    rtl = false
+
+    math = true
+    custom_css = ["/assets/css/custom.css"]
+    custom_js = ["/assets/js/scripts.js"]
+
+    disable_comments = true
+
+# Social links
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 1
+    url = "https://twitter.com/gwendallecoguic/"
+[[params.social]]
+    name = "Linkedin"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 2
+    url = "https://www.linkedin.com/in/gwendal-le-coguic/"
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 3
+    url = "https://github.com/gwen001/"
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "CVEs"
+    weight = 2
+    url  = "/cves/"
+[[menu.main]]
+    name = "Services"
+    weight = 3
+    url  = "/services/"
+[[menu.main]]
+    name = "Press"
+    weight = 4
+    url  = "/press/"
+[[menu.main]]
+    name = "About"
+    weight = 5
+    url = "/about/"
+
+[permalinks]
+  posts = "/:title/"
