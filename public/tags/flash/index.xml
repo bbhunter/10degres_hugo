@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>flash on 10degres</title>
+    <link>http://10degres.net/tags/flash/</link>
+    <description>Recent content in flash on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/flash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find vulnerabilities in Flash SWF</title>
+      <link>http://10degres.net/find-vulnerabilities-in-flash-swf/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/find-vulnerabilities-in-flash-swf/</guid>
+      <description>&lt;p&gt;As a user I would say that I don&amp;rsquo;t care about all these Flash stuff that try to catch my eyes, most of the time I have a plugin to disable them.
+As a developper, it reminds me the (not so good) old time when the marketing peoples always wanted to add &amp;ldquo;movement&amp;rdquo; in the website, yeah it looks so kool!
+As a hacker, well&amp;hellip; I didn&amp;rsquo;t know how nice it could be, but I recently learned how to find issue in there and it&amp;rsquo;s funny as hell.
+I was close to the success as I quickly found 3 XSS, but unfortunately all my reports were marked as duplicate :/&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

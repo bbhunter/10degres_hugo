@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WAF on 10degres</title>
+    <link>http://10degres.net/tags/waf/</link>
+    <description>Recent content in WAF on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/waf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare origin server</title>
+      <link>http://10degres.net/cloudflare-origin-server/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/cloudflare-origin-server/</guid>
+      <description>&lt;p&gt;What is &lt;a href=&#34;https://www.cloudflare.com/&#34;&gt;Cloudflare&lt;/a&gt;? In short: Content Delivery Network (CDN), Web Application Firewall (WAF) and cherry/icing on the cake, 1 year go Cloudflare released a fast DNS resolver.
+With 4 pricings and more than &lt;a href=&#34;https://www.cloudflare.com/case-studies/&#34;&gt;16M Internet properties&lt;/a&gt;, Cloudflare is now one of the most popular firewall used for web applications.
+Working as a reverse proxy the WAF does not only offer a protection against DDOS but can also trigger an alert/error when he detects an attack.
+But what if you can bypass all these protections in a second making the defense useless?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

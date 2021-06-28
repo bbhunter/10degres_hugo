@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>information gathering on 10degres</title>
+    <link>http://10degres.net/tags/information-gathering/</link>
+    <description>Recent content in information gathering on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/information-gathering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Subdomain enumeration</title>
+      <link>http://10degres.net/subdomain-enumeration/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/subdomain-enumeration/</guid>
+      <description>&lt;p&gt;A friend recently asked me what methods I use to find subdomains.
+To be honest I was confused, like &lt;em&gt;&amp;ldquo;oooohhh so much, brute force mmm&amp;hellip; zone transfer and&amp;hellip; brute for&amp;hellip; wait Google and mmm&amp;hellip; many other tools!&amp;quot;&lt;/em&gt;
+What a shame that I was so inaccurate after so much time spent to look for subdomains.
+Time to dig a little bit!
+After I wrote a list of the most popular methods, I tried to make a list of some tools and online resources to exploit them.
+Of course this list is far from exhaustive, there are many new stuff every day, but it&amp;rsquo;s still a good start :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Actarus code release</title>
+      <link>http://10degres.net/actarus-code-release/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/actarus-code-release/</guid>
+      <description>&lt;p&gt;Actarus is a custom tool that can perform automatic recon and store all datas in a database.
+Afterwards you could consult/search keywords in it to find vulnerabilities or at least entry points.&lt;/p&gt;
+&lt;p&gt;After some months of inactivity, I finally decided to publicly release the source code of Actarus.
+I started this project to learn Symfony, now I hate it. Maybe someone will give him another chance to grow up.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Document Metadata</title>
+      <link>http://10degres.net/document-metadata/</link>
+      <pubDate>Tue, 09 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/document-metadata/</guid>
+      <description>&lt;p&gt;Metadata are informations stored in a document itself but not easy to find for common mortals.
+Those infos usually are: file name/type/size, author, organization, created date, last modified date and so on&amp;hellip;
+But sometimes there are extra infos that could be very interesting from a hacker point of view like email, phone number, username, geoloc and even local ip address.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ping sweep</title>
+      <link>http://10degres.net/ping-sweep/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/ping-sweep/</guid>
+      <description>&lt;p&gt;In the second part of the first phase of a penetration test, active information gathering,it&amp;rsquo;s important to mapas accurate as possible the network of you target.
+To find live hosts there isa technique called &lt;em&gt;ping sweep&lt;/em&gt;.
+Different tools exist to perform that task.&lt;/p&gt;
+&lt;h2 id=&#34;ping&#34;&gt;Ping&lt;/h2&gt;
+&lt;p&gt;A single &lt;code&gt;ping&lt;/code&gt; can give you the ip address of the target, the ttl and the time. However since the methodis based on ICMP requests, the target could be configured to block or trash them&amp;hellip; With a simple bash script, you can loop throught a range of ip address to test them all:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ip in &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;seq &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt; 220&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+  ping -c &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; 192.168.11.$ip | grep &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bytes from&amp;#34;&lt;/span&gt; | cut -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; -f &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; | cut -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;:&amp;#34;&lt;/span&gt; -f1 &amp;amp;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;-c&lt;/code&gt; option is configuredto only send 1 request. The grep is usedto display onlythe host who respond to the request (and supposed alive) and finally cut is used for a nice display. Notice the &lt;code&gt;&amp;amp;&lt;/code&gt; at the end of the line, it&amp;rsquo;s very usefull pto paralellize tasks and make the script faster. Here is the result:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/ping-sweep-ping.png&#34; alt=&#34;ping sweep ping&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DNS enumeration with Host</title>
+      <link>http://10degres.net/dns-enumeration-with-host/</link>
+      <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/dns-enumeration-with-host/</guid>
+      <description>&lt;p&gt;While performing a pentest the information gathering phase is the most important, it&amp;rsquo;s the key of a successful test.
+The DNS is very great source of informations, whith some simple queries you will be able to grab usefull datas about the domain you are targeting.
+The &lt;code&gt;host&lt;/code&gt; command is a very powerful DNS lookup utility which is present in all Linux distribution.&lt;/p&gt;
+&lt;p&gt;For the examples, I will use a domain which allows that kind of query at this moment.&lt;/p&gt;
+&lt;h2 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h2&gt;
+&lt;p&gt;As the &lt;code&gt;man&lt;/code&gt; says, &lt;code&gt;host&lt;/code&gt; is normally used to convert names to IP addresses and vice versa:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/dns-enumeration-host-basic.png&#34; alt=&#34;DNS enumeration host basic&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If the domain doesn&amp;rsquo;t exist, you will meet that message: &lt;code&gt;Host pmolkijn.de not found: 3(NXDOMAIN)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If the ip doesn&amp;rsquo;t point anywhere, you will get this message: &lt;code&gt;Host 91.121.139.2 not found: 3(NXDOMAIN)&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>theHarvester</title>
+      <link>http://10degres.net/theharvester/</link>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/theharvester/</guid>
+      <description>&lt;p&gt;Information gathering is the first and the most important step of a penetration test.
+More informations you will grab, easier the exploit will be.&lt;/p&gt;
+&lt;p&gt;Developed by Christian Martorella &lt;a href=&#34;https://code.google.com/p/theharvester/&#34;&gt;theHarvester&lt;/a&gt; is very usefull for this task.
+It&amp;rsquo;s a python script that will help you to find user emails and subdomains of a given domain by merely parsing search engines results.
+The following data sources are supported :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bing,&lt;/li&gt;
+&lt;li&gt;google, googleCSE, googleplus, google-profiles&lt;/li&gt;
+&lt;li&gt;jigsaw&lt;/li&gt;
+&lt;li&gt;linkedin&lt;/li&gt;
+&lt;li&gt;people123&lt;/li&gt;
+&lt;li&gt;pgp&lt;/li&gt;
+&lt;li&gt;shodan&lt;/li&gt;
+&lt;li&gt;twitter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;theHarvester is by default installed on Kali Linux. Basic usage is:
+&lt;code&gt;theharvester -d &amp;lt;domain&amp;gt; -b &amp;lt;source&amp;gt;&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pentest - Information gathering tools</title>
+      <link>http://10degres.net/pentest-information-gathering-tools/</link>
+      <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/pentest-information-gathering-tools/</guid>
+      <description>&lt;p&gt;Below some tools you can use for information gathering while performing a penetration test:&lt;/p&gt;
+&lt;h2 id=&#34;online&#34;&gt;Online&lt;/h2&gt;
+&lt;p&gt;googledorks from &lt;a href=&#34;http://www.hackersforcharity.org/ghdb/&#34; title=&#34;Hackers for Charity Googledorks&#34;&gt;Hackers for Charity&lt;/a&gt; and 
+from the &lt;a href=&#34;http://www.exploit-db.com/google-dorks/&#34; title=&#34;The Exploit Database Googledorks&#34;&gt;Exploit Database&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.ip-adress.com/&#34; title=&#34;IP-address&#34;&gt;IP-address&lt;/a&gt;:
+free IP Address Lookup&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://toolbar.netcraft.com/site_report&#34; title=&#34;Netcraft&#34;&gt;Netcraft&lt;/a&gt;:
+what is that site running?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.shodanhq.com/&#34; title=&#34;SHODAN&#34;&gt;SHODAN&lt;/a&gt;:
+search engine for all connected object around the world (even fridges)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.threatagent.com/&#34; title=&#34;Threat Agent&#34;&gt;Threat Agent&lt;/a&gt;:
+collect informations from open sources (seems to be down?)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/&#34; title=&#34;Wolfram|Alpha&#34;&gt;Wolfram|Alpha&lt;/a&gt;: 
+compute answers and provide knowledge&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.yougetsignal.com/&#34; title=&#34;YouGetSignal&#34;&gt;YouGetSignal&lt;/a&gt;: 
+collection of uncomplicated, powerful network tools&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

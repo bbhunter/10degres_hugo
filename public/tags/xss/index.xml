@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xss on 10degres</title>
+    <link>http://10degres.net/tags/xss/</link>
+    <description>Recent content in xss on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/xss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find vulnerabilities in Flash SWF</title>
+      <link>http://10degres.net/find-vulnerabilities-in-flash-swf/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/find-vulnerabilities-in-flash-swf/</guid>
+      <description>&lt;p&gt;As a user I would say that I don&amp;rsquo;t care about all these Flash stuff that try to catch my eyes, most of the time I have a plugin to disable them.
+As a developper, it reminds me the (not so good) old time when the marketing peoples always wanted to add &amp;ldquo;movement&amp;rdquo; in the website, yeah it looks so kool!
+As a hacker, well&amp;hellip; I didn&amp;rsquo;t know how nice it could be, but I recently learned how to find issue in there and it&amp;rsquo;s funny as hell.
+I was close to the success as I quickly found 3 XSS, but unfortunately all my reports were marked as duplicate :/&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Bug Bounty program that changed my life</title>
+      <link>http://10degres.net/the-bug-bounty-program-that-changed-my-life/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/the-bug-bounty-program-that-changed-my-life/</guid>
+      <description>&lt;p&gt;This is a real story or not, that occured in mid 2017 or not, about a private program or not, on Hackerone or not, believe me or not, but it changed my life.
+I would like to thanks all the people from this company I talked with.
+They were very nice with me, very fast to fix the bugs and I always got the rewards in less than 7 days, frequently the day of the report, even for the smallest bugs.
+Thanks to them, I wish we could find more program like this one.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Massive pwnage</title>
+      <link>http://10degres.net/massive-pwnage/</link>
+      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/massive-pwnage/</guid>
+      <description>&lt;p&gt;There is different ways to hunt for vulnerabilities, depending of your knowledge, your skills, your expectation and how you like to chase.
+I personally love programming and, as a true developper, I&amp;rsquo;m lazy, so I love to automate things.
+By writing some piece of code or by combining multiple tools, you can find a lot of interesting stuff.
+This article is about some scripts/tricks I wrote/use to perform massive tests:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;XSS with PhantomJS&lt;/li&gt;
+&lt;li&gt;Heroku subdomain takeover&lt;/li&gt;
+&lt;li&gt;Amazon S3 buckets theft&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>An extremely buggy web app !</title>
+      <link>http://10degres.net/an-extremely-buggy-web-app/</link>
+      <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/an-extremely-buggy-web-app/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;bWAPP&lt;/strong&gt; is a PHP web application which is intentionnally crackable. It covers a very large set of common vulns but also some unusual case you can meet on the Internet.&lt;/p&gt;
+&lt;p&gt;The goal here is to train your development skill and hacking knowledge to be able to write a better (more secure) code.
+Compared to &lt;a href=&#34;http://10degres.net/damn-vulnerable-web-application/&#34;&gt;DVWA&lt;/a&gt;, you have to consider bWAPP as a much more advanced level of difficulty.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/bwapp.png&#34; alt=&#34;bwapp&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DVWA - XSS reflected</title>
+      <link>http://10degres.net/dvwa-xss-reflected/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/dvwa-xss-reflected/</guid>
+      <description>&lt;p&gt;According to OWASP Top 10, Cross-Site Scripting aka XSS takes the 3rd place in the more common and important web vulnerabilities list.
+Her primary goal is to spoof the session of another user by stealing his cookie id, usually a privileged user like an admin. 
+You can train XSS in Damn Vulnerable Web Application, here are some tests you can perform.&lt;/p&gt;
+&lt;h2 id=&#34;low&#34;&gt;Low&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;( &lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;array_key_exists&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;, $_GET) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; $_GET[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;NULL&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; $_GET[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt; ) {  
+  $isempty &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;;  
+} &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {  
+  $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;pre&amp;gt;&amp;#39;&lt;/span&gt;;  
+  $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hello &amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; $_GET[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;];  
+  $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;/pre&amp;gt;&amp;#39;&lt;/span&gt;;  
+}
+&lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This code output the &lt;code&gt;name&lt;/code&gt; parameter without any filter so it&amp;rsquo;s very vulnerable to XSS!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Damn Vulnerable Web Application</title>
+      <link>http://10degres.net/damn-vulnerable-web-application/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/damn-vulnerable-web-application/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DVWA&lt;/strong&gt; is a PHP/MySQL web application that is intentionally vulnerable.
+The goal is to learn common web vulnerabilities and improve your security skills by training yourself on your own server.
+3 levels are available (low, medium and high) to perform those following attacks :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bruce Force&lt;/li&gt;
+&lt;li&gt;Command Execution&lt;/li&gt;
+&lt;li&gt;CSRF&lt;/li&gt;
+&lt;li&gt;Captcha&lt;/li&gt;
+&lt;li&gt;File Inclusion&lt;/li&gt;
+&lt;li&gt;SQL Injection (plus Blind)&lt;/li&gt;
+&lt;li&gt;File Upload&lt;/li&gt;
+&lt;li&gt;XSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The lowest level is usually pretty easy to bypass but the high level as a best practice presents the right way to protect your application.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vulnerability - Cross Site Scripting aka XSS</title>
+      <link>http://10degres.net/vulnerability-cross-site-scripting-aka-xss/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/vulnerability-cross-site-scripting-aka-xss/</guid>
+      <description>Description Cross-site Scripting (XSS) by OWASP
+Cross-site scripting by Wikipedia
+Cross-site scripting (DOM-based) by PortSwigger
+Cross-site scripting (reflected) by PortSwigger
+Cross-site scripting (reflected DOM-based) by PortSwigger
+Cross-site scripting (stored) by PortSwigger
+Cross-site scripting (stored DOM-based) by PortSwigger
+Browser cross-site scripting filter disabled by PortSwigger
+Tools KNOXSS by Brute Logic
+XSS Hunter by Mandatory</description>
+    </item>
+    
+  </channel>
+</rss>

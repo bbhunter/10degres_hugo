@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recon on 10degres</title>
+    <link>http://10degres.net/tags/recon/</link>
+    <description>Recent content in recon on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/recon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub tools collection</title>
+      <link>http://10degres.net/github-tools-collection/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/github-tools-collection/</guid>
+      <description>&lt;p&gt;This is the current thread in the bug hunter community: how to find sensitive informations on GitHub. Understand how to find tokens/keys/passwords on the largest code database in the world in order to pwn a company and get massive rewards. Using tools or doing it manually, some very talented people like &lt;a href=&#34;https://twitter.com/Th3G3nt3lman&#34;&gt;Th3G3nt3lman&lt;/a&gt; are real wizards when it comes to discover such treasures. Many tools are now available but since I wanted to learn Python for a long time, I jumped at the opportunity. In this article I&amp;rsquo;m going to present some scripts I wrote in PHP and Python to fit my needs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cloudflare origin server</title>
+      <link>http://10degres.net/cloudflare-origin-server/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/cloudflare-origin-server/</guid>
+      <description>&lt;p&gt;What is &lt;a href=&#34;https://www.cloudflare.com/&#34;&gt;Cloudflare&lt;/a&gt;? In short: Content Delivery Network (CDN), Web Application Firewall (WAF) and cherry/icing on the cake, 1 year go Cloudflare released a fast DNS resolver.
+With 4 pricings and more than &lt;a href=&#34;https://www.cloudflare.com/case-studies/&#34;&gt;16M Internet properties&lt;/a&gt;, Cloudflare is now one of the most popular firewall used for web applications.
+Working as a reverse proxy the WAF does not only offer a protection against DDOS but can also trigger an alert/error when he detects an attack.
+But what if you can bypass all these protections in a second making the defense useless?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Subdomain enumeration</title>
+      <link>http://10degres.net/subdomain-enumeration/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/subdomain-enumeration/</guid>
+      <description>&lt;p&gt;A friend recently asked me what methods I use to find subdomains.
+To be honest I was confused, like &lt;em&gt;&amp;ldquo;oooohhh so much, brute force mmm&amp;hellip; zone transfer and&amp;hellip; brute for&amp;hellip; wait Google and mmm&amp;hellip; many other tools!&amp;quot;&lt;/em&gt;
+What a shame that I was so inaccurate after so much time spent to look for subdomains.
+Time to dig a little bit!
+After I wrote a list of the most popular methods, I tried to make a list of some tools and online resources to exploit them.
+Of course this list is far from exhaustive, there are many new stuff every day, but it&amp;rsquo;s still a good start :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Actarus code release</title>
+      <link>http://10degres.net/actarus-code-release/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/actarus-code-release/</guid>
+      <description>&lt;p&gt;Actarus is a custom tool that can perform automatic recon and store all datas in a database.
+Afterwards you could consult/search keywords in it to find vulnerabilities or at least entry points.&lt;/p&gt;
+&lt;p&gt;After some months of inactivity, I finally decided to publicly release the source code of Actarus.
+I started this project to learn Symfony, now I hate it. Maybe someone will give him another chance to grow up.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

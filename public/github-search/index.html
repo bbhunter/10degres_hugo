@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gwendal Le Coguic">
+    <meta name="description" content="Gwendal Le Coguic, web developer and bug hunter">
+    <meta name="keywords" content="development,security,researcher,bugbounty,tools,php,python">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+
+<meta name="twitter:title" content="GitHub search"/>
+<meta name="twitter:description" content="We all know the famous quote &ldquo;Think out of the box&rdquo;.
+Technical knowledge is important but creativity is also.
+In bug bounty, to get nice rewards, sometimes you don&rsquo;t need to be a crazy coder or great network engineer, you simply need to try what other didn&rsquo;t.
+This year, Slack get in trouble because many developers leave their credentials in their public repository.
+Last year Uber had to deal with a major security issue: database keys were stored in GitHub (this leads to a sweet bounty for the finder).
+I found an interesting project, on GitHub itself, to parse the search engine results: vcsmap from Melvinsh.
+Unfortunately the scrapper seems to have trouble with search that required authentication.
+Since I don&rsquo;t understand Ruby, I wrote my own tool with PHP."/>
+<meta name="twitter:site" content="@10degres"/>
+<meta name="twitter:creator" content="@gwendallecoguic"/>
+
+    <meta property="og:title" content="GitHub search" />
+<meta property="og:description" content="We all know the famous quote &ldquo;Think out of the box&rdquo;.
+Technical knowledge is important but creativity is also.
+In bug bounty, to get nice rewards, sometimes you don&rsquo;t need to be a crazy coder or great network engineer, you simply need to try what other didn&rsquo;t.
+This year, Slack get in trouble because many developers leave their credentials in their public repository.
+Last year Uber had to deal with a major security issue: database keys were stored in GitHub (this leads to a sweet bounty for the finder).
+I found an interesting project, on GitHub itself, to parse the search engine results: vcsmap from Melvinsh.
+Unfortunately the scrapper seems to have trouble with search that required authentication.
+Since I don&rsquo;t understand Ruby, I wrote my own tool with PHP." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://10degres.net/github-search/" />
+
+<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="article:published_time" content="2016-09-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-09-06T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
+
+
+    
+      <base href="http://10degres.net/github-search/">
+    
+    <title>
+  GitHub search · 10degres
+</title>
+
+    
+      <link rel="canonical" href="http://10degres.net/github-search/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.b7c885186d029c262c5580a8cf13937b5dae16dc868972a0c3fdd82752e6cacb.css" integrity="sha256-t8iFGG0CnCYsVYCozxOTe12uFtyGiXKgw/3YJ1Lmyss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+    
+
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://10degres.net/">
+      10degres
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">GitHub search</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2016-09-06T00:00:00Z'>
+                September 6, 2016
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://10degres.net/tags/github/">github</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/password/">password</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/security/">security</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/bug-bounty/">bug bounty</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/tools/">tools</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>We all know the famous quote &ldquo;<em>Think out of the box</em>&rdquo;.
+Technical knowledge is important but creativity is also.
+In bug bounty, to get nice rewards, sometimes you don&rsquo;t need to be a crazy coder or great network engineer, you simply need to try what other didn&rsquo;t.</p>
+<p>This year, Slack get in trouble because many developers leave their credentials in their public repository.
+Last year Uber had to deal with a major security issue: database keys were stored in GitHub (this leads to a sweet bounty for the finder).</p>
+<p>I found an interesting project, on GitHub itself, to parse the search engine results: <a href="https://github.com/melvinsh/vcsmap">vcsmap from Melvinsh</a>.
+Unfortunately the scrapper seems to have trouble with search that required authentication.
+Since I don&rsquo;t understand Ruby, I wrote my own tool with PHP.</p>
+<p>The code is available on my <a href="https://github.com/gwen001/github-search">GitHub repository</a> and for sure, you can tweak it to fit your needs.
+Usage is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php github-search.php [OPTIONS]
+
+Options:
+    -c  set cookie session
+    -e	file extension filter
+    -f  looking for file
+    -h  print this help
+    -o  provide organization name
+    -r  maximum number of results, default 50
+    -s  search string
+
+Examples:
+    php github-search.php -o myorganization -s db_password
+    php github-search.php -o myorganization -f wp-config.php -s db_password
+    php github-search.php -c &#34;user_session=B0KqycP8LlYORc-s3WFZoH71TG&#34; -f wp-config -e php -r 1000
+</code></pre></div><p>An organization name must be provided when you are not authenticated on GitHub, that why the cookie option exists, of course you should use your own cookie value. And here is the output:</p>
+<p><img src="http://10degres.net/images/github-search-example.png" alt="GitHub search PHP tool"></p>
+<p>The following fields are displayed:</p>
+<ul>
+<li>repository: name of the repository where the file/string has been found</li>
+<li>file: name of the file found or where the string has been found</li>
+<li>language: the estimated language used in the file</li>
+<li>summary: the lines where the string has been found with their number</li>
+<li>link: direct link to the concerned file</li>
+</ul>
+<p>Give it a try and let me know if you find a bug!</p>
+<h2 id="external-resources">External resources</h2>
+<ul>
+<li><a href="http://arstechnica.com/security/2015/03/in-major-goof-uber-stored-sensitive-database-key-on-public-github-page/">Uber database keys revealed</a></li>
+<li><a href="http://arstechnica.co.uk/security/2016/04/hacking-slack-accounts-as-easy-as-searching-github/">Public Slack credentials</a></li>
+<li><a href="https://github.com/techgaun/github-dorks/blob/master/github-dorks.txt">GitHub dorks</a></li>
+</ul>
+      </div>
+
+      <footer>
+        
+
+
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-61485350-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+      <script src="http://10degres.net/assets/js/scripts.js"></script>
+    
+    
+  </body>
+
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video gallery on 10degres</title>
+    <link>http://10degres.net/tags/video-gallery/</link>
+    <description>Recent content in video gallery on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/video-gallery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vulnerability in Wordpress Video Gallery</title>
+      <link>http://10degres.net/vulnerability-in-wordpress-video-gallery/</link>
+      <pubDate>Thu, 12 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/vulnerability-in-wordpress-video-gallery/</guid>
+      <description>&lt;p&gt;Recently reported by Claudio Viviani, there is an SQL Injection available in this plugin who has been downloaded more than 100k.
+Developped by Apptha (again), the current version 2.7 still vulnerable and downloadable from
+the official &lt;a href=&#34;https://wordpress.org/plugins/contus-video-gallery/&#34; title=&#34;Wordpress Video Gallery&#34;&gt;Wordpress Plugin Directory&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The hole comes from the lack of filter on the GET parameter &lt;code&gt;vid&lt;/code&gt; in &lt;code&gt;/wp-content/plugins/contus-video-gallery/videogalleryrss.php&lt;/code&gt; (the plugin must be enable to perform the injection):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;video&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+  $thumbImageorder &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;w.vid ASC&amp;#39;&lt;/span&gt;;
+  $vid             &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filter_input&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;INPUT_GET&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vid&amp;#39;&lt;/span&gt;);
+  $where           &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;AND w.vid =&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;$vid;
+  $TypeOFvideos    &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $contusOBJ&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;home_thumbdata&lt;/span&gt;( $thumbImageorder , $where , $dataLimit );
+&lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Since there is no filter specified when calling &lt;a href=&#34;http://php.net/manual/fr/function.filter-input.php&#34; title=&#34;filter_input&#34;&gt;filter_input&lt;/a&gt;, the default value is used which is &lt;code&gt;unsafe_raw&lt;/code&gt;.
+According to the PHP documentation, &lt;a href=&#34;http://php.net/manual/fr/filter.filters.sanitize.php&#34; title=&#34;FILTER_UNSAFE_RAW&#34;&gt;FILTER_UNSAFE_RAW&lt;/a&gt; deletes chars under 32 and over 127 and converts &lt;code&gt;&amp;amp;&lt;/code&gt; to &lt;code&gt;&amp;amp;amp;&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

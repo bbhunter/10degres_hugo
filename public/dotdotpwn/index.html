@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gwendal Le Coguic">
+    <meta name="description" content="Gwendal Le Coguic, web developer and bug hunter">
+    <meta name="keywords" content="development,security,researcher,bugbounty,tools,php,python">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+
+<meta name="twitter:title" content="DotDotPwn"/>
+<meta name="twitter:description" content="Path traversal is a very powerful attack but not necessarily easy to find, fortunatly DotDotPwn is here to help you! DotDotPwn is a powerful traversal directory fuzzer.
+Written in perl, it&rsquo;s installed in Kali Linux by default.
+Basic usage is:
+dotdotpwn.pl -m &lt;module&gt; -h &lt;host&gt;
+Several options are available:
+-h: the host you want to test
+-m: it supports http, ftp or text file as a payload
+-o and -O: enable the operating system detection
+-d: max depth it will look for (ie. max ../)
+-f: file to grab (default is /etc/passwd for *nix system)
+-E: try to grab some extra files depending of the os detection result
+-S: ssl support
+-x: specify the port
+-r: output file
+-q: quiet mode
+-k: keyword to match in the response who means a win
+-b: exit after the first vulnerability found
+-M: http method to use with http module (can&rsquo;t make it work)
+-e: add an extension (.php, .png, &hellip;)
+and some more&hellip;"/>
+<meta name="twitter:site" content="@10degres"/>
+<meta name="twitter:creator" content="@gwendallecoguic"/>
+
+    <meta property="og:title" content="DotDotPwn" />
+<meta property="og:description" content="Path traversal is a very powerful attack but not necessarily easy to find, fortunatly DotDotPwn is here to help you! DotDotPwn is a powerful traversal directory fuzzer.
+Written in perl, it&rsquo;s installed in Kali Linux by default.
+Basic usage is:
+dotdotpwn.pl -m &lt;module&gt; -h &lt;host&gt;
+Several options are available:
+-h: the host you want to test
+-m: it supports http, ftp or text file as a payload
+-o and -O: enable the operating system detection
+-d: max depth it will look for (ie. max ../)
+-f: file to grab (default is /etc/passwd for *nix system)
+-E: try to grab some extra files depending of the os detection result
+-S: ssl support
+-x: specify the port
+-r: output file
+-q: quiet mode
+-k: keyword to match in the response who means a win
+-b: exit after the first vulnerability found
+-M: http method to use with http module (can&rsquo;t make it work)
+-e: add an extension (.php, .png, &hellip;)
+and some more&hellip;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://10degres.net/dotdotpwn/" />
+
+<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="article:published_time" content="2015-01-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-01-23T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
+
+
+    
+      <base href="http://10degres.net/dotdotpwn/">
+    
+    <title>
+  DotDotPwn · 10degres
+</title>
+
+    
+      <link rel="canonical" href="http://10degres.net/dotdotpwn/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.b7c885186d029c262c5580a8cf13937b5dae16dc868972a0c3fdd82752e6cacb.css" integrity="sha256-t8iFGG0CnCYsVYCozxOTe12uFtyGiXKgw/3YJ1Lmyss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+    
+
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://10degres.net/">
+      10degres
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">DotDotPwn</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2015-01-23T00:00:00Z'>
+                January 23, 2015
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://10degres.net/tags/pentest/">pentest</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/path-traversal/">path traversal</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>Path traversal is a very powerful attack but not necessarily easy to find, fortunatly DotDotPwn is here to help you! <a href="http://dotdotpwn.blogspot.fr/" title="DotDotPwn">DotDotPwn</a> is a powerful traversal directory fuzzer.
+Written in perl, it&rsquo;s installed in Kali Linux by default.</p>
+<p>Basic usage is:</p>
+<p><code>dotdotpwn.pl -m &lt;module&gt; -h &lt;host&gt;</code></p>
+<p>Several options are available:</p>
+<p>-h: the host you want to test<br>
+-m: it supports http, ftp or text file as a payload<br>
+-o and -O: enable the operating system detection<br>
+-d: max depth it will look for (ie. max <code>../</code>)<br>
+-f: file to grab (default is <code>/etc/passwd</code> for *nix system)<br>
+-E: try to grab some extra files depending of the os detection result<br>
+-S: ssl support<br>
+-x: specify the port<br>
+-r: output file<br>
+-q: quiet mode<br>
+-k: keyword to match in the response who means a win<br>
+-b: exit after the first vulnerability found<br>
+-M: http method to use with http module (can&rsquo;t make it work)<br>
+-e: add an extension (.php, .png, &hellip;)</p>
+<p>and some more&hellip;</p>
+<p>Example:</p>
+<p><img src="http://10degres.net/images/dotdotpwn_1.png" alt="dotdotpwn"></p>
+<p>Will produce the following Apache logs (note that the User-Agent is different for each request):</p>
+<p><img src="http://10degres.net/images/dotdotpwn_2.png" alt="dotdotpwn"></p>
+<p>To deal with session and cookies you can use a payload to provide details about the HTTP request.
+The keyword <code>TRAVERSAL</code> is required by DotDotPwn to specify where the injection should be performed.
+For instance in the file inclusion section in DVWA, you can try this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">GET</span> /vulnerabilities/fi/?page=TRAVERSAL <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">local.dvwa.com</span>
+Cookie<span style="color:#f92672">:</span> <span style="color:#ae81ff">security=low; PHPSESSID=rcvkns45jv1i62t1c4jqj8ogu4</span>
+</code></pre></div><p>With the following command:</p>
+<p><code>$ dotdotpwn.pl -m payload -h local.dvwa.com -p ~/dvwa_fi.txt -x 80 -k &quot;root:&quot; -f /etc/passwd</code></p>
+<h2 id="external-resources">External resources</h2>
+<ul>
+<li><a href="https://www.owasp.org/index.php/Path_Traversal">OWASP Path Traversal</a></li>
+<li><a href="http://10degres.net/damn-vulnerable-web-application/">Damn Vulnerable Web Application</a></li>
+</ul>
+      </div>
+
+      <footer>
+        
+
+
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-61485350-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+      <script src="http://10degres.net/assets/js/scripts.js"></script>
+    
+    
+  </body>
+
+</html>

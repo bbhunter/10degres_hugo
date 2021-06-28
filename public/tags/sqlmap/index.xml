@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sqlmap on 10degres</title>
+    <link>http://10degres.net/tags/sqlmap/</link>
+    <description>Recent content in sqlmap on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/sqlmap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sqlmap</title>
+      <link>http://10degres.net/sqlmap/</link>
+      <pubDate>Mon, 18 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/sqlmap/</guid>
+      <description>&lt;p&gt;Written in Python by &lt;a href=&#34;https://twitter.com/stamparm&#34;&gt;Miroslav Stamper&lt;/a&gt;, Sqlmap is probably the best automated tool to detect and exploit SQL Injection.&lt;/p&gt;
+&lt;p&gt;Sqlmap fully supports many databases as MySQL, Microsoft SQL Server, PostgreSQL, Oracle (and many more) and is able to detect the following injection types :
+Boolean based blind, Error based, Union based, Stacked queries, Time based blind, Inline queries. Depending of the target status, sqlmap is also able to :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;prompt an interactive sql shell&lt;/li&gt;
+&lt;li&gt;download/upload files&lt;/li&gt;
+&lt;li&gt;prompt a web shell&lt;/li&gt;
+&lt;li&gt;crack hashed password using a dictionnary attack&lt;/li&gt;
+&lt;li&gt;and a lot more&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below some examples of the main functions using &lt;a href=&#34;http://10degres.net/an-extremely-buggy-web-app/&#34;&gt;bWAPP&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/sqlmap-basic-usage.png&#34; alt=&#34;sqlmap basic usage&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this example sqlmap has detected that the GET parameter &lt;code&gt;title&lt;/code&gt; of the search function is vulnerable to sql injection.
+Well done! Plus it found that 4 different types of injection can be used for exploitation.
+Note that sqlmap has also detected that the parameter is vulnerable to XSS attacks which is unfortunatly very common these days&amp;hellip;&lt;/p&gt;
+&lt;p&gt;To perform test on POST field you should write: &lt;code&gt;--data=&amp;quot;title=sqlitest&amp;amp;action=search&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In the next example, I&amp;rsquo;ll turn off the verbose mode.&lt;/p&gt;
+&lt;br&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

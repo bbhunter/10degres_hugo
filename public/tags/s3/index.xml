@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>s3 on 10degres</title>
+    <link>http://10degres.net/tags/s3/</link>
+    <description>Recent content in s3 on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/s3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kick the bucket</title>
+      <link>http://10degres.net/kick-the-bucket/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/kick-the-bucket/</guid>
+      <description>&lt;p&gt;I already wrote &lt;a href=&#34;http://10degres.net/playing-with-s3-buckets/&#34;&gt;a post about Amazon S3 buckets&lt;/a&gt; but they became so popular these last weeks  that many people explain what is a bucket, what is the danger and how to exploit misconfiguration. My goal here is more: how/where to find those vulnerable buckets.&lt;/p&gt;
+&lt;p&gt;First I assume you already know the basics, if not, you can read the excellent article from &lt;a href=&#34;https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/&#34;&gt;Frans Rosen on Detectify&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Playing with S3 buckets</title>
+      <link>http://10degres.net/playing-with-s3-buckets/</link>
+      <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/playing-with-s3-buckets/</guid>
+      <description>&lt;p&gt;Amazon Simple Storage Service aka S3 is a cloud storage for the Internet.
+You first create a bucket and you can then upload any number of objects (photos, videos, documents etc.) to it.
+However if the permissions (ACL) are not well settled, bad things can happen.&lt;/p&gt;
+&lt;p&gt;Recently disclosed by Hackerone, a misconfiguration in their Amazon Web Services S3 buckets allowed any authenticated user to write in there.
+From here an attacker could upload a malicious file waiting for someone open it, or overwrite existing files.&lt;/p&gt;
+&lt;p&gt;When you crawl a website, you can you can check the presence of S3 by intercepting calls to &lt;code&gt;amazonaws.com&lt;/code&gt;.
+The bucket call can have different look:&lt;br&gt;
+&lt;code&gt;https://&amp;lt;aws_region&amp;gt;.amazonaws.com/&amp;lt;bucket_name&amp;gt;/&amp;lt;file_path&amp;gt;&lt;/code&gt;&lt;br&gt;
+or:&lt;br&gt;
+&lt;code&gt;https://&amp;lt;bucket_name&amp;gt;.amazonaws.com/&amp;lt;file_path&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once you get the bucket name, you can execute many tests using &lt;strong&gt;awscli&lt;/strong&gt; to check his permissions.
+If you try to access to a bucket who doesn&amp;rsquo;t exist, you&amp;rsquo;ll get this message:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ aws s3 ls s3://gwen001-azertyuiop  
+A client error &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;NoSuchBucket&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; occurred when calling the ListObjects operation: The specified bucket does not exist
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you try to execute a command you are not allowed to, you&amp;rsquo;ll then get something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ aws s3 ls s3://gwen001-test000/
+A client error &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessDenied&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; occurred when calling the ListObjects operation: Access Denied
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

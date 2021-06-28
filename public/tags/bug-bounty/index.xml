@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bug bounty on 10degres</title>
+    <link>http://10degres.net/tags/bug-bounty/</link>
+    <description>Recent content in bug bounty on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/bug-bounty/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to keep hackers motivated in bug bounty</title>
+      <link>http://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</link>
+      <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</guid>
+      <description>Nowadays, there is thousands of programs on several platforms, so how would you attract hackers to you? Why would I choose your program instead of another? Why would I spend time testing your system? Think about hackers like part of your customers or investors, you have convince them to work with you, you have to promote your program like you would market your products.
+One big difference with pentest is that a bug bounty program is something you build on the long term.</description>
+    </item>
+    
+    <item>
+      <title>5 things to avoid in bug bounty</title>
+      <link>http://10degres.net/5-things-to-avoid-in-bug-bounty/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/5-things-to-avoid-in-bug-bounty/</guid>
+      <description>The second article of a serie about bug bounty management. This one give some tips to companies about what kind of mistakes they should avoid to keep good relationship with hackers.
+Unfixed bugs Hackers work on your program, they could choose another one but they chose you. They spend time trying to find issues in your system, which is the purpose of a bug bounty program obviously, the minimum you can do is to fix what they report.</description>
+    </item>
+    
+    <item>
+      <title>5 things to do before running your first bug bounty program</title>
+      <link>http://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/</guid>
+      <description>Welcome 2020! I will start this year with a set of articles about program management. In this one, I will try to explain some important things all companies should do BEFORE running a first bug bounty program. Since there is no official rules in bug bounty, we miss that, at the end you can always do whatever you want. So those articles are more about best practices/good tips.
+Do pentest/audits Test before the test.</description>
+    </item>
+    
+    <item>
+      <title>Bug bounty management, a bad example</title>
+      <link>http://10degres.net/bug-bounty-management-a-bad-example/</link>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/bug-bounty-management-a-bad-example/</guid>
+      <description>&lt;p&gt;As I lately released an article about a &lt;a href=&#34;http://10degres.net/bug-bounty-management-a-great-example-zomato/&#34;&gt;good bug bounty program example&lt;/a&gt;, I also wanted to write something about what kind of behaviours companies should avoid to keep the community motivated.&lt;/p&gt;
+&lt;p&gt;In 2017, I worked on a great program, so great that I published an article about them called &amp;ldquo;&lt;a href=&#34;http://10degres.net/the-bug-bounty-program-that-changed-my-life/&#34;&gt;The Bug Bounty program that changed my life&lt;/a&gt;&amp;rdquo;.
+Since I was very successful on that program, some weeks ago I decided to give another try.
+I quickly checked the policy on their Hackerone page and noticed some changes in the rules.
+I quickly reported some small bugs and also noticed some changes in the reports management process.&lt;/p&gt;
+&lt;p&gt;Unfortunately all those changes now make the program &lt;strong&gt;terrible&lt;/strong&gt;.
+Here is my analysis.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bug bounty management, a great example: Zomato</title>
+      <link>http://10degres.net/bug-bounty-management-a-great-example-zomato/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/bug-bounty-management-a-great-example-zomato/</guid>
+      <description>&lt;p&gt;Since I decided to work on my advisor position in the bug bounty industry, I wanted to know more details about what makes a good program, what are the important keys and what to avoid.&lt;/p&gt;
+&lt;p&gt;I contacted Prateek Tiwari, lead security engineering at &lt;a href=&#34;https://twitter.com/Zomato&#34;&gt;Zomato&lt;/a&gt;, he was nice enough to answer all my questions.
+Let&amp;rsquo;s discover how Zomato became one of the best program, not only on Hackerone but in the whole bug bounty industry.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Swag Store</title>
+      <link>http://10degres.net/swag-store/</link>
+      <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/swag-store/</guid>
+      <description>&lt;p&gt;In the bug bounty industry, companies/programs reward hackers with bounties for their contribution, most of the time money and swag from time to time.
+But what about platforms?
+How platforms thank their hackers?
+Unfortunately events are not a standard and only a few selected hackers can participate.
+What about something more popular, something fair, something that all hunters could enjoy, even the beginners, even the casuals?
+All platforms have a scoring system so what if you could transform this reputation/score to something more concrete?
+This is THE SWAG STORE.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Hunter Games</title>
+      <link>http://10degres.net/the-hunter-games/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/the-hunter-games/</guid>
+      <description>&lt;p&gt;What if bug bounty platforms had their own contest?
+Imagine a tournament where bug hunters would be promoted and sponsored by platforms like in every (e-)sports.
+Imagine an event where they could fight on a dedicated scope as it would be in a CTF event but with bounties or a Hackerone event but with a huge competition in the background.
+This is THE HUNTER GAMES.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to write a Bug Bounty report</title>
+      <link>http://10degres.net/how-to-write-a-bug-bounty-report/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/how-to-write-a-bug-bounty-report/</guid>
+      <description>&lt;p&gt;One of the first thing I learned when I started security, is that the report is just as important as the pentest itself.
+Some bug bounty platforms give reputation points according the quality.
+While there is no official rules to write a good report, there are some good practices to know and some bad ones to avoid.
+Mines are probably not the best but I never had any problem with any company, it&amp;rsquo;s also pretty rare that the secteam asks for more informations since I try to detail as much as I can in the initial report.
+Let me give you some tips and the global pattern of my templates.
+If you like it, use it, if not, then create your own :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS takeover through SSRF in JavaScript</title>
+      <link>http://10degres.net/aws-takeover-through-ssrf-in-javascript/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/aws-takeover-through-ssrf-in-javascript/</guid>
+      <description>&lt;p&gt;Here is the story of a bug I found in a private bug bounty program on &lt;a href=&#34;https://hackerone.com/&#34;&gt;Hackerone&lt;/a&gt;.
+It took me exactly 12h30 -no break- to find it, exploit and report.
+I was able to dump the AWS credentials, this lead me to fully compromise the account of the company: 20 buckets and 80 EC2 instances (Amazon Elastic Compute Cloud) in my hands.
+Besides the fact that it&amp;rsquo;s one of my best bug in my hunter career, I also learnt alot during this sprint, so let&amp;rsquo;s share!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Interview with a Bug Bounty program</title>
+      <link>http://10degres.net/interview-with-a-bug-bounty-program/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/interview-with-a-bug-bounty-program/</guid>
+      <description>&lt;p&gt;One month ago I started to chase on a new private program.
+Since we were in touch by mail and since their office is pretty close to my place, I proposed to meet.
+They immediatly accepted.
+We talked for an hour, about security, my job, their program.
+That was so interesting, question after question, we learned alot from each other.
+I though it would be nice to share this experience, some people probably have some of these questions in mind, so in this article I tried to resume our interview.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Colorize your hunt</title>
+      <link>http://10degres.net/colorize-your-hunt/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/colorize-your-hunt/</guid>
+      <description>&lt;p&gt;As a full time bug hunter, it&amp;rsquo;s important to use the tools you are confortable with, sometimes a small improvement can change your life.
+During the great 3 days course presented by &lt;a href=&#34;http://www.agarri.fr/&#34;&gt;Nicolas Grégoire&lt;/a&gt;, he showed us a browser called Autochrome.
+Combined with a tiny Burp Suite extension, it becomes very easy to visualize the things you really want to see and reduce the noise for your eyes.
+In this article I will show you my current configuration.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cons of Bug Bounty</title>
+      <link>http://10degres.net/cons-of-bug-bounty/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/cons-of-bug-bounty/</guid>
+      <description>&lt;p&gt;This article is the following of the previous one (obviously&amp;hellip;) about &lt;a href=&#34;http://10degres.net/why-bug-bounty/&#34;&gt;why I love bug bounty&lt;/a&gt;.
+However I realized that that one sounds like everything is perfect in this job, but since the world is not whole pinky full of rainbows, and butterflies, and unicorns, I have to say the truth.
+Long time resolution, loneliness, deception, companies, there are also bad points (or maybe I&amp;rsquo;m just frustrated to get so much duplicates these days xD).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Subdomain enumeration</title>
+      <link>http://10degres.net/subdomain-enumeration/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/subdomain-enumeration/</guid>
+      <description>&lt;p&gt;A friend recently asked me what methods I use to find subdomains.
+To be honest I was confused, like &lt;em&gt;&amp;ldquo;oooohhh so much, brute force mmm&amp;hellip; zone transfer and&amp;hellip; brute for&amp;hellip; wait Google and mmm&amp;hellip; many other tools!&amp;quot;&lt;/em&gt;
+What a shame that I was so inaccurate after so much time spent to look for subdomains.
+Time to dig a little bit!
+After I wrote a list of the most popular methods, I tried to make a list of some tools and online resources to exploit them.
+Of course this list is far from exhaustive, there are many new stuff every day, but it&amp;rsquo;s still a good start :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why Bug Bounty</title>
+      <link>http://10degres.net/why-bug-bounty/</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/why-bug-bounty/</guid>
+      <description>&lt;p&gt;People are usually surprised by the answer when they ask me what I do for living, questions rain, here are some answers.
+My first report was a XSS on a Yahoo acquisition, it happened the 26th January 2016. Since this date, I (try to) perform Bug Bounty as a full time job on &lt;a href=&#34;https://hackerone.com&#34;&gt;Hackerone&lt;/a&gt;.
+Did I say &amp;ldquo;job&amp;rdquo;? I don&amp;rsquo;t really consider bug bounty/hacking as a &amp;ldquo;job&amp;rdquo;, it&amp;rsquo;s more a hobby or a passion, because you have to be passionnate to perform in this domain.
+So let&amp;rsquo;s say that bug bounty is my main source of income.
+Below why I do this &amp;ldquo;job&amp;rdquo;, why it fits perfectly to me and why I love it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Actarus code release</title>
+      <link>http://10degres.net/actarus-code-release/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/actarus-code-release/</guid>
+      <description>&lt;p&gt;Actarus is a custom tool that can perform automatic recon and store all datas in a database.
+Afterwards you could consult/search keywords in it to find vulnerabilities or at least entry points.&lt;/p&gt;
+&lt;p&gt;After some months of inactivity, I finally decided to publicly release the source code of Actarus.
+I started this project to learn Symfony, now I hate it. Maybe someone will give him another chance to grow up.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GitHub search</title>
+      <link>http://10degres.net/github-search/</link>
+      <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/github-search/</guid>
+      <description>&lt;p&gt;We all know the famous quote &amp;ldquo;&lt;em&gt;Think out of the box&lt;/em&gt;&amp;rdquo;.
+Technical knowledge is important but creativity is also.
+In bug bounty, to get nice rewards, sometimes you don&amp;rsquo;t need to be a crazy coder or great network engineer, you simply need to try what other didn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;This year, Slack get in trouble because many developers leave their credentials in their public repository.
+Last year Uber had to deal with a major security issue: database keys were stored in GitHub (this leads to a sweet bounty for the finder).&lt;/p&gt;
+&lt;p&gt;I found an interesting project, on GitHub itself, to parse the search engine results: &lt;a href=&#34;https://github.com/melvinsh/vcsmap&#34;&gt;vcsmap from Melvinsh&lt;/a&gt;.
+Unfortunately the scrapper seems to have trouble with search that required authentication.
+Since I don&amp;rsquo;t understand Ruby, I wrote my own tool with PHP.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bug Bounty Programs</title>
+      <link>http://10degres.net/bug-bounty-programs/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/bug-bounty-programs/</guid>
+      <description>&lt;p&gt;With the evolution of cybercrime this last years, security is became an important budget in large companies.
+For instance, &lt;a href=&#34;https://www.facebook.com/whitehat/&#34;&gt;Facebook&lt;/a&gt; has created a dedicated platform for security reseacher and frequently reward them ($1.3 million spent in 2014).&lt;/p&gt;
+&lt;p&gt;Ebay, Airbnb, Yahoo, Snapchat, Wordpress, all of these companies are now aware about security and all of them have subscribed a bug bounty program. 
+Even mobile plateform as Android and IOS apps are recently focused by the giant Google.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>http://10degres.net/resources/</link>
+      <pubDate>Mon, 01 Jan 1990 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/resources/</guid>
+      <description>&lt;p&gt;There is a lot of resources available about hacking and security, here are my favorites.&lt;/p&gt;
+&lt;p&gt;Some blogs I frequently visit from bounty hunters themself.
+They explain their findings, why it occurs, how they were able to exploit and sometimes how much they win.
+I visit them once a week and I also follow their writer on Twitter to not miss the bugs they don&amp;rsquo;t review.&lt;/p&gt;
+&lt;p&gt;In my opinion the best way to learn hacking and security is to read public disclosure.
+It&amp;rsquo;s a great resources of tips and tools to use to make your life easier.
+Some of my favorites issues, the ones I like to read again and again to understand the vulnerability and try to discern the state of mind of the hacker who found it.
+It&amp;rsquo;s also a good way to improve your report skill and see the way hackers communicates with security teams to keep good feelings.&lt;/p&gt;
+&lt;p&gt;Each Time I learn a new kind of issue, I try to reproduce it on on my local lab, then I try it on security programs I&amp;rsquo;m currently working on.
+Sometime it works, sometimes not but bug bounty is also about patience. Happy reading !&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

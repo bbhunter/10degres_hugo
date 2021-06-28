@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>command execution on 10degres</title>
+    <link>http://10degres.net/tags/command-execution/</link>
+    <description>Recent content in command execution on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/command-execution/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Damn Vulnerable Web Application</title>
+      <link>http://10degres.net/damn-vulnerable-web-application/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/damn-vulnerable-web-application/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DVWA&lt;/strong&gt; is a PHP/MySQL web application that is intentionally vulnerable.
+The goal is to learn common web vulnerabilities and improve your security skills by training yourself on your own server.
+3 levels are available (low, medium and high) to perform those following attacks :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bruce Force&lt;/li&gt;
+&lt;li&gt;Command Execution&lt;/li&gt;
+&lt;li&gt;CSRF&lt;/li&gt;
+&lt;li&gt;Captcha&lt;/li&gt;
+&lt;li&gt;File Inclusion&lt;/li&gt;
+&lt;li&gt;SQL Injection (plus Blind)&lt;/li&gt;
+&lt;li&gt;File Upload&lt;/li&gt;
+&lt;li&gt;XSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The lowest level is usually pretty easy to bypass but the high level as a best practice presents the right way to protect your application.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

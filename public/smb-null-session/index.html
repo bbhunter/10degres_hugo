@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gwendal Le Coguic">
+    <meta name="description" content="Gwendal Le Coguic, web developer and bug hunter">
+    <meta name="keywords" content="development,security,researcher,bugbounty,tools,php,python">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+
+<meta name="twitter:title" content="SMB null session"/>
+<meta name="twitter:description" content="While performing a pentest, if you discover a server running the SMB protocol 
+you can test if it&rsquo;s vulnerable to anonymous connection (also called null session) and then glean a lot of informations with
+a RPC client.
+Nmap is usefull to locate that kind of service:
+
+Now you can try to interact with the remote machine with the help of rpcclient.
+To perform a null session you have to specify an empty user and an empty password.
+If the host is not vulnerable, you will get the following error:
+$ rpcclient -U &#34;&#34; 192.168.1.31
+Enter &#39;s password:
+could not initialise lsa pipe. Error was NT_STATUS_ACCESS_DENIED
+could not obtain sid for domain WORKGROUP
+error: NT_STATUS_ACCESS_DENIED
+But if the host is vulnerable you will immediatly get a prompt:
+$ rpcclient -U &#34;&#34; 192.168.1.18
+Enter &#39;s password:
+rpcclient $&gt;
+"/>
+<meta name="twitter:site" content="@10degres"/>
+<meta name="twitter:creator" content="@gwendallecoguic"/>
+
+    <meta property="og:title" content="SMB null session" />
+<meta property="og:description" content="While performing a pentest, if you discover a server running the SMB protocol 
+you can test if it&rsquo;s vulnerable to anonymous connection (also called null session) and then glean a lot of informations with
+a RPC client.
+Nmap is usefull to locate that kind of service:
+
+Now you can try to interact with the remote machine with the help of rpcclient.
+To perform a null session you have to specify an empty user and an empty password.
+If the host is not vulnerable, you will get the following error:
+$ rpcclient -U &#34;&#34; 192.168.1.31
+Enter &#39;s password:
+could not initialise lsa pipe. Error was NT_STATUS_ACCESS_DENIED
+could not obtain sid for domain WORKGROUP
+error: NT_STATUS_ACCESS_DENIED
+But if the host is vulnerable you will immediatly get a prompt:
+$ rpcclient -U &#34;&#34; 192.168.1.18
+Enter &#39;s password:
+rpcclient $&gt;
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://10degres.net/smb-null-session/" />
+
+<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="article:published_time" content="2015-05-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-05-09T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
+
+
+    
+      <base href="http://10degres.net/smb-null-session/">
+    
+    <title>
+  SMB null session · 10degres
+</title>
+
+    
+      <link rel="canonical" href="http://10degres.net/smb-null-session/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.b7c885186d029c262c5580a8cf13937b5dae16dc868972a0c3fdd82752e6cacb.css" integrity="sha256-t8iFGG0CnCYsVYCozxOTe12uFtyGiXKgw/3YJ1Lmyss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+    
+
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://10degres.net/">
+      10degres
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">SMB null session</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2015-05-09T00:00:00Z'>
+                May 9, 2015
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://10degres.net/tags/smb/">smb</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/rpc/">rpc</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>While performing a pentest, if you discover a server running the <a href="http://en.wikipedia.org/wiki/Server_Message_Block" title="Server Message Block">SMB protocol</a> 
+you can test if it&rsquo;s vulnerable to anonymous connection (also called null session) and then glean a lot of informations with
+a <a href="http://en.wikipedia.org/wiki/Remote_procedure_call" title="Remote Procedure Call">RPC</a> client.
+Nmap is usefull to locate that kind of service:</p>
+<p><img src="http://10degres.net/images/smb-null-session-1.png" alt="smb null session"></p>
+<p>Now you can try to interact with the remote machine with the help of <a href="https://www.samba.org/samba/docs/man/manpages/rpcclient.1.html" title="Man rpcclient">rpcclient</a>.
+To perform a null session you have to specify an empty user and an empty password.
+If the host is not vulnerable, you will get the following error:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ rpcclient -U &#34;&#34; 192.168.1.31
+Enter &#39;s password:
+could not initialise lsa pipe. Error was NT_STATUS_ACCESS_DENIED
+could not obtain sid for domain WORKGROUP
+error: NT_STATUS_ACCESS_DENIED
+</code></pre></div><p>But if the host is vulnerable you will immediatly get a prompt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ rpcclient -U &#34;&#34; 192.168.1.18
+Enter &#39;s password:
+rpcclient $&gt;
+</code></pre></div><p>If you connect successfully, you can use help to see the list of available commands (anyway tab works for autocompletion).
+Below some examples of the most used.</p>
+<p>Basic server infos:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">rpcclient $&gt; srvinfo
+  LUIGI          Wk Sv PrQ Unx NT SNT nintendo server
+  platform_id     :  500
+  os version      :  4.9
+  server type     :  0x809a03
+</code></pre></div><p>Users enumeration:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">rpcclient $&gt; enumdomusers
+user:[admin] rid:[0x3ec]
+user:[Administrator] rid:[0x1f4]
+user:[Guest] rid:[0x1f5]
+user:[lisa] rid:[0x3f1]
+user:[mark] rid:[0x3f2]&lt;/pre&gt;
+</code></pre></div><p>Groups enumeration:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">rpcclient $&gt; enumalsgroups builtin
+group:[Administrators] rid:[0x220]
+group:[Backup Operators] rid:[0x227]
+group:[Guests] rid:[0x222]
+group:[Power Users] rid:[0x223]
+group:[Users] rid:[0x221]
+</code></pre></div><p>Privileges of the connected user:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">rpcclient $&gt; enumprivs
+found 8 privileges
+
+SeMachineAccountPrivilege 		0:6 (0x0:0x6)
+SeTakeOwnershipPrivilege 		0:9 (0x0:0x9)
+SeBackupPrivilege 		0:17 (0x0:0x11)
+SeRestorePrivilege 		0:18 (0x0:0x12)
+SeRemoteShutdownPrivilege 		0:24 (0x0:0x18)
+SePrintOperatorPrivilege 		0:4097 (0x0:0x1001)
+SeAddUsersPrivilege 		0:4098 (0x0:0x1002)
+SeDiskOperatorPrivilege 		0:4099 (0x0:0x1003)
+</code></pre></div><p>Shares enumeration:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">rpcclient $&gt; netshareenum
+netname: IPC$
+  remark:	IPC Service
+  path:	C:\tmp
+  password:
+netname: Lisa Share
+  remark:	Lisa Docs
+  path:	C:\home\lisa\files
+  password:
+</code></pre></div><p><a href="https://code.google.com/p/phillips321/">enum4linux</a> is the perfect tool to automate null session attacks.
+According to the documentation : &ldquo;[&hellip;] this script is basically just a wrapper around rpcclient, net, nmblookup and smbclient [&hellip;]&rdquo;.</p>
+      </div>
+
+      <footer>
+        
+
+
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-61485350-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+      <script src="http://10degres.net/assets/js/scripts.js"></script>
+    
+    
+  </body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gwendal Le Coguic">
+    <meta name="description" content="Gwendal Le Coguic, web developer and bug hunter">
+    <meta name="keywords" content="development,security,researcher,bugbounty,tools,php,python">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+
+<meta name="twitter:title" content="Choose your password"/>
+<meta name="twitter:description" content="I recently worked with a well known web agency in France.
+They have a good reputation, they were rewarded last year for their good works and they are in the top 40 of the best french agencies. 
+However I was terribly surprised to find many basic errors/misconfiguration on their own site: error_reporting enable, 
+SQL injection and finally a &ldquo;private&rdquo; admin section reachable with a simple couple of demo/demo as credentials&hellip;
+Such vulnerability can be dangerous when using common login/password and it can be even deadly if the discovered user has high privileges.
+It was true in this situation: mail contact, articles, resumes, photos everything was alterable.
+Below the good practice to create a strong password.
+The rules
+
+must be at least 8 characters
+must be different than your previous password
+must NOT be related to your username
+must NOT contain any recognizable word
+"/>
+<meta name="twitter:site" content="@10degres"/>
+<meta name="twitter:creator" content="@gwendallecoguic"/>
+
+    <meta property="og:title" content="Choose your password" />
+<meta property="og:description" content="I recently worked with a well known web agency in France.
+They have a good reputation, they were rewarded last year for their good works and they are in the top 40 of the best french agencies. 
+However I was terribly surprised to find many basic errors/misconfiguration on their own site: error_reporting enable, 
+SQL injection and finally a &ldquo;private&rdquo; admin section reachable with a simple couple of demo/demo as credentials&hellip;
+Such vulnerability can be dangerous when using common login/password and it can be even deadly if the discovered user has high privileges.
+It was true in this situation: mail contact, articles, resumes, photos everything was alterable.
+Below the good practice to create a strong password.
+The rules
+
+must be at least 8 characters
+must be different than your previous password
+must NOT be related to your username
+must NOT contain any recognizable word
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://10degres.net/choose-your-password/" />
+
+<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="article:published_time" content="2015-03-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-03-02T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
+
+
+    
+      <base href="http://10degres.net/choose-your-password/">
+    
+    <title>
+  Choose your password · 10degres
+</title>
+
+    
+      <link rel="canonical" href="http://10degres.net/choose-your-password/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.b7c885186d029c262c5580a8cf13937b5dae16dc868972a0c3fdd82752e6cacb.css" integrity="sha256-t8iFGG0CnCYsVYCozxOTe12uFtyGiXKgw/3YJ1Lmyss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+    
+
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://10degres.net/">
+      10degres
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Choose your password</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2015-03-02T00:00:00Z'>
+                March 2, 2015
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://10degres.net/tags/password/">password</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/security/">security</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>I recently worked with a well known web agency in France.
+They have a good reputation, they were rewarded last year for their good works and they are in the top 40 of the best french agencies. </p>
+<p>However I was terribly surprised to find many basic errors/misconfiguration on their own site: error_reporting enable, 
+SQL injection and finally a &ldquo;private&rdquo; admin section reachable with a simple couple of <code>demo</code>/<code>demo</code> as credentials&hellip;</p>
+<p>Such vulnerability can be dangerous when using common login/password and it can be even deadly if the discovered user has high privileges.
+It was true in this situation: mail contact, articles, resumes, photos everything was alterable.</p>
+<p>Below the good practice to create a strong password.</p>
+<h2 id="the-rules">The rules</h2>
+<ul>
+<li>must be at least 8 characters</li>
+<li>must be different than your previous password</li>
+<li>must NOT be related to your username</li>
+<li>must NOT contain any recognizable word</li>
+</ul>
+<h2 id="the-characters-set">The characters set</h2>
+<ul>
+<li>must contains uppercase: <code>A, B, C, ...</code></li>
+<li>must contains lowercase: <code>a, b, c, ...</code></li>
+<li>must contains number: <code>0, 1, 2, ...</code></li>
+<li>must contains symbol: <code>#, §, %, @, &amp;, ...</code></li>
+</ul>
+<h2 id="the-method">The method</h2>
+<p>A good approach is to choose a random sentence, a song title, a proverb, a book excerpt or whatever you&rsquo;ll remember easily&hellip; Extract the first letter of each words, apply some changes and add some chars.</p>
+<h2 id="the-example">The example</h2>
+<p>I choosed a small sentence from &ldquo;Fade into you&rdquo; by Mazzy Star:</p>
+<ol>
+<li>the original: <code>Some kind of night into your darkness</code></li>
+<li>first letters: <code>skoniyd</code></li>
+<li>replace letters by numbers: <code>sk0n1yd</code></li>
+<li>transform lowercase to uppercase: <code>Sk0n1yD</code></li>
+<li>add symbols to reach a good length: <code>#Sk0n1yD*</code></li>
+</ol>
+<p>An attack based on a dictionary would fail against this password. A brute force still possible but will be much much loooooonnnnnnger :)</p>
+<h2 id="external-resources">External resources</h2>
+<ul>
+<li><a href="http://www.makeuseof.com/tag/test-password-strength-tool-hackers-use/">A good article about how to test your password</a></li>
+</ul>
+      </div>
+
+      <footer>
+        
+
+
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-61485350-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+      <script src="http://10degres.net/assets/js/scripts.js"></script>
+    
+    
+  </body>
+
+</html>

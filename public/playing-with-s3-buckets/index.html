@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gwendal Le Coguic">
+    <meta name="description" content="Gwendal Le Coguic, web developer and bug hunter">
+    <meta name="keywords" content="development,security,researcher,bugbounty,tools,php,python">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+
+<meta name="twitter:title" content="Playing with S3 buckets"/>
+<meta name="twitter:description" content="Amazon Simple Storage Service aka S3 is a cloud storage for the Internet.
+You first create a bucket and you can then upload any number of objects (photos, videos, documents etc.) to it.
+However if the permissions (ACL) are not well settled, bad things can happen.
+Recently disclosed by Hackerone, a misconfiguration in their Amazon Web Services S3 buckets allowed any authenticated user to write in there.
+From here an attacker could upload a malicious file waiting for someone open it, or overwrite existing files.
+When you crawl a website, you can you can check the presence of S3 by intercepting calls to amazonaws.com.
+The bucket call can have different look:
+https://&lt;aws_region&gt;.amazonaws.com/&lt;bucket_name&gt;/&lt;file_path&gt;
+or:
+https://&lt;bucket_name&gt;.amazonaws.com/&lt;file_path&gt;
+Once you get the bucket name, you can execute many tests using awscli to check his permissions.
+If you try to access to a bucket who doesn&rsquo;t exist, you&rsquo;ll get this message:
+$ aws s3 ls s3://gwen001-azertyuiop  
+A client error (NoSuchBucket) occurred when calling the ListObjects operation: The specified bucket does not exist
+If you try to execute a command you are not allowed to, you&rsquo;ll then get something like this:
+$ aws s3 ls s3://gwen001-test000/
+A client error (AccessDenied) occurred when calling the ListObjects operation: Access Denied
+"/>
+<meta name="twitter:site" content="@10degres"/>
+<meta name="twitter:creator" content="@gwendallecoguic"/>
+
+    <meta property="og:title" content="Playing with S3 buckets" />
+<meta property="og:description" content="Amazon Simple Storage Service aka S3 is a cloud storage for the Internet.
+You first create a bucket and you can then upload any number of objects (photos, videos, documents etc.) to it.
+However if the permissions (ACL) are not well settled, bad things can happen.
+Recently disclosed by Hackerone, a misconfiguration in their Amazon Web Services S3 buckets allowed any authenticated user to write in there.
+From here an attacker could upload a malicious file waiting for someone open it, or overwrite existing files.
+When you crawl a website, you can you can check the presence of S3 by intercepting calls to amazonaws.com.
+The bucket call can have different look:
+https://&lt;aws_region&gt;.amazonaws.com/&lt;bucket_name&gt;/&lt;file_path&gt;
+or:
+https://&lt;bucket_name&gt;.amazonaws.com/&lt;file_path&gt;
+Once you get the bucket name, you can execute many tests using awscli to check his permissions.
+If you try to access to a bucket who doesn&rsquo;t exist, you&rsquo;ll get this message:
+$ aws s3 ls s3://gwen001-azertyuiop  
+A client error (NoSuchBucket) occurred when calling the ListObjects operation: The specified bucket does not exist
+If you try to execute a command you are not allowed to, you&rsquo;ll then get something like this:
+$ aws s3 ls s3://gwen001-test000/
+A client error (AccessDenied) occurred when calling the ListObjects operation: Access Denied
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://10degres.net/playing-with-s3-buckets/" />
+
+<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="article:published_time" content="2016-04-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-04-15T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
+
+
+    
+      <base href="http://10degres.net/playing-with-s3-buckets/">
+    
+    <title>
+  Playing with S3 buckets · 10degres
+</title>
+
+    
+      <link rel="canonical" href="http://10degres.net/playing-with-s3-buckets/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.b7c885186d029c262c5580a8cf13937b5dae16dc868972a0c3fdd82752e6cacb.css" integrity="sha256-t8iFGG0CnCYsVYCozxOTe12uFtyGiXKgw/3YJ1Lmyss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+    
+
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://10degres.net/">
+      10degres
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Playing with S3 buckets</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2016-04-15T00:00:00Z'>
+                April 15, 2016
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://10degres.net/tags/aws/">aws</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/s3/">s3</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/bucket/">bucket</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>Amazon Simple Storage Service aka S3 is a cloud storage for the Internet.
+You first create a bucket and you can then upload any number of objects (photos, videos, documents etc.) to it.
+However if the permissions (ACL) are not well settled, bad things can happen.</p>
+<p>Recently disclosed by Hackerone, a misconfiguration in their Amazon Web Services S3 buckets allowed any authenticated user to write in there.
+From here an attacker could upload a malicious file waiting for someone open it, or overwrite existing files.</p>
+<p>When you crawl a website, you can you can check the presence of S3 by intercepting calls to <code>amazonaws.com</code>.
+The bucket call can have different look:<br>
+<code>https://&lt;aws_region&gt;.amazonaws.com/&lt;bucket_name&gt;/&lt;file_path&gt;</code><br>
+or:<br>
+<code>https://&lt;bucket_name&gt;.amazonaws.com/&lt;file_path&gt;</code></p>
+<p>Once you get the bucket name, you can execute many tests using <strong>awscli</strong> to check his permissions.
+If you try to access to a bucket who doesn&rsquo;t exist, you&rsquo;ll get this message:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ aws s3 ls s3://gwen001-azertyuiop  
+A client error <span style="color:#f92672">(</span>NoSuchBucket<span style="color:#f92672">)</span> occurred when calling the ListObjects operation: The specified bucket does not exist
+</code></pre></div><p>If you try to execute a command you are not allowed to, you&rsquo;ll then get something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ aws s3 ls s3://gwen001-test000/
+A client error <span style="color:#f92672">(</span>AccessDenied<span style="color:#f92672">)</span> occurred when calling the ListObjects operation: Access Denied
+</code></pre></div><p>For the purpose of this article I created some buckets with differents permissions:</p>
+<table>
+<thead>
+<tr>
+<th>Bucket</th>
+<th>Grantee</th>
+<th>Read</th>
+<th>Write</th>
+<th>get ACL</th>
+<th>set ACL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test000</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>test001</td>
+<td>me</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>test002</td>
+<td>Everyone</td>
+<td>yes</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>test003</td>
+<td>Everyone</td>
+<td>yes</td>
+<td>yes</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>test004</td>
+<td>Everyone</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>test005</td>
+<td>Everyone</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Using my brain and bit of Bash, I wrote a script based on a wordlist to discover and test my buckets.
+The wordlist: <code>test000 test001 testme test002 test003 test004 test005 testx</code></p>
+<p>The script:<br>
+<a href="https://github.com/gwen001/pentest-tools/blob/master/s3-buckets-force.sh">https://github.com/gwen001/pentest-tools/blob/master/s3-buckets-force.sh</a></p>
+<p>The output:<br>
+<img src="http://10degres.net/images/s3-bucket-test.png" alt="s3 bucket test"></p>
+<p>Finally 6 buckets has been found, which is correct, and the permissions has also been tested.</p>
+<p>When <code>Edit Permissions</code> is allowed for <code>Everyone</code>, this is the deadly zone but don&rsquo;t underestimate the power of read only.
+From a pentester point of view this is a very good start to gather informations about your business and for a hacker it&rsquo;s a great source to leak your datas.</p>
+<h2 id="external-resources">External resources</h2>
+<ul>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/S3_ACLs_UsingACLs.html">Managing your bucket access with ACLs</a></li>
+<li><a href="https://www.youtube.com/watch?v=_x5VKuFjvrk">Demo video from Pete Yaworks</a></li>
+<li><a href="https://hackerone.com/reports/128088">The initial report on Hackerone</a></li>
+</ul>
+      </div>
+
+      <footer>
+        
+
+
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-61485350-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+      <script src="http://10degres.net/assets/js/scripts.js"></script>
+    
+    
+  </body>
+
+</html>

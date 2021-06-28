@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gwendal Le Coguic">
+    <meta name="description" content="Gwendal Le Coguic, web developer and bug hunter">
+    <meta name="keywords" content="development,security,researcher,bugbounty,tools,php,python">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+
+<meta name="twitter:title" content="5 things to do before running your first bug bounty program"/>
+<meta name="twitter:description" content="Welcome 2020! I will start this year with a set of articles about program management. In this one, I will try to explain some important things all companies should do BEFORE running a first bug bounty program. Since there is no official rules in bug bounty, we miss that, at the end you can always do whatever you want. So those articles are more about best practices/good tips.
+Do pentest/audits Test before the test."/>
+<meta name="twitter:site" content="@10degres"/>
+<meta name="twitter:creator" content="@gwendallecoguic"/>
+
+    <meta property="og:title" content="5 things to do before running your first bug bounty program" />
+<meta property="og:description" content="Welcome 2020! I will start this year with a set of articles about program management. In this one, I will try to explain some important things all companies should do BEFORE running a first bug bounty program. Since there is no official rules in bug bounty, we miss that, at the end you can always do whatever you want. So those articles are more about best practices/good tips.
+Do pentest/audits Test before the test." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/" />
+
+<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="article:published_time" content="2020-01-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-16T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
+
+
+    
+      <base href="http://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/">
+    
+    <title>
+  5 things to do before running your first bug bounty program · 10degres
+</title>
+
+    
+      <link rel="canonical" href="http://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.b7c885186d029c262c5580a8cf13937b5dae16dc868972a0c3fdd82752e6cacb.css" integrity="sha256-t8iFGG0CnCYsVYCozxOTe12uFtyGiXKgw/3YJ1Lmyss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+    
+
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://10degres.net/">
+      10degres
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">5 things to do before running your first bug bounty program</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-01-16T00:00:00Z'>
+                January 16, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              4 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://10degres.net/tags/bug-bounty/">bug bounty</a>
+      <span class="separator">•</span>
+    <a href="http://10degres.net/tags/management/">management</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>Welcome 2020!
+I will start this year with a set of articles about program management.
+In this one, I will try to explain some important things all companies should do BEFORE running a first bug bounty program.
+Since there is no official rules in bug bounty, we miss that, at the end you can always do whatever you want.
+So those articles are more about best practices/good tips.</p>
+<h1 id="do-pentestaudits">Do pentest/audits</h1>
+<p>Test before the test.</p>
+<p>You have issues, yes you have, a lot, you just don&rsquo;t know yet.
+Some of them can easily be detected during a pentest or code audit, the basics can also be found by most of the automated scanners used by security companies.
+Once they have been identified, you basically have two options:</p>
+<ul>
+<li>fix them</li>
+<li>add them to the OOS/know issues/won&rsquo;t fix section of your program policy</li>
+</ul>
+<p>If you don&rsquo;t do anything, keeping them &ldquo;for later&rdquo;, hackers will find them, report, and you will have to pay for this, at least the first times, to avoid hackers anger.
+It&rsquo;s not acceptable to mark those reports as N/A, acting like &ldquo;yeah yeah we already know that&rdquo; and not pay, it will kill your reputation.
+You also don&rsquo;t want to waste your time again and again to manage reports about the vulnerabilities you&rsquo;re already aware of.</p>
+<p><u>Jumping into bug bounty without a proper security background will literally ruin everything.</u></p>
+<h1 id="prepare-your-technical-infrastructure">Prepare your technical infrastructure</h1>
+<p>Hackers hack, be prepared!</p>
+<p>No matter if you mention to refrain the use of automated scanner, hackers use tools, they generate alot of traffic.
+You probably want to avoid DDOS as well as you don&rsquo;t want to pause your program because your system is not able to handle so much traffic.
+Doing that would stop hackers in their run, you will lose their precious motivation.
+It&rsquo;s frustrating as hell to be forced to stop hacking a target when you&rsquo;re already on something interesting.</p>
+<p>Plus, there is no point to open a bug bounty program if your hackers are banned after an hour by your firewall and you don&rsquo;t have any easy way to bring them back in the game.
+You don&rsquo;t want to manually manage a huge blacklist of IP addresses.</p>
+<p><img src="http://10degres.net/images/ie_service_unavailable.png" alt="ie service unavailable"></p>
+<h1 id="think-your-internal-workflow">Think your internal workflow</h1>
+<p>Hackers hack more, be more prepared!</p>
+<p>As soon as your program is open, no matter if you choose to stay private or public, you will receive the first reports in less than an hour (~15/30mn).
+It&rsquo;s very important to think your internal workflow <strong>BEFORE</strong> you open the program.
+There is a strong chance that you get more reports in the next days.
+First, you don&rsquo;t want to be overloaded, second, it&rsquo;s not acceptable to pause the program just because you thought you were not (so) vulnerable.</p>
+<div style="float:left;width:620px">
+    Really, don't underestimate hackers.
+    I saw too many programs "paused" because they were not able to handle the flow of reports constantly growing up.
+    Because they though that they could manage all this shit only one day/week, because the security team was not ready, because the triagers didn't speak english, because the manager had to ask the permission for every single bounty, because they don't know how to forward the bugs to the dev team etc...
+    <br/><br/>
+    On the right side is an example of the workflow of a report I made to explain how it should be handled <u>on the platform</u>.
+    Then you have to create your own internal process.
+    <br/><br/>
+    Most of the platforms allow the integration of external tools like bug trackers, Jira, Slack, Zendesk, GitLab and so on...
+    Use this feature as much as you need to make your report management more efficient.
+</div>
+<a href="http://10degres.net/images/report-flow.png" title="Report flow" target="_blank"><img src="http://10degres.net/images/report-flow.png" alt="Report flow" width="200" style="float:right;" /></a>
+<div style="clear:both;"></div>
+<h1 id="study-others-programs">Study others programs</h1>
+<p>You&rsquo;re not the first one so learn from other programs, their mistakes, their successes.</p>
+<ul>
+<li>Read their policy or simply copy/paste/update to create your own.</li>
+<li>Quickly check the bounty table to know what rewards they offer (money, swag&hellip;), even if it all depends of your own budget of course.</li>
+<li>See what kind of scope they test: subdomain, wildcard, api, mobile&hellip;</li>
+<li>Read carefully the out of scope section to avoid the common pitfalls, really, you don&rsquo;t want to spend your whole yearly budget for missing SPF or SSL certificates errors.</li>
+<li>Read their disclosed reports, how they reply to hackers, the automated responses, the delay, their communication skills (appreciation, greetings, closing formula&hellip;).
+(good examples: <a href="https://hackerone.com/security/hacktivity">Hackerone</a>, <a href="https://hackerone.com/valve/hacktivity">Valve</a>, poor example: <a href="https://hackerone.com/twitter/hacktivity">Twitter</a>)</li>
+</ul>
+<h1 id="join-the-community">Join the community</h1>
+<p>If not done yet, joining the community on <a href="https://twitter.com/search?q=bugbounty">Twitter</a> could be your best move ever.</p>
+<p>Start by following the platforms and some popular hackers in the bug bounty industry.
+From here you will be able to better understand what are their expectations, their motivations, what they are looking for.
+More, your security team will learn a lot from them, the current popular vulnerabilities, the tools they use etc&hellip;</p>
+<p>Time after time you will follow more hackers, YOUR hackers.
+You will be immediately warned if someone talk about your programs, good words or complaints are always important to improve yourself.</p>
+<h1 id="good-reads">Good reads</h1>
+<p>Information Security Assessment Types by Daniel Miessler:<br>
+<a href="https://danielmiessler.com/study/security-assessment-types/#vulnerability">https://danielmiessler.com/study/security-assessment-types/#vulnerability</a></p>
+<p>The hacker powered security report 2018 by Hackerone:<br>
+<a href="https://www.hackerone.com/sites/default/files/2018-07/The%20Hacker-Powered%20Security%20Report%202018.pdf">https://www.hackerone.com/sites/default/files/2018-07/The%20Hacker-Powered%20Security%20Report%202018.pdf</a></p>
+<p>Report workflow by YesWeHack:<br>
+<a href="https://blog.yeswehack.com/2019/07/24/a-quick-update-on-our-point-system/">https://blog.yeswehack.com/2019/07/24/a-quick-update-on-our-point-system/</a></p>
+
+      </div>
+
+      <footer>
+        
+
+
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-61485350-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+      <script src="http://10degres.net/assets/js/scripts.js"></script>
+    
+    
+  </body>
+
+</html>

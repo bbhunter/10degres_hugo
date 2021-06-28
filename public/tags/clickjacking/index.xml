@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>clickjacking on 10degres</title>
+    <link>http://10degres.net/tags/clickjacking/</link>
+    <description>Recent content in clickjacking on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 1970 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/clickjacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vulnerability - Clickjacking</title>
+      <link>http://10degres.net/vulnerability-clickjacking/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/vulnerability-clickjacking/</guid>
+      <description>Description Clickjacking by Wikipedia
+Frameable response (potential Clickjacking) by PortSwigger</description>
+    </item>
+    
+  </channel>
+</rss>

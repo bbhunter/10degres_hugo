@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>file upload on 10degres</title>
+    <link>http://10degres.net/tags/file-upload/</link>
+    <description>Recent content in file upload on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/file-upload/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DVWA - File upload</title>
+      <link>http://10degres.net/dvwa-file-upload/</link>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/dvwa-file-upload/</guid>
+      <description>&lt;p&gt;A very useful aspect of PHP is the ability to manage file uploads.
+Allowing users to send a file opens a whole can of worms, so be careful when allowing this fonctionnality.
+If wrong protected it could result of a full control of the server.
+With DVWA you can learn effective defense.&lt;/p&gt;
+&lt;h2 id=&#34;low&#34;&gt;Low&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;move_uploaded_file&lt;/span&gt;($_FILES[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;uploaded&amp;#39;&lt;/span&gt;][&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tmp_name&amp;#39;&lt;/span&gt;], $target_path)) {
+    $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;pre&amp;gt;&amp;#39;&lt;/span&gt;;
+    $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Your image was not uploaded.&amp;#39;&lt;/span&gt;;
+    $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;/pre&amp;gt;&amp;#39;&lt;/span&gt;;
+} &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {
+    $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;pre&amp;gt;&amp;#39;&lt;/span&gt;;
+    $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; $target_path &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; succesfully uploaded!&amp;#39;&lt;/span&gt;;
+    $html &lt;span style=&#34;color:#f92672&#34;&gt;.=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;/pre&amp;gt;&amp;#39;&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The first level is the easiest because it has absolutly no protection against malicious file upload.
+Choose a file - in my case a PHP shell - and submit the form:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/dvwa-file-upload_1.png&#34; alt=&#34;DVWA file upload&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Damn Vulnerable Web Application</title>
+      <link>http://10degres.net/damn-vulnerable-web-application/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/damn-vulnerable-web-application/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DVWA&lt;/strong&gt; is a PHP/MySQL web application that is intentionally vulnerable.
+The goal is to learn common web vulnerabilities and improve your security skills by training yourself on your own server.
+3 levels are available (low, medium and high) to perform those following attacks :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bruce Force&lt;/li&gt;
+&lt;li&gt;Command Execution&lt;/li&gt;
+&lt;li&gt;CSRF&lt;/li&gt;
+&lt;li&gt;Captcha&lt;/li&gt;
+&lt;li&gt;File Inclusion&lt;/li&gt;
+&lt;li&gt;SQL Injection (plus Blind)&lt;/li&gt;
+&lt;li&gt;File Upload&lt;/li&gt;
+&lt;li&gt;XSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The lowest level is usually pretty easy to bypass but the high level as a best practice presents the right way to protect your application.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

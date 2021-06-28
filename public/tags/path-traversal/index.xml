@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>path traversal on 10degres</title>
+    <link>http://10degres.net/tags/path-traversal/</link>
+    <description>Recent content in path traversal on 10degres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/path-traversal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An extremely buggy web app !</title>
+      <link>http://10degres.net/an-extremely-buggy-web-app/</link>
+      <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/an-extremely-buggy-web-app/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;bWAPP&lt;/strong&gt; is a PHP web application which is intentionnally crackable. It covers a very large set of common vulns but also some unusual case you can meet on the Internet.&lt;/p&gt;
+&lt;p&gt;The goal here is to train your development skill and hacking knowledge to be able to write a better (more secure) code.
+Compared to &lt;a href=&#34;http://10degres.net/damn-vulnerable-web-application/&#34;&gt;DVWA&lt;/a&gt;, you have to consider bWAPP as a much more advanced level of difficulty.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/bwapp.png&#34; alt=&#34;bwapp&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DotDotPwn</title>
+      <link>http://10degres.net/dotdotpwn/</link>
+      <pubDate>Fri, 23 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/dotdotpwn/</guid>
+      <description>&lt;p&gt;Path traversal is a very powerful attack but not necessarily easy to find, fortunatly DotDotPwn is here to help you! &lt;a href=&#34;http://dotdotpwn.blogspot.fr/&#34; title=&#34;DotDotPwn&#34;&gt;DotDotPwn&lt;/a&gt; is a powerful traversal directory fuzzer.
+Written in perl, it&amp;rsquo;s installed in Kali Linux by default.&lt;/p&gt;
+&lt;p&gt;Basic usage is:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dotdotpwn.pl -m &amp;lt;module&amp;gt; -h &amp;lt;host&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Several options are available:&lt;/p&gt;
+&lt;p&gt;-h: the host you want to test&lt;br&gt;
+-m: it supports http, ftp or text file as a payload&lt;br&gt;
+-o and -O: enable the operating system detection&lt;br&gt;
+-d: max depth it will look for (ie. max &lt;code&gt;../&lt;/code&gt;)&lt;br&gt;
+-f: file to grab (default is &lt;code&gt;/etc/passwd&lt;/code&gt; for *nix system)&lt;br&gt;
+-E: try to grab some extra files depending of the os detection result&lt;br&gt;
+-S: ssl support&lt;br&gt;
+-x: specify the port&lt;br&gt;
+-r: output file&lt;br&gt;
+-q: quiet mode&lt;br&gt;
+-k: keyword to match in the response who means a win&lt;br&gt;
+-b: exit after the first vulnerability found&lt;br&gt;
+-M: http method to use with http module (can&amp;rsquo;t make it work)&lt;br&gt;
+-e: add an extension (.php, .png, &amp;hellip;)&lt;/p&gt;
+&lt;p&gt;and some more&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Damn Vulnerable Web Application</title>
+      <link>http://10degres.net/damn-vulnerable-web-application/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://10degres.net/damn-vulnerable-web-application/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DVWA&lt;/strong&gt; is a PHP/MySQL web application that is intentionally vulnerable.
+The goal is to learn common web vulnerabilities and improve your security skills by training yourself on your own server.
+3 levels are available (low, medium and high) to perform those following attacks :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bruce Force&lt;/li&gt;
+&lt;li&gt;Command Execution&lt;/li&gt;
+&lt;li&gt;CSRF&lt;/li&gt;
+&lt;li&gt;Captcha&lt;/li&gt;
+&lt;li&gt;File Inclusion&lt;/li&gt;
+&lt;li&gt;SQL Injection (plus Blind)&lt;/li&gt;
+&lt;li&gt;File Upload&lt;/li&gt;
+&lt;li&gt;XSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The lowest level is usually pretty easy to bypass but the high level as a best practice presents the right way to protect your application.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
