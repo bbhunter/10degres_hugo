@@ -59,7 +59,7 @@
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -141,7 +141,7 @@ Then all scripts will load this file. (ps: the more token you have the better it
 <h2 id="memotxt">memo.txt</h2>
 <p>First of all you better understand how GitHub search engine works.
 Here is a very quick resume of the <a href="https://developer.github.com/v3/search/">Official GitHub documentation</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">term in filename: term in:file
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">term in filename: term in:file
 term in path: term in:path
 from a user: user:USERNAME
 from an org: org:ORGNAME
@@ -163,7 +163,7 @@ cats NOT &#34;hello world&#34;
 <p>This script performs regexps on all repositories located in a specified folder and subfolders.
 But more it searches in the history of the repositories, not only the current version of the files.
 All commits are checked!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: git-history.py [-h] [-p PATH] [-d DATE] [-c LENGTH] [-s SEARCH]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: git-history.py [-h] [-p PATH] [-d DATE] [-c LENGTH] [-s SEARCH]
                       [-t THREADS]
 
 optional arguments:
@@ -179,7 +179,7 @@ optional arguments:
 </code></pre></div><p>On big repositories (or folders who contain multiple repositories), this operation can take a while.
 To make it faster, you can customize the maximum threads used, set a date limit and a size option.</p>
 <p>Examples:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git-history.py -p ~/repos -s &#34;AKIA.*&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git-history.py -p ~/repos -s &#34;AKIA.*&#34;
 git-history.py -p ~/repos -s ~/.gf/aws-keys.json -d 2019-01-01 -c 1000000
 </code></pre></div><p>Note that the regexps file (option <code>-s</code>) can be a single regexp or a file using the format of the nice tool <a href="https://github.com/tomnomnom/gf">gf</a> by <a href="https://twitter.com/TomNomNom">TomNomNom</a>.</p>
 <p><img src="http://10degres.net/images/git-history-py.jpg" alt="git history python"></p>
@@ -189,7 +189,7 @@ Strongly inspired by <a href="https://twitter.com/tomnomnom/status/1133345832688
 <p><img src="http://10degres.net/images/git-history-sh.jpg" alt="git history bash"></p>
 <h2 id="git-pillagepy">git-pillage.py</h2>
 <p>Inspired by <a href="https://github.com/koto/gitpillage/blob/master/gitpillage.sh">gitpillage.sh</a>. I wanted to make it faster and more verbose, it was also a nice way to pratice that exercise on <a href="https://pentesterlab.com">Pentesterlab</a> about Git directory structure.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: git-pillage.py [-h] [-u URL] [-t THREADS] [-e EXTENSION] [-x EXCLUDE]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: git-pillage.py [-h] [-u URL] [-t THREADS] [-e EXTENSION] [-x EXCLUDE]
                      [-v]
 
 optional arguments:
@@ -206,13 +206,13 @@ optional arguments:
                         po,mo,mp3,mp4,mpeg,avi
   -v, --verbose         verbose mode, default: off
 </code></pre></div><p>Examples:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git-pillage.py -u https://www.example.com -t 10 -v
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git-pillage.py -u https://www.example.com -t 10 -v
 git-pillage.py -u https://www.example.com/ -x pdf,doc,docx,txt,xls,xlsx
 git-pillage.py -u https://www.example.com/htdocs/src/ -t 10 -e php,sh,py,rb,bat -v
 </code></pre></div><p><img src="http://10degres.net/images/gitpillage.jpg" alt="gitpillage"></p>
 <h2 id="github-contributorspy">github-contributors.py</h2>
 <p>This script returns some informations about the peoples listed as contributors of every repositories of an organization.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-contributors.py [-h] [-t TOKEN] [-o ORG] [-u USER]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-contributors.py [-h] [-t TOKEN] [-o ORG] [-u USER]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -221,7 +221,7 @@ optional arguments:
   -o ORG, --org ORG     organization
   -u USER, --user USER  user
 </code></pre></div><p>Example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git-contributors.py -o snapchat
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git-contributors.py -o snapchat
 </code></pre></div><div  style="width:400px;float:left;margin-right:20px;">
   <a href="http://10degres.net/images/github-contributors-github.jpg" title="github contributors" target="_blank" ><img src="http://10degres.net/images/github-contributors-github.jpg" alt="github contributors" /></a>
 </div>
@@ -233,12 +233,12 @@ optional arguments:
 <p>Performs dorks on GitHub for the users/organizations provided (list can be provided by separating users/orgs with comma).
 Dorks must be listed in a single text file.
 Results are not stored (could be an option?), only the number or results is displayed.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: /opt/bin/github-dorks.php &lt;o/u/n&gt; &lt;org/user&gt; [&lt;dork file&gt;]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: /opt/bin/github-dorks.php &lt;o/u/n&gt; &lt;org/user&gt; [&lt;dork file&gt;]
 </code></pre></div><p><img src="http://10degres.net/images/github-dorks-php.jpg" alt="github dorks php"></p>
 <h2 id="github-dorkspy">github-dorks.py</h2>
 <p>The Python version of the previous script.
 It&rsquo;s supposed to be much faster (and more stable) because of the multi thread option, but unfortunately GitHub rate limit on search code is pretty low so use it carefully.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-dorks.py [-h] [-d DORKS] [-t TOKEN] [-o ORG] [-e THREADS]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-dorks.py [-h] [-d DORKS] [-t TOKEN] [-o ORG] [-e THREADS]
                        [-u USER]
 
 optional arguments:
@@ -260,7 +260,7 @@ optional arguments:
 <li>linkedin, Google dork is:  <code>site:linkedin.com/in [term]</code>, nicknames are generated by the script using firstname and lastname</li>
 </ul>
 <p>Since the script uses the magnificient <a href="https://github.com/s0md3v/goop">Goop</a> from <a href="https://twitter.com/s0md3v">s0md3v</a>, a facebook cookie is required to bypass Google rate limit (can be provided on the command line or environment variable).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-employees.py [-h] [-m MOD] [-s STARTPAGE] [-f FBCOOKIE]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-employees.py [-h] [-m MOD] [-s STARTPAGE] [-f FBCOOKIE]
                            [-t TERM] [-p PAGE] [-r RESUME] [-i INPUT]
                            [-k KEYWORD] [-o TOKEN]
 
@@ -283,7 +283,7 @@ optional arguments:
   -o TOKEN, --token TOKEN
                         github token
 </code></pre></div><p>Examples:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">github-employees.py -m github -p 30 -t &#34;valvesoftware&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">github-employees.py -m github -p 30 -t &#34;valvesoftware&#34;
 github-employees.py -f &#34;fr=1dQvI2Lp7cTfjt; datr=6uqdXS6tsFY5CJ...&#34; -m linkedin -o &#34;1ec46a7...&#34; -t &#34;valvesoftware programmer&#34; -t &#34;valvesoftware admin&#34;
 </code></pre></div><p><img src="http://10degres.net/images/github-employees.jpg" alt="github employees"></p>
 <h2 id="github-endpointspy">github-endpoints.py</h2>
@@ -292,7 +292,7 @@ Very useful, you can also get some extras subdomains.
 Relative urls can be displayed or not as well as external domains urls.
 Based on regexp, it also has an exclude list.
 Feed it as much as you can to filter the results the way you like!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-endpoints.py [-h] [-t TOKEN] [-d DOMAIN] [-e] [-a] [-r] [-s]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-endpoints.py [-h] [-t TOKEN] [-d DOMAIN] [-e] [-a] [-r] [-s]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -307,7 +307,7 @@ optional arguments:
 </code></pre></div><p><img src="http://10degres.net/images/github-endpoints.png" alt="github endpoints"></p>
 <h2 id="github-grabrepophp">github-grabrepo.php</h2>
 <p>Very simple script that clones all public repositories belonging to a given user/organization.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php github-grabrepo.php -o/-u &lt;organization/user&gt; [OPTIONS]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php github-grabrepo.php -o/-u &lt;organization/user&gt; [OPTIONS]
 
 Options:
 	-d	set destination directory (required)
@@ -317,7 +317,7 @@ Options:
 </code></pre></div><p><img src="http://10degres.net/images/github-grabrepo.jpg" alt="github grabrepo"></p>
 <h2 id="github-searchphp">github-search.php</h2>
 <p>Perform code search through GitHub API.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php github-search.php [OPTIONS]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php github-search.php [OPTIONS]
 
 Options:
 	-c	set cookie session
@@ -333,7 +333,7 @@ Options:
 	-s	search string
 	-t	set authorization token (overwrite cookie, best option)
 </code></pre></div><p>Examples:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">	php github-search.php -o myorganization -s db_password
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">	php github-search.php -o myorganization -s db_password
 	php github-search.php -o myorganization -f wp-config.php -s db_password
 	php github-search.php -c &#34;user_session=B0KqycP8LlYORc-s3WFZoH71TG&#34; -f wp-config -e php -r 1000
 	php github-search.php -t 32a11e6f340c2fe1a6071795a3b1a8c876b3cf29 -l php -s DB_USERNAME
@@ -342,7 +342,7 @@ Options:
 <h2 id="github-subdomainspy">github-subdomains.py</h2>
 <p>Find additional subdomains on GitHub.
 Very useful during you recon phase, you will probably get some extras subdomains other tools didn&rsquo;t find because not public.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-subdomains.py [-h] [-t TOKEN] [-d DOMAIN] [-e] [-s]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-subdomains.py [-h] [-t TOKEN] [-d DOMAIN] [-e] [-s]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -371,7 +371,7 @@ If you perform several searches in a row (same dork), using the API or the websi
 Because of that I got many many (too many) notifications on my Slack, mostly false positive.</p>
 <p>According to this I wrote a second version of GitHub survey which is much more reliable.</p>
 <p>First it uses the <code>last-sha</code> parameter to limit the search (search until&hellip;) then it filters the results with the exclude list feeded by the web page to decide if a notification should be send or not. Much better!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-survey2.py [-h] [-t TOKEN] [-p PAGE] [-c CONFIG]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-survey2.py [-h] [-t TOKEN] [-p PAGE] [-c CONFIG]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -383,7 +383,7 @@ optional arguments:
 </code></pre></div><p><img src="http://10degres.net/images/github-survey-py2.jpg" alt="github survey python"></p>
 <h2 id="github-userspy">github-users.py</h2>
 <p>This script performs a user search using GitHub API and display some informations about them.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-users.py [-h] [-t TOKEN] [-k KEYWORD]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">usage: github-users.py [-h] [-t TOKEN] [-k KEYWORD]
 
 optional arguments:
   -h, --help            show this help message and exit

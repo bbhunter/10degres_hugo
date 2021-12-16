@@ -36,10 +36,10 @@
       <description>&lt;p&gt;Here is the way I usually follow to test a Wordpress install.&lt;/p&gt;
 &lt;h2 id=&#34;information-gathering&#34;&gt;Information gathering&lt;/h2&gt;
 &lt;p&gt;Get basic informations with &lt;a href=&#34;https://wpscan.org/&#34;&gt;WPScan&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;wpscan -r --enumerate u --url http://www.example.com
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;wpscan -r --enumerate u --url http://www.example.com
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If it can&amp;rsquo;t retrieve the user list, try to use provided script &lt;code&gt;stop_user_enumeration_bypass.rb&lt;/code&gt;
 For each user found, try to brute with basic passwords:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;wpscan -r --url http://www.example.com --wordlist /Wordlists/Passwords/best1050.txt --username &amp;lt;username&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;wpscan -r --url http://www.example.com --wordlist /Wordlists/Passwords/best1050.txt --username &amp;lt;username&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the version of Wordpress has been found, download it from the official archive directory:
 &lt;a href=&#34;https://wordpress.org/download/release-archive/&#34;&gt;https://wordpress.org/download/release-archive/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Open the tested website and take a look at the source to find those strings:
@@ -61,14 +61,14 @@ This could reveal more themes/plugins.&lt;/p&gt;</description>
 &lt;p&gt;While I was working on a famous bug bounty program, WPScan returns me the list of the plugins configured on the Wordpress install.
 Here is what I found in one of them: &lt;a href=&#34;https://wordpress.org/plugins/gallery-images/&#34;&gt;Image Gallery by Huge-IT&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;WPScan output, no issues known:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[+] Name: gallery-images - v1.8.6  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[+] Name: gallery-images - v1.8.6  
  |  Location: https://[REDACTED]/wp-content/plugins/gallery-images/  
  |  Readme: https://[REDACTED]/wp-content/plugins/gallery-images/readme.txt  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After a fast search on &lt;a href=&#34;https://www.exploit-db.com/&#34;&gt;exploit-db.com&lt;/a&gt; with no success, I finally decided to download it and read the code to find vulnerabilites by myself.
 Since the readme was available, I was able to confirm the version of the plugin.&lt;/p&gt;
 &lt;p&gt;I was looking for two kind of vulnerabilities: file upload and sql injection.
 First thing I did was to locate PHP files, and grepping the result to find &lt;code&gt;Content-Disposition&lt;/code&gt; header:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ find . -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*.php*&amp;#34;&lt;/span&gt; | xargs grep -i header
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ find . -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*.php*&amp;#34;&lt;/span&gt; | xargs grep -i header
 ./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
 ./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
 ./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
@@ -135,7 +135,7 @@ Note that sqlmap has also detected that the parameter is vulnerable to XSS atta
 Developped by Apptha (again), the current version 2.7 still vulnerable and downloadable from
 the official &lt;a href=&#34;https://wordpress.org/plugins/contus-video-gallery/&#34; title=&#34;Wordpress Video Gallery&#34;&gt;Wordpress Plugin Directory&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The hole comes from the lack of filter on the GET parameter &lt;code&gt;vid&lt;/code&gt; in &lt;code&gt;/wp-content/plugins/contus-video-gallery/videogalleryrss.php&lt;/code&gt; (the plugin must be enable to perform the injection):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;video&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;video&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
   $thumbImageorder &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;w.vid ASC&amp;#39;&lt;/span&gt;;
   $vid             &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;filter_input&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;INPUT_GET&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;vid&amp;#39;&lt;/span&gt;);
   $where           &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;AND w.vid =&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;$vid;

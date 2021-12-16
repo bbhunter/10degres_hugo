@@ -69,7 +69,7 @@ If you like it, use it, if not, then create your own :)" />
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -178,7 +178,7 @@ Unless you can chain several vulnerabilities of course (for example: OR + CSRF +
 <p>Take time to rate the issue, in an <strong><u>obvious</u></strong> way.
 Too low, there is a chance that the secteam pass over it, but you could be happy if finally the bounty is higher than your expectations.
 Too high, the secteam could think that you overrated in order to increase the bounty, they will notice, lower the rating, lower the bounty and you will be disappointed.</p>
-<p><img src="http://10degres.net/images/report-cvss.png" alt="report cvss" width="220" style="float:left;" /></p>
+<img src="http://10degres.net/images/report-cvss.png" alt="report cvss" width="220" style="float:left;" />
 <div style="float:right;width:600px;">
     Sometimes optional, sometimes mandatory, if available, try to fill the <a href="https://www.first.org/cvss/calculator/3.0">CVSS</a> score.
     Even if it's not perfect and context dependent, it gives a good idea of the criticity of the issue <u>in a technical point of view</u>.
@@ -217,7 +217,7 @@ Give them the whole process step by step using an ordered list so you could refe
 &hellip;</p>
 <p>If you use a local proxy like Burp Suite, you can provide the request in a <code>http</code> block code.
 It&rsquo;s very easy to reproduce the issue that way, you simply need to copy/paste it back to the software, update the cookie or any auth token and that&rsquo;s it, simple and efficient.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">GET</span> /directory_traversal_1.php?page=/etc/issue <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">GET</span> /directory_traversal_1.php?page=/etc/issue <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
 Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">bwapp.test.net</span>
 User-Agent<span style="color:#f92672">:</span> <span style="color:#ae81ff">Mozilla/5.0 (X11; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0</span>
 Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">*/*</span>
@@ -275,7 +275,7 @@ They won't unless you give important additional informations.
 If you really feel that something is going wrong with this report/program then consider to request an intervention from the platform itself.
 </code></pre>
 </div>
-<p><img src="http://10degres.net/images/yoda-medit.jpg" alt="Yoda mediting" width="250" style="float:right;" /></p>
+<img src="http://10degres.net/images/yoda-medit.jpg" alt="Yoda mediting" width="250" style="float:right;" />
 <div style="clear:both;"></div>
 <p><span style="color:#4BAE50"><strong>Be patient :)</strong></span>
 I personally ping every 2 weeks when no news.

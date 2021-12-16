@@ -69,7 +69,7 @@ To perform that task, you can use a single tool like TheHarvester or DNSRecon." 
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -152,7 +152,7 @@ This way he could trick users and even the employees of the company to grab usef
 <p>First of all you have to find a list of subdomains of your target.
 To perform that task, you can use a single tool like <a href="http://10degres.net/theharvester/">TheHarvester</a> or <a href="https://github.com/darkoperator/dnsrecon">DNSRecon</a>.</p>
 <p>Then for each subdomains you should check if it is an alias or not, I personnally use the command <code>host</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ host rencontres.leparisien.fr
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ host rencontres.leparisien.fr
 rencontres.leparisien.fr is an alias for www.pointscommuns.com.
 www.pointscommuns.com has address 217.70.188.38
 </code></pre></div><p>if yes, and if the alias destination is an external domain, then you should check his expiry date of this domain.
@@ -160,7 +160,7 @@ Because if this domain has expired, that means an attacker could buy it through 
 Then put a fake look alike website in place and finally start social engineering by impersonating the vulnerable company.</p>
 <p>To perform all those tests, I wrote a PHP script that takes a subdomains list as an argument.
 Usage is:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php dnsexpire.php [OPTIONS] -f &lt;subdomain|input file&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php dnsexpire.php [OPTIONS] -f &lt;subdomain|input file&gt;
 
 Options:
     -a  set alert for result output, default=30 days

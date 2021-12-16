@@ -65,7 +65,7 @@ In this article I will show you my current configuration." />
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -156,7 +156,7 @@ Proxy server configured<br>
 &hellip;</p>
 <p>Check the file <code>~/.local/autochrome/chrome</code> to see them all and customize the configuration as you want.
 I personnally added Flash support:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">  &#34;--ppapi-flash-path=/usr/lib/adobe-flashplugin/libpepflashplayer.so&#34;,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">  &#34;--ppapi-flash-path=/usr/lib/adobe-flashplugin/libpepflashplayer.so&#34;,
   &#34;--ppapi-flash-version=30.0.0.134&#34;
 </code></pre></div><p>Resetting cookies or other cached datas is possible with the help of a single button, as well as switching to another profile.<br>
 <img src="http://10degres.net/images/autochrome.png" alt="Autochrome"></p>
@@ -164,14 +164,14 @@ I personnally added Flash support:</p>
 This is absolutely awesome when you need to test several levels of permissions. For instance: unauthenticated user, connected user, administrator&hellip;
 By default, only three profiles are available: red, yellow, blue.
 You have to update the script <code>lib/auto_chrome/profile_builder.rb</code> in order to enable them all, line 23:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> @profile_names<span style="color:#f92672">.</span>empty?
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">if</span> @profile_names<span style="color:#f92672">.</span>empty?
   @profile_names <span style="color:#f92672">=</span> <span style="color:#e6db74">%w(Red Yellow Blue Green Orange Purple Cyan White)</span>
 <span style="color:#66d9ef">end</span>
 </code></pre></div><p>Then generate the profiles:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ruby autochrome.rb -P
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ruby autochrome.rb -P
 </code></pre></div><p>White seems to be buggy so seven themes are now available.
 Since yellow is my favorite color, I choosed to create an alias:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias ac<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;~/.local/autochrome/chrome --profile-directory=Yellow 2&gt;/dev/null &amp;&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias ac<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;~/.local/autochrome/chrome --profile-directory=Yellow 2&gt;/dev/null &amp;&#39;</span>
 </code></pre></div><h2 id="multi-browser-highlighting">Multi Browser Highlighting</h2>
 <p>Download on <a href="https://portswigger.net/bappstore">BApp Store</a> or <a href="https://github.com/PortSwigger/multi-browser-highlighting">PortSwigger Github</a></p>
 <p><em>&ldquo;A simple burp plugin that highlights the Proxy history to differentiate requests made by different browsers. The way this works is that each browser would be assigned one color and the highlights happen automatically.&quot;</em></p>

@@ -65,7 +65,7 @@ Thanks to them, I wish we could find more program like this one." />
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -172,7 +172,7 @@ Using the program <a href="https://github.com/koto/gitpillage">gitpillage</a>, I
 <p>I quickly found some calls to <code>exec()</code>, that allow a developper to execute system commands.
 By tracking the creation of the command string, I had notice that a POST parameter was used without any sanitization.
 Simplified, the code looked like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
     $image<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">upload</span>( $_FILES[<span style="color:#e6db74">&#39;img&#39;</span>][<span style="color:#e6db74">&#39;tmp_name&#39;</span>], $_POST );
 
     <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">image</span> {
@@ -243,7 +243,7 @@ Guess what? I got the whole source code and it was not interpreted, so actually 
 <p>Jumping from include to include, I got some config files with database credentials, API keys of 3rd party services and so on&hellip;
 After digging for a while, I finally got the Graal aka the hard coded <code>autoload</code> file.
 Basically it&rsquo;s an array with the classname as the keys and the filepath as the values, here is a basic example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 $t_autoload <span style="color:#f92672">=</span> [
 	<span style="color:#e6db74">&#39;Auth&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;/var/www/project/lib/User/Auth.php&#39;</span>,
 	<span style="color:#e6db74">&#39;User&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;/var/www/project/lib/User/User.php&#39;</span>,

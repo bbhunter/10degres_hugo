@@ -87,7 +87,7 @@ If you call it directly it will works but in that case index.php is usually u
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -168,11 +168,11 @@ However I met some problems to make it works in a real situation so I decided t
 Grab it in <a href="http://php.net/releases/" title="PHP releases">PHP releases archive</a>.
 After compiled and configured, it&rsquo;s very important to set <strong>magic_quotes_gpc=Off</strong> in the <code>php.ini</code> (it won&rsquo;t work with <code>ini_set</code> in the script itself).</p>
 <p>Then imagine an <code>index.php</code> like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 <span style="color:#66d9ef">include</span>( <span style="color:#e6db74">&#39;/var/www/pages/&#39;</span><span style="color:#f92672">.</span>$_GET[<span style="color:#e6db74">&#39;p&#39;</span>]<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;.php&#39;</span> );
 <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>And a <code>/pages/store.php</code> like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;This is the store !&#39;</span>;
 <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>If you call it directly it will works but in that case <code>index.php</code> is usually used to display common stuffs like header and footer.</p>

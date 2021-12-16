@@ -35,10 +35,10 @@ or:&lt;br&gt;
 &lt;code&gt;https://&amp;lt;bucket_name&amp;gt;.amazonaws.com/&amp;lt;file_path&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Once you get the bucket name, you can execute many tests using &lt;strong&gt;awscli&lt;/strong&gt; to check his permissions.
 If you try to access to a bucket who doesn&amp;rsquo;t exist, you&amp;rsquo;ll get this message:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ aws s3 ls s3://gwen001-azertyuiop  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ aws s3 ls s3://gwen001-azertyuiop  
 A client error &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;NoSuchBucket&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; occurred when calling the ListObjects operation: The specified bucket does not exist
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you try to execute a command you are not allowed to, you&amp;rsquo;ll then get something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ aws s3 ls s3://gwen001-test000/
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ aws s3 ls s3://gwen001-test000/
 A client error &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessDenied&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; occurred when calling the ListObjects operation: Access Denied
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>

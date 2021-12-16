@@ -71,7 +71,7 @@ Wordpress says that automatic update changes file/dir permissions, that&rsquo;s 
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -165,7 +165,7 @@ Years later, it&rsquo;s still there with the list of infected versions.</p>
 <p>Keep your Wordpress up to date. For each new release you&rsquo;ll get a warning in your dashboard.
 If you have automatic update enable (implemented in version 3.7), you&rsquo;ll receive a message but you&rsquo;ll not need to do anything.</p>
 <p>It can be usefull to hide the current version of your Wordpress with this small script in <code>functions.php</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">remove_wp_version_tag</span>() {
   <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;
 }
@@ -176,7 +176,7 @@ If you have automatic update enable (implemented in version 3.7), you&rsquo;ll
 <p>Rename the default user admin to whatever you want because this username is the first target of a brute force attack.</p>
 <p>Give your users a nickname, which should be selected as public and different than the username.</p>
 <p>Disable authors dedicated page with this small script in <code>functions.php</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 <span style="color:#a6e22e">add_action</span>(<span style="color:#e6db74">&#39;template_redirect&#39;</span>, <span style="color:#e6db74">&#39;bwp_template_redirect&#39;</span>);
 
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">bwp_template_redirect</span>() {
@@ -193,7 +193,7 @@ If you have automatic update enable (implemented in version 3.7), you&rsquo;ll
 You wouldn&rsquo;t keep a Local File Inclusion because of a gallery plugins, even if it&rsquo;s disable. Btw remove disabled plugins/themes, you don&rsquo;t need them and you probably won&rsquo;t care about patches&hellip;</p>
 <p>Try to hide the current version of your plugins  and themes by removing <code>.txt</code> files who disclose to much infos (versions, patches, bugs, &hellip;) as well as most <code>.html</code> files.
 Those two functions prevent display of version numbers in the html source of your site, in <code>functions.php</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">remove_wp_version_strings</span>( $src ) {
   <span style="color:#66d9ef">global</span> $wp_version;
     <span style="color:#a6e22e">parse_str</span>(<span style="color:#a6e22e">parse_url</span>($src, <span style="color:#a6e22e">PHP_URL_QUERY</span>), $query);
@@ -217,13 +217,13 @@ Those two functions prevent display of version numbers in the html source of you
 <span style="color:#a6e22e">add_filter</span>( <span style="color:#e6db74">&#39;script_loader_src&#39;</span>, <span style="color:#e6db74">&#39;vc_remove_wp_ver_css_js&#39;</span>, <span style="color:#ae81ff">9999</span> );
 </code></pre></div><h2 id="admin--login">Admin &amp; Login</h2>
 <p>To protect admin section you can restrict <code>wp-admin</code> directory and <code>wp-login.php</code> to trusted IP address. In <code>/.htaccess</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;filesmatch &#34;wp-login&#34;=&#34;&#34;&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;filesmatch &#34;wp-login&#34;=&#34;&#34;&gt;
   order deny,allow
   deny from all
   allow from xxx.xxx.xxx.xxx
 &lt;/filesmatch&gt;
 </code></pre></div><p>In <code>/wp-admin/.htaccess</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">order deny,allow
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">order deny,allow
 deny from all
 allow from xxx.xxx.xxx.xxx
 </code></pre></div><p>To prevent brute force, and if you have a server with <strong>fail2ban</strong> installed, there is a Wordpress plugin planned to interact with it:

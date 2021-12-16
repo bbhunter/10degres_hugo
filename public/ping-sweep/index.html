@@ -81,7 +81,7 @@ The -c option is configuredto only send 1 request. The grep is usedto display on
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -160,7 +160,7 @@ To find live hosts there isa technique called <em>ping sweep</em>.
 Different tools exist to perform that task.</p>
 <h2 id="ping">Ping</h2>
 <p>A single <code>ping</code> can give you the ip address of the target, the ttl and the time. However since the methodis based on ICMP requests, the target could be configured to block or trash them&hellip; With a simple bash script, you can loop throught a range of ip address to test them all:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 <span style="color:#66d9ef">for</span> ip in <span style="color:#66d9ef">$(</span>seq <span style="color:#ae81ff">200</span> 220<span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">do</span>
   ping -c <span style="color:#ae81ff">1</span> 192.168.11.$ip | grep <span style="color:#e6db74">&#34;bytes from&#34;</span> | cut -d <span style="color:#e6db74">&#34; &#34;</span> -f <span style="color:#ae81ff">4</span> | cut -d <span style="color:#e6db74">&#34;:&#34;</span> -f1 &amp;
@@ -171,7 +171,7 @@ Different tools exist to perform that task.</p>
 <p>The bad point of this method is that you mustchoose a port to test.
 I usually use the HTTP port (80) but you&rsquo;ll have toadapt this option for your target.
 Below a small bashscript:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 <span style="color:#66d9ef">for</span> ip in <span style="color:#66d9ef">$(</span>seq <span style="color:#ae81ff">200</span> 210<span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">do</span>
   nc -n -v -z -w <span style="color:#ae81ff">1</span> 192.168.11.$ip <span style="color:#ae81ff">80</span> 2&gt;&amp;<span style="color:#ae81ff">1</span> |grep open

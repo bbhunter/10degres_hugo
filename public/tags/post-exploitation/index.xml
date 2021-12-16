@@ -18,10 +18,10 @@
 Depending of the context, different solutions exist to perform that task.&lt;/p&gt;
 &lt;h2 id=&#34;rinetd&#34;&gt;Rinetd&lt;/h2&gt;
 &lt;p&gt;The easiest one. First you need to install Rinetd:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;aptitude search rinetd
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;aptitude search rinetd
 p   rinetd                                     - Internet TCP redirection server&amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit the &lt;code&gt;/etc/rinetd.conf&lt;/code&gt; file:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# bindadress    bindport  connectaddress  connectport
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;# bindadress    bindport  connectaddress  connectport
 192.168.0.10    80        91.121.139.22   8080
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Restart Rinetd and from now, all incoming traffic on &lt;code&gt;192.168.0.10&lt;/code&gt; on port &lt;code&gt;80&lt;/code&gt; will be redirected to &lt;code&gt;91.121.139.22&lt;/code&gt; on port &lt;code&gt;8080&lt;/code&gt;.
 This can be usefull if a firewall is restricting outbound traffic on certain port.&lt;/p&gt;</description>

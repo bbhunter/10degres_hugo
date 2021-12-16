@@ -91,7 +91,7 @@ Choose a file - in my case a PHP shell - and submit the form:
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -170,7 +170,7 @@ Allowing users to send a file opens a whole can of worms, so be careful when al
 If wrong protected it could result of a full control of the server.
 With DVWA you can learn effective defense.</p>
 <h2 id="low">Low</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">move_uploaded_file</span>($_FILES[<span style="color:#e6db74">&#39;uploaded&#39;</span>][<span style="color:#e6db74">&#39;tmp_name&#39;</span>], $target_path)) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">move_uploaded_file</span>($_FILES[<span style="color:#e6db74">&#39;uploaded&#39;</span>][<span style="color:#e6db74">&#39;tmp_name&#39;</span>], $target_path)) {
     $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;pre&gt;&#39;</span>;
     $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;Your image was not uploaded.&#39;</span>;
     $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;/pre&gt;&#39;</span>;
@@ -185,7 +185,7 @@ Choose a file - in my case a PHP shell - and submit the form:</p>
 <p>The script has been successfully uploaded and the path displayed, now you can easily call it:</p>
 <p><img src="http://10degres.net/images/dvwa-file-upload-2.png" alt="DVWA file upload"></p>
 <h2 id="medium">Medium</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">if</span> (($uploaded_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;image/jpeg&#34;</span>) <span style="color:#f92672">&amp;&amp;</span> ($uploaded_size <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100000</span>)){
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">if</span> (($uploaded_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;image/jpeg&#34;</span>) <span style="color:#f92672">&amp;&amp;</span> ($uploaded_size <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100000</span>)){
   <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">move_uploaded_file</span>($_FILES[<span style="color:#e6db74">&#39;uploaded&#39;</span>][<span style="color:#e6db74">&#39;tmp_name&#39;</span>], $target_path)) {
     $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;pre&gt;&#39;</span>;
     $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;Your image was not uploaded.&#39;</span>;
@@ -209,7 +209,7 @@ Locate the <code>Content-type</code> header and replace it by: <code>image/jpeg<
 <p><img src="http://10degres.net/images/dvwa_file_upload_4.png" alt="DVWA file upload"></p>
 <p>Submit the new request, et voilà! It works like a fucking charm!</p>
 <h2 id="high">High</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">if</span> (($uploaded_ext <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;jpg&#34;</span> <span style="color:#f92672">||</span> $uploaded_ext <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;JPG&#34;</span> <span style="color:#f92672">||</span> $uploaded_ext <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;jpeg&#34;</span> <span style="color:#f92672">||</span> $uploaded_ext <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;JPEG&#34;</span>) <span style="color:#f92672">&amp;&amp;</span> ($uploaded_size <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100000</span>)){
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">if</span> (($uploaded_ext <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;jpg&#34;</span> <span style="color:#f92672">||</span> $uploaded_ext <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;JPG&#34;</span> <span style="color:#f92672">||</span> $uploaded_ext <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;jpeg&#34;</span> <span style="color:#f92672">||</span> $uploaded_ext <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;JPEG&#34;</span>) <span style="color:#f92672">&amp;&amp;</span> ($uploaded_size <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100000</span>)){
   <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">move_uploaded_file</span>($_FILES[<span style="color:#e6db74">&#39;uploaded&#39;</span>][<span style="color:#e6db74">&#39;tmp_name&#39;</span>], $target_path)) {
     $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;pre&gt;&#39;</span>;
     $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;Your image was not uploaded 1.&#39;</span>;

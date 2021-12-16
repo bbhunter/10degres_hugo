@@ -51,14 +51,14 @@
 &lt;p&gt;While I was working on a famous bug bounty program, WPScan returns me the list of the plugins configured on the Wordpress install.
 Here is what I found in one of them: &lt;a href=&#34;https://wordpress.org/plugins/gallery-images/&#34;&gt;Image Gallery by Huge-IT&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;WPScan output, no issues known:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[+] Name: gallery-images - v1.8.6  
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[+] Name: gallery-images - v1.8.6  
  |  Location: https://[REDACTED]/wp-content/plugins/gallery-images/  
  |  Readme: https://[REDACTED]/wp-content/plugins/gallery-images/readme.txt  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After a fast search on &lt;a href=&#34;https://www.exploit-db.com/&#34;&gt;exploit-db.com&lt;/a&gt; with no success, I finally decided to download it and read the code to find vulnerabilites by myself.
 Since the readme was available, I was able to confirm the version of the plugin.&lt;/p&gt;
 &lt;p&gt;I was looking for two kind of vulnerabilities: file upload and sql injection.
 First thing I did was to locate PHP files, and grepping the result to find &lt;code&gt;Content-Disposition&lt;/code&gt; header:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ find . -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*.php*&amp;#34;&lt;/span&gt; | xargs grep -i header
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ find . -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*.php*&amp;#34;&lt;/span&gt; | xargs grep -i header
 ./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
 ./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
 ./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;

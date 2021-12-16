@@ -21,13 +21,13 @@ Nmap is usefull to locate that kind of service:&lt;/p&gt;
 &lt;p&gt;Now you can try to interact with the remote machine with the help of &lt;a href=&#34;https://www.samba.org/samba/docs/man/manpages/rpcclient.1.html&#34; title=&#34;Man rpcclient&#34;&gt;rpcclient&lt;/a&gt;.
 To perform a null session you have to specify an empty user and an empty password.
 If the host is not vulnerable, you will get the following error:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ rpcclient -U &amp;#34;&amp;#34; 192.168.1.31
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ rpcclient -U &amp;#34;&amp;#34; 192.168.1.31
 Enter &amp;#39;s password:
 could not initialise lsa pipe. Error was NT_STATUS_ACCESS_DENIED
 could not obtain sid for domain WORKGROUP
 error: NT_STATUS_ACCESS_DENIED
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But if the host is vulnerable you will immediatly get a prompt:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ rpcclient -U &amp;#34;&amp;#34; 192.168.1.18
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;$ rpcclient -U &amp;#34;&amp;#34; 192.168.1.18
 Enter &amp;#39;s password:
 rpcclient $&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>

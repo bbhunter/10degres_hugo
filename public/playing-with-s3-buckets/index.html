@@ -93,7 +93,7 @@ A client error (AccessDenied) occurred when calling the ListObjects operation: A
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.90.1" />
   </head>
 
   <body class=" ">
@@ -181,10 +181,10 @@ or:<br>
 <code>https://&lt;bucket_name&gt;.amazonaws.com/&lt;file_path&gt;</code></p>
 <p>Once you get the bucket name, you can execute many tests using <strong>awscli</strong> to check his permissions.
 If you try to access to a bucket who doesn&rsquo;t exist, you&rsquo;ll get this message:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ aws s3 ls s3://gwen001-azertyuiop  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ aws s3 ls s3://gwen001-azertyuiop  
 A client error <span style="color:#f92672">(</span>NoSuchBucket<span style="color:#f92672">)</span> occurred when calling the ListObjects operation: The specified bucket does not exist
 </code></pre></div><p>If you try to execute a command you are not allowed to, you&rsquo;ll then get something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ aws s3 ls s3://gwen001-test000/
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ aws s3 ls s3://gwen001-test000/
 A client error <span style="color:#f92672">(</span>AccessDenied<span style="color:#f92672">)</span> occurred when calling the ListObjects operation: Access Denied
 </code></pre></div><p>For the purpose of this article I created some buckets with differents permissions:</p>
 <table>
