@@ -316,7 +316,7 @@ img {
     list-style: none;
     margin-bottom: 0;
     margin-top: 0; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 600px) {
       .navigation .navigation-list {
         position: absolute;
         top: 6.0rem;
@@ -335,7 +335,7 @@ img {
       float: left;
       margin: 0;
       position: relative; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 600px) {
         .navigation .navigation-list .navigation-item {
           float: none !important;
           text-align: center; }
@@ -344,7 +344,7 @@ img {
       .navigation .navigation-list .navigation-item a, .navigation .navigation-list .navigation-item span {
         margin-left: 1.0rem;
         margin-right: 1.0rem; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 600px) {
       .navigation .navigation-list .menu-separator {
         border-top: 2px solid #212121;
         margin: 0 8.0rem; }
@@ -352,7 +352,7 @@ img {
           display: none; } }
   .navigation #menu-toggle {
     display: none; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 600px) {
       .navigation #menu-toggle:checked + label {
         color: #E0E0E0; }
       .navigation #menu-toggle:checked + label + ul {
@@ -361,7 +361,7 @@ img {
         max-height: 100rem; } }
   .navigation .menu-button {
     display: none; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 600px) {
       .navigation .menu-button {
         display: block;
         font-size: 2.4rem;
