@@ -26,9 +26,9 @@ unsafe= true
     author = "Gwendal Le Coguic"
     title = "10degres"
     twitter = "gwendallecoguic"
-    info = "bug bounty advisor"
-    description = "Gwendal Le Coguic, web developer and bug hunter"
-    keywords = "development,security,researcher,bugbounty,tools,php,python"
+    info = "bug bounty professional"
+    description = "Gwendal Le Coguic, developer and bug hunter"
+    keywords = "developer,security,researcher,pentester,bugbounty,bughunter,tools,php,python,golang"
     avatarurl = "/assets/img/avatar.jpg"
     images = ["/assets/img/header-background.jpg"]
 
