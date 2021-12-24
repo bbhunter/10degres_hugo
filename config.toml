@@ -28,7 +28,7 @@ unsafe= true
     twitter = "gwendallecoguic"
     info = "bug bounty professional"
     description = "Gwendal Le Coguic, developer and bug hunter"
-    keywords = "developer,security,researcher,pentester,bugbounty,bughunter,tools,php,python,golang"
+    keywords = "developer,security,researcher,pentester,bugbounty,bughunter,tools,bash,php,python,golang"
     avatarurl = "/assets/img/avatar.jpg"
     images = ["/assets/img/header-background.jpg"]
 
