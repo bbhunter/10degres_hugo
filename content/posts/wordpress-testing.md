@@ -90,17 +90,17 @@ SQL statements:
 ```none
 egrep -ri 'select|insert|update|delete' . | grep -i ".php" | egrep --color -i "select.*FROM|insert.*INTO|update.*SET|delete.*FROM"
 egrep -ri '\->prepare|\->get_results' . | grep -i ".php" | egrep --color -i '\->prepare|\->get_results'
-egrep -ri '\$_SERVER|\$_REQUEST|\$_GET|\$_POST|\$_COOKIE' . | grep -i ".php" | egrep --color -i '\$_SERVER\[|\$_REQUEST\[|\$_GET\[|\$_POST\[|\$_COOKIE\['
+egrep -ri '\$_SERVER|\$_REQUEST|\$_GET|\$_POST|\$_COOKIE|\$_ENV|\$_FILES|\$GLOBALS|\$_SESSION' . | grep -i ".php" | egrep --color -i '\$_SERVER\[|\$_REQUEST\[|\$_GET\[|\$_POST\[|\$_COOKIE\[|\$_ENV\[|\$_FILES\[|\$GLOBALS\[|\$_SESSION\['
 ```
 
 File system interaction:
 ```none
-egrep -ri 'fopen|file_get_contents|file_put_contents|fread|fwrite|fputs|fgets|readfile|fpassthru' . | grep -i ".php" | egrep --color -i "fopen\s*\(|file_get_contents\s*\(|file_put_contents\s*\(|fread\s*\(|fwrite\s*\(|fputs\s*\(|fgets\s*\(|readfile\s*\(|fpassthru\s*\("
+egrep -ri 'fopen|popen|file_get_contents|file_put_contents|fread|fwrite|fputs|fputcsv|fgetc|fgets|fgetss|fgetcsv|readfile|fpassthru|fscanf|move_uploaded_file|parse_ini_file' . | grep -i ".php" | egrep --color -i "fopen\s*\(|popen\s*\(|file_get_contents\s*\(|file_put_contents\s*\(|fread\s*\(|fwrite\s*\(|fputs\s*\(|fputcsv\s*\(|fgetc\s*\(|fgets\s*\(|fgetss\s*\(|fgetcsv\s*\(|readfile\s*\(|fpassthru\s*\(|fscanf\s*\(|move_uploaded_file\s*\(|parse_ini_file\s*\("
 ```
 
 Command execution:
 ```none
-egrep -ri 'eval|system|exec|shell_exec|passthru' . | grep -i ".php" | egrep --color -i "eval\s*\(|system\s*\(|exec\s*\(|shell_exec\s*\(|passthru\s*\("
+egrep -ri 'eval|system|exec|shell_exec|passthru|escapeshell|proc_' . | grep -i ".php" | egrep --color -i "eval\s*\(|system\s*\(|exec\s*\(|shell_exec\s*\(|passthru\s*\(|escapeshell\s*\(|proc_\s*\("
 egrep -ri 'assert|create_function|preg_replace|preg_replace_callback' . | grep -i ".php" | egrep --color -i "assert\s*\(|create_function\s*\(|preg_replace\s*\(|preg_replace_callback\s*\("
 egrep -ri 'array_map|array_walk|array_walk_recursive|call_user_func|call_user_func_array' . | grep -i ".php" | egrep --color -i "array_map\s*\(|array_walk\s*\(|array_walk_recursive\s*\(|call_user_func\s*\(|call_user_func_array\s*\("
 ```
@@ -112,7 +112,7 @@ egrep -ri 'include|require' . | grep -i ".php" | egrep --color -i "include\s*\(|
 
 Custom headers:
 ```none
-egrep -ri 'header|setcookie|content-disposition' . | grep -i ".php" | egrep --color -i "header\s*\(|setcookie\s*\(|content-disposition\s*\("
+egrep -ri 'header|setcookie|content-disposition' . | grep -i ".php" | egrep --color -i "header\s*\(|setcookie\s*\(|content-disposition"
 ```
 
 

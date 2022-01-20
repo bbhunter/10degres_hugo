@@ -81,7 +81,7 @@ This could reveal more themes/plugins." />
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.91.0" />
+    <meta name="generator" content="Hugo 0.91.2" />
   </head>
 
   <body class=" ">
@@ -203,17 +203,17 @@ Test everything on your local install before testing your target.</p>
 <p>SQL statements:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">egrep -ri &#39;select|insert|update|delete&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;select.*FROM|insert.*INTO|update.*SET|delete.*FROM&#34;
 egrep -ri &#39;\-&gt;prepare|\-&gt;get_results&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#39;\-&gt;prepare|\-&gt;get_results&#39;
-egrep -ri &#39;\$_SERVER|\$_REQUEST|\$_GET|\$_POST|\$_COOKIE&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#39;\$_SERVER\[|\$_REQUEST\[|\$_GET\[|\$_POST\[|\$_COOKIE\[&#39;
+egrep -ri &#39;\$_SERVER|\$_REQUEST|\$_GET|\$_POST|\$_COOKIE|\$_ENV|\$_FILES|\$GLOBALS|\$_SESSION&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#39;\$_SERVER\[|\$_REQUEST\[|\$_GET\[|\$_POST\[|\$_COOKIE\[|\$_ENV\[|\$_FILES\[|\$GLOBALS\[|\$_SESSION\[&#39;
 </code></pre></div><p>File system interaction:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">egrep -ri &#39;fopen|file_get_contents|file_put_contents|fread|fwrite|fputs|fgets|readfile|fpassthru&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;fopen\s*\(|file_get_contents\s*\(|file_put_contents\s*\(|fread\s*\(|fwrite\s*\(|fputs\s*\(|fgets\s*\(|readfile\s*\(|fpassthru\s*\(&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">egrep -ri &#39;fopen|popen|file_get_contents|file_put_contents|fread|fwrite|fputs|fputcsv|fgetc|fgets|fgetss|fgetcsv|readfile|fpassthru|fscanf|move_uploaded_file|parse_ini_file&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;fopen\s*\(|popen\s*\(|file_get_contents\s*\(|file_put_contents\s*\(|fread\s*\(|fwrite\s*\(|fputs\s*\(|fputcsv\s*\(|fgetc\s*\(|fgets\s*\(|fgetss\s*\(|fgetcsv\s*\(|readfile\s*\(|fpassthru\s*\(|fscanf\s*\(|move_uploaded_file\s*\(|parse_ini_file\s*\(&#34;
 </code></pre></div><p>Command execution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">egrep -ri &#39;eval|system|exec|shell_exec|passthru&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;eval\s*\(|system\s*\(|exec\s*\(|shell_exec\s*\(|passthru\s*\(&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">egrep -ri &#39;eval|system|exec|shell_exec|passthru|escapeshell|proc_&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;eval\s*\(|system\s*\(|exec\s*\(|shell_exec\s*\(|passthru\s*\(|escapeshell\s*\(|proc_\s*\(&#34;
 egrep -ri &#39;assert|create_function|preg_replace|preg_replace_callback&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;assert\s*\(|create_function\s*\(|preg_replace\s*\(|preg_replace_callback\s*\(&#34;
 egrep -ri &#39;array_map|array_walk|array_walk_recursive|call_user_func|call_user_func_array&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;array_map\s*\(|array_walk\s*\(|array_walk_recursive\s*\(|call_user_func\s*\(|call_user_func_array\s*\(&#34;
 </code></pre></div><p>File inclusion:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">egrep -ri &#39;include|require&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;include\s*\(|include_once\s*\(|require\s*\(|require_once\s*\(&#34;
 </code></pre></div><p>Custom headers:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">egrep -ri &#39;header|setcookie|content-disposition&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;header\s*\(|setcookie\s*\(|content-disposition\s*\(&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">egrep -ri &#39;header|setcookie|content-disposition&#39; . | grep -i &#34;.php&#34; | egrep --color -i &#34;header\s*\(|setcookie\s*\(|content-disposition&#34;
 </code></pre></div><h2 id="boring-stuff">Boring stuff</h2>
 <p>Finally, you can use the same technics you use on any other website. Try to find endpoints from Google, Wayback Machine, etc&hellip; and test SQLi, XSS and so on&hellip;
 Far from exhaustive, you also need to check authentication deeper, specially if oauth is part of the game.</p>
