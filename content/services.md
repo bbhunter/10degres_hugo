@@ -17,6 +17,7 @@ How to choose a scope, how to create a reward policy, what are SLAs...
 Depending of some criterias (size, country, law...) some of them probably fit better to your business.
 
 In a nutshell my goal is to help all actors in the bug bounty industry to be successful and develop the programs on the long term.
+See my <a href="https://docs.google.com/presentation/d/1u3gRMiX_82iCH3OHWeONhAmXUVkuWPfkSBf1TQphXoY/edit?usp=sharing" target="_blank">bug bounty overwiew</a> on Google docs.
 
 Whether for a first step or for any question about an already running security program, feel free to contact me by e-mail: g[at]10degres[dot]net
 
