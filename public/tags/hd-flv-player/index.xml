@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hd flv player on 10degres</title>
-    <link>http://10degres.net/tags/hd-flv-player/</link>
+    <link>https://10degres.net/tags/hd-flv-player/</link>
     <description>Recent content in hd flv player on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/hd-flv-player/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/hd-flv-player/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vulnerability in HD FLV Player</title>
-      <link>http://10degres.net/vulnerability-in-hd-flv-player/</link>
+      <link>https://10degres.net/vulnerability-in-hd-flv-player/</link>
       <pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-in-hd-flv-player/</guid>
+      <guid>https://10degres.net/vulnerability-in-hd-flv-player/</guid>
       <description>&lt;p&gt;Reported by &lt;a href=&#34;http://blog.sucuri.net/2014/12/critical-vulnerability-in-joomla-hd-flv-player-plugin.html&#34; title=&#34;Sucuri&#34;&gt;Sucuri&lt;/a&gt;,
 the HD FLV Player suffers of an Arbitrary File Download vulnerability which is of course considered critical.&lt;/p&gt;
 &lt;p&gt;The vulnerable code can be found in &lt;code&gt;download.php&lt;/code&gt;:&lt;/p&gt;

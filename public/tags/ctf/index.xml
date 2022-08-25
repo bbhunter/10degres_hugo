@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ctf on 10degres</title>
-    <link>http://10degres.net/tags/ctf/</link>
+    <link>https://10degres.net/tags/ctf/</link>
     <description>Recent content in ctf on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Hunter Games</title>
-      <link>http://10degres.net/the-hunter-games/</link>
+      <link>https://10degres.net/the-hunter-games/</link>
       <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/the-hunter-games/</guid>
+      <guid>https://10degres.net/the-hunter-games/</guid>
       <description>&lt;p&gt;What if bug bounty platforms had their own contest?
 Imagine a tournament where bug hunters would be promoted and sponsored by platforms like in every (e-)sports.
 Imagine an event where they could fight on a dedicated scope as it would be in a CTF event but with bounties or a Hackerone event but with a huge competition in the background.
@@ -21,10 +21,10 @@ This is THE HUNTER GAMES.&lt;/p&gt;</description>
     
     <item>
       <title>Fail at CTF h1-212 - The Evil Job</title>
-      <link>http://10degres.net/fail-at-ctf-h1-212-the-evil-job/</link>
+      <link>https://10degres.net/fail-at-ctf-h1-212-the-evil-job/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/fail-at-ctf-h1-212-the-evil-job/</guid>
+      <guid>https://10degres.net/fail-at-ctf-h1-212-the-evil-job/</guid>
       <description>&lt;p&gt;Hackerone recently released a CTF created by &lt;a href=&#34;https://twitter.com/jobertabma&#34;&gt;Jobert Abma&lt;/a&gt;. Even if I didn&amp;rsquo;t complete the challenge, it was so exciting and I was so close from the solution that I wanted to share a writeup.
 Here is the tweet that tiggered the war:&lt;/p&gt;
 &lt;blockquote&gt;

@@ -33,7 +33,7 @@ Wordpress says that automatic update changes file/dir permissions, that's true b
 
 ## Database
 
-It's very important that your database is protected with strong credentials, check the post about [how to choose a good password](http://10degres.net/choose-your-password/). 
+It's very important that your database is protected with strong credentials, check the post about [how to choose a good password](/choose-your-password/). 
 Keep in mind that a SQL user must be only used for one application and **must not have administrator privileges**.
 
 It's also possible to change the table prefix which is `wp_` by default, this will prevent from automatic SQL injection attacks. 

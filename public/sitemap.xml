@@ -2,529 +2,529 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://10degres.net/</loc>
+    <loc>https://10degres.net/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/bug-bounty/</loc>
+    <loc>https://10degres.net/tags/bug-bounty/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/hackers/</loc>
+    <loc>https://10degres.net/tags/hackers/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</loc>
+    <loc>https://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/management/</loc>
+    <loc>https://10degres.net/tags/management/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/posts/</loc>
+    <loc>https://10degres.net/posts/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/</loc>
+    <loc>https://10degres.net/tags/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/cves/</loc>
+    <loc>https://10degres.net/cves/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/sql-injection/</loc>
+    <loc>https://10degres.net/tags/sql-injection/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/cves/cve-2020-8645/</loc>
+    <loc>https://10degres.net/cves/cve-2020-8645/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/5-things-to-avoid-in-bug-bounty/</loc>
+    <loc>https://10degres.net/5-things-to-avoid-in-bug-bounty/</loc>
     <lastmod>2020-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/rce/</loc>
+    <loc>https://10degres.net/tags/rce/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/cves/cve-2020-8440/</loc>
+    <loc>https://10degres.net/cves/cve-2020-8440/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/upload/</loc>
+    <loc>https://10degres.net/tags/upload/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/cves/cve-2020-7229/</loc>
+    <loc>https://10degres.net/cves/cve-2020-7229/</loc>
     <lastmod>2020-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/</loc>
+    <loc>https://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/</loc>
     <lastmod>2020-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/bug-bounty-management-a-bad-example/</loc>
+    <loc>https://10degres.net/bug-bounty-management-a-bad-example/</loc>
     <lastmod>2019-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/bug-bounty-management-a-great-example-zomato/</loc>
+    <loc>https://10degres.net/bug-bounty-management-a-great-example-zomato/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/services/</loc>
+    <loc>https://10degres.net/services/</loc>
     <lastmod>2019-10-27T18:05:10+01:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/press/</loc>
+    <loc>https://10degres.net/press/</loc>
     <lastmod>2019-10-18T17:50:10+02:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/about/</loc>
+    <loc>https://10degres.net/about/</loc>
     <lastmod>2019-10-18T16:06:21+02:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/github-tools-collection/</loc>
+    <loc>https://10degres.net/github-tools-collection/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/recon/</loc>
+    <loc>https://10degres.net/tags/recon/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/tools/</loc>
+    <loc>https://10degres.net/tags/tools/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/cloudflare/</loc>
+    <loc>https://10degres.net/tags/cloudflare/</loc>
     <lastmod>2019-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/cloudflare-origin-server/</loc>
+    <loc>https://10degres.net/cloudflare-origin-server/</loc>
     <lastmod>2019-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/firewall/</loc>
+    <loc>https://10degres.net/tags/firewall/</loc>
     <lastmod>2019-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/waf/</loc>
+    <loc>https://10degres.net/tags/waf/</loc>
     <lastmod>2019-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/project/</loc>
+    <loc>https://10degres.net/tags/project/</loc>
     <lastmod>2019-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/swag/</loc>
+    <loc>https://10degres.net/tags/swag/</loc>
     <lastmod>2019-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/swag-store/</loc>
+    <loc>https://10degres.net/swag-store/</loc>
     <lastmod>2019-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/ctf/</loc>
+    <loc>https://10degres.net/tags/ctf/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/game/</loc>
+    <loc>https://10degres.net/tags/game/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/hunter/</loc>
+    <loc>https://10degres.net/tags/hunter/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/the-hunter-games/</loc>
+    <loc>https://10degres.net/the-hunter-games/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/how-to-write-a-bug-bounty-report/</loc>
+    <loc>https://10degres.net/how-to-write-a-bug-bounty-report/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/report/</loc>
+    <loc>https://10degres.net/tags/report/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/writing/</loc>
+    <loc>https://10degres.net/tags/writing/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/aws/</loc>
+    <loc>https://10degres.net/tags/aws/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/aws-takeover-through-ssrf-in-javascript/</loc>
+    <loc>https://10degres.net/aws-takeover-through-ssrf-in-javascript/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/javascript/</loc>
+    <loc>https://10degres.net/tags/javascript/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/ssrf/</loc>
+    <loc>https://10degres.net/tags/ssrf/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/interview-with-a-bug-bounty-program/</loc>
+    <loc>https://10degres.net/interview-with-a-bug-bounty-program/</loc>
     <lastmod>2018-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/burp-suite/</loc>
+    <loc>https://10degres.net/tags/burp-suite/</loc>
     <lastmod>2018-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/chrome/</loc>
+    <loc>https://10degres.net/tags/chrome/</loc>
     <lastmod>2018-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/colorize-your-hunt/</loc>
+    <loc>https://10degres.net/colorize-your-hunt/</loc>
     <lastmod>2018-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/cons-of-bug-bounty/</loc>
+    <loc>https://10degres.net/cons-of-bug-bounty/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/find-vulnerabilities-in-flash-swf/</loc>
+    <loc>https://10degres.net/find-vulnerabilities-in-flash-swf/</loc>
     <lastmod>2018-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/flash/</loc>
+    <loc>https://10degres.net/tags/flash/</loc>
     <lastmod>2018-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/xss/</loc>
+    <loc>https://10degres.net/tags/xss/</loc>
     <lastmod>2018-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/information-gathering/</loc>
+    <loc>https://10degres.net/tags/information-gathering/</loc>
     <lastmod>2018-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/subdomain/</loc>
+    <loc>https://10degres.net/tags/subdomain/</loc>
     <lastmod>2018-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/subdomain-enumeration/</loc>
+    <loc>https://10degres.net/subdomain-enumeration/</loc>
     <lastmod>2018-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/why-bug-bounty/</loc>
+    <loc>https://10degres.net/why-bug-bounty/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/repository/</loc>
+    <loc>https://10degres.net/tags/repository/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/sqli/</loc>
+    <loc>https://10degres.net/tags/sqli/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/the-bug-bounty-program-that-changed-my-life/</loc>
+    <loc>https://10degres.net/the-bug-bounty-program-that-changed-my-life/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/bucket/</loc>
+    <loc>https://10degres.net/tags/bucket/</loc>
     <lastmod>2018-02-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/cloudfront/</loc>
+    <loc>https://10degres.net/tags/cloudfront/</loc>
     <lastmod>2018-02-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/heroku/</loc>
+    <loc>https://10degres.net/tags/heroku/</loc>
     <lastmod>2018-02-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/massive-pwnage/</loc>
+    <loc>https://10degres.net/massive-pwnage/</loc>
     <lastmod>2018-02-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/fail-at-ctf-h1-212-the-evil-job/</loc>
+    <loc>https://10degres.net/fail-at-ctf-h1-212-the-evil-job/</loc>
     <lastmod>2017-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/wordpress/</loc>
+    <loc>https://10degres.net/tags/wordpress/</loc>
     <lastmod>2017-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/wordpress-testing/</loc>
+    <loc>https://10degres.net/wordpress-testing/</loc>
     <lastmod>2017-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/kick-the-bucket/</loc>
+    <loc>https://10degres.net/kick-the-bucket/</loc>
     <lastmod>2017-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/s3/</loc>
+    <loc>https://10degres.net/tags/s3/</loc>
     <lastmod>2017-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/my-way-to-go/</loc>
+    <loc>https://10degres.net/my-way-to-go/</loc>
     <lastmod>2017-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/actarus/</loc>
+    <loc>https://10degres.net/tags/actarus/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/actarus-code-release/</loc>
+    <loc>https://10degres.net/actarus-code-release/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/dns/</loc>
+    <loc>https://10degres.net/tags/dns/</loc>
     <lastmod>2016-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/subdomain-takeover-dns-expiration/</loc>
+    <loc>https://10degres.net/subdomain-takeover-dns-expiration/</loc>
     <lastmod>2016-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/github/</loc>
+    <loc>https://10degres.net/tags/github/</loc>
     <lastmod>2016-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/github-search/</loc>
+    <loc>https://10degres.net/github-search/</loc>
     <lastmod>2016-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/password/</loc>
+    <loc>https://10degres.net/tags/password/</loc>
     <lastmod>2016-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/security/</loc>
+    <loc>https://10degres.net/tags/security/</loc>
     <lastmod>2016-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/cves/cve-2016-11018/</loc>
+    <loc>https://10degres.net/cves/cve-2016-11018/</loc>
     <lastmod>2016-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/playing-with-s3-buckets/</loc>
+    <loc>https://10degres.net/playing-with-s3-buckets/</loc>
     <lastmod>2016-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/an-extremely-buggy-web-app/</loc>
+    <loc>https://10degres.net/an-extremely-buggy-web-app/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/brute-force/</loc>
+    <loc>https://10degres.net/tags/brute-force/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/bwapp/</loc>
+    <loc>https://10degres.net/tags/bwapp/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/command-injection/</loc>
+    <loc>https://10degres.net/tags/command-injection/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/csrf/</loc>
+    <loc>https://10degres.net/tags/csrf/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/lfirfi/</loc>
+    <loc>https://10degres.net/tags/lfirfi/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/path-traversal/</loc>
+    <loc>https://10degres.net/tags/path-traversal/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/training/</loc>
+    <loc>https://10degres.net/tags/training/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/sqlmap/</loc>
+    <loc>https://10degres.net/sqlmap/</loc>
     <lastmod>2016-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/sqlmap/</loc>
+    <loc>https://10degres.net/tags/sqlmap/</loc>
     <lastmod>2016-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/file-transfer/</loc>
+    <loc>https://10degres.net/tags/file-transfer/</loc>
     <lastmod>2015-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/file-transfer-with-ping/</loc>
+    <loc>https://10degres.net/file-transfer-with-ping/</loc>
     <lastmod>2015-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/icmp/</loc>
+    <loc>https://10degres.net/tags/icmp/</loc>
     <lastmod>2015-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/ping/</loc>
+    <loc>https://10degres.net/tags/ping/</loc>
     <lastmod>2015-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/stegano/</loc>
+    <loc>https://10degres.net/tags/stegano/</loc>
     <lastmod>2015-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/steganography/</loc>
+    <loc>https://10degres.net/steganography/</loc>
     <lastmod>2015-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/bug-bounty-programs/</loc>
+    <loc>https://10degres.net/bug-bounty-programs/</loc>
     <lastmod>2015-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/hacker/</loc>
+    <loc>https://10degres.net/tags/hacker/</loc>
     <lastmod>2015-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/pivot/</loc>
+    <loc>https://10degres.net/tags/pivot/</loc>
     <lastmod>2015-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/port-forwarding-and-tunneling/</loc>
+    <loc>https://10degres.net/port-forwarding-and-tunneling/</loc>
     <lastmod>2015-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/post-exploitation/</loc>
+    <loc>https://10degres.net/tags/post-exploitation/</loc>
     <lastmod>2015-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/ssh/</loc>
+    <loc>https://10degres.net/tags/ssh/</loc>
     <lastmod>2015-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/exploitation/</loc>
+    <loc>https://10degres.net/tags/exploitation/</loc>
     <lastmod>2015-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/kali/</loc>
+    <loc>https://10degres.net/tags/kali/</loc>
     <lastmod>2015-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/metasploit/</loc>
+    <loc>https://10degres.net/tags/metasploit/</loc>
     <lastmod>2015-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/offensive-security-certified-professional/</loc>
+    <loc>https://10degres.net/offensive-security-certified-professional/</loc>
     <lastmod>2015-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/offsec/</loc>
+    <loc>https://10degres.net/tags/offsec/</loc>
     <lastmod>2015-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/oscp/</loc>
+    <loc>https://10degres.net/tags/oscp/</loc>
     <lastmod>2015-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/pentest/</loc>
+    <loc>https://10degres.net/tags/pentest/</loc>
     <lastmod>2015-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/pwk/</loc>
+    <loc>https://10degres.net/tags/pwk/</loc>
     <lastmod>2015-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/document-metadata/</loc>
+    <loc>https://10degres.net/document-metadata/</loc>
     <lastmod>2015-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/metadata/</loc>
+    <loc>https://10degres.net/tags/metadata/</loc>
     <lastmod>2015-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/secure-your-wordpress/</loc>
+    <loc>https://10degres.net/secure-your-wordpress/</loc>
     <lastmod>2015-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/rpc/</loc>
+    <loc>https://10degres.net/tags/rpc/</loc>
     <lastmod>2015-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/smb/</loc>
+    <loc>https://10degres.net/tags/smb/</loc>
     <lastmod>2015-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/smb-null-session/</loc>
+    <loc>https://10degres.net/smb-null-session/</loc>
     <lastmod>2015-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/dvwa/</loc>
+    <loc>https://10degres.net/tags/dvwa/</loc>
     <lastmod>2015-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/dvwa-csrf/</loc>
+    <loc>https://10degres.net/dvwa-csrf/</loc>
     <lastmod>2015-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/captcha/</loc>
+    <loc>https://10degres.net/tags/captcha/</loc>
     <lastmod>2015-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/dvwa-insecure-captcha/</loc>
+    <loc>https://10degres.net/dvwa-insecure-captcha/</loc>
     <lastmod>2015-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/ping-sweep/</loc>
+    <loc>https://10degres.net/ping-sweep/</loc>
     <lastmod>2015-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/hacker-test-1-10/</loc>
+    <loc>https://10degres.net/hacker-test-1-10/</loc>
     <lastmod>2015-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/choose-your-password/</loc>
+    <loc>https://10degres.net/choose-your-password/</loc>
     <lastmod>2015-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/dns-enumeration-with-host/</loc>
+    <loc>https://10degres.net/dns-enumeration-with-host/</loc>
     <lastmod>2015-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/backdoor/</loc>
+    <loc>https://10degres.net/tags/backdoor/</loc>
     <lastmod>2015-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/remote-command-execution/</loc>
+    <loc>https://10degres.net/tags/remote-command-execution/</loc>
     <lastmod>2015-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/weevely/</loc>
+    <loc>https://10degres.net/weevely/</loc>
     <lastmod>2015-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/video-gallery/</loc>
+    <loc>https://10degres.net/tags/video-gallery/</loc>
     <lastmod>2015-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-in-wordpress-video-gallery/</loc>
+    <loc>https://10degres.net/vulnerability-in-wordpress-video-gallery/</loc>
     <lastmod>2015-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/dvwa-file-upload/</loc>
+    <loc>https://10degres.net/dvwa-file-upload/</loc>
     <lastmod>2015-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/file-upload/</loc>
+    <loc>https://10degres.net/tags/file-upload/</loc>
     <lastmod>2015-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/owasp/</loc>
+    <loc>https://10degres.net/tags/owasp/</loc>
     <lastmod>2015-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/owasp-top-10/</loc>
+    <loc>https://10degres.net/owasp-top-10/</loc>
     <lastmod>2015-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/introduction-to-pentesting/</loc>
+    <loc>https://10degres.net/introduction-to-pentesting/</loc>
     <lastmod>2015-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/bdd/</loc>
+    <loc>https://10degres.net/tags/bdd/</loc>
     <lastmod>2015-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/mysql/</loc>
+    <loc>https://10degres.net/tags/mysql/</loc>
     <lastmod>2015-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/mysql-truncation/</loc>
+    <loc>https://10degres.net/mysql-truncation/</loc>
     <lastmod>2015-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/dotdotpwn/</loc>
+    <loc>https://10degres.net/dotdotpwn/</loc>
     <lastmod>2015-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/exploit-exercices-nebula-ndash-level03/</loc>
+    <loc>https://10degres.net/exploit-exercices-nebula-ndash-level03/</loc>
     <lastmod>2015-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/exploit-exercises/</loc>
+    <loc>https://10degres.net/tags/exploit-exercises/</loc>
     <lastmod>2015-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/nebula/</loc>
+    <loc>https://10degres.net/tags/nebula/</loc>
     <lastmod>2015-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/theharvester/</loc>
+    <loc>https://10degres.net/theharvester/</loc>
     <lastmod>2015-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/dvwa-xss-reflected/</loc>
+    <loc>https://10degres.net/dvwa-xss-reflected/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/browser-extensions/</loc>
+    <loc>https://10degres.net/browser-extensions/</loc>
     <lastmod>2015-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/resources/</loc>
+    <loc>https://10degres.net/tags/resources/</loc>
     <lastmod>2015-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/exploit-exercices-nebula-level00/</loc>
+    <loc>https://10degres.net/exploit-exercices-nebula-level00/</loc>
     <lastmod>2015-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/exploit-exercices-nebula-level01/</loc>
+    <loc>https://10degres.net/exploit-exercices-nebula-level01/</loc>
     <lastmod>2015-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/exploit-exercices-nebula-level02/</loc>
+    <loc>https://10degres.net/exploit-exercices-nebula-level02/</loc>
     <lastmod>2015-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/null-byte/</loc>
+    <loc>https://10degres.net/tags/null-byte/</loc>
     <lastmod>2015-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/null-byte-injection/</loc>
+    <loc>https://10degres.net/null-byte-injection/</loc>
     <lastmod>2015-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/php/</loc>
+    <loc>https://10degres.net/tags/php/</loc>
     <lastmod>2015-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/virtual-machine/</loc>
+    <loc>https://10degres.net/tags/virtual-machine/</loc>
     <lastmod>2014-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerable-by-design/</loc>
+    <loc>https://10degres.net/vulnerable-by-design/</loc>
     <lastmod>2014-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/file-download/</loc>
+    <loc>https://10degres.net/tags/file-download/</loc>
     <lastmod>2014-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/hd-flv-player/</loc>
+    <loc>https://10degres.net/tags/hd-flv-player/</loc>
     <lastmod>2014-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/joomla/</loc>
+    <loc>https://10degres.net/tags/joomla/</loc>
     <lastmod>2014-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-in-hd-flv-player/</loc>
+    <loc>https://10degres.net/vulnerability-in-hd-flv-player/</loc>
     <lastmod>2014-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/command-execution/</loc>
+    <loc>https://10degres.net/tags/command-execution/</loc>
     <lastmod>2014-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/damn-vulnerable-web-application/</loc>
+    <loc>https://10degres.net/damn-vulnerable-web-application/</loc>
     <lastmod>2014-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/books/</loc>
+    <loc>https://10degres.net/tags/books/</loc>
     <lastmod>1990-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/resources/</loc>
+    <loc>https://10degres.net/resources/</loc>
     <lastmod>1990-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/videos/</loc>
+    <loc>https://10degres.net/tags/videos/</loc>
     <lastmod>1990-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/pentest-exploitation-tools/</loc>
+    <loc>https://10degres.net/pentest-exploitation-tools/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/pentest-information-gathering-tools/</loc>
+    <loc>https://10degres.net/pentest-information-gathering-tools/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/pentest-post-exploitation-tools/</loc>
+    <loc>https://10degres.net/pentest-post-exploitation-tools/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/pentest-vulnerability-assessment-tools/</loc>
+    <loc>https://10degres.net/pentest-vulnerability-assessment-tools/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/clickjacking/</loc>
+    <loc>https://10degres.net/tags/clickjacking/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/cors/</loc>
+    <loc>https://10degres.net/tags/cors/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/prssi/</loc>
+    <loc>https://10degres.net/tags/prssi/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/tags/rpo/</loc>
+    <loc>https://10degres.net/tags/rpo/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerabilities-list/</loc>
+    <loc>https://10degres.net/vulnerabilities-list/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-clickjacking/</loc>
+    <loc>https://10degres.net/vulnerability-clickjacking/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-cross-origin-resource-sharing-aka-cors/</loc>
+    <loc>https://10degres.net/vulnerability-cross-origin-resource-sharing-aka-cors/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-cross-site-request-forgery-aka-csrf/</loc>
+    <loc>https://10degres.net/vulnerability-cross-site-request-forgery-aka-csrf/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-cross-site-scripting-aka-xss/</loc>
+    <loc>https://10degres.net/vulnerability-cross-site-scripting-aka-xss/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-relative-path-overwrite-aka-rpo-or-prssi/</loc>
+    <loc>https://10degres.net/vulnerability-relative-path-overwrite-aka-rpo-or-prssi/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-sql-injection-aka-sqli/</loc>
+    <loc>https://10degres.net/vulnerability-sql-injection-aka-sqli/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://10degres.net/vulnerability-subdomain-takeover/</loc>
+    <loc>https://10degres.net/vulnerability-subdomain-takeover/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>file transfer on 10degres</title>
-    <link>http://10degres.net/tags/file-transfer/</link>
+    <link>https://10degres.net/tags/file-transfer/</link>
     <description>Recent content in file transfer on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/file-transfer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Oct 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/file-transfer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>File transfer with ping</title>
-      <link>http://10degres.net/file-transfer-with-ping/</link>
+      <link>https://10degres.net/file-transfer-with-ping/</link>
       <pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/file-transfer-with-ping/</guid>
+      <guid>https://10degres.net/file-transfer-with-ping/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Anyone who ever deals with server managment knows the famous &lt;code&gt;ping&lt;/code&gt; utility.
 Ping send &lt;strong&gt;ICMP request&lt;/strong&gt; to a remote host, it&amp;rsquo;s commonly used to test if a server is alive or to know his ip address.
@@ -21,9 +21,9 @@ For the purpose I test my script with different media types like png or mp3 and
 &lt;h2 id=&#34;the-idea&#34;&gt;The idea&lt;/h2&gt;
 &lt;p&gt;By default ping requests are formed with 98 bytes including 56 bytes of data and various headers.
 With the &lt;code&gt;-p&lt;/code&gt; option, ping allows you to customize 16 of those 56 bytes:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/ping_test.png&#34; alt=&#34;ping test&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/ping_test.png&#34; alt=&#34;ping test&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here is the request catched with &lt;code&gt;tcpdump&lt;/code&gt; on the remote host:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/ping-capture.png&#34; alt=&#34;ping capture&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/ping-capture.png&#34; alt=&#34;ping capture&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As you can see the submitted string repeats again and again until the end of the data request.
 If you provide a string longer than 16 bytes it will be truncated. From here, we can &lt;strong&gt;convert any data to hexa and send it through ping request&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>

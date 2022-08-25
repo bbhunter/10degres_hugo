@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>project on 10degres</title>
-    <link>http://10degres.net/tags/project/</link>
+    <link>https://10degres.net/tags/project/</link>
     <description>Recent content in project on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Swag Store</title>
-      <link>http://10degres.net/swag-store/</link>
+      <link>https://10degres.net/swag-store/</link>
       <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/swag-store/</guid>
+      <guid>https://10degres.net/swag-store/</guid>
       <description>&lt;p&gt;In the bug bounty industry, companies/programs reward hackers with bounties for their contribution, most of the time money and swag from time to time.
 But what about platforms?
 How platforms thank their hackers?
@@ -24,10 +24,10 @@ This is THE SWAG STORE.&lt;/p&gt;</description>
     
     <item>
       <title>The Hunter Games</title>
-      <link>http://10degres.net/the-hunter-games/</link>
+      <link>https://10degres.net/the-hunter-games/</link>
       <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/the-hunter-games/</guid>
+      <guid>https://10degres.net/the-hunter-games/</guid>
       <description>&lt;p&gt;What if bug bounty platforms had their own contest?
 Imagine a tournament where bug hunters would be promoted and sponsored by platforms like in every (e-)sports.
 Imagine an event where they could fight on a dedicated scope as it would be in a CTF event but with bounties or a Hackerone event but with a huge competition in the background.

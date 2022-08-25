@@ -10,7 +10,7 @@
     <meta name="keywords" content="developer,security,researcher,pentester,bugbounty,bughunter,tools,bash,php,python,golang">
 
     <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+<meta name="twitter:image" content="https://10degres.net/assets/img/header-background.jpg"/>
 
 <meta name="twitter:title" content="DNS enumeration with Host"/>
 <meta name="twitter:description" content="While performing a pentest the information gathering phase is the most important, it&rsquo;s the key of a successful test.
@@ -36,22 +36,22 @@ As the man says, host is normally used to convert names to IP addresses and vic
 If the domain doesn&rsquo;t exist, you will meet that message: Host pmolkijn.de not found: 3(NXDOMAIN)
 If the ip doesn&rsquo;t point anywhere, you will get this message: Host 91.121.139.2 not found: 3(NXDOMAIN)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://10degres.net/dns-enumeration-with-host/" />
+<meta property="og:url" content="https://10degres.net/dns-enumeration-with-host/" />
 
-<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="og:image" content="https://10degres.net/assets/img/header-background.jpg" />
 <meta property="article:published_time" content="2015-02-27T00:00:00+00:00" />
 <meta property="article:modified_time" content="2015-02-27T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
 
 
     
-      <base href="http://10degres.net/dns-enumeration-with-host/">
+      <base href="https://10degres.net/dns-enumeration-with-host/">
     
     <title>
   DNS enumeration with Host · 10degres
 </title>
 
     
-      <link rel="canonical" href="http://10degres.net/dns-enumeration-with-host/">
+      <link rel="canonical" href="https://10degres.net/dns-enumeration-with-host/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -61,7 +61,7 @@ If the ip doesn&rsquo;t point anywhere, you will get this message: Host 91.121.1
     
       
       
-      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.3d8325016df2bf0f0e874e28c83131f668a953cb3245cf9391fae4ff5b76b2ed.css" integrity="sha256-PYMlAW3yvw8Oh04oyDEx9mipU8syRc&#43;Tkfrk/1t2su0=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://10degres.net/assets/css/coder.min.3d8325016df2bf0f0e874e28c83131f668a953cb3245cf9391fae4ff5b76b2ed.css" integrity="sha256-PYMlAW3yvw8Oh04oyDEx9mipU8syRc&#43;Tkfrk/1t2su0=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -69,11 +69,11 @@ If the ip doesn&rsquo;t point anywhere, you will get this message: Host 91.121.1
     
 
     
-      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+      <link rel="stylesheet" href="https://10degres.net/assets/css/custom.css" />
     
 
-    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.92.2" />
   </head>
@@ -82,7 +82,7 @@ If the ip doesn&rsquo;t point anywhere, you will get this message: Host 91.121.1
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="http://10degres.net/">
+    <a class="navigation-title" href="https://10degres.net/">
       10degres
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -91,23 +91,23 @@ If the ip doesn&rsquo;t point anywhere, you will get this message: Host 91.121.1
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+            <a class="navigation-link" href="https://10degres.net/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+            <a class="navigation-link" href="https://10degres.net/cves/">CVEs</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+            <a class="navigation-link" href="https://10degres.net/services/">Services</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+            <a class="navigation-link" href="https://10degres.net/press/">Press</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+            <a class="navigation-link" href="https://10degres.net/about/">About</a>
           </li>
         
       
@@ -141,11 +141,11 @@ If the ip doesn&rsquo;t point anywhere, you will get this message: Host 91.121.1
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="http://10degres.net/tags/pentest/">pentest</a>
+    <a href="https://10degres.net/tags/pentest/">pentest</a>
       <span class="separator">•</span>
-    <a href="http://10degres.net/tags/information-gathering/">information gathering</a>
+    <a href="https://10degres.net/tags/information-gathering/">information gathering</a>
       <span class="separator">•</span>
-    <a href="http://10degres.net/tags/dns/">dns</a></div>
+    <a href="https://10degres.net/tags/dns/">dns</a></div>
 
         </div>
       </header>
@@ -157,7 +157,7 @@ The <code>host</code> command is a very powerful DNS lookup utility which is pre
 <p>For the examples, I will use a domain which allows that kind of query at this moment.</p>
 <h2 id="basic-usage">Basic usage</h2>
 <p>As the <code>man</code> says, <code>host</code> is normally used to convert names to IP addresses and vice versa:</p>
-<p><img src="http://10degres.net/images/dns-enumeration-host-basic.png" alt="DNS enumeration host basic"></p>
+<p><img src="https://10degres.net/images/dns-enumeration-host-basic.png" alt="DNS enumeration host basic"></p>
 <p>If the domain doesn&rsquo;t exist, you will meet that message: <code>Host pmolkijn.de not found: 3(NXDOMAIN)</code></p>
 <p>If the ip doesn&rsquo;t point anywhere, you will get this message: <code>Host 91.121.139.2 not found: 3(NXDOMAIN)</code></p>
 <h2 id="forward">Forward</h2>
@@ -171,7 +171,7 @@ Imagine a text file containing those few keywords:</p>
   host $name.leparisien.fr |grep <span style="color:#e6db74">&#34;has address&#34;</span> |cut -d <span style="color:#e6db74">&#34; &#34;</span> -f 1,4
 <span style="color:#66d9ef">done</span>
 </code></pre></div><p>Will output:</p>
-<p><img src="http://10degres.net/images/dns-enumeration-host-forward.png" alt="DNS enumeration host forward"></p>
+<p><img src="https://10degres.net/images/dns-enumeration-host-forward.png" alt="DNS enumeration host forward"></p>
 <h2 id="reverse">Reverse</h2>
 <p>Of course you could query the discovered ip address but you can also query all ip in the same network to find more subdomains. Here is a simple shell script:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
@@ -180,14 +180,14 @@ Imagine a text file containing those few keywords:</p>
   host 160.92.126.$ip |grep <span style="color:#e6db74">&#34;leparisien.fr&#34;</span> |cut -d <span style="color:#e6db74">&#34; &#34;</span> -f 1,5
 <span style="color:#66d9ef">done</span>
 </code></pre></div><p>Will output:</p>
-<p><img src="http://10degres.net/images/dns-enumeration-host-reverse.png" alt="DNS enumeration host reverse"></p>
+<p><img src="https://10degres.net/images/dns-enumeration-host-reverse.png" alt="DNS enumeration host reverse"></p>
 <h2 id="zone-transfer">Zone transfer</h2>
 <p>Finally the best technique is to try a zone transfer.
 Zone transfer is a mechanism available for administrators to replicate DNS databases across a set of DNS servers.</p>
 <p>With the <code>-t</code> option you can grab specific informations about the domain: name server (ns), exchange mail (mx), alias (cname), etc.:</p>
-<p><img src="http://10degres.net/images/dns-enumeration-host-zone-transfer-1.png" alt="DNS enumeration host zone transfer"></p>
+<p><img src="https://10degres.net/images/dns-enumeration-host-zone-transfer-1.png" alt="DNS enumeration host zone transfer"></p>
 <p>Then, for each name server found we will try to perform a zone transfer for the domain of the example:</p>
-<p><img src="http://10degres.net/images/dns-enumeration-host-zone-transfer-2.png" alt="DNS enumeration host zone transfer"></p>
+<p><img src="https://10degres.net/images/dns-enumeration-host-zone-transfer-2.png" alt="DNS enumeration host zone transfer"></p>
 <p>Et voilà! My screen is to small but more than 100 unique subdomains have been found.
 If the zone transfer fails, you will get this message: <code>; Transfer failed.</code></p>
 <p>There is many tools to deal with DNS: <code>dig</code>, <code>dnsenum</code>, <code>dnsrecon</code> can also do the trick.
@@ -236,7 +236,7 @@ if (!doNotTrack) {
 </script>
 
     
-      <script src="http://10degres.net/assets/js/scripts.js"></script>
+      <script src="https://10degres.net/assets/js/scripts.js"></script>
     
 
   </body>

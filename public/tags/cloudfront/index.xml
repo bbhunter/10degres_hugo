@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cloudfront on 10degres</title>
-    <link>http://10degres.net/tags/cloudfront/</link>
+    <link>https://10degres.net/tags/cloudfront/</link>
     <description>Recent content in cloudfront on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/cloudfront/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/cloudfront/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Massive pwnage</title>
-      <link>http://10degres.net/massive-pwnage/</link>
+      <link>https://10degres.net/massive-pwnage/</link>
       <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/massive-pwnage/</guid>
+      <guid>https://10degres.net/massive-pwnage/</guid>
       <description>&lt;p&gt;There is different ways to hunt for vulnerabilities, depending of your knowledge, your skills, your expectation and how you like to chase.
 I personally love programming and, as a true developper, I&amp;rsquo;m lazy, so I love to automate things.
 By writing some piece of code or by combining multiple tools, you can find a lot of interesting stuff.

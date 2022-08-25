@@ -12,7 +12,7 @@ see_also:
     url: https://hackerone.com/reports/136169
   -
     link: Image Gallery SQL Injection
-    url: http://10degres.net/cves/cve-2016-11018/
+    url: /cves/cve-2016-11018/
 ---
 Here is the way I usually follow to test a Wordpress install.
 

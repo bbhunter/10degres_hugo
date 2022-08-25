@@ -1,4 +1,4 @@
-baseURL = "http://10degres.net/"
+baseURL = "https://10degres.net/"
 googleAnalytics = "UA-61485350-1"
 languageCode = "en-us"
 title = "10degres"

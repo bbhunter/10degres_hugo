@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>repository on 10degres</title>
-    <link>http://10degres.net/tags/repository/</link>
+    <link>https://10degres.net/tags/repository/</link>
     <description>Recent content in repository on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/repository/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/repository/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Bug Bounty program that changed my life</title>
-      <link>http://10degres.net/the-bug-bounty-program-that-changed-my-life/</link>
+      <link>https://10degres.net/the-bug-bounty-program-that-changed-my-life/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/the-bug-bounty-program-that-changed-my-life/</guid>
+      <guid>https://10degres.net/the-bug-bounty-program-that-changed-my-life/</guid>
       <description>&lt;p&gt;This is a real story or not, that occured in mid 2017 or not, about a private program or not, on Hackerone or not, believe me or not, but it changed my life.
 I would like to thanks all the people from this company I talked with.
 They were very nice with me, very fast to fix the bugs and I always got the rewards in less than 7 days, frequently the day of the report, even for the smallest bugs.

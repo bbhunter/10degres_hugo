@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>video gallery on 10degres</title>
-    <link>http://10degres.net/tags/video-gallery/</link>
+    <link>https://10degres.net/tags/video-gallery/</link>
     <description>Recent content in video gallery on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/video-gallery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/video-gallery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vulnerability in Wordpress Video Gallery</title>
-      <link>http://10degres.net/vulnerability-in-wordpress-video-gallery/</link>
+      <link>https://10degres.net/vulnerability-in-wordpress-video-gallery/</link>
       <pubDate>Thu, 12 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-in-wordpress-video-gallery/</guid>
+      <guid>https://10degres.net/vulnerability-in-wordpress-video-gallery/</guid>
       <description>&lt;p&gt;Recently reported by Claudio Viviani, there is an SQL Injection available in this plugin who has been downloaded more than 100k.
 Developped by Apptha (again), the current version 2.7 still vulnerable and downloadable from
 the official &lt;a href=&#34;https://wordpress.org/plugins/contus-video-gallery/&#34; title=&#34;Wordpress Video Gallery&#34;&gt;Wordpress Plugin Directory&lt;/a&gt;.&lt;/p&gt;

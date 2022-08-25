@@ -10,7 +10,7 @@
     <meta name="keywords" content="developer,security,researcher,pentester,bugbounty,bughunter,tools,bash,php,python,golang">
 
     <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+<meta name="twitter:image" content="https://10degres.net/assets/img/header-background.jpg"/>
 
 <meta name="twitter:title" content="SMB null session"/>
 <meta name="twitter:description" content="While performing a pentest, if you discover a server running the SMB protocol 
@@ -54,22 +54,22 @@ Enter &#39;s password:
 rpcclient $&gt;
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://10degres.net/smb-null-session/" />
+<meta property="og:url" content="https://10degres.net/smb-null-session/" />
 
-<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="og:image" content="https://10degres.net/assets/img/header-background.jpg" />
 <meta property="article:published_time" content="2015-05-09T00:00:00+00:00" />
 <meta property="article:modified_time" content="2015-05-09T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
 
 
     
-      <base href="http://10degres.net/smb-null-session/">
+      <base href="https://10degres.net/smb-null-session/">
     
     <title>
   SMB null session · 10degres
 </title>
 
     
-      <link rel="canonical" href="http://10degres.net/smb-null-session/">
+      <link rel="canonical" href="https://10degres.net/smb-null-session/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -79,7 +79,7 @@ rpcclient $&gt;
     
       
       
-      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.3d8325016df2bf0f0e874e28c83131f668a953cb3245cf9391fae4ff5b76b2ed.css" integrity="sha256-PYMlAW3yvw8Oh04oyDEx9mipU8syRc&#43;Tkfrk/1t2su0=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://10degres.net/assets/css/coder.min.3d8325016df2bf0f0e874e28c83131f668a953cb3245cf9391fae4ff5b76b2ed.css" integrity="sha256-PYMlAW3yvw8Oh04oyDEx9mipU8syRc&#43;Tkfrk/1t2su0=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -87,11 +87,11 @@ rpcclient $&gt;
     
 
     
-      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+      <link rel="stylesheet" href="https://10degres.net/assets/css/custom.css" />
     
 
-    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.92.2" />
   </head>
@@ -100,7 +100,7 @@ rpcclient $&gt;
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="http://10degres.net/">
+    <a class="navigation-title" href="https://10degres.net/">
       10degres
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -109,23 +109,23 @@ rpcclient $&gt;
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+            <a class="navigation-link" href="https://10degres.net/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+            <a class="navigation-link" href="https://10degres.net/cves/">CVEs</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+            <a class="navigation-link" href="https://10degres.net/services/">Services</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+            <a class="navigation-link" href="https://10degres.net/press/">Press</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+            <a class="navigation-link" href="https://10degres.net/about/">About</a>
           </li>
         
       
@@ -159,9 +159,9 @@ rpcclient $&gt;
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="http://10degres.net/tags/smb/">smb</a>
+    <a href="https://10degres.net/tags/smb/">smb</a>
       <span class="separator">•</span>
-    <a href="http://10degres.net/tags/rpc/">rpc</a></div>
+    <a href="https://10degres.net/tags/rpc/">rpc</a></div>
 
         </div>
       </header>
@@ -171,7 +171,7 @@ rpcclient $&gt;
 you can test if it&rsquo;s vulnerable to anonymous connection (also called null session) and then glean a lot of informations with
 a <a href="http://en.wikipedia.org/wiki/Remote_procedure_call" title="Remote Procedure Call">RPC</a> client.
 Nmap is usefull to locate that kind of service:</p>
-<p><img src="http://10degres.net/images/smb-null-session-1.png" alt="smb null session"></p>
+<p><img src="https://10degres.net/images/smb-null-session-1.png" alt="smb null session"></p>
 <p>Now you can try to interact with the remote machine with the help of <a href="https://www.samba.org/samba/docs/man/manpages/rpcclient.1.html" title="Man rpcclient">rpcclient</a>.
 To perform a null session you have to specify an empty user and an empty password.
 If the host is not vulnerable, you will get the following error:</p>
@@ -270,7 +270,7 @@ if (!doNotTrack) {
 </script>
 
     
-      <script src="http://10degres.net/assets/js/scripts.js"></script>
+      <script src="https://10degres.net/assets/js/scripts.js"></script>
     
 
   </body>

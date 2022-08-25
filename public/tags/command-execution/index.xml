@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>command execution on 10degres</title>
-    <link>http://10degres.net/tags/command-execution/</link>
+    <link>https://10degres.net/tags/command-execution/</link>
     <description>Recent content in command execution on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/command-execution/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/command-execution/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Damn Vulnerable Web Application</title>
-      <link>http://10degres.net/damn-vulnerable-web-application/</link>
+      <link>https://10degres.net/damn-vulnerable-web-application/</link>
       <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/damn-vulnerable-web-application/</guid>
+      <guid>https://10degres.net/damn-vulnerable-web-application/</guid>
       <description>&lt;p&gt;&lt;strong&gt;DVWA&lt;/strong&gt; is a PHP/MySQL web application that is intentionally vulnerable.
 The goal is to learn common web vulnerabilities and improve your security skills by training yourself on your own server.
 3 levels are available (low, medium and high) to perform those following attacks :&lt;/p&gt;

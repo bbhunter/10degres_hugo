@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aws on 10degres</title>
-    <link>http://10degres.net/tags/aws/</link>
+    <link>https://10degres.net/tags/aws/</link>
     <description>Recent content in aws on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS takeover through SSRF in JavaScript</title>
-      <link>http://10degres.net/aws-takeover-through-ssrf-in-javascript/</link>
+      <link>https://10degres.net/aws-takeover-through-ssrf-in-javascript/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/aws-takeover-through-ssrf-in-javascript/</guid>
+      <guid>https://10degres.net/aws-takeover-through-ssrf-in-javascript/</guid>
       <description>&lt;p&gt;Here is the story of a bug I found in a private bug bounty program on &lt;a href=&#34;https://hackerone.com/&#34;&gt;Hackerone&lt;/a&gt;.
 It took me exactly 12h30 -no break- to find it, exploit and report.
 I was able to dump the AWS credentials, this lead me to fully compromise the account of the company: 20 buckets and 80 EC2 instances (Amazon Elastic Compute Cloud) in my hands.
@@ -21,10 +21,10 @@ Besides the fact that it&amp;rsquo;s one of my best bug in my hunter career, I a
     
     <item>
       <title>Massive pwnage</title>
-      <link>http://10degres.net/massive-pwnage/</link>
+      <link>https://10degres.net/massive-pwnage/</link>
       <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/massive-pwnage/</guid>
+      <guid>https://10degres.net/massive-pwnage/</guid>
       <description>&lt;p&gt;There is different ways to hunt for vulnerabilities, depending of your knowledge, your skills, your expectation and how you like to chase.
 I personally love programming and, as a true developper, I&amp;rsquo;m lazy, so I love to automate things.
 By writing some piece of code or by combining multiple tools, you can find a lot of interesting stuff.
@@ -38,20 +38,20 @@ This article is about some scripts/tricks I wrote/use to perform massive tests:&
     
     <item>
       <title>Kick the bucket</title>
-      <link>http://10degres.net/kick-the-bucket/</link>
+      <link>https://10degres.net/kick-the-bucket/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/kick-the-bucket/</guid>
-      <description>&lt;p&gt;I already wrote &lt;a href=&#34;http://10degres.net/playing-with-s3-buckets/&#34;&gt;a post about Amazon S3 buckets&lt;/a&gt; but they became so popular these last weeks  that many people explain what is a bucket, what is the danger and how to exploit misconfiguration. My goal here is more: how/where to find those vulnerable buckets.&lt;/p&gt;
+      <guid>https://10degres.net/kick-the-bucket/</guid>
+      <description>&lt;p&gt;I already wrote &lt;a href=&#34;https://10degres.net/playing-with-s3-buckets/&#34;&gt;a post about Amazon S3 buckets&lt;/a&gt; but they became so popular these last weeks  that many people explain what is a bucket, what is the danger and how to exploit misconfiguration. My goal here is more: how/where to find those vulnerable buckets.&lt;/p&gt;
 &lt;p&gt;First I assume you already know the basics, if not, you can read the excellent article from &lt;a href=&#34;https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/&#34;&gt;Frans Rosen on Detectify&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Playing with S3 buckets</title>
-      <link>http://10degres.net/playing-with-s3-buckets/</link>
+      <link>https://10degres.net/playing-with-s3-buckets/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/playing-with-s3-buckets/</guid>
+      <guid>https://10degres.net/playing-with-s3-buckets/</guid>
       <description>&lt;p&gt;Amazon Simple Storage Service aka S3 is a cloud storage for the Internet.
 You first create a bucket and you can then upload any number of objects (photos, videos, documents etc.) to it.
 However if the permissions (ACL) are not well settled, bad things can happen.&lt;/p&gt;

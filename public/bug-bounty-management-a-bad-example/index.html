@@ -10,7 +10,7 @@
     <meta name="keywords" content="developer,security,researcher,pentester,bugbounty,bughunter,tools,bash,php,python,golang">
 
     <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://10degres.net/assets/img/header-background.jpg"/>
+<meta name="twitter:image" content="https://10degres.net/assets/img/header-background.jpg"/>
 
 <meta name="twitter:title" content="Bug bounty management, a bad example"/>
 <meta name="twitter:description" content="As I lately released an article about a good bug bounty program example, I also wanted to write something about what kind of behaviours companies should avoid to keep the community motivated.
@@ -32,22 +32,22 @@ I quickly reported some small bugs and also noticed some changes in the reports 
 Unfortunately all those changes now make the program terrible.
 Here is my analysis." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://10degres.net/bug-bounty-management-a-bad-example/" />
+<meta property="og:url" content="https://10degres.net/bug-bounty-management-a-bad-example/" />
 
-<meta property="og:image" content="http://10degres.net/assets/img/header-background.jpg" />
+<meta property="og:image" content="https://10degres.net/assets/img/header-background.jpg" />
 <meta property="article:published_time" content="2019-12-16T00:00:00+00:00" />
 <meta property="article:modified_time" content="2019-12-16T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
 
 
     
-      <base href="http://10degres.net/bug-bounty-management-a-bad-example/">
+      <base href="https://10degres.net/bug-bounty-management-a-bad-example/">
     
     <title>
   Bug bounty management, a bad example · 10degres
 </title>
 
     
-      <link rel="canonical" href="http://10degres.net/bug-bounty-management-a-bad-example/">
+      <link rel="canonical" href="https://10degres.net/bug-bounty-management-a-bad-example/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -57,7 +57,7 @@ Here is my analysis." />
     
       
       
-      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.3d8325016df2bf0f0e874e28c83131f668a953cb3245cf9391fae4ff5b76b2ed.css" integrity="sha256-PYMlAW3yvw8Oh04oyDEx9mipU8syRc&#43;Tkfrk/1t2su0=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://10degres.net/assets/css/coder.min.3d8325016df2bf0f0e874e28c83131f668a953cb3245cf9391fae4ff5b76b2ed.css" integrity="sha256-PYMlAW3yvw8Oh04oyDEx9mipU8syRc&#43;Tkfrk/1t2su0=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -65,11 +65,11 @@ Here is my analysis." />
     
 
     
-      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+      <link rel="stylesheet" href="https://10degres.net/assets/css/custom.css" />
     
 
-    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.92.2" />
   </head>
@@ -78,7 +78,7 @@ Here is my analysis." />
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="http://10degres.net/">
+    <a class="navigation-title" href="https://10degres.net/">
       10degres
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -87,23 +87,23 @@ Here is my analysis." />
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+            <a class="navigation-link" href="https://10degres.net/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+            <a class="navigation-link" href="https://10degres.net/cves/">CVEs</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+            <a class="navigation-link" href="https://10degres.net/services/">Services</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+            <a class="navigation-link" href="https://10degres.net/press/">Press</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+            <a class="navigation-link" href="https://10degres.net/about/">About</a>
           </li>
         
       
@@ -137,16 +137,16 @@ Here is my analysis." />
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="http://10degres.net/tags/bug-bounty/">bug bounty</a>
+    <a href="https://10degres.net/tags/bug-bounty/">bug bounty</a>
       <span class="separator">•</span>
-    <a href="http://10degres.net/tags/management/">management</a></div>
+    <a href="https://10degres.net/tags/management/">management</a></div>
 
         </div>
       </header>
 
       <div>
-        <p>As I lately released an article about a <a href="http://10degres.net/bug-bounty-management-a-great-example-zomato/">good bug bounty program example</a>, I also wanted to write something about what kind of behaviours companies should avoid to keep the community motivated.</p>
-<p>In 2017, I worked on a great program, so great that I published an article about them called &ldquo;<a href="http://10degres.net/the-bug-bounty-program-that-changed-my-life/">The Bug Bounty program that changed my life</a>&rdquo;.
+        <p>As I lately released an article about a <a href="https://10degres.net/bug-bounty-management-a-great-example-zomato/">good bug bounty program example</a>, I also wanted to write something about what kind of behaviours companies should avoid to keep the community motivated.</p>
+<p>In 2017, I worked on a great program, so great that I published an article about them called &ldquo;<a href="https://10degres.net/the-bug-bounty-program-that-changed-my-life/">The Bug Bounty program that changed my life</a>&rdquo;.
 Since I was very successful on that program, some weeks ago I decided to give another try.
 I quickly checked the policy on their Hackerone page and noticed some changes in the rules.
 I quickly reported some small bugs and also noticed some changes in the reports management process.</p>
@@ -174,7 +174,7 @@ Hackerone minimum is 500$ as well as Facebook, so 450$ is very nice.
 They might be very confident, no low bugs anymore (at least what they think) or very rich.</p>
 <p>Anyway, this is the normal evolution of a bug bounty program.
 It usually starts with a linear approach and once that most critical bugs have been found <u>and fixed</u>, <strong>you can increase the top bounties to put a stronger accent on high severity bugs</strong>.</p>
-<p><img src="http://10degres.net/images/willoz-bounty-policy.png" alt="bounty policy"></p>
+<p><img src="https://10degres.net/images/willoz-bounty-policy.png" alt="bounty policy"></p>
 <p>So where is the problem?<br>
 The problem is not the amounts.
 There is simply no point to raise the bounties so much if at the end your goal is to avoid payment as much as you can, using tons of excuses or crazy policy.
@@ -188,7 +188,7 @@ It means that the reports will be handled very quickly, but not necessarily in a
 Triagers are not aware about all details about the security of the company, they have to learn/ask what to do with that kind of bug, should it be rewarded or not, how much&hellip;
 When they take decision by themself it often leads to big mistakes.
 I think I&rsquo;m safe to say that hackers usually don&rsquo;t like (understand hate) managed programs.</p>
-<p><img src="http://10degres.net/images/willoz-triager-complaint.png" alt="triager complaint"></p>
+<p><img src="https://10degres.net/images/willoz-triager-complaint.png" alt="triager complaint"></p>
 <p>Second point is that <strong>it breaks the link between the security team and hackers</strong>.
 This is one of the reason I like bug bounty: being in touch with the employees of companies all over the world and help them to fix their bugs, talk with them, share.
 In this case, I lost that trusted relationship built with time in a second.</p>
@@ -247,7 +247,7 @@ Not only the security team but also the platforms triagers are now unresponsive.
 And again after 3 years, that company is supposed to have a very good internal worklow, <strong>the internal process should be very well oiled</strong>.
 Ignoring a 2 month report with 3 dunning notices is a big mess, you&rsquo;re not gonna earn the community confidence with that kind of behaviour.</p>
 <p>Side note: when you send a message to the emergency email provided by the company in their rules, you get the following response:
-<img src="http://10degres.net/images/willoz-autoreply.png" alt="automatic reply"></p>
+<img src="https://10degres.net/images/willoz-autoreply.png" alt="automatic reply"></p>
 <p>Two words: DEAD END.<br>
 What&rsquo;s the point to set some stupid requirements based on meaningless numbers to finally say to send a message to the exact same email???
 It&rsquo;s a waste of time for everyone.</p>
@@ -264,7 +264,7 @@ He is a very well known hunter in the community performing bug bounty full time 
     <br/><br/>
     What a mistake from the company.
 </div>
-<img src="http://10degres.net/images/willoz-unhappy-hacker.png" alt="unhappy hacker" width="350" style="float:right;" />
+<img src="https://10degres.net/images/willoz-unhappy-hacker.png" alt="unhappy hacker" width="350" style="float:right;" />
 <div style="clear:both;"></div>
 <p><strong>Ban should be considered as the very last option</strong> and a hacker with 3 years of experience on the programs who tried &ldquo;direct contact&rdquo; should be a big red alert for the security team, it means alot.</p>
 <h2 id="conclusion">Conclusion</h2>
@@ -320,7 +320,7 @@ if (!doNotTrack) {
 </script>
 
     
-      <script src="http://10degres.net/assets/js/scripts.js"></script>
+      <script src="https://10degres.net/assets/js/scripts.js"></script>
     
 
   </body>

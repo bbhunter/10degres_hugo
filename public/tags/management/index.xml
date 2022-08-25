@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>management on 10degres</title>
-    <link>http://10degres.net/tags/management/</link>
+    <link>https://10degres.net/tags/management/</link>
     <description>Recent content in management on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to keep hackers motivated in bug bounty</title>
-      <link>http://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</link>
+      <link>https://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</guid>
+      <guid>https://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</guid>
       <description>Nowadays, there is thousands of programs on several platforms, so how would you attract hackers to you? Why would I choose your program instead of another? Why would I spend time testing your system? Think about hackers like part of your customers or investors, you have convince them to work with you, you have to promote your program like you would market your products.
 One big difference with pentest is that a bug bounty program is something you build on the long term.</description>
     </item>
     
     <item>
       <title>5 things to avoid in bug bounty</title>
-      <link>http://10degres.net/5-things-to-avoid-in-bug-bounty/</link>
+      <link>https://10degres.net/5-things-to-avoid-in-bug-bounty/</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/5-things-to-avoid-in-bug-bounty/</guid>
+      <guid>https://10degres.net/5-things-to-avoid-in-bug-bounty/</guid>
       <description>The second article of a serie about bug bounty management. This one give some tips to companies about what kind of mistakes they should avoid to keep good relationship with hackers.
 Unfixed bugs Hackers work on your program, they could choose another one but they chose you. They spend time trying to find issues in your system, which is the purpose of a bug bounty program obviously, the minimum you can do is to fix what they report.</description>
     </item>
     
     <item>
       <title>5 things to do before running your first bug bounty program</title>
-      <link>http://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/</link>
+      <link>https://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/</link>
       <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/</guid>
+      <guid>https://10degres.net/5-things-to-do-before-running-your-first-bug-bounty-program/</guid>
       <description>Welcome 2020! I will start this year with a set of articles about program management. In this one, I will try to explain some important things all companies should do BEFORE running a first bug bounty program. Since there is no official rules in bug bounty, we miss that, at the end you can always do whatever you want. So those articles are more about best practices/good tips.
 Do pentest/audits Test before the test.</description>
     </item>
     
     <item>
       <title>Bug bounty management, a bad example</title>
-      <link>http://10degres.net/bug-bounty-management-a-bad-example/</link>
+      <link>https://10degres.net/bug-bounty-management-a-bad-example/</link>
       <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/bug-bounty-management-a-bad-example/</guid>
-      <description>&lt;p&gt;As I lately released an article about a &lt;a href=&#34;http://10degres.net/bug-bounty-management-a-great-example-zomato/&#34;&gt;good bug bounty program example&lt;/a&gt;, I also wanted to write something about what kind of behaviours companies should avoid to keep the community motivated.&lt;/p&gt;
-&lt;p&gt;In 2017, I worked on a great program, so great that I published an article about them called &amp;ldquo;&lt;a href=&#34;http://10degres.net/the-bug-bounty-program-that-changed-my-life/&#34;&gt;The Bug Bounty program that changed my life&lt;/a&gt;&amp;rdquo;.
+      <guid>https://10degres.net/bug-bounty-management-a-bad-example/</guid>
+      <description>&lt;p&gt;As I lately released an article about a &lt;a href=&#34;https://10degres.net/bug-bounty-management-a-great-example-zomato/&#34;&gt;good bug bounty program example&lt;/a&gt;, I also wanted to write something about what kind of behaviours companies should avoid to keep the community motivated.&lt;/p&gt;
+&lt;p&gt;In 2017, I worked on a great program, so great that I published an article about them called &amp;ldquo;&lt;a href=&#34;https://10degres.net/the-bug-bounty-program-that-changed-my-life/&#34;&gt;The Bug Bounty program that changed my life&lt;/a&gt;&amp;rdquo;.
 Since I was very successful on that program, some weeks ago I decided to give another try.
 I quickly checked the policy on their Hackerone page and noticed some changes in the rules.
 I quickly reported some small bugs and also noticed some changes in the reports management process.&lt;/p&gt;
@@ -54,10 +54,10 @@ Here is my analysis.&lt;/p&gt;</description>
     
     <item>
       <title>Bug bounty management, a great example: Zomato</title>
-      <link>http://10degres.net/bug-bounty-management-a-great-example-zomato/</link>
+      <link>https://10degres.net/bug-bounty-management-a-great-example-zomato/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/bug-bounty-management-a-great-example-zomato/</guid>
+      <guid>https://10degres.net/bug-bounty-management-a-great-example-zomato/</guid>
       <description>&lt;p&gt;Since I decided to work on my advisor position in the bug bounty industry, I wanted to know more details about what makes a good program, what are the important keys and what to avoid.&lt;/p&gt;
 &lt;p&gt;I contacted Prateek Tiwari, lead security engineering at &lt;a href=&#34;https://twitter.com/Zomato&#34;&gt;Zomato&lt;/a&gt;, he was nice enough to answer all my questions.
 Let&amp;rsquo;s discover how Zomato became one of the best program, not only on Hackerone but in the whole bug bounty industry.&lt;/p&gt;</description>

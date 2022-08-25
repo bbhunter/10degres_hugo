@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>csrf on 10degres</title>
-    <link>http://10degres.net/tags/csrf/</link>
+    <link>https://10degres.net/tags/csrf/</link>
     <description>Recent content in csrf on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/csrf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/csrf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>An extremely buggy web app !</title>
-      <link>http://10degres.net/an-extremely-buggy-web-app/</link>
+      <link>https://10degres.net/an-extremely-buggy-web-app/</link>
       <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/an-extremely-buggy-web-app/</guid>
+      <guid>https://10degres.net/an-extremely-buggy-web-app/</guid>
       <description>&lt;p&gt;&lt;strong&gt;bWAPP&lt;/strong&gt; is a PHP web application which is intentionnally crackable. It covers a very large set of common vulns but also some unusual case you can meet on the Internet.&lt;/p&gt;
 &lt;p&gt;The goal here is to train your development skill and hacking knowledge to be able to write a better (more secure) code.
-Compared to &lt;a href=&#34;http://10degres.net/damn-vulnerable-web-application/&#34;&gt;DVWA&lt;/a&gt;, you have to consider bWAPP as a much more advanced level of difficulty.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/bwapp.png&#34; alt=&#34;bwapp&#34;&gt;&lt;/p&gt;</description>
+Compared to &lt;a href=&#34;https://10degres.net/damn-vulnerable-web-application/&#34;&gt;DVWA&lt;/a&gt;, you have to consider bWAPP as a much more advanced level of difficulty.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/bwapp.png&#34; alt=&#34;bwapp&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DVWA - CSRF</title>
-      <link>http://10degres.net/dvwa-csrf/</link>
+      <link>https://10degres.net/dvwa-csrf/</link>
       <pubDate>Thu, 26 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/dvwa-csrf/</guid>
+      <guid>https://10degres.net/dvwa-csrf/</guid>
       <description>&lt;p&gt;Cross-Site Request Forgery aka CSRF is an attack unintentionally triggered by the user himself.
 It sends HTTP requests to execute unexpected actions in different ways: trough &lt;code&gt;img&lt;/code&gt; tag to perform &lt;code&gt;GET&lt;/code&gt; requests or with Ajax requests when &lt;code&gt;POST&lt;/code&gt; is required.
-You can learn basic CSRF in &lt;a href=&#34;http://10degres.net/damn-vulnerable-web-application/&#34; title=&#34;Damn Vulnerable Web Application&#34;&gt;DVWA&lt;/a&gt;.&lt;/p&gt;
+You can learn basic CSRF in &lt;a href=&#34;https://10degres.net/damn-vulnerable-web-application/&#34; title=&#34;Damn Vulnerable Web Application&#34;&gt;DVWA&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To perform this CSRF you firstly need to log in, then you must visit a malicious site who will perform a stealth HTTP request who will submit the change password form with specific values.&lt;/p&gt;
 &lt;h2 id=&#34;low&#34;&gt;Low&lt;/h2&gt;
 &lt;p&gt;The original request can be found by using a local proxy like Burp Suite or analyzing HTTP headers with a browser extension like &lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/live-http-headers/&#34;&gt;Live HTTP Headers&lt;/a&gt;.
@@ -46,10 +46,10 @@ The payload:&lt;/p&gt;
     
     <item>
       <title>Damn Vulnerable Web Application</title>
-      <link>http://10degres.net/damn-vulnerable-web-application/</link>
+      <link>https://10degres.net/damn-vulnerable-web-application/</link>
       <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/damn-vulnerable-web-application/</guid>
+      <guid>https://10degres.net/damn-vulnerable-web-application/</guid>
       <description>&lt;p&gt;&lt;strong&gt;DVWA&lt;/strong&gt; is a PHP/MySQL web application that is intentionally vulnerable.
 The goal is to learn common web vulnerabilities and improve your security skills by training yourself on your own server.
 3 levels are available (low, medium and high) to perform those following attacks :&lt;/p&gt;
@@ -68,10 +68,10 @@ The goal is to learn common web vulnerabilities and improve your security skills
     
     <item>
       <title>Vulnerability - Cross Site Request Forgery aka CSRF</title>
-      <link>http://10degres.net/vulnerability-cross-site-request-forgery-aka-csrf/</link>
+      <link>https://10degres.net/vulnerability-cross-site-request-forgery-aka-csrf/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-cross-site-request-forgery-aka-csrf/</guid>
+      <guid>https://10degres.net/vulnerability-cross-site-request-forgery-aka-csrf/</guid>
       <description>Description Cross-Site Request Forgery (CSRF) by OWASP
 Cross-site request forgery by Wikipedia
 Cross-site request forgery by PortSwigger</description>

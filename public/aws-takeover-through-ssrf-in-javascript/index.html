@@ -10,7 +10,7 @@
     <meta name="keywords" content="developer,security,researcher,pentester,bugbounty,bughunter,tools,bash,php,python,golang">
 
     <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://10degres.net/images/aws-webservices.png"/>
+<meta name="twitter:image" content="https://10degres.net/images/aws-webservices.png"/>
 
 <meta name="twitter:title" content="AWS takeover through SSRF in JavaScript"/>
 <meta name="twitter:description" content="Here is the story of a bug I found in a private bug bounty program on Hackerone.
@@ -26,22 +26,22 @@ It took me exactly 12h30 -no break- to find it, exploit and report.
 I was able to dump the AWS credentials, this lead me to fully compromise the account of the company: 20 buckets and 80 EC2 instances (Amazon Elastic Compute Cloud) in my hands.
 Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also learnt alot during this sprint, so let&rsquo;s share!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://10degres.net/aws-takeover-through-ssrf-in-javascript/" />
+<meta property="og:url" content="https://10degres.net/aws-takeover-through-ssrf-in-javascript/" />
 
-<meta property="og:image" content="http://10degres.net/images/aws-webservices.png" />
+<meta property="og:image" content="https://10degres.net/images/aws-webservices.png" />
 <meta property="article:published_time" content="2018-10-02T00:00:00+00:00" />
 <meta property="article:modified_time" content="2018-10-02T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
 
 
     
-      <base href="http://10degres.net/aws-takeover-through-ssrf-in-javascript/">
+      <base href="https://10degres.net/aws-takeover-through-ssrf-in-javascript/">
     
     <title>
   AWS takeover through SSRF in JavaScript · 10degres
 </title>
 
     
-      <link rel="canonical" href="http://10degres.net/aws-takeover-through-ssrf-in-javascript/">
+      <link rel="canonical" href="https://10degres.net/aws-takeover-through-ssrf-in-javascript/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -51,7 +51,7 @@ Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also 
     
       
       
-      <link rel="stylesheet" href="http://10degres.net/assets/css/coder.min.3d8325016df2bf0f0e874e28c83131f668a953cb3245cf9391fae4ff5b76b2ed.css" integrity="sha256-PYMlAW3yvw8Oh04oyDEx9mipU8syRc&#43;Tkfrk/1t2su0=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://10degres.net/assets/css/coder.min.3d8325016df2bf0f0e874e28c83131f668a953cb3245cf9391fae4ff5b76b2ed.css" integrity="sha256-PYMlAW3yvw8Oh04oyDEx9mipU8syRc&#43;Tkfrk/1t2su0=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -59,11 +59,11 @@ Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also 
     
 
     
-      <link rel="stylesheet" href="http://10degres.net/assets/css/custom.css" />
+      <link rel="stylesheet" href="https://10degres.net/assets/css/custom.css" />
     
 
-    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.92.2" />
   </head>
@@ -72,7 +72,7 @@ Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also 
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="http://10degres.net/">
+    <a class="navigation-title" href="https://10degres.net/">
       10degres
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -81,23 +81,23 @@ Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also 
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/posts/">Blog</a>
+            <a class="navigation-link" href="https://10degres.net/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/cves/">CVEs</a>
+            <a class="navigation-link" href="https://10degres.net/cves/">CVEs</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/services/">Services</a>
+            <a class="navigation-link" href="https://10degres.net/services/">Services</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/press/">Press</a>
+            <a class="navigation-link" href="https://10degres.net/press/">Press</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://10degres.net/about/">About</a>
+            <a class="navigation-link" href="https://10degres.net/about/">About</a>
           </li>
         
       
@@ -131,13 +131,13 @@ Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also 
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="http://10degres.net/tags/bug-bounty/">bug bounty</a>
+    <a href="https://10degres.net/tags/bug-bounty/">bug bounty</a>
       <span class="separator">•</span>
-    <a href="http://10degres.net/tags/aws/">aws</a>
+    <a href="https://10degres.net/tags/aws/">aws</a>
       <span class="separator">•</span>
-    <a href="http://10degres.net/tags/ssrf/">ssrf</a>
+    <a href="https://10degres.net/tags/ssrf/">ssrf</a>
       <span class="separator">•</span>
-    <a href="http://10degres.net/tags/javascript/">javascript</a></div>
+    <a href="https://10degres.net/tags/javascript/">javascript</a></div>
 
         </div>
       </header>
@@ -308,7 +308,7 @@ Thanks <a href="https://stackoverflow.com/a/45529432">StackOverflow</a>.</p>
 <p>Since I found some S3 buckets related to ArticMonkey (<code>articmonkey-xxx</code>), I thought that this company might also use AWS servers for their webapp (which was also confirmed by the header in some responses <code>x-cache: Hit from cloudfront</code>).
 I quickly jumped on the list of the most common <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SSRF%20injection">SSRF URL for Cloud Instances</a>.</p>
 <p>And got a nice hit when I tried to access the metadatas of the instance.
-<a href="http://10degres.net/images/ssrf-aws-takeover-burpsuite.png" title="aws takeover through ssrf in javascript" target="_blank"><img src="http://10degres.net/images/ssrf-aws-takeover-burpsuite.png" alt="aws takeover through ssrf in javascript" /></a></p>
+<a href="https://10degres.net/images/ssrf-aws-takeover-burpsuite.png" title="aws takeover through ssrf in javascript" target="_blank"><img src="https://10degres.net/images/ssrf-aws-takeover-burpsuite.png" alt="aws takeover through ssrf in javascript" /></a></p>
 <p>Decoded output is the directory listing returned:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ami-id
 ami-launch-index
@@ -345,7 +345,7 @@ $ export AWS_SESSION_TOKEN<span style="color:#f92672">=</span>AQoDYXdzEJr...
 </code></pre></div><p>Checking my idendity with the following command proved that I was not myself anymore.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">aws sts get-caller-identity
 </code></pre></div><p>And then&hellip;<br>
-<a href="http://10degres.net/images/ssrf-aws-takeover-poc.png" title="aws takeover through ssrf in javascript" target="_blank"><img src="http://10degres.net/images/ssrf-aws-takeover-poc.png" alt="aws takeover through ssrf in javascript" /></a></p>
+<a href="https://10degres.net/images/ssrf-aws-takeover-poc.png" title="aws takeover through ssrf in javascript" target="_blank"><img src="https://10degres.net/images/ssrf-aws-takeover-poc.png" alt="aws takeover through ssrf in javascript" /></a></p>
 <p>Left: listing of the EC2 instances configured by ArticMonkey. Probably a big part -or the whole- of their system.</p>
 <p>Right: the company owns 20 buckets containing, highly sensitive datas from customers, static files for the web application and, according to the name of the buckets, probably logs/backups of their servers.</p>
 <p>Impact: lethal.</p>
@@ -410,7 +410,7 @@ if (!doNotTrack) {
 </script>
 
     
-      <script src="http://10degres.net/assets/js/scripts.js"></script>
+      <script src="https://10degres.net/assets/js/scripts.js"></script>
     
 
   </body>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rpc on 10degres</title>
-    <link>http://10degres.net/tags/rpc/</link>
+    <link>https://10degres.net/tags/rpc/</link>
     <description>Recent content in rpc on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/rpc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/rpc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SMB null session</title>
-      <link>http://10degres.net/smb-null-session/</link>
+      <link>https://10degres.net/smb-null-session/</link>
       <pubDate>Sat, 09 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/smb-null-session/</guid>
+      <guid>https://10degres.net/smb-null-session/</guid>
       <description>&lt;p&gt;While performing a pentest, if you discover a server running the &lt;a href=&#34;http://en.wikipedia.org/wiki/Server_Message_Block&#34; title=&#34;Server Message Block&#34;&gt;SMB protocol&lt;/a&gt; 
 you can test if it&amp;rsquo;s vulnerable to anonymous connection (also called null session) and then glean a lot of informations with
 a &lt;a href=&#34;http://en.wikipedia.org/wiki/Remote_procedure_call&#34; title=&#34;Remote Procedure Call&#34;&gt;RPC&lt;/a&gt; client.
 Nmap is usefull to locate that kind of service:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/smb-null-session-1.png&#34; alt=&#34;smb null session&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/smb-null-session-1.png&#34; alt=&#34;smb null session&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now you can try to interact with the remote machine with the help of &lt;a href=&#34;https://www.samba.org/samba/docs/man/manpages/rpcclient.1.html&#34; title=&#34;Man rpcclient&#34;&gt;rpcclient&lt;/a&gt;.
 To perform a null session you have to specify an empty user and an empty password.
 If the host is not vulnerable, you will get the following error:&lt;/p&gt;

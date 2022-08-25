@@ -6,7 +6,7 @@ tags:
 see_also:
   -
     link: Why Bug Bounty
-    url: http://10degres.net/why-bugbounty/
+    url: /why-bugbounty/
   -
     link: Why bug bounty hunters love the thrill of the chase
     url: https://www.csoonline.com/article/2846873/data-protection/why-bug-bounty-hunters-love-the-thrill-of-the-chase.html

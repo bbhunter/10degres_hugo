@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dns on 10degres</title>
-    <link>http://10degres.net/tags/dns/</link>
+    <link>https://10degres.net/tags/dns/</link>
     <description>Recent content in dns on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/dns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Subdomain takeover - DNS expiration</title>
-      <link>http://10degres.net/subdomain-takeover-dns-expiration/</link>
+      <link>https://10degres.net/subdomain-takeover-dns-expiration/</link>
       <pubDate>Wed, 12 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/subdomain-takeover-dns-expiration/</guid>
+      <guid>https://10degres.net/subdomain-takeover-dns-expiration/</guid>
       <description>&lt;p&gt;One quick and easy way to make cash in bug bounty job is subdomain takeover.
 The goal is to steal a forgetted/unused subdomain of your target and put a PoC in place.
 If you are able to do that, that means that instead of a plain text file, an attacker could replicate the true site of the victim and perform phishing.
 This way he could trick users and even the employees of the company to grab useful data like credentials, this can also have really huge impact on the companies reputation.&lt;/p&gt;
 &lt;p&gt;First of all you have to find a list of subdomains of your target.
-To perform that task, you can use a single tool like &lt;a href=&#34;http://10degres.net/theharvester/&#34;&gt;TheHarvester&lt;/a&gt; or &lt;a href=&#34;https://github.com/darkoperator/dnsrecon&#34;&gt;DNSRecon&lt;/a&gt;.&lt;/p&gt;</description>
+To perform that task, you can use a single tool like &lt;a href=&#34;https://10degres.net/theharvester/&#34;&gt;TheHarvester&lt;/a&gt; or &lt;a href=&#34;https://github.com/darkoperator/dnsrecon&#34;&gt;DNSRecon&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DNS enumeration with Host</title>
-      <link>http://10degres.net/dns-enumeration-with-host/</link>
+      <link>https://10degres.net/dns-enumeration-with-host/</link>
       <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/dns-enumeration-with-host/</guid>
+      <guid>https://10degres.net/dns-enumeration-with-host/</guid>
       <description>&lt;p&gt;While performing a pentest the information gathering phase is the most important, it&amp;rsquo;s the key of a successful test.
 The DNS is very great source of informations, whith some simple queries you will be able to grab usefull datas about the domain you are targeting.
 The &lt;code&gt;host&lt;/code&gt; command is a very powerful DNS lookup utility which is present in all Linux distribution.&lt;/p&gt;
 &lt;p&gt;For the examples, I will use a domain which allows that kind of query at this moment.&lt;/p&gt;
 &lt;h2 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h2&gt;
 &lt;p&gt;As the &lt;code&gt;man&lt;/code&gt; says, &lt;code&gt;host&lt;/code&gt; is normally used to convert names to IP addresses and vice versa:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/dns-enumeration-host-basic.png&#34; alt=&#34;DNS enumeration host basic&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/dns-enumeration-host-basic.png&#34; alt=&#34;DNS enumeration host basic&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If the domain doesn&amp;rsquo;t exist, you will meet that message: &lt;code&gt;Host pmolkijn.de not found: 3(NXDOMAIN)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;If the ip doesn&amp;rsquo;t point anywhere, you will get this message: &lt;code&gt;Host 91.121.139.2 not found: 3(NXDOMAIN)&lt;/code&gt;&lt;/p&gt;</description>
     </item>

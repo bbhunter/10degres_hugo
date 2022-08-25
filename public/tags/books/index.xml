@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>books on 10degres</title>
-    <link>http://10degres.net/tags/books/</link>
+    <link>https://10degres.net/tags/books/</link>
     <description>Recent content in books on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 1990 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 1990 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/books/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resources</title>
-      <link>http://10degres.net/resources/</link>
+      <link>https://10degres.net/resources/</link>
       <pubDate>Mon, 01 Jan 1990 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/resources/</guid>
+      <guid>https://10degres.net/resources/</guid>
       <description>&lt;p&gt;There is a lot of resources available about hacking and security, here are my favorites.&lt;/p&gt;
 &lt;p&gt;Some blogs I frequently visit from bounty hunters themself.
 They explain their findings, why it occurs, how they were able to exploit and sometimes how much they win.

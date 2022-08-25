@@ -7,7 +7,7 @@ tags:
 see_also:
   -
     link: Introduction to DVWA
-    url: http://10degres.net/damn-vulnerable-web-application/
+    url: /damn-vulnerable-web-application/
   -
     link: My favourites browser extensions
     url: /browser-extensions/

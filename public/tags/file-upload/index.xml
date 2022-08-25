@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>file upload on 10degres</title>
-    <link>http://10degres.net/tags/file-upload/</link>
+    <link>https://10degres.net/tags/file-upload/</link>
     <description>Recent content in file upload on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/file-upload/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/file-upload/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DVWA - File upload</title>
-      <link>http://10degres.net/dvwa-file-upload/</link>
+      <link>https://10degres.net/dvwa-file-upload/</link>
       <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/dvwa-file-upload/</guid>
+      <guid>https://10degres.net/dvwa-file-upload/</guid>
       <description>&lt;p&gt;A very useful aspect of PHP is the ability to manage file uploads.
 Allowing users to send a file opens a whole can of worms, so be careful when allowing this fonctionnality.
 If wrong protected it could result of a full control of the server.
@@ -29,15 +29,15 @@ With DVWA you can learn effective defense.&lt;/p&gt;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The first level is the easiest because it has absolutly no protection against malicious file upload.
 Choose a file - in my case a PHP shell - and submit the form:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/dvwa-file-upload_1.png&#34; alt=&#34;DVWA file upload&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/dvwa-file-upload_1.png&#34; alt=&#34;DVWA file upload&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Damn Vulnerable Web Application</title>
-      <link>http://10degres.net/damn-vulnerable-web-application/</link>
+      <link>https://10degres.net/damn-vulnerable-web-application/</link>
       <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/damn-vulnerable-web-application/</guid>
+      <guid>https://10degres.net/damn-vulnerable-web-application/</guid>
       <description>&lt;p&gt;&lt;strong&gt;DVWA&lt;/strong&gt; is a PHP/MySQL web application that is intentionally vulnerable.
 The goal is to learn common web vulnerabilities and improve your security skills by training yourself on your own server.
 3 levels are available (low, medium and high) to perform those following attacks :&lt;/p&gt;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dvwa on 10degres</title>
-    <link>http://10degres.net/tags/dvwa/</link>
+    <link>https://10degres.net/tags/dvwa/</link>
     <description>Recent content in dvwa on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/dvwa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/dvwa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DVWA - CSRF</title>
-      <link>http://10degres.net/dvwa-csrf/</link>
+      <link>https://10degres.net/dvwa-csrf/</link>
       <pubDate>Thu, 26 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/dvwa-csrf/</guid>
+      <guid>https://10degres.net/dvwa-csrf/</guid>
       <description>&lt;p&gt;Cross-Site Request Forgery aka CSRF is an attack unintentionally triggered by the user himself.
 It sends HTTP requests to execute unexpected actions in different ways: trough &lt;code&gt;img&lt;/code&gt; tag to perform &lt;code&gt;GET&lt;/code&gt; requests or with Ajax requests when &lt;code&gt;POST&lt;/code&gt; is required.
-You can learn basic CSRF in &lt;a href=&#34;http://10degres.net/damn-vulnerable-web-application/&#34; title=&#34;Damn Vulnerable Web Application&#34;&gt;DVWA&lt;/a&gt;.&lt;/p&gt;
+You can learn basic CSRF in &lt;a href=&#34;https://10degres.net/damn-vulnerable-web-application/&#34; title=&#34;Damn Vulnerable Web Application&#34;&gt;DVWA&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To perform this CSRF you firstly need to log in, then you must visit a malicious site who will perform a stealth HTTP request who will submit the change password form with specific values.&lt;/p&gt;
 &lt;h2 id=&#34;low&#34;&gt;Low&lt;/h2&gt;
 &lt;p&gt;The original request can be found by using a local proxy like Burp Suite or analyzing HTTP headers with a browser extension like &lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/live-http-headers/&#34;&gt;Live HTTP Headers&lt;/a&gt;.
@@ -34,27 +34,27 @@ The payload:&lt;/p&gt;
     
     <item>
       <title>DVWA - Insecure CAPTCHA</title>
-      <link>http://10degres.net/dvwa-insecure-captcha/</link>
+      <link>https://10degres.net/dvwa-insecure-captcha/</link>
       <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/dvwa-insecure-captcha/</guid>
+      <guid>https://10degres.net/dvwa-insecure-captcha/</guid>
       <description>&lt;p&gt;Captchas are usually used to prevent robots to make an action instead of humans.
 It should add an extra layer of security but badly configured it could lead to unauthorized access&amp;hellip;&lt;/p&gt;
 &lt;p&gt;When you try to submit the form without providing a captcha code, you get the following error:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/dvwa-captcha-error.png&#34; alt=&#34;dvwa captcha error&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/dvwa-captcha-error.png&#34; alt=&#34;dvwa captcha error&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;low&#34;&gt;Low&lt;/h2&gt;
 &lt;p&gt;Try to submit an empty password and take a look to the HTTP request and her parameters, you can notice the strange variable &lt;code&gt;step&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/dvwa-captcha-low.png&#34; alt=&#34;dvwa captcha low&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/dvwa-captcha-low.png&#34; alt=&#34;dvwa captcha low&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This variable is the step in the change password functionnality.
 So if you simply change it to &lt;code&gt;2&lt;/code&gt; and replay the request with this new value, it works perfectly.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DVWA - File upload</title>
-      <link>http://10degres.net/dvwa-file-upload/</link>
+      <link>https://10degres.net/dvwa-file-upload/</link>
       <pubDate>Wed, 11 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/dvwa-file-upload/</guid>
+      <guid>https://10degres.net/dvwa-file-upload/</guid>
       <description>&lt;p&gt;A very useful aspect of PHP is the ability to manage file uploads.
 Allowing users to send a file opens a whole can of worms, so be careful when allowing this fonctionnality.
 If wrong protected it could result of a full control of the server.
@@ -71,15 +71,15 @@ With DVWA you can learn effective defense.&lt;/p&gt;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The first level is the easiest because it has absolutly no protection against malicious file upload.
 Choose a file - in my case a PHP shell - and submit the form:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/dvwa-file-upload_1.png&#34; alt=&#34;DVWA file upload&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/dvwa-file-upload_1.png&#34; alt=&#34;DVWA file upload&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DVWA - XSS reflected</title>
-      <link>http://10degres.net/dvwa-xss-reflected/</link>
+      <link>https://10degres.net/dvwa-xss-reflected/</link>
       <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/dvwa-xss-reflected/</guid>
+      <guid>https://10degres.net/dvwa-xss-reflected/</guid>
       <description>&lt;p&gt;According to OWASP Top 10, Cross-Site Scripting aka XSS takes the 3rd place in the more common and important web vulnerabilities list.
 Her primary goal is to spoof the session of another user by stealing his cookie id, usually a privileged user like an admin. 
 You can train XSS in Damn Vulnerable Web Application, here are some tests you can perform.&lt;/p&gt;
@@ -98,10 +98,10 @@ You can train XSS in Damn Vulnerable Web Application, here are some tests you ca
     
     <item>
       <title>Damn Vulnerable Web Application</title>
-      <link>http://10degres.net/damn-vulnerable-web-application/</link>
+      <link>https://10degres.net/damn-vulnerable-web-application/</link>
       <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/damn-vulnerable-web-application/</guid>
+      <guid>https://10degres.net/damn-vulnerable-web-application/</guid>
       <description>&lt;p&gt;&lt;strong&gt;DVWA&lt;/strong&gt; is a PHP/MySQL web application that is intentionally vulnerable.
 The goal is to learn common web vulnerabilities and improve your security skills by training yourself on your own server.
 3 levels are available (low, medium and high) to perform those following attacks :&lt;/p&gt;

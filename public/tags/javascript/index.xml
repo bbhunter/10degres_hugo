@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on 10degres</title>
-    <link>http://10degres.net/tags/javascript/</link>
+    <link>https://10degres.net/tags/javascript/</link>
     <description>Recent content in javascript on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS takeover through SSRF in JavaScript</title>
-      <link>http://10degres.net/aws-takeover-through-ssrf-in-javascript/</link>
+      <link>https://10degres.net/aws-takeover-through-ssrf-in-javascript/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/aws-takeover-through-ssrf-in-javascript/</guid>
+      <guid>https://10degres.net/aws-takeover-through-ssrf-in-javascript/</guid>
       <description>&lt;p&gt;Here is the story of a bug I found in a private bug bounty program on &lt;a href=&#34;https://hackerone.com/&#34;&gt;Hackerone&lt;/a&gt;.
 It took me exactly 12h30 -no break- to find it, exploit and report.
 I was able to dump the AWS credentials, this lead me to fully compromise the account of the company: 20 buckets and 80 EC2 instances (Amazon Elastic Compute Cloud) in my hands.

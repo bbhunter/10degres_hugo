@@ -7,7 +7,7 @@ tags:
 see_also:
   -
     link: Introduction to pentesting
-    url: http://10degres.net/introduction-to-pentesting/
+    url: /introduction-to-pentesting/
 ---
 Weevely is a PHP command line web shell usually used as a backdoor while performing the post exploitation phase of a penetration test. 
 By default in Kali Linux, the installed version 1.1 isn't supported anymore but version 3 is available on [GitHub](https://github.com/epinna/weevely3 "Weevely on GitHub").

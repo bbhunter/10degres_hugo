@@ -84,7 +84,7 @@ When a XSS is found, no matter the code you submit, it will be evaluated.
 You can then perform a redirection:
 
 ```html
-<script>document.location='http://10degres.net'</script>
+<script>document.location='http://www.example.com'</script>
 ```
 
 Deface the site:

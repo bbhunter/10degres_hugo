@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wordpress on 10degres</title>
-    <link>http://10degres.net/tags/wordpress/</link>
+    <link>https://10degres.net/tags/wordpress/</link>
     <description>Recent content in wordpress on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wordpress testing</title>
-      <link>http://10degres.net/wordpress-testing/</link>
+      <link>https://10degres.net/wordpress-testing/</link>
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/wordpress-testing/</guid>
+      <guid>https://10degres.net/wordpress-testing/</guid>
       <description>&lt;p&gt;Here is the way I usually follow to test a Wordpress install.&lt;/p&gt;
 &lt;h2 id=&#34;information-gathering&#34;&gt;Information gathering&lt;/h2&gt;
 &lt;p&gt;Get basic informations with &lt;a href=&#34;https://wpscan.org/&#34;&gt;WPScan&lt;/a&gt;:&lt;/p&gt;
@@ -29,10 +29,10 @@ This could reveal more themes/plugins.&lt;/p&gt;</description>
     
     <item>
       <title>Unauthenticated SQL injection in Wordpress plugin “gallery-images” by Huge-IT</title>
-      <link>http://10degres.net/cves/cve-2016-11018/</link>
+      <link>https://10degres.net/cves/cve-2016-11018/</link>
       <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/cves/cve-2016-11018/</guid>
+      <guid>https://10degres.net/cves/cve-2016-11018/</guid>
       <description>&lt;p&gt;An issue was discovered in the Huge-IT gallery-images plugin before 1.9.0 for WordPress. The headers &lt;code&gt;Client-Ip&lt;/code&gt; and &lt;code&gt;X-Forwarded-For&lt;/code&gt; are prone to unauthenticated SQL injection. The affected file is &lt;code&gt;gallery-images.php&lt;/code&gt;. The affected function is &lt;code&gt;huge_it_image_gallery_ajax_callback()&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;mitre: &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-11018&#34;&gt;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-11018&lt;/a&gt;&lt;/li&gt;
@@ -68,10 +68,10 @@ First thing I did was to locate PHP files, and grepping the result to find &lt;c
     
     <item>
       <title>Secure your Wordpress</title>
-      <link>http://10degres.net/secure-your-wordpress/</link>
+      <link>https://10degres.net/secure-your-wordpress/</link>
       <pubDate>Sun, 10 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/secure-your-wordpress/</guid>
+      <guid>https://10degres.net/secure-your-wordpress/</guid>
       <description>&lt;p&gt;With more than 60 million websites, WordPress is the most popular CMS currently in use but it&amp;rsquo;s also based on the most hacked environment aka LAMP.&lt;/p&gt;
 &lt;p&gt;As we all know, there is no way to stop a determined hacker but you can slow him down or detect him before things become serious.
 Below some techniques to improve the security of your site. 
@@ -83,10 +83,10 @@ Wordpress says that automatic update changes file/dir permissions, that&amp;rsqu
     
     <item>
       <title>Vulnerability in Wordpress Video Gallery</title>
-      <link>http://10degres.net/vulnerability-in-wordpress-video-gallery/</link>
+      <link>https://10degres.net/vulnerability-in-wordpress-video-gallery/</link>
       <pubDate>Thu, 12 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-in-wordpress-video-gallery/</guid>
+      <guid>https://10degres.net/vulnerability-in-wordpress-video-gallery/</guid>
       <description>&lt;p&gt;Recently reported by Claudio Viviani, there is an SQL Injection available in this plugin who has been downloaded more than 100k.
 Developped by Apptha (again), the current version 2.7 still vulnerable and downloadable from
 the official &lt;a href=&#34;https://wordpress.org/plugins/contus-video-gallery/&#34; title=&#34;Wordpress Video Gallery&#34;&gt;Wordpress Plugin Directory&lt;/a&gt;.&lt;/p&gt;
@@ -103,10 +103,10 @@ According to the PHP documentation, &lt;a href=&#34;http://php.net/manual/fr/fi
     
     <item>
       <title>Vulnerability in HD FLV Player</title>
-      <link>http://10degres.net/vulnerability-in-hd-flv-player/</link>
+      <link>https://10degres.net/vulnerability-in-hd-flv-player/</link>
       <pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-in-hd-flv-player/</guid>
+      <guid>https://10degres.net/vulnerability-in-hd-flv-player/</guid>
       <description>&lt;p&gt;Reported by &lt;a href=&#34;http://blog.sucuri.net/2014/12/critical-vulnerability-in-joomla-hd-flv-player-plugin.html&#34; title=&#34;Sucuri&#34;&gt;Sucuri&lt;/a&gt;,
 the HD FLV Player suffers of an Arbitrary File Download vulnerability which is of course considered critical.&lt;/p&gt;
 &lt;p&gt;The vulnerable code can be found in &lt;code&gt;download.php&lt;/code&gt;:&lt;/p&gt;

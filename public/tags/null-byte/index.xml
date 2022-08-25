@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>null byte on 10degres</title>
-    <link>http://10degres.net/tags/null-byte/</link>
+    <link>https://10degres.net/tags/null-byte/</link>
     <description>Recent content in null byte on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Jan 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/null-byte/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jan 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/null-byte/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Null Byte Injection</title>
-      <link>http://10degres.net/null-byte-injection/</link>
+      <link>https://10degres.net/null-byte-injection/</link>
       <pubDate>Sat, 10 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/null-byte-injection/</guid>
+      <guid>https://10degres.net/null-byte-injection/</guid>
       <description>&lt;p&gt;I recently read a nice article on &lt;a href=&#34;http://resources.infosecinstitute.com/null-byte-injection-php/&#34; title=&#34;Null byte injection&#34;&gt;InfoSec Institute&lt;/a&gt;
 (again) about Null byte injection.
 However I met some problems to make it works in a real situation so I decided to write my own.&lt;/p&gt;

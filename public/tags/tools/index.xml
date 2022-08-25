@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tools on 10degres</title>
-    <link>http://10degres.net/tags/tools/</link>
+    <link>https://10degres.net/tags/tools/</link>
     <description>Recent content in tools on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub tools collection</title>
-      <link>http://10degres.net/github-tools-collection/</link>
+      <link>https://10degres.net/github-tools-collection/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/github-tools-collection/</guid>
+      <guid>https://10degres.net/github-tools-collection/</guid>
       <description>&lt;p&gt;This is the current thread in the bug hunter community: how to find sensitive informations on GitHub. Understand how to find tokens/keys/passwords on the largest code database in the world in order to pwn a company and get massive rewards. Using tools or doing it manually, some very talented people like &lt;a href=&#34;https://twitter.com/Th3G3nt3lman&#34;&gt;Th3G3nt3lman&lt;/a&gt; are real wizards when it comes to discover such treasures. Many tools are now available but since I wanted to learn Python for a long time, I jumped at the opportunity. In this article I&amp;rsquo;m going to present some scripts I wrote in PHP and Python to fit my needs.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Cloudflare origin server</title>
-      <link>http://10degres.net/cloudflare-origin-server/</link>
+      <link>https://10degres.net/cloudflare-origin-server/</link>
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/cloudflare-origin-server/</guid>
+      <guid>https://10degres.net/cloudflare-origin-server/</guid>
       <description>&lt;p&gt;What is &lt;a href=&#34;https://www.cloudflare.com/&#34;&gt;Cloudflare&lt;/a&gt;? In short: Content Delivery Network (CDN), Web Application Firewall (WAF) and cherry/icing on the cake, 1 year go Cloudflare released a fast DNS resolver.
 With 4 pricings and more than &lt;a href=&#34;https://www.cloudflare.com/case-studies/&#34;&gt;16M Internet properties&lt;/a&gt;, Cloudflare is now one of the most popular firewall used for web applications.
 Working as a reverse proxy the WAF does not only offer a protection against DDOS but can also trigger an alert/error when he detects an attack.
@@ -30,10 +30,10 @@ But what if you can bypass all these protections in a second making the defense 
     
     <item>
       <title>Colorize your hunt</title>
-      <link>http://10degres.net/colorize-your-hunt/</link>
+      <link>https://10degres.net/colorize-your-hunt/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/colorize-your-hunt/</guid>
+      <guid>https://10degres.net/colorize-your-hunt/</guid>
       <description>&lt;p&gt;As a full time bug hunter, it&amp;rsquo;s important to use the tools you are confortable with, sometimes a small improvement can change your life.
 During the great 3 days course presented by &lt;a href=&#34;http://www.agarri.fr/&#34;&gt;Nicolas Grégoire&lt;/a&gt;, he showed us a browser called Autochrome.
 Combined with a tiny Burp Suite extension, it becomes very easy to visualize the things you really want to see and reduce the noise for your eyes.
@@ -42,10 +42,10 @@ In this article I will show you my current configuration.&lt;/p&gt;</description
     
     <item>
       <title>Subdomain enumeration</title>
-      <link>http://10degres.net/subdomain-enumeration/</link>
+      <link>https://10degres.net/subdomain-enumeration/</link>
       <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/subdomain-enumeration/</guid>
+      <guid>https://10degres.net/subdomain-enumeration/</guid>
       <description>&lt;p&gt;A friend recently asked me what methods I use to find subdomains.
 To be honest I was confused, like &lt;em&gt;&amp;ldquo;oooohhh so much, brute force mmm&amp;hellip; zone transfer and&amp;hellip; brute for&amp;hellip; wait Google and mmm&amp;hellip; many other tools!&amp;quot;&lt;/em&gt;
 What a shame that I was so inaccurate after so much time spent to look for subdomains.
@@ -56,10 +56,10 @@ Of course this list is far from exhaustive, there are many new stuff every day, 
     
     <item>
       <title>Actarus code release</title>
-      <link>http://10degres.net/actarus-code-release/</link>
+      <link>https://10degres.net/actarus-code-release/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/actarus-code-release/</guid>
+      <guid>https://10degres.net/actarus-code-release/</guid>
       <description>&lt;p&gt;Actarus is a custom tool that can perform automatic recon and store all datas in a database.
 Afterwards you could consult/search keywords in it to find vulnerabilities or at least entry points.&lt;/p&gt;
 &lt;p&gt;After some months of inactivity, I finally decided to publicly release the source code of Actarus.
@@ -68,24 +68,24 @@ I started this project to learn Symfony, now I hate it. Maybe someone will give 
     
     <item>
       <title>Subdomain takeover - DNS expiration</title>
-      <link>http://10degres.net/subdomain-takeover-dns-expiration/</link>
+      <link>https://10degres.net/subdomain-takeover-dns-expiration/</link>
       <pubDate>Wed, 12 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/subdomain-takeover-dns-expiration/</guid>
+      <guid>https://10degres.net/subdomain-takeover-dns-expiration/</guid>
       <description>&lt;p&gt;One quick and easy way to make cash in bug bounty job is subdomain takeover.
 The goal is to steal a forgetted/unused subdomain of your target and put a PoC in place.
 If you are able to do that, that means that instead of a plain text file, an attacker could replicate the true site of the victim and perform phishing.
 This way he could trick users and even the employees of the company to grab useful data like credentials, this can also have really huge impact on the companies reputation.&lt;/p&gt;
 &lt;p&gt;First of all you have to find a list of subdomains of your target.
-To perform that task, you can use a single tool like &lt;a href=&#34;http://10degres.net/theharvester/&#34;&gt;TheHarvester&lt;/a&gt; or &lt;a href=&#34;https://github.com/darkoperator/dnsrecon&#34;&gt;DNSRecon&lt;/a&gt;.&lt;/p&gt;</description>
+To perform that task, you can use a single tool like &lt;a href=&#34;https://10degres.net/theharvester/&#34;&gt;TheHarvester&lt;/a&gt; or &lt;a href=&#34;https://github.com/darkoperator/dnsrecon&#34;&gt;DNSRecon&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>GitHub search</title>
-      <link>http://10degres.net/github-search/</link>
+      <link>https://10degres.net/github-search/</link>
       <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/github-search/</guid>
+      <guid>https://10degres.net/github-search/</guid>
       <description>&lt;p&gt;We all know the famous quote &amp;ldquo;&lt;em&gt;Think out of the box&lt;/em&gt;&amp;rdquo;.
 Technical knowledge is important but creativity is also.
 In bug bounty, to get nice rewards, sometimes you don&amp;rsquo;t need to be a crazy coder or great network engineer, you simply need to try what other didn&amp;rsquo;t.&lt;/p&gt;
@@ -98,10 +98,10 @@ Since I don&amp;rsquo;t understand Ruby, I wrote my own tool with PHP.&lt;/p&gt;
     
     <item>
       <title>Browser extensions</title>
-      <link>http://10degres.net/browser-extensions/</link>
+      <link>https://10degres.net/browser-extensions/</link>
       <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/browser-extensions/</guid>
+      <guid>https://10degres.net/browser-extensions/</guid>
       <description>&lt;p&gt;There is a lot of browser extensions developed by the community, here are my favorites.&lt;/p&gt;
 &lt;h2 id=&#34;firefox&#34;&gt;Firefox&lt;/h2&gt;
 &lt;p&gt;All of this following extensions can be found in the &lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/collections/yehgdotnet/webhacker/&#34; title=&#34;HackerFox&#34;&gt;HackerFox&lt;/a&gt; suite.&lt;/p&gt;
@@ -119,10 +119,10 @@ display informations about the query : headers, cookies, POST data, time and 
     
     <item>
       <title>Resources</title>
-      <link>http://10degres.net/resources/</link>
+      <link>https://10degres.net/resources/</link>
       <pubDate>Mon, 01 Jan 1990 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/resources/</guid>
+      <guid>https://10degres.net/resources/</guid>
       <description>&lt;p&gt;There is a lot of resources available about hacking and security, here are my favorites.&lt;/p&gt;
 &lt;p&gt;Some blogs I frequently visit from bounty hunters themself.
 They explain their findings, why it occurs, how they were able to exploit and sometimes how much they win.
@@ -137,10 +137,10 @@ Sometime it works, sometimes not but bug bounty is also about patience. Happy re
     
     <item>
       <title>Pentest - Exploitation tools</title>
-      <link>http://10degres.net/pentest-exploitation-tools/</link>
+      <link>https://10degres.net/pentest-exploitation-tools/</link>
       <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/pentest-exploitation-tools/</guid>
+      <guid>https://10degres.net/pentest-exploitation-tools/</guid>
       <description>&lt;p&gt;Below some tools you can use for exploitation while performing a penetration test:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://labs.portcullis.co.uk/tools/acccheck/&#34;&gt;acccheck&lt;/a&gt;: SMB brute forcer (login/password)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.aircrack-ng.org/&#34; title=&#34;Aircrack-ng&#34;&gt;Aircrack&lt;/a&gt;: a suite of tools for 802.11a/b/g WEP and WPA cracking&lt;/p&gt;
@@ -155,10 +155,10 @@ Sometime it works, sometimes not but bug bounty is also about patience. Happy re
     
     <item>
       <title>Pentest - Information gathering tools</title>
-      <link>http://10degres.net/pentest-information-gathering-tools/</link>
+      <link>https://10degres.net/pentest-information-gathering-tools/</link>
       <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/pentest-information-gathering-tools/</guid>
+      <guid>https://10degres.net/pentest-information-gathering-tools/</guid>
       <description>&lt;p&gt;Below some tools you can use for information gathering while performing a penetration test:&lt;/p&gt;
 &lt;h2 id=&#34;online&#34;&gt;Online&lt;/h2&gt;
 &lt;p&gt;googledorks from &lt;a href=&#34;http://www.hackersforcharity.org/ghdb/&#34; title=&#34;Hackers for Charity Googledorks&#34;&gt;Hackers for Charity&lt;/a&gt; and 
@@ -179,10 +179,10 @@ collection of uncomplicated, powerful network tools&lt;/p&gt;</description>
     
     <item>
       <title>Pentest - Post exploitation tools</title>
-      <link>http://10degres.net/pentest-post-exploitation-tools/</link>
+      <link>https://10degres.net/pentest-post-exploitation-tools/</link>
       <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/pentest-post-exploitation-tools/</guid>
+      <guid>https://10degres.net/pentest-post-exploitation-tools/</guid>
       <description>&lt;p&gt;Below some tools you can use for post exploitation while performing a penetration test:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://cryptcat.sourceforge.net/&#34; title=&#34;Cryptcat&#34;&gt;Cryptcat&lt;/a&gt;:
 Netcat enhanced with twofish encryption&lt;/p&gt;
@@ -196,10 +196,10 @@ networking utility which reads and writes data across network connections using 
     
     <item>
       <title>Pentest - Vulnerability assessment tools</title>
-      <link>http://10degres.net/pentest-vulnerability-assessment-tools/</link>
+      <link>https://10degres.net/pentest-vulnerability-assessment-tools/</link>
       <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/pentest-vulnerability-assessment-tools/</guid>
+      <guid>https://10degres.net/pentest-vulnerability-assessment-tools/</guid>
       <description>&lt;p&gt;Below some tools you can use for scans and vulnerability assessment while performing a penetration test:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.exploit-db.com/&#34; title=&#34;exploit-db&#34;&gt;exploit-db&lt;/a&gt;: The Exploit Database&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://rgaucher.info/beta/grabber/&#34;&gt;grabber&lt;/a&gt;: web application scanner&lt;/p&gt;
@@ -213,10 +213,10 @@ networking utility which reads and writes data across network connections using 
     
     <item>
       <title>Vulnerability - Cross Origin Resource Sharing aka CORS</title>
-      <link>http://10degres.net/vulnerability-cross-origin-resource-sharing-aka-cors/</link>
+      <link>https://10degres.net/vulnerability-cross-origin-resource-sharing-aka-cors/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-cross-origin-resource-sharing-aka-cors/</guid>
+      <guid>https://10degres.net/vulnerability-cross-origin-resource-sharing-aka-cors/</guid>
       <description>Description CORS OriginHeaderScrutiny by OWASP
 Cross-origin resource sharing by Wikipedia
 Cross-origin resource sharing by PortSwigger
@@ -231,10 +231,10 @@ Tools testcors by me</description>
     
     <item>
       <title>Vulnerability - Cross Site Scripting aka XSS</title>
-      <link>http://10degres.net/vulnerability-cross-site-scripting-aka-xss/</link>
+      <link>https://10degres.net/vulnerability-cross-site-scripting-aka-xss/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-cross-site-scripting-aka-xss/</guid>
+      <guid>https://10degres.net/vulnerability-cross-site-scripting-aka-xss/</guid>
       <description>Description Cross-site Scripting (XSS) by OWASP
 Cross-site scripting by Wikipedia
 Cross-site scripting (DOM-based) by PortSwigger
@@ -249,10 +249,10 @@ XSS Hunter by Mandatory</description>
     
     <item>
       <title>Vulnerability - SQL Injection aka SQLi</title>
-      <link>http://10degres.net/vulnerability-sql-injection-aka-sqli/</link>
+      <link>https://10degres.net/vulnerability-sql-injection-aka-sqli/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-sql-injection-aka-sqli/</guid>
+      <guid>https://10degres.net/vulnerability-sql-injection-aka-sqli/</guid>
       <description>Description SQL Injection overview by OWASP
 SQL injection by Wikipedia
 SQL statement in request parameter by PortSwigger
@@ -268,10 +268,10 @@ Hacktivity 2012 - Joe McCray - Big Bang Theory - Pentesting high security enviro
     
     <item>
       <title>Vulnerability - Subdomain takeover</title>
-      <link>http://10degres.net/vulnerability-subdomain-takeover/</link>
+      <link>https://10degres.net/vulnerability-subdomain-takeover/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/vulnerability-subdomain-takeover/</guid>
+      <guid>https://10degres.net/vulnerability-subdomain-takeover/</guid>
       <description>Articles Hostile subdomain takeover by Detectify
 Hijacking of abandoned subdomains by Detectify
 Tools dnsexpire by me

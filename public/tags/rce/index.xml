@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rce on 10degres</title>
-    <link>http://10degres.net/tags/rce/</link>
+    <link>https://10degres.net/tags/rce/</link>
     <description>Recent content in rce on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/rce/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/rce/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unrestricted file upload in SimpleJobScript by Niteosoft</title>
-      <link>http://10degres.net/cves/cve-2020-8440/</link>
+      <link>https://10degres.net/cves/cve-2020-8440/</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/cves/cve-2020-8440/</guid>
+      <guid>https://10degres.net/cves/cve-2020-8440/</guid>
       <description>controllers/page_apply.php in Simplejobscript.com SJS through 1.66 is prone to unauthenticated Remote Code Execution by uploading a PHP script as a resume.
  mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8440 public announcement: https://github.com/niteosoft/simplejobscript/issues/10  </description>
     </item>
     
     <item>
       <title>The Bug Bounty program that changed my life</title>
-      <link>http://10degres.net/the-bug-bounty-program-that-changed-my-life/</link>
+      <link>https://10degres.net/the-bug-bounty-program-that-changed-my-life/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/the-bug-bounty-program-that-changed-my-life/</guid>
+      <guid>https://10degres.net/the-bug-bounty-program-that-changed-my-life/</guid>
       <description>&lt;p&gt;This is a real story or not, that occured in mid 2017 or not, about a private program or not, on Hackerone or not, believe me or not, but it changed my life.
 I would like to thanks all the people from this company I talked with.
 They were very nice with me, very fast to fix the bugs and I always got the rewards in less than 7 days, frequently the day of the report, even for the smallest bugs.
@@ -31,10 +31,10 @@ Thanks to them, I wish we could find more program like this one.&lt;/p&gt;</desc
     
     <item>
       <title>Wordpress testing</title>
-      <link>http://10degres.net/wordpress-testing/</link>
+      <link>https://10degres.net/wordpress-testing/</link>
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/wordpress-testing/</guid>
+      <guid>https://10degres.net/wordpress-testing/</guid>
       <description>&lt;p&gt;Here is the way I usually follow to test a Wordpress install.&lt;/p&gt;
 &lt;h2 id=&#34;information-gathering&#34;&gt;Information gathering&lt;/h2&gt;
 &lt;p&gt;Get basic informations with &lt;a href=&#34;https://wpscan.org/&#34;&gt;WPScan&lt;/a&gt;:&lt;/p&gt;

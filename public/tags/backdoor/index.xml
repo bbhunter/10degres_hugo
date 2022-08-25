@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>backdoor on 10degres</title>
-    <link>http://10degres.net/tags/backdoor/</link>
+    <link>https://10degres.net/tags/backdoor/</link>
     <description>Recent content in backdoor on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/backdoor/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Feb 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/backdoor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Weevely</title>
-      <link>http://10degres.net/weevely/</link>
+      <link>https://10degres.net/weevely/</link>
       <pubDate>Thu, 19 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/weevely/</guid>
+      <guid>https://10degres.net/weevely/</guid>
       <description>&lt;p&gt;Weevely is a PHP command line web shell usually used as a backdoor while performing the post exploitation phase of a penetration test.
 By default in Kali Linux, the installed version 1.1 isn&amp;rsquo;t supported anymore but version 3 is available on &lt;a href=&#34;https://github.com/epinna/weevely3&#34; title=&#34;Weevely on GitHub&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Generate the backdoor:&lt;/p&gt;

@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>s3 on 10degres</title>
-    <link>http://10degres.net/tags/s3/</link>
+    <link>https://10degres.net/tags/s3/</link>
     <description>Recent content in s3 on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/s3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/s3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kick the bucket</title>
-      <link>http://10degres.net/kick-the-bucket/</link>
+      <link>https://10degres.net/kick-the-bucket/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/kick-the-bucket/</guid>
-      <description>&lt;p&gt;I already wrote &lt;a href=&#34;http://10degres.net/playing-with-s3-buckets/&#34;&gt;a post about Amazon S3 buckets&lt;/a&gt; but they became so popular these last weeks  that many people explain what is a bucket, what is the danger and how to exploit misconfiguration. My goal here is more: how/where to find those vulnerable buckets.&lt;/p&gt;
+      <guid>https://10degres.net/kick-the-bucket/</guid>
+      <description>&lt;p&gt;I already wrote &lt;a href=&#34;https://10degres.net/playing-with-s3-buckets/&#34;&gt;a post about Amazon S3 buckets&lt;/a&gt; but they became so popular these last weeks  that many people explain what is a bucket, what is the danger and how to exploit misconfiguration. My goal here is more: how/where to find those vulnerable buckets.&lt;/p&gt;
 &lt;p&gt;First I assume you already know the basics, if not, you can read the excellent article from &lt;a href=&#34;https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/&#34;&gt;Frans Rosen on Detectify&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Playing with S3 buckets</title>
-      <link>http://10degres.net/playing-with-s3-buckets/</link>
+      <link>https://10degres.net/playing-with-s3-buckets/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/playing-with-s3-buckets/</guid>
+      <guid>https://10degres.net/playing-with-s3-buckets/</guid>
       <description>&lt;p&gt;Amazon Simple Storage Service aka S3 is a cloud storage for the Internet.
 You first create a bucket and you can then upload any number of objects (photos, videos, documents etc.) to it.
 However if the permissions (ACL) are not well settled, bad things can happen.&lt;/p&gt;

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nebula on 10degres</title>
-    <link>http://10degres.net/tags/nebula/</link>
+    <link>https://10degres.net/tags/nebula/</link>
     <description>Recent content in nebula on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Jan 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/nebula/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jan 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/nebula/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploit Exercices, Nebula &amp;ndash; level03</title>
-      <link>http://10degres.net/exploit-exercices-nebula-ndash-level03/</link>
+      <link>https://10degres.net/exploit-exercices-nebula-ndash-level03/</link>
       <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/exploit-exercices-nebula-ndash-level03/</guid>
+      <guid>https://10degres.net/exploit-exercices-nebula-ndash-level03/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Check the home directory of flag03 and take note of the files there.
 There is a crontab that is called every couple of minutes.
 Files for this level can be found in /home/flag03.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;First, let&amp;rsquo;s check the home directory of our target &lt;code&gt;flag03&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/exploit_exercices_nebula_level03_1.png&#34; alt=&#34;Exploit Exercises Nebula Level03&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/exploit_exercices_nebula_level03_1.png&#34; alt=&#34;Exploit Exercises Nebula Level03&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ok we have an empty directory with full access and a shell script who looks like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/sh
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i in /home/flag03/writable.d/* ; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
@@ -31,10 +31,10 @@ Files for this level can be found in /home/flag03.&lt;/p&gt;
     
     <item>
       <title>Exploit Exercices, Nebula - level00</title>
-      <link>http://10degres.net/exploit-exercices-nebula-level00/</link>
+      <link>https://10degres.net/exploit-exercices-nebula-level00/</link>
       <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/exploit-exercices-nebula-level00/</guid>
+      <guid>https://10degres.net/exploit-exercices-nebula-level00/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://exploit-exercises.com/nebula/&#34; title=&#34;Exploit Exercises, Nebula&#34;&gt;Nebula&lt;/a&gt; is part of Exploit Exercises,
 it covers a variety of simple and intermediate challenges that cover Linux privilege escalation, common scripting language issues, and file system race conditions.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -50,10 +50,10 @@ A single command can do the trick:&lt;/p&gt;
     
     <item>
       <title>Exploit Exercices, Nebula - level01</title>
-      <link>http://10degres.net/exploit-exercices-nebula-level01/</link>
+      <link>https://10degres.net/exploit-exercices-nebula-level01/</link>
       <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/exploit-exercices-nebula-level01/</guid>
+      <guid>https://10degres.net/exploit-exercices-nebula-level01/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;There is a vulnerability in the below program that allows arbitrary programs to be executed, can you find it?
 Files for this level can be found in /home/flag01.&lt;/p&gt;
@@ -82,10 +82,10 @@ Files for this level can be found in /home/flag01.&lt;/p&gt;
     
     <item>
       <title>Exploit Exercices, Nebula - level02</title>
-      <link>http://10degres.net/exploit-exercices-nebula-level02/</link>
+      <link>https://10degres.net/exploit-exercices-nebula-level02/</link>
       <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/exploit-exercices-nebula-level02/</guid>
+      <guid>https://10degres.net/exploit-exercices-nebula-level02/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;There is a vulnerability in the below program that allows arbitrary programs to be executed, can you find it?
 Files for this level can be found in /home/flag02.&lt;/p&gt;

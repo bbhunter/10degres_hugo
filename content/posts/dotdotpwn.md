@@ -10,7 +10,7 @@ see_also:
     url: https://www.owasp.org/index.php/Path_Traversal
   -
     link: Damn Vulnerable Web Application
-    url: http://10degres.net/damn-vulnerable-web-application/
+    url: /damn-vulnerable-web-application/
 ---
 Path traversal is a very powerful attack but not necessarily easy to find, fortunatly DotDotPwn is here to help you! [DotDotPwn](http://dotdotpwn.blogspot.fr/ "DotDotPwn") is a powerful traversal directory fuzzer. 
 Written in perl, it's installed in Kali Linux by default.

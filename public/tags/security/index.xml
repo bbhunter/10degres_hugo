@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security on 10degres</title>
-    <link>http://10degres.net/tags/security/</link>
+    <link>https://10degres.net/tags/security/</link>
     <description>Recent content in security on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub search</title>
-      <link>http://10degres.net/github-search/</link>
+      <link>https://10degres.net/github-search/</link>
       <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/github-search/</guid>
+      <guid>https://10degres.net/github-search/</guid>
       <description>&lt;p&gt;We all know the famous quote &amp;ldquo;&lt;em&gt;Think out of the box&lt;/em&gt;&amp;rdquo;.
 Technical knowledge is important but creativity is also.
 In bug bounty, to get nice rewards, sometimes you don&amp;rsquo;t need to be a crazy coder or great network engineer, you simply need to try what other didn&amp;rsquo;t.&lt;/p&gt;
@@ -25,10 +25,10 @@ Since I don&amp;rsquo;t understand Ruby, I wrote my own tool with PHP.&lt;/p&gt;
     
     <item>
       <title>Secure your Wordpress</title>
-      <link>http://10degres.net/secure-your-wordpress/</link>
+      <link>https://10degres.net/secure-your-wordpress/</link>
       <pubDate>Sun, 10 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/secure-your-wordpress/</guid>
+      <guid>https://10degres.net/secure-your-wordpress/</guid>
       <description>&lt;p&gt;With more than 60 million websites, WordPress is the most popular CMS currently in use but it&amp;rsquo;s also based on the most hacked environment aka LAMP.&lt;/p&gt;
 &lt;p&gt;As we all know, there is no way to stop a determined hacker but you can slow him down or detect him before things become serious.
 Below some techniques to improve the security of your site. 
@@ -40,10 +40,10 @@ Wordpress says that automatic update changes file/dir permissions, that&amp;rsqu
     
     <item>
       <title>Choose your password</title>
-      <link>http://10degres.net/choose-your-password/</link>
+      <link>https://10degres.net/choose-your-password/</link>
       <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/choose-your-password/</guid>
+      <guid>https://10degres.net/choose-your-password/</guid>
       <description>&lt;p&gt;I recently worked with a well known web agency in France.
 They have a good reputation, they were rewarded last year for their good works and they are in the top 40 of the best french agencies. &lt;/p&gt;
 &lt;p&gt;However I was terribly surprised to find many basic errors/misconfiguration on their own site: error_reporting enable, 

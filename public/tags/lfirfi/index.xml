@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lfi&amp;rfi on 10degres</title>
-    <link>http://10degres.net/tags/lfirfi/</link>
+    <link>https://10degres.net/tags/lfirfi/</link>
     <description>Recent content in lfi&amp;rfi on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://10degres.net/tags/lfirfi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/lfirfi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>An extremely buggy web app !</title>
-      <link>http://10degres.net/an-extremely-buggy-web-app/</link>
+      <link>https://10degres.net/an-extremely-buggy-web-app/</link>
       <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://10degres.net/an-extremely-buggy-web-app/</guid>
+      <guid>https://10degres.net/an-extremely-buggy-web-app/</guid>
       <description>&lt;p&gt;&lt;strong&gt;bWAPP&lt;/strong&gt; is a PHP web application which is intentionnally crackable. It covers a very large set of common vulns but also some unusual case you can meet on the Internet.&lt;/p&gt;
 &lt;p&gt;The goal here is to train your development skill and hacking knowledge to be able to write a better (more secure) code.
-Compared to &lt;a href=&#34;http://10degres.net/damn-vulnerable-web-application/&#34;&gt;DVWA&lt;/a&gt;, you have to consider bWAPP as a much more advanced level of difficulty.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://10degres.net/images/bwapp.png&#34; alt=&#34;bwapp&#34;&gt;&lt;/p&gt;</description>
+Compared to &lt;a href=&#34;https://10degres.net/damn-vulnerable-web-application/&#34;&gt;DVWA&lt;/a&gt;, you have to consider bWAPP as a much more advanced level of difficulty.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://10degres.net/images/bwapp.png&#34; alt=&#34;bwapp&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

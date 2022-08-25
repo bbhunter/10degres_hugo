@@ -5,4 +5,4 @@ Contact: g@10degres.net
 Disclosure: Full
 
 # Our security acknowledgements page
-Acknowledgement: http://10degres.net/hall-of-fame
+Acknowledgement: https://10degres.net/hall-of-fame
