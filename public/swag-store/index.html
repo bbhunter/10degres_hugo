@@ -71,7 +71,7 @@ This is THE SWAG STORE." />
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -232,16 +232,16 @@ Give <code>Read and write</code> permission to:<br>
 <p><strong>1/</strong> The hacker creates an account on the store</p>
 <p><strong>2/</strong> He submits his store ID in his profile on the bug bounty platform</p>
 <p>For convenience, this process could be fully automated by the platform using the <a href="https://help.shopify.com/en/api/reference/customers/customer#create-2019-07">Shopify API</a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># create customer
-curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/customers.json -H &#34;Content-Type: application/json&#34; -X POST -d &#39;{&#34;customer&#34;:{&#34;email&#34;:&#34;g@10degres.net&#34;,&#34;accepts_marketing&#34;:false,&#34;first_name&#34;:&#34;Gwen&#34;,&#34;last_name&#34;:&#34;Gwen&#34;,&#34;currency&#34;:&#34;USD&#34;,&#34;addresses&#34;:[{&#34;first_name&#34;:&#34;Gwen&#34;,&#34;last_name&#34;:&#34;Gwen&#34;,&#34;company&#34;:&#34;10degres&#34;,&#34;address1&#34;:&#34;my address&#34;,&#34;address2&#34;:&#34;my address 2&#34;,&#34;city&#34;:&#34;Paris&#34;,&#34;province&#34;:&#34;&#34;,&#34;country&#34;:&#34;France&#34;,&#34;zip&#34;:&#34;75001&#34;,&#34;phone&#34;:&#34;&#34;,&#34;name&#34;:&#34;Gwen Gwen&#34;,&#34;province_code&#34;:null,&#34;country_code&#34;:&#34;FR&#34;,&#34;country_name&#34;:&#34;France&#34;,&#34;default&#34;:true}]}}&#39;
-</code></pre></div><p><strong>3/</strong> The hacker visits his profil page and decide to <em>&ldquo;Create a discount code&rdquo;</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># create customer
+</span></span><span style="display:flex;"><span>curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/customers.json -H &#34;Content-Type: application/json&#34; -X POST -d &#39;{&#34;customer&#34;:{&#34;email&#34;:&#34;g@10degres.net&#34;,&#34;accepts_marketing&#34;:false,&#34;first_name&#34;:&#34;Gwen&#34;,&#34;last_name&#34;:&#34;Gwen&#34;,&#34;currency&#34;:&#34;USD&#34;,&#34;addresses&#34;:[{&#34;first_name&#34;:&#34;Gwen&#34;,&#34;last_name&#34;:&#34;Gwen&#34;,&#34;company&#34;:&#34;10degres&#34;,&#34;address1&#34;:&#34;my address&#34;,&#34;address2&#34;:&#34;my address 2&#34;,&#34;city&#34;:&#34;Paris&#34;,&#34;province&#34;:&#34;&#34;,&#34;country&#34;:&#34;France&#34;,&#34;zip&#34;:&#34;75001&#34;,&#34;phone&#34;:&#34;&#34;,&#34;name&#34;:&#34;Gwen Gwen&#34;,&#34;province_code&#34;:null,&#34;country_code&#34;:&#34;FR&#34;,&#34;country_name&#34;:&#34;France&#34;,&#34;default&#34;:true}]}}&#39;
+</span></span></code></pre></div><p><strong>3/</strong> The hacker visits his profil page and decide to <em>&ldquo;Create a discount code&rdquo;</em></p>
 <p><strong>4/</strong> The plaform creates the voucher on the swag store:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># create price rule
-curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/price_rules.json -H &#34;Content-Type: application/json&#34; -X POST -d &#39;{&#34;price_rule&#34;: {&#34;title&#34;: &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;,&#34;target_type&#34;: &#34;line_item&#34;,&#34;target_selection&#34;: &#34;all&#34;,&#34;allocation_method&#34;: &#34;across&#34;,&#34;value_type&#34;: &#34;fixed_amount&#34;,&#34;value&#34;: &#34;-10.0&#34;,&#34;customer_selection&#34;: &#34;prerequisite&#34;,&#34;prerequisite_customer_ids&#34;:[&#34;&lt;USER_ID&gt;&#34;],&#34;starts_at&#34;: &#34;2019-01-01T00:00:00Z&#34;,&#34;ends_at&#34;: &#34;2019-01-02T00:00:00Z&#34;}}&#39;
-
-# create discount code
-curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/price_rules/&lt;PRICE_RULE_ID&gt;/discount_codes.json -H &#34;Content-Type: application/json&#34; -X POST -d &#39;{&#34;discount_code&#34;:{&#34;code&#34;:&#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;}}&#39;
-</code></pre></div><p>For security reason:<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># create price rule
+</span></span><span style="display:flex;"><span>curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/price_rules.json -H &#34;Content-Type: application/json&#34; -X POST -d &#39;{&#34;price_rule&#34;: {&#34;title&#34;: &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;,&#34;target_type&#34;: &#34;line_item&#34;,&#34;target_selection&#34;: &#34;all&#34;,&#34;allocation_method&#34;: &#34;across&#34;,&#34;value_type&#34;: &#34;fixed_amount&#34;,&#34;value&#34;: &#34;-10.0&#34;,&#34;customer_selection&#34;: &#34;prerequisite&#34;,&#34;prerequisite_customer_ids&#34;:[&#34;&lt;USER_ID&gt;&#34;],&#34;starts_at&#34;: &#34;2019-01-01T00:00:00Z&#34;,&#34;ends_at&#34;: &#34;2019-01-02T00:00:00Z&#34;}}&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># create discount code
+</span></span><span style="display:flex;"><span>curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/price_rules/&lt;PRICE_RULE_ID&gt;/discount_codes.json -H &#34;Content-Type: application/json&#34; -X POST -d &#39;{&#34;discount_code&#34;:{&#34;code&#34;:&#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;}}&#39;
+</span></span></code></pre></div><p>For security reason:<br>
 - Price rules should be configured with the correct user id: <code>customer_selection + prerequisite_customer_ids</code><br>
 - The end date of the validity of the &ldquo;offer&rdquo; should be setted to a short period: <code>ends_at</code><br>
 - The price rule could be only used once: <code>once_per_customer</code></p>
@@ -252,30 +252,30 @@ curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/a
 If the discount is &lt; than the subtotal, the hacker will have to remove some items from his cart (or pay the difference with real money but no one wants that&hellip;)</p>
 <p><img src="https://10degres.net/images/swag-store-checkout.png" alt="swag store checkout"></p>
 <p><strong>8/</strong> The platform is notified by the store that a payment just occured</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> / <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
-Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
-X-Shopify-Topic<span style="color:#f92672">:</span> <span style="color:#ae81ff">orders/paid</span>
-X-Shopify-Shop-Domain<span style="color:#f92672">:</span> <span style="color:#ae81ff">bbswagstore.myshopify.com</span>
-X-Shopify-Order-Id<span style="color:#f92672">:</span> <span style="color:#ae81ff">8209946494603</span>
-X-Shopify-Test<span style="color:#f92672">:</span> <span style="color:#ae81ff">true</span>
-X-Shopify-Hmac-Sha256<span style="color:#f92672">:</span> <span style="color:#ae81ff">N2nqX1/zcS4953w9/et+UDvEmMy1QhNEe14zG7afjTc=</span>
-X-Shopify-Api-Version<span style="color:#f92672">:</span> <span style="color:#ae81ff">2019-07</span>
-Accept-Encoding<span style="color:#f92672">:</span> <span style="color:#ae81ff">gzip;q=1.0,deflate;q=0.6,identity;q=0.3</span>
-Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">*/*</span>
-User-Agent<span style="color:#f92672">:</span> <span style="color:#ae81ff">Ruby</span>
-Content-Length<span style="color:#f92672">:</span> <span style="color:#ae81ff">6441</span>
-Connection<span style="color:#f92672">:</span> <span style="color:#ae81ff">close</span>
-Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">www.mysuperbugbountyplatform.com</span>
-
-{<span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#ae81ff">8209946494603</span>,<span style="color:#f92672">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;jon@doe.ca&#34;</span>,<span style="color:#f92672">&#34;closed_at&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;created_at&#34;</span>:<span style="color:#e6db74">&#34;2019-07-15T16:39:44+02:00&#34;</span><span style="color:#960050;background-color:#1e0010">...</span>
-</code></pre></div><p><strong>9/</strong> The platform decreases the swag credit of the hacker by the <u>real amount of the order</u></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">POST</span> / <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+</span></span><span style="display:flex;"><span>Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+</span></span><span style="display:flex;"><span>X-Shopify-Topic<span style="color:#f92672">:</span> <span style="color:#ae81ff">orders/paid</span>
+</span></span><span style="display:flex;"><span>X-Shopify-Shop-Domain<span style="color:#f92672">:</span> <span style="color:#ae81ff">bbswagstore.myshopify.com</span>
+</span></span><span style="display:flex;"><span>X-Shopify-Order-Id<span style="color:#f92672">:</span> <span style="color:#ae81ff">8209946494603</span>
+</span></span><span style="display:flex;"><span>X-Shopify-Test<span style="color:#f92672">:</span> <span style="color:#ae81ff">true</span>
+</span></span><span style="display:flex;"><span>X-Shopify-Hmac-Sha256<span style="color:#f92672">:</span> <span style="color:#ae81ff">N2nqX1/zcS4953w9/et+UDvEmMy1QhNEe14zG7afjTc=</span>
+</span></span><span style="display:flex;"><span>X-Shopify-Api-Version<span style="color:#f92672">:</span> <span style="color:#ae81ff">2019-07</span>
+</span></span><span style="display:flex;"><span>Accept-Encoding<span style="color:#f92672">:</span> <span style="color:#ae81ff">gzip;q=1.0,deflate;q=0.6,identity;q=0.3</span>
+</span></span><span style="display:flex;"><span>Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">*/*</span>
+</span></span><span style="display:flex;"><span>User-Agent<span style="color:#f92672">:</span> <span style="color:#ae81ff">Ruby</span>
+</span></span><span style="display:flex;"><span>Content-Length<span style="color:#f92672">:</span> <span style="color:#ae81ff">6441</span>
+</span></span><span style="display:flex;"><span>Connection<span style="color:#f92672">:</span> <span style="color:#ae81ff">close</span>
+</span></span><span style="display:flex;"><span>Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">www.mysuperbugbountyplatform.com</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#ae81ff">8209946494603</span>,<span style="color:#f92672">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;jon@doe.ca&#34;</span>,<span style="color:#f92672">&#34;closed_at&#34;</span>:<span style="color:#66d9ef">null</span>,<span style="color:#f92672">&#34;created_at&#34;</span>:<span style="color:#e6db74">&#34;2019-07-15T16:39:44+02:00&#34;</span><span style="color:#960050;background-color:#1e0010">...</span>
+</span></span></code></pre></div><p><strong>9/</strong> The platform decreases the swag credit of the hacker by the <u>real amount of the order</u></p>
 <p><strong>10/</strong> (optional) The platform revokes the voucher</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># delete price rule</span>
-curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/price_rules/&lt;PRICE_RULE_ID&gt;.json -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> -X DELETE
-
-<span style="color:#75715e"># delete discount code</span>
-curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/price_rules/&lt;PRICE_RULE_ID&gt;/discount_codes/&lt;DISCOUNT_CODE_ID&gt;.json -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> -X DELETE
-</code></pre></div><p><strong>11/</strong> (optional) Using the same method, the platform can revokes all voucher created the day before but not used</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># delete price rule</span>
+</span></span><span style="display:flex;"><span>curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/price_rules/&lt;PRICE_RULE_ID&gt;.json -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> -X DELETE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># delete discount code</span>
+</span></span><span style="display:flex;"><span>curl https://&lt;API_KEY&gt;:&lt;PASSWORD&gt;@&lt;STORE_NAME&gt;.myshopify.com/admin/api/2019-04/price_rules/&lt;PRICE_RULE_ID&gt;/discount_codes/&lt;DISCOUNT_CODE_ID&gt;.json -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> -X DELETE
+</span></span></code></pre></div><p><strong>11/</strong> (optional) Using the same method, the platform can revokes all voucher created the day before but not used</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>My store is just a small example of what could be possible, we can imagine everything: classic goodies, books, courses, <strong>conventions invites</strong> (most of the time very expensive), software licenses, IOT stuff&hellip; etc&hellip;</p>
 <p>In an improved version of a Swag Store we can imagine that programs items could also be available: Pornhub, Etsy, GitHub, Eset, they all have incredible swag very popular in the community.</p>

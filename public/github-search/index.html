@@ -73,7 +73,7 @@ Since I don&rsquo;t understand Ruby, I wrote my own tool with PHP." />
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -163,22 +163,22 @@ Unfortunately the scrapper seems to have trouble with search that required authe
 Since I don&rsquo;t understand Ruby, I wrote my own tool with PHP.</p>
 <p>The code is available on my <a href="https://github.com/gwen001/github-search">GitHub repository</a> and for sure, you can tweak it to fit your needs.
 Usage is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php github-search.php [OPTIONS]
-
-Options:
-    -c  set cookie session
-    -e	file extension filter
-    -f  looking for file
-    -h  print this help
-    -o  provide organization name
-    -r  maximum number of results, default 50
-    -s  search string
-
-Examples:
-    php github-search.php -o myorganization -s db_password
-    php github-search.php -o myorganization -f wp-config.php -s db_password
-    php github-search.php -c &#34;user_session=B0KqycP8LlYORc-s3WFZoH71TG&#34; -f wp-config -e php -r 1000
-</code></pre></div><p>An organization name must be provided when you are not authenticated on GitHub, that why the cookie option exists, of course you should use your own cookie value. And here is the output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Usage: php github-search.php [OPTIONS]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Options:
+</span></span><span style="display:flex;"><span>    -c  set cookie session
+</span></span><span style="display:flex;"><span>    -e	file extension filter
+</span></span><span style="display:flex;"><span>    -f  looking for file
+</span></span><span style="display:flex;"><span>    -h  print this help
+</span></span><span style="display:flex;"><span>    -o  provide organization name
+</span></span><span style="display:flex;"><span>    -r  maximum number of results, default 50
+</span></span><span style="display:flex;"><span>    -s  search string
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Examples:
+</span></span><span style="display:flex;"><span>    php github-search.php -o myorganization -s db_password
+</span></span><span style="display:flex;"><span>    php github-search.php -o myorganization -f wp-config.php -s db_password
+</span></span><span style="display:flex;"><span>    php github-search.php -c &#34;user_session=B0KqycP8LlYORc-s3WFZoH71TG&#34; -f wp-config -e php -r 1000
+</span></span></code></pre></div><p>An organization name must be provided when you are not authenticated on GitHub, that why the cookie option exists, of course you should use your own cookie value. And here is the output:</p>
 <p><img src="https://10degres.net/images/github-search-example.png" alt="GitHub search PHP tool"></p>
 <p>The following fields are displayed:</p>
 <ul>

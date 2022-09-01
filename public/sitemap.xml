@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://10degres.net/</loc>
-    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/bug-bounty/</loc>
-    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/hackers/</loc>
-    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</loc>
-    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/management/</loc>
-    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/posts/</loc>
-    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/the-underlying-rules-of-bug-bounty/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/cves/</loc>
@@ -203,12 +206,6 @@
     <loc>https://10degres.net/my-way-to-go/</loc>
     <lastmod>2017-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://10degres.net/tags/actarus/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/actarus-code-release/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://10degres.net/tags/dns/</loc>
     <lastmod>2016-10-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -257,10 +254,10 @@
     <loc>https://10degres.net/tags/training/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://10degres.net/sqlmap/</loc>
+    <loc>https://10degres.net/tags/sqlmap/</loc>
     <lastmod>2016-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://10degres.net/tags/sqlmap/</loc>
+    <loc>https://10degres.net/sqlmap/</loc>
     <lastmod>2016-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/file-transfer/</loc>

@@ -35,23 +35,11 @@ But what if you can bypass all these protections in a second making the defense 
       
       <guid>https://10degres.net/subdomain-enumeration/</guid>
       <description>&lt;p&gt;A friend recently asked me what methods I use to find subdomains.
-To be honest I was confused, like &lt;em&gt;&amp;ldquo;oooohhh so much, brute force mmm&amp;hellip; zone transfer and&amp;hellip; brute for&amp;hellip; wait Google and mmm&amp;hellip; many other tools!&amp;quot;&lt;/em&gt;
+To be honest I was confused, like &lt;em&gt;&amp;ldquo;oooohhh so much, brute force mmm&amp;hellip; zone transfer and&amp;hellip; brute for&amp;hellip; wait Google and mmm&amp;hellip; many other tools!&amp;rdquo;&lt;/em&gt;
 What a shame that I was so inaccurate after so much time spent to look for subdomains.
 Time to dig a little bit!
 After I wrote a list of the most popular methods, I tried to make a list of some tools and online resources to exploit them.
 Of course this list is far from exhaustive, there are many new stuff every day, but it&amp;rsquo;s still a good start :)&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Actarus code release</title>
-      <link>https://10degres.net/actarus-code-release/</link>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/actarus-code-release/</guid>
-      <description>&lt;p&gt;Actarus is a custom tool that can perform automatic recon and store all datas in a database.
-Afterwards you could consult/search keywords in it to find vulnerabilities or at least entry points.&lt;/p&gt;
-&lt;p&gt;After some months of inactivity, I finally decided to publicly release the source code of Actarus.
-I started this project to learn Symfony, now I hate it. Maybe someone will give him another chance to grow up.&lt;/p&gt;</description>
     </item>
     
   </channel>

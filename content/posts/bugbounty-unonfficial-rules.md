@@ -1,16 +1,11 @@
 ---
-date: 2020-05-11
-draft: yes
+date: 2022-08-01
 title: "The underlying rules of bug bounty"
 tags:
 - bug bounty
 - management
 - hackers
-- rules
 ---
-
-bug bounty is cheaper than pentest
-
 
 # 3 entities, 3 jobs
 
@@ -41,7 +36,7 @@ Their job is basically to serve companies AND hackers by creating a trusted rela
 <u>They have an important role at preparing companies</u> to the incoming unexpected situations, like a mentor.
 And since they are literally selling hackers, it's the job of the platforms to ensure that they are <u>respected and rewarded</u> for their work.
 
-&gt; [List of bug bounty platforms](https://github.com/gwen001/BB-datas)
+&gt; [List of bug bounty platforms](https://github.com/disclose/bug-bounty-platforms)
 
 
 # Respect
@@ -112,12 +107,12 @@ Fortunately some platforms implement other metrics like <u>signal</u>, <u>impact
 As a program manager, you may prefer to rely on them when it comes to invite hunters.
 
 &gt; [Signal and Impact on Hackerone](https://docs.hackerone.com/hackers/signal-and-impact.html)  
-&gt; [How to better measure Crowd performance? on Bugcrowd](https://www.bugcrowd.com/blog/how-we-measure-crowd-performance/)
+&gt; [How we Measure Researcher Performance on Bugcrowd](https://www.bugcrowd.com/blog/how-we-measure-researcher-performance/)
 
 
 # CVSS isn't everything
 
-As described on the [official website](https://www.first.org/cvss/calculator/3.0):
+As described on the [official website](https://www.first.org/cvss/calculator/3.1):
 
 > The Common Vulnerability Scoring System (CVSS) is an open framework for communicating the characteristics and severity of software vulnerabilities. CVSS consists of three metric groups: Base, Temporal, and Environmental. The Base group represents the intrinsic qualities of a vulnerability that are constant over time and across user environments, the Temporal group reflects the characteristics of a vulnerability that change over time, and the Environmental group represents the characteristics of a vulnerability that are unique to a user's environment. The Base metrics produce a score ranging from 0 to 10, which can then be modified by scoring the Temporal and Environmental metrics.
 
@@ -134,10 +129,9 @@ Spot the difference:
 </div>
 <div style="clear:both;"></div>
 
-Don't twist your mind, it's the same image :x
+Don't twist your mind, it's the same image.
 But imagine for a second that the first screenshot concerns a production web server or a database server, and the second one comes from a test server only hosting the vulnerable script, no data at all, no connection to any network.
 CVSS is the same but would it be the same impact ?
-I Guess no.
 Because of that, bounties may vary alot.
 
 In the red corner, we then have vary famous vulnerabilities like <a href="https://www.cvedetails.com/cve/CVE-2016-3714/">ImageTragick</a> and <a href="https://www.cvedetails.com/cve/CVE-2017-5638/">Struts</a>, both have a CVSS score of 10.0 because of the deadly impact.
@@ -211,10 +205,10 @@ Hunters: avoid these programs as much as you can.
 
 # Safe Harbor
 
-Depending of the domain (bank, insurance, government...), it can be pretty hard for a company to open a bug bounty program because of the laws that apply to that domain: tracable users, logs saved n months/years, geographic restrictions and so on...
+Depending of the domain (bank, insurance, government...), it can be pretty hard for a company to open a bug bounty program because of the laws that apply to the domain: tracable users, logs saved n months/years, geographic restrictions and so on...
 Because of that, platforms put many efforts to provide the needed services: VPN, logs, backups, hackers selection (no it's not only about reputaton)...
 
-The purpose of all of this, is of course, to follow the laws, but it's also a way for companies to track what have been done and by who.
+The purpose of all of this is of course to follow the laws, but it's also a way for companies to track what have been done and by who.
 Imagine a situation where a hacker reports a SQL injection and the developpers notice that some records have been deleted by "someone".
 Imagine a customer platform freezed few minutes after the first launch, they may want to know what happened and who is responsible.
 
@@ -238,7 +232,7 @@ Problem is that, even as a part of a bug bounty program, hunters are not always 
 By the end of 2017, [Kevin Finisterre](https://twitter.com/d0tslash) encountered a complicated situation as he was unfairly threaten by DJI after he sent a 30+ pages report.
 His story has been mentionned in a presentation by [Amit Elazari](https://twitter.com/amitelazari) at USENIX Enigma 2018.
 
-&gt; [Why I walked away from $30,000 of DJI bounty money](http://www.digitalmunition.com/WhyIWalkedFrom3k.pdf)  
+&gt; [Why I walked away from $30,000 of DJI bounty money](https://regmedia.co.uk/2017/11/16/whyiwalkedfrom3k.pdf)  
 &gt; [Hacking the Law: Are Bug Bounties a True Safe Harbor?](https://www.youtube.com/watch?v=riZIFOw0pJA)
 
 Safe Harbor is real help as soon as it's included in the security policies.
@@ -249,20 +243,37 @@ Hackerone, Bugcrowd and Intigriti are the good examples.
 <img src="/images/intigriti-safe-harbour.png" alt="intigriti safe harbour" />
 
 &gt; [Hackerone: offer white hats a safe harbour](https://www.digitalnewsasia.com/digital-economy/hackerone-offer-white-hats-safe-harbour)  
-&gt; [GitHub Bug Bounty Program Legal Safe Harbor](https://help.github.com/en/github/site-policy/github-bug-bounty-program-legal-safe-harbor)  
+&gt; [GitHub Bug Bounty Program Legal Safe Harbor](https://docs.github.com/en/site-policy/security-policies/github-bug-bounty-program-legal-safe-harbor)  
 &gt; [Safe Harbor for Security Bug Bounty Participants by Mozilla](https://blog.mozilla.org/security/2018/08/01/safe-harbor-for-security-bug-bounty-participants/)
 
 
-# Scope
+# Bounty on triage
 
-I already talked about scopes in a previous article [5 things to avoid in bug bounty](/5-things-to-avoid-in-bug-bounty/) but here are some details.
+Bounty on triage should be the regular way, seriously.
+
+Unless the secteam needs more informations to reproduce the bug, hunter job is done as soon as the report is accepted so <u>he should be immediately rewarded</u>.
+
+Take a minute to think about people who perform bug bounty as a full time job, think about beginnners.
+Hunters are not like big companies with a huge cash flow!
+They are normal peoples with duties and responsibilities **#paythebills**.
 
 
-# Miscellaneous
+# Disclosure
 
+Disclosure is a good marketing move as it shows companies concern about security.
+It also helps to promote your program with the community.
+As reports are one of the best resource for hackers to learn, as they get better from them, you can see that as good investment.
 
-employee's company can't play
+Sharable informations: 
+- quantity of reports
+- % of accepted reports
+- total rewarded
+- average bounty
+- vulnerability types
+- full reports
+- …
 
+Disclosure can be community reserved or public.
 
 
 <style>

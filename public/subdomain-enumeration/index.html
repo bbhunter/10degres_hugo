@@ -14,7 +14,7 @@
 
 <meta name="twitter:title" content="Subdomain enumeration"/>
 <meta name="twitter:description" content="A friend recently asked me what methods I use to find subdomains.
-To be honest I was confused, like &ldquo;oooohhh so much, brute force mmm&hellip; zone transfer and&hellip; brute for&hellip; wait Google and mmm&hellip; many other tools!&quot;
+To be honest I was confused, like &ldquo;oooohhh so much, brute force mmm&hellip; zone transfer and&hellip; brute for&hellip; wait Google and mmm&hellip; many other tools!&rdquo;
 What a shame that I was so inaccurate after so much time spent to look for subdomains.
 Time to dig a little bit!
 After I wrote a list of the most popular methods, I tried to make a list of some tools and online resources to exploit them.
@@ -24,7 +24,7 @@ Of course this list is far from exhaustive, there are many new stuff every day, 
 
     <meta property="og:title" content="Subdomain enumeration" />
 <meta property="og:description" content="A friend recently asked me what methods I use to find subdomains.
-To be honest I was confused, like &ldquo;oooohhh so much, brute force mmm&hellip; zone transfer and&hellip; brute for&hellip; wait Google and mmm&hellip; many other tools!&quot;
+To be honest I was confused, like &ldquo;oooohhh so much, brute force mmm&hellip; zone transfer and&hellip; brute for&hellip; wait Google and mmm&hellip; many other tools!&rdquo;
 What a shame that I was so inaccurate after so much time spent to look for subdomains.
 Time to dig a little bit!
 After I wrote a list of the most popular methods, I tried to make a list of some tools and online resources to exploit them.
@@ -69,7 +69,7 @@ Of course this list is far from exhaustive, there are many new stuff every day, 
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -150,7 +150,7 @@ Of course this list is far from exhaustive, there are many new stuff every day, 
 
       <div>
         <p>A friend recently asked me what methods I use to find subdomains.
-To be honest I was confused, like <em>&ldquo;oooohhh so much, brute force mmm&hellip; zone transfer and&hellip; brute for&hellip; wait Google and mmm&hellip; many other tools!&quot;</em>
+To be honest I was confused, like <em>&ldquo;oooohhh so much, brute force mmm&hellip; zone transfer and&hellip; brute for&hellip; wait Google and mmm&hellip; many other tools!&rdquo;</em>
 What a shame that I was so inaccurate after so much time spent to look for subdomains.
 Time to dig a little bit!
 After I wrote a list of the most popular methods, I tried to make a list of some tools and online resources to exploit them.
@@ -245,9 +245,9 @@ TXDNS: alt names (typo/tld)<br>
 <a href="https://gitlab.com/">https://gitlab.com/</a><br>
 <a href="https://www.virustotal.com/fr/">https://www.virustotal.com/fr/</a></p>
 <h2 id="dns-cache-snooping">DNS cache snooping</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">nslookup -norecursive domain.com
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">nmap -sU -p 53 --script dns-cache-snoop.nse --script-args &#39;dns-cache-snoop.mode=timed,dns-cache-snoop.domains={domain1,domain2,domain3}&#39; &lt;ip&gt;
-</code></pre></div><h2 id="others-online-resources">Others online resources</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>nslookup -norecursive domain.com
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>nmap -sU -p 53 --script dns-cache-snoop.nse --script-args &#39;dns-cache-snoop.mode=timed,dns-cache-snoop.domains={domain1,domain2,domain3}&#39; &lt;ip&gt;
+</span></span></code></pre></div><h2 id="others-online-resources">Others online resources</h2>
 <p><a href="https://ask.fm/">https://ask.fm/</a><br>
 <a href="http://logontube.com/">http://logontube.com/</a><br>
 <a href="http://commoncrawl.org/">http://commoncrawl.org/</a><br>

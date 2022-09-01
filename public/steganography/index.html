@@ -67,7 +67,7 @@ As a second layer of protection, you can also encrypt the data with any algorith
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -164,9 +164,9 @@ Who will notice the difference between a full black pixel with R=0, G=0, B=0 and
 <p><img src="https://10degres.net/images/lsb-mountain-message.png" alt="lsb mountain with message">
 <img src="https://10degres.net/images/lsb-mountain-empty.png" alt="lsb mountain original"></p>
 <p>The picture with the encoded message is the left one, obviously you cannot see the difference without an image editor, here is the extracted data:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">UXVlIGRldmllbnQgbGEgdmVydHUgcGVuZGFudCBjZXMgZMOpbGljaWV1eCB2b3lhZ2VzIG91IGxhIHBlbnPDqWU
-gZnJhbmNoaXQgdG91cyBsZXMgb2JzdGFjbGVzID8=
-</code></pre></div><p>After a base64 decode, a text from Honoré De Balzac, a famous french writer, appears:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>UXVlIGRldmllbnQgbGEgdmVydHUgcGVuZGFudCBjZXMgZMOpbGljaWV1eCB2b3lhZ2VzIG91IGxhIHBlbnPDqWU
+</span></span><span style="display:flex;"><span>gZnJhbmNoaXQgdG91cyBsZXMgb2JzdGFjbGVzID8=
+</span></span></code></pre></div><p>After a base64 decode, a text from Honoré De Balzac, a famous french writer, appears:</p>
 <p><code>Que devient la vertu pendant ces délicieux voyages ou la pensée franchit tous les obstacles ?</code></p>
 <p>In this test I only used the red component to store my message, that means I can only encode one bit of one character in one pixel.
 Since a character is encoded on 8 bits, the string max length is:

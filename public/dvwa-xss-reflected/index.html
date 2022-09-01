@@ -85,7 +85,7 @@ This code output the name parameter without any filter so it&rsquo;s very vulne
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -165,31 +165,31 @@ This code output the name parameter without any filter so it&rsquo;s very vulne
 Her primary goal is to spoof the session of another user by stealing his cookie id, usually a privileged user like an admin. 
 You can train XSS in Damn Vulnerable Web Application, here are some tests you can perform.</p>
 <h2 id="low">Low</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-<span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">array_key_exists</span> (<span style="color:#e6db74">&#34;name&#34;</span>, $_GET) <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#66d9ef">NULL</span> <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&#39;</span> ) {  
-  $isempty <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;  
-} <span style="color:#66d9ef">else</span> {  
-  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;pre&gt;&#39;</span>;  
-  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;Hello &#39;</span> <span style="color:#f92672">.</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>];  
-  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;/pre&gt;&#39;</span>;  
-}
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>This code output the <code>name</code> parameter without any filter so it&rsquo;s very vulnerable to XSS!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>( <span style="color:#f92672">!</span><span style="color:#a6e22e">array_key_exists</span> (<span style="color:#e6db74">&#34;name&#34;</span>, $_GET) <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#66d9ef">NULL</span> <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&#39;</span> ) {  
+</span></span><span style="display:flex;"><span>  $isempty <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;  
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {  
+</span></span><span style="display:flex;"><span>  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;pre&gt;&#39;</span>;  
+</span></span><span style="display:flex;"><span>  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;Hello &#39;</span> <span style="color:#f92672">.</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>];  
+</span></span><span style="display:flex;"><span>  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;/pre&gt;&#39;</span>;  
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>This code output the <code>name</code> parameter without any filter so it&rsquo;s very vulnerable to XSS!</p>
 <p>If you provide a single name it works perfectly but if you insert any HTML code it will be interpreted:</p>
 <p><img src="https://10degres.net/images/dvwa_xss_reflected_low0.png" alt="DVWA XSS reflected low"></p>
 <p>That means you can also use JavaScript:</p>
 <p><img src="https://10degres.net/images/dvwa_xss_reflected_low1.png" alt="DVWA XSS reflected low"></p>
 <h2 id="medium">Medium</h2>
 <p>In the second level, the parameter is sanitized by removing the HTML tag <code>&lt;script&gt;</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-<span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">array_key_exists</span> (<span style="color:#e6db74">&#34;name&#34;</span>, $_GET) <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#66d9ef">NULL</span> <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&#39;</span>){
-  $isempty <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
-} <span style="color:#66d9ef">else</span> {
-  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39; &lt;pre&gt;&#39;</span>;
-  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;Hello &#39;</span> <span style="color:#f92672">.</span> <span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#39;&lt;script&gt;&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>, $_GET[<span style="color:#e6db74">&#39;name&#39;</span>]);
-  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;/pre&gt;&#39;</span>;
-}
-</code></pre></div><p>Is that enough? Of course not because the text you provide can have many different forms.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">array_key_exists</span> (<span style="color:#e6db74">&#34;name&#34;</span>, $_GET) <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#66d9ef">NULL</span> <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&#39;</span>){
+</span></span><span style="display:flex;"><span>  $isempty <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39; &lt;pre&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;Hello &#39;</span> <span style="color:#f92672">.</span> <span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#39;&lt;script&gt;&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>, $_GET[<span style="color:#e6db74">&#39;name&#39;</span>]);
+</span></span><span style="display:flex;"><span>  $html <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39;&lt;/pre&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Is that enough? Of course not because the text you provide can have many different forms.
 The test is not even case insensitive.
 So you can simply use the same payload as previously and just add an uppercase letter or some few useless characters like white spaces:</p>
 <p><img src="https://10degres.net/images/dvwa_xss_reflected_low2.png" alt="DVWA XSS reflected medium"></p>
@@ -202,12 +202,12 @@ this function converts all special characters to HTML entities.
 So the HTML or JavaScript code won&rsquo;t run.</p>
 <p>When a XSS is found, no matter the code you submit, it will be evaluated.
 You can then perform a redirection:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;document.<span style="color:#a6e22e">location</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;http://www.example.com&#39;</span>&lt;/<span style="color:#f92672">script</span>&gt;
-</code></pre></div><p>Deface the site:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;document.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;H@ck3d by true l33t r0x0r&#39;</span>)&lt;/<span style="color:#f92672">script</span>&gt;
-</code></pre></div><p>Or display cookies&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;<span style="color:#a6e22e">alert</span>(document.<span style="color:#a6e22e">cookie</span>)&lt;/<span style="color:#f92672">script</span>&gt;
-</code></pre></div><h2 id="external-resources">External resources</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;document.<span style="color:#a6e22e">location</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;http://www.example.com&#39;</span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>Deface the site:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;document.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;H@ck3d by true l33t r0x0r&#39;</span>)&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>Or display cookies&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;<span style="color:#a6e22e">alert</span>(document.<span style="color:#a6e22e">cookie</span>)&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><h2 id="external-resources">External resources</h2>
 <ul>
 <li><a href="https://www.owasp.org/index.php/Top_10_2013-Top_10">OWASP Top 10</a></li>
 <li><a href="https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_(XSS)">OWASP XSS description</a></li>

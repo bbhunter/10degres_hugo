@@ -69,7 +69,7 @@ To perform that task, you can use a single tool like TheHarvester or DNSRecon." 
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.102.2" />
   </head>
 
   <body class=" ">
@@ -152,25 +152,25 @@ This way he could trick users and even the employees of the company to grab usef
 <p>First of all you have to find a list of subdomains of your target.
 To perform that task, you can use a single tool like <a href="https://10degres.net/theharvester/">TheHarvester</a> or <a href="https://github.com/darkoperator/dnsrecon">DNSRecon</a>.</p>
 <p>Then for each subdomains you should check if it is an alias or not, I personnally use the command <code>host</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ host rencontres.leparisien.fr
-rencontres.leparisien.fr is an alias for www.pointscommuns.com.
-www.pointscommuns.com has address 217.70.188.38
-</code></pre></div><p>if yes, and if the alias destination is an external domain, then you should check his expiry date of this domain.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ host rencontres.leparisien.fr
+</span></span><span style="display:flex;"><span>rencontres.leparisien.fr is an alias for www.pointscommuns.com.
+</span></span><span style="display:flex;"><span>www.pointscommuns.com has address 217.70.188.38
+</span></span></code></pre></div><p>if yes, and if the alias destination is an external domain, then you should check his expiry date of this domain.
 Because if this domain has expired, that means an attacker could buy it through a registrar like Gandi for a small amount.
 Then put a fake look alike website in place and finally start social engineering by impersonating the vulnerable company.</p>
 <p>To perform all those tests, I wrote a PHP script that takes a subdomains list as an argument.
 Usage is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Usage: php dnsexpire.php [OPTIONS] -f &lt;subdomain|input file&gt;
-
-Options:
-    -a  set alert for result output, default=30 days
-    -f  subdomains list source file
-    -h  print this help
-
-Examples:
-    php dnsexpire.php -f example.com
-    php dnsexpire.php -a 10 -f dns.txt
-</code></pre></div><p>Output is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Usage: php dnsexpire.php [OPTIONS] -f &lt;subdomain|input file&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Options:
+</span></span><span style="display:flex;"><span>    -a  set alert for result output, default=30 days
+</span></span><span style="display:flex;"><span>    -f  subdomains list source file
+</span></span><span style="display:flex;"><span>    -h  print this help
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Examples:
+</span></span><span style="display:flex;"><span>    php dnsexpire.php -f example.com
+</span></span><span style="display:flex;"><span>    php dnsexpire.php -a 10 -f dns.txt
+</span></span></code></pre></div><p>Output is:</p>
 <p><img src="https://10degres.net/images/dnsexpire-example.jpg" alt="DNS expiration PHP tool"></p>
 <p>The code is available on my <a href="https://github.com/gwen001/dnsexpire">GitHub repository</a> so give it a try!</p>
 <h2 id="external-resources">External resources</h2>

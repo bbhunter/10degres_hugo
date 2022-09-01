@@ -14,7 +14,7 @@
       
       <guid>https://10degres.net/subdomain-enumeration/</guid>
       <description>&lt;p&gt;A friend recently asked me what methods I use to find subdomains.
-To be honest I was confused, like &lt;em&gt;&amp;ldquo;oooohhh so much, brute force mmm&amp;hellip; zone transfer and&amp;hellip; brute for&amp;hellip; wait Google and mmm&amp;hellip; many other tools!&amp;quot;&lt;/em&gt;
+To be honest I was confused, like &lt;em&gt;&amp;ldquo;oooohhh so much, brute force mmm&amp;hellip; zone transfer and&amp;hellip; brute for&amp;hellip; wait Google and mmm&amp;hellip; many other tools!&amp;rdquo;&lt;/em&gt;
 What a shame that I was so inaccurate after so much time spent to look for subdomains.
 Time to dig a little bit!
 After I wrote a list of the most popular methods, I tried to make a list of some tools and online resources to exploit them.
