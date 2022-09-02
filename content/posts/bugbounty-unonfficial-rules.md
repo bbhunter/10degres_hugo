@@ -261,8 +261,8 @@ They are normal peoples with duties and responsibilities **#paythebills**.
 # Disclosure
 
 Disclosure is a good marketing move as it shows companies concern about security.
-It also helps to promote your program with the community.
-As reports are one of the best resource for hackers to learn, as they get better from them, you can see that as good investment.
+It also helps to promote programs with the community.
+As reports are one of the best resource for hackers to learn, as they get better from them, it can be seen as good investment.
 
 Sharable informations: 
 - quantity of reports
