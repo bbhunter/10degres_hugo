@@ -5,6 +5,7 @@ tags:
 - dns
 - subdomain
 - tools
+- subdomain takeover
 see_also:
   -
     link: Explanation by Peter Yaworski

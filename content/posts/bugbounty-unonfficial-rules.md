@@ -4,7 +4,6 @@ title: "The underlying rules of bug bounty"
 tags:
 - bug bounty
 - management
-- hackers
 ---
 
 # 3 entities, 3 jobs

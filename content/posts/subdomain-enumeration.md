@@ -4,10 +4,11 @@ title: Subdomain enumeration
 images: [/images/subdomain-enumeration-aquatone.jpg]
 tags:
 - recon
-- subdomain
 - bug bounty
 - information gathering
 - tools
+- recon
+- subdomain takeover
 see_also:
   -
     link: The Art of Subdomain Enumeration

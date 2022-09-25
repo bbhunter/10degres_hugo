@@ -6,7 +6,25 @@
     <description>Recent content in Tags on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>subdomain takeover</title>
+      <link>https://10degres.net/tags/subdomain-takeover/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/subdomain-takeover/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://10degres.net/tags/tools/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/tools/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>bug bounty</title>
       <link>https://10degres.net/tags/bug-bounty/</link>
@@ -17,20 +35,20 @@
     </item>
     
     <item>
-      <title>hackers</title>
-      <link>https://10degres.net/tags/hackers/</link>
-      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/hackers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>management</title>
       <link>https://10degres.net/tags/management/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackers</title>
+      <link>https://10degres.net/tags/hackers/</link>
+      <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/hackers/</guid>
       <description></description>
     </item>
     
@@ -67,15 +85,6 @@
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/tags/recon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tools</title>
-      <link>https://10degres.net/tags/tools/</link>
-      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/tools/</guid>
       <description></description>
     </item>
     
@@ -242,15 +251,6 @@
     </item>
     
     <item>
-      <title>subdomain</title>
-      <link>https://10degres.net/tags/subdomain/</link>
-      <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/subdomain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>repository</title>
       <link>https://10degres.net/tags/repository/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
@@ -265,6 +265,15 @@
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/tags/sqli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>subdomain</title>
+      <link>https://10degres.net/tags/subdomain/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/subdomain/</guid>
       <description></description>
     </item>
     

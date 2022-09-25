@@ -6,7 +6,18 @@
     <description>Recent content in Posts on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One takeover to rule them all</title>
+      <link>https://10degres.net/one-takeover-to-rule-them-all/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/one-takeover-to-rule-them-all/</guid>
+      <description>Because of Covid, the first quarantaine in France occured in March 2020. During that time I wrote a Python script to detect Subdomain Takeover. As I have been successful several times with the tool, one hit was especially beautiful.
+The story of how I have been able to take control of 450+ subdomains of the national french electricity company EDF.
+I&#39;m not going to explain what is subdomain takeover so take a look at the following articles if you want to know more: OWASP test guide</description>
+    </item>
+    
     <item>
       <title>The underlying rules of bug bounty</title>
       <link>https://10degres.net/the-underlying-rules-of-bug-bounty/</link>
