@@ -1,6 +1,7 @@
 ---
 date: 2022-09-21
 title: One takeover to rule them all
+images: [/images/edf-subto.png]
 tags:
 - tools
 - subdomain takeover
