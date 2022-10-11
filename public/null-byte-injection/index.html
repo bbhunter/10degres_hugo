@@ -131,37 +131,46 @@ If you call it directly it will works but in that case index.php is usually u
 
       <div class="content">
         
-  <section class="container post">
+<section class="container post">
+
+    <div id="share-buttons">
+    <a href="http://www.reddit.com/submit?url=http:/&amp;title=Null%20Byte%20Injection"><img src="https://10degres.net/assets/img/share/reddit.png"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2f10degres.net%2fnull-byte-injection%2f&amp;title=Null%20Byte%20Injection&amp;summary=&amp;source="><img src="https://10degres.net/assets/img/share/linkedin.png"></a>
+    <a href="https://twitter.com/intent/tweet?text=https%3a%2f%2f10degres.net%2fnull-byte-injection%2f"><img src="https://10degres.net/assets/img/share/twitter.png"></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f10degres.net%2fnull-byte-injection%2f"><img src="https://10degres.net/assets/img/share/facebook.png"></a>
+</div>
+
+
     <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">Null Byte Injection</h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fas fa-calendar"></i>
-              <time datetime='2015-01-10T00:00:00Z'>
-                January 10, 2015
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fas fa-clock"></i>
-              2 minutes read
-            </span>
-          </div>
-          
-          <div class="tags">
+        <header>
+            <div class="post-title">
+                <h1 class="title">Null Byte Injection</h1>
+            </div>
+            <div class="post-meta">
+                <div class="date">
+                    <span class="posted-on">
+                      <i class="fas fa-calendar"></i>
+                        <time datetime='2015-01-10T00:00:00Z'>
+                            January 10, 2015
+                        </time>
+                    </span>
+                    <span class="reading-time">
+                        <i class="fas fa-clock"></i>
+                        2 minutes read
+                    </span>
+                </div>
+                
+                <div class="tags">
   <i class="fas fa-tag"></i>
     <a href="https://10degres.net/tags/php/">php</a>
       <span class="separator">•</span>
     <a href="https://10degres.net/tags/null-byte/">null byte</a></div>
 
-        </div>
-      </header>
+            </div>
+          </header>
 
-      <div>
-        <p>I recently read a nice article on <a href="http://resources.infosecinstitute.com/null-byte-injection-php/" title="Null byte injection">InfoSec Institute</a>
+        <div>
+            <p>I recently read a nice article on <a href="http://resources.infosecinstitute.com/null-byte-injection-php/" title="Null byte injection">InfoSec Institute</a>
 (again) about Null byte injection.
 However I met some problems to make it works in a real situation so I decided to write my own.</p>
 <p>First of all, this vulnerability has been <strong>fully patched in PHP 5.3.4</strong> (until someone else find another buggy function&hellip;), that means you need to install an old version of PHP.
@@ -200,17 +209,18 @@ Of course the goal of this attack is to retrieve sensitive files:</p>
 <li><a href="https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Null_Byte_Injection">OWASP description</a></li>
 <li><a href="http://blog.benjaminwalters.net/?p=22139">Another article about Null byte injection</a></li>
 </ul>
-      </div>
+        </div>
 
-      <footer>
-        
+        <footer>
+            
 
 
-      </footer>
+        </footer>
     </article>
 
     
-  </section>
+</section>
+
 
       </div>
 

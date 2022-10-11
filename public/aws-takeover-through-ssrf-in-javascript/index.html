@@ -109,27 +109,36 @@ Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also 
 
       <div class="content">
         
-  <section class="container post">
+<section class="container post">
+
+    <div id="share-buttons">
+    <a href="http://www.reddit.com/submit?url=http:/&amp;title=AWS%20takeover%20through%20SSRF%20in%20JavaScript"><img src="https://10degres.net/assets/img/share/reddit.png"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2f10degres.net%2faws-takeover-through-ssrf-in-javascript%2f&amp;title=AWS%20takeover%20through%20SSRF%20in%20JavaScript&amp;summary=&amp;source="><img src="https://10degres.net/assets/img/share/linkedin.png"></a>
+    <a href="https://twitter.com/intent/tweet?text=https%3a%2f%2f10degres.net%2faws-takeover-through-ssrf-in-javascript%2f"><img src="https://10degres.net/assets/img/share/twitter.png"></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f10degres.net%2faws-takeover-through-ssrf-in-javascript%2f"><img src="https://10degres.net/assets/img/share/facebook.png"></a>
+</div>
+
+
     <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">AWS takeover through SSRF in JavaScript</h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fas fa-calendar"></i>
-              <time datetime='2018-10-02T00:00:00Z'>
-                October 2, 2018
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fas fa-clock"></i>
-              8 minutes read
-            </span>
-          </div>
-          
-          <div class="tags">
+        <header>
+            <div class="post-title">
+                <h1 class="title">AWS takeover through SSRF in JavaScript</h1>
+            </div>
+            <div class="post-meta">
+                <div class="date">
+                    <span class="posted-on">
+                      <i class="fas fa-calendar"></i>
+                        <time datetime='2018-10-02T00:00:00Z'>
+                            October 2, 2018
+                        </time>
+                    </span>
+                    <span class="reading-time">
+                        <i class="fas fa-clock"></i>
+                        8 minutes read
+                    </span>
+                </div>
+                
+                <div class="tags">
   <i class="fas fa-tag"></i>
     <a href="https://10degres.net/tags/bug-bounty/">bug bounty</a>
       <span class="separator">•</span>
@@ -139,11 +148,11 @@ Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also 
       <span class="separator">•</span>
     <a href="https://10degres.net/tags/javascript/">javascript</a></div>
 
-        </div>
-      </header>
+            </div>
+          </header>
 
-      <div>
-        <p>Here is the story of a bug I found in a private bug bounty program on <a href="https://hackerone.com/">Hackerone</a>.
+        <div>
+            <p>Here is the story of a bug I found in a private bug bounty program on <a href="https://hackerone.com/">Hackerone</a>.
 It took me exactly 12h30 -no break- to find it, exploit and report.
 I was able to dump the AWS credentials, this lead me to fully compromise the account of the company: 20 buckets and 80 EC2 instances (Amazon Elastic Compute Cloud) in my hands.
 Besides the fact that it&rsquo;s one of my best bug in my hunter career, I also learnt alot during this sprint, so let&rsquo;s share!</p>
@@ -370,17 +379,18 @@ err&hellip;</p>
 <li><a href="https://github.com/swisskyrepo/PayloadsAllTheThings">PayloadsAllTheThings</a></li>
 <li><a href="https://docs.aws.amazon.com/">AWS Documentation</a></li>
 </ul>
-      </div>
+        </div>
 
-      <footer>
-        
+        <footer>
+            
 
 
-      </footer>
+        </footer>
     </article>
 
     
-  </section>
+</section>
+
 
       </div>
 

@@ -129,37 +129,46 @@ CREATE TABLE IF NOT EXISTS `user` (
 
       <div class="content">
         
-  <section class="container post">
+<section class="container post">
+
+    <div id="share-buttons">
+    <a href="http://www.reddit.com/submit?url=http:/&amp;title=MySQL%20Truncation"><img src="https://10degres.net/assets/img/share/reddit.png"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2f10degres.net%2fmysql-truncation%2f&amp;title=MySQL%20Truncation&amp;summary=&amp;source="><img src="https://10degres.net/assets/img/share/linkedin.png"></a>
+    <a href="https://twitter.com/intent/tweet?text=https%3a%2f%2f10degres.net%2fmysql-truncation%2f"><img src="https://10degres.net/assets/img/share/twitter.png"></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f10degres.net%2fmysql-truncation%2f"><img src="https://10degres.net/assets/img/share/facebook.png"></a>
+</div>
+
+
     <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">MySQL Truncation</h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fas fa-calendar"></i>
-              <time datetime='2015-01-28T00:00:00Z'>
-                January 28, 2015
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fas fa-clock"></i>
-              3 minutes read
-            </span>
-          </div>
-          
-          <div class="tags">
+        <header>
+            <div class="post-title">
+                <h1 class="title">MySQL Truncation</h1>
+            </div>
+            <div class="post-meta">
+                <div class="date">
+                    <span class="posted-on">
+                      <i class="fas fa-calendar"></i>
+                        <time datetime='2015-01-28T00:00:00Z'>
+                            January 28, 2015
+                        </time>
+                    </span>
+                    <span class="reading-time">
+                        <i class="fas fa-clock"></i>
+                        3 minutes read
+                    </span>
+                </div>
+                
+                <div class="tags">
   <i class="fas fa-tag"></i>
     <a href="https://10degres.net/tags/mysql/">mysql</a>
       <span class="separator">•</span>
     <a href="https://10degres.net/tags/bdd/">bdd</a></div>
 
-        </div>
-      </header>
+            </div>
+          </header>
 
-      <div>
-        <h2 id="description">Description</h2>
+        <div>
+            <h2 id="description">Description</h2>
 <p>Here is a very interesting issue in MySQL database.
 SQL truncation occurs when you try to insert/update a field with a string which is longer than the maximum length defined in the table structure.
 For instance if you defined a column <code>name</code> as a varchar(8) and you provide <code>abracadabra</code> wich is 11, MySQL will truncate the string to 8 and will insert <code>abracada</code> instead.
@@ -204,17 +213,18 @@ Many developers don&rsquo;t even test the result of their sql requests so if the
 <p>Another solution would be to use a unique index on the proper field, MySQL will trigger an error because it will (again) consider &ldquo;<code>admin</code>&rdquo; and &ldquo;<code>admin  </code> &quot; as equal.</p>
 <p>Finally, most of the orm check the good validity of the values before executing the queries and apply filters.
 This must be tested&hellip;</p>
-      </div>
+        </div>
 
-      <footer>
-        
+        <footer>
+            
 
 
-      </footer>
+        </footer>
     </article>
 
     
-  </section>
+</section>
+
 
       </div>
 

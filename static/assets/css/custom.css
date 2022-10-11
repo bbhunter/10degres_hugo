@@ -45,3 +45,16 @@ section.cves ul li .title, section.cves ul li .title:hover, section.cves ul li .
 .about h2 a:hover {
     color: #1EC8BB;
 }
+
+.post {
+    position: relative;
+}
+#share-buttons {
+    position: absolute;
+    top: 250px;
+    left: -100px;
+}
+#share-buttons a {
+    display: block;
+    margin-bottom: 10px;
+}
