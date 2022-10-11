@@ -6,25 +6,7 @@
     <description>Recent content in Tags on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>sql injection</title>
-      <link>https://10degres.net/tags/sql-injection/</link>
-      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/sql-injection/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sqli</title>
-      <link>https://10degres.net/tags/sqli/</link>
-      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/sqli/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>subdomain takeover</title>
       <link>https://10degres.net/tags/subdomain-takeover/</link>
@@ -71,11 +53,65 @@
     </item>
     
     <item>
+      <title>code injection</title>
+      <link>https://10degres.net/tags/code-injection/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/code-injection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cve</title>
+      <link>https://10degres.net/tags/cve/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/cve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>rce</title>
       <link>https://10degres.net/tags/rce/</link>
-      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/tags/rce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql injection</title>
+      <link>https://10degres.net/tags/sql-injection/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/sql-injection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lfd</title>
+      <link>https://10degres.net/tags/lfd/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/lfd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>path traversal</title>
+      <link>https://10degres.net/tags/path-traversal/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/path-traversal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xss</title>
+      <link>https://10degres.net/tags/xss/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/xss/</guid>
       <description></description>
     </item>
     
@@ -242,15 +278,6 @@
     </item>
     
     <item>
-      <title>xss</title>
-      <link>https://10degres.net/tags/xss/</link>
-      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/xss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>information gathering</title>
       <link>https://10degres.net/tags/information-gathering/</link>
       <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
@@ -265,6 +292,15 @@
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/tags/repository/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sqli</title>
+      <link>https://10degres.net/tags/sqli/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/sqli/</guid>
       <description></description>
     </item>
     
@@ -400,15 +436,6 @@
       <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/tags/lfirfi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>path traversal</title>
-      <link>https://10degres.net/tags/path-traversal/</link>
-      <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/path-traversal/</guid>
       <description></description>
     </item>
     

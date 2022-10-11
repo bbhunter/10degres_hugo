@@ -6,7 +6,23 @@
     <description>Recent content in path traversal on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/path-traversal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/path-traversal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Path traversal in Zenphoto v1.5.6 and prior</title>
+      <link>https://10degres.net/cves/cve-2020-22144/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/cves/cve-2020-22144/</guid>
+      <description>An issue in /zp-core/admin-logs.php of Zenphoto 1.5.6 allows attackers to perform a directory traversal and read arbitrary log files.
+mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22144 Description:
+The admin function allows to download log files from the local system that are not suppose to.
+Details:
+File: /zp-core/admin-logs.php
+Parameter: filename
+Payload:
+/zp-core/admin-logs.php?action=download_log&amp;amp;page=logs&amp;amp;tab=setup&amp;amp;filename=../../../../../../../../../var/log/alternatives&amp;amp;XSRFToken=bcf89608fdaaa5e293ccd5f83d1614f05bfcbaae PoC:</description>
+    </item>
+    
     <item>
       <title>An extremely buggy web app !</title>
       <link>https://10degres.net/an-extremely-buggy-web-app/</link>

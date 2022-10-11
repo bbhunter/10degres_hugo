@@ -1305,5 +1305,20 @@ Tools dnsexpire by me
 3rdparty-services by me</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://10degres.net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/</guid>
+      <description>cve search: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=php
+find project: https://www.sourcecodester.com/php-project
+search the product: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=Online+Magazine+Management
+find issue confirm CVE doesn&amp;rsquo;t exist: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=Online+Magazine+Management
+contact the vendor with all details
+fill form: https://cveform.mitre.org/
+with help of the guide: https://github.com/CVEProject/cveproject.github.io/blob/gh-pages/requester/reservation-guidelines.md</description>
+    </item>
+    
   </channel>
 </rss>

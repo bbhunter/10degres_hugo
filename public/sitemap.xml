@@ -3,22 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://10degres.net/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/cves/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/sql-injection/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/cves/online_magazine_management_system-sqli/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/sqli/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/one-takeover-to-rule-them-all/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
@@ -27,6 +12,9 @@
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/subdomain-takeover/</loc>
+    <lastmod>2022-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/tools/</loc>
@@ -47,14 +35,50 @@
     <loc>https://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://10degres.net/tags/code-injection/</loc>
+    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/cve-2020-22155/</loc>
+    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/cve/</loc>
+    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/</loc>
+    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/rce/</loc>
+    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/cve-2020-22154/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/sql-injection/</loc>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/cve-2020-22145/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/lfd/</loc>
+    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/path-traversal/</loc>
+    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/cve-2020-22144/</loc>
+    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/cve-2020-22143/</loc>
+    <lastmod>2020-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/xss/</loc>
+    <lastmod>2020-02-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://10degres.net/cves/cve-2020-8645/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/5-things-to-avoid-in-bug-bounty/</loc>
     <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/rce/</loc>
-    <lastmod>2020-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/cves/cve-2020-8440/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
@@ -164,9 +188,6 @@
     <loc>https://10degres.net/tags/flash/</loc>
     <lastmod>2018-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://10degres.net/tags/xss/</loc>
-    <lastmod>2018-05-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://10degres.net/tags/information-gathering/</loc>
     <lastmod>2018-04-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -177,6 +198,9 @@
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/repository/</loc>
+    <lastmod>2018-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/sqli/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/subdomain/</loc>
@@ -255,9 +279,6 @@
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/lfirfi/</loc>
-    <lastmod>2016-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/path-traversal/</loc>
     <lastmod>2016-01-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/training/</loc>
@@ -532,5 +553,7 @@
   </url><url>
     <loc>https://10degres.net/vulnerability-subdomain-takeover/</loc>
     <lastmod>1970-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/</loc>
   </url>
 </urlset>

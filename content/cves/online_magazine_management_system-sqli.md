@@ -2,7 +2,9 @@
 cve: "pending..."
 title: "SQL Injection in Online Magazine Management System"
 date: 2022-10-10
+draft: yes
 tags:
+- cve
 - sql injection
 - sqli
 ---

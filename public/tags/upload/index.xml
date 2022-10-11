@@ -8,13 +8,19 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/upload/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Unrestricted file upload in SimpleJobScript by Niteosoft</title>
+      <title>Unrestricted file upload in SimpleJobScript</title>
       <link>https://10degres.net/cves/cve-2020-8440/</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-8440/</guid>
       <description>controllers/page_apply.php in Simplejobscript.com SJS through 1.66 is prone to unauthenticated Remote Code Execution by uploading a PHP script as a resume.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8440 public announcement: https://github.com/niteosoft/simplejobscript/issues/10 </description>
+mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8440 public announcement: https://github.com/niteosoft/simplejobscript/issues/10 Description:
+controllers/page_apply.php in simplejobscript.com SJS &amp;lt;=1.66 is prone to unauthenticated Remote Code Execution by uploading a PHP script as a resume.
+Details:
+File: /controllers/page_apply.php URL: /apply
+Parameter: cv
+Steps to Reproduce:
+1/ Apply for a job and attach a PHP file as your resume</description>
     </item>
     
     <item>

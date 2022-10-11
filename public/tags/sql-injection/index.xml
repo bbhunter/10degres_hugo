@@ -6,38 +6,49 @@
     <description>Recent content in sql injection on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/sql-injection/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/sql-injection/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>SQL Injection in Online Magazine Management System</title>
-      <link>https://10degres.net/cves/online_magazine_management_system-sqli/</link>
-      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      <title>Authenticated SQL injection in Zenphoto v1.5.6 and prior</title>
+      <link>https://10degres.net/cves/cve-2020-22154/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://10degres.net/cves/online_magazine_management_system-sqli/</guid>
-      <description>Login form of Online Magazine Management System v1.0 is prone to SQL injection. An attacker could exploit parameters username and password to get administrator access.
-mitre: https://cve.mitre.org/ Description:
-The parameters username and password are not sanitized during the login process.
-An attacker could craft a payload to bypass the login form. No valid login or password are needed.
-The first user in the database will be returned, so usually the admin user.</description>
+      <guid>https://10degres.net/cves/cve-2020-22154/</guid>
+      <description>Zenphoto 1.5.6 was discovered to contain a SQL injection via the postAlbumSort() function in /zp-core/admin-functions.php.
+mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22154 Description:
+The function postAlbumSort() triggers a SQL query using the POST parameter order, unfortunately his value is not sanitized when building the query.
+Details:
+File: /zp-core/admin-functions.php
+Function: postAlbumSort()
+Parameter: order
+Payload:
+POST /zp-core/admin-edit.php?page=edit&amp;amp;action=savealbumorder XSRFToken=bfc6ec5b3fdffce396ca60b824b68e3eb18a5d4c&amp;amp;checkallaction=noaction&amp;amp;newtag_mass_tags_=&amp;amp;massownerselect=admin&amp;amp;order=id%5B2 and (select sleep(5))%23%5D%3Dnull%26id%5B1%5D%3Dnull&amp;amp;update=Save+Order Recommendation:
+Cast the value to integer.
+PoC:</description>
     </item>
     
     <item>
-      <title>Unauthenticated SQL injection in SimpleJobScript by Niteosoft</title>
+      <title>Unauthenticated SQL injection in SimpleJobScript</title>
       <link>https://10degres.net/cves/cve-2020-8645/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-8645/</guid>
       <description>An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is job_id. The function is getJobApplicationsByJobId(). The file is _lib/class.JobApplication.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8645 public announcement: https://github.com/niteosoft/simplejobscript/issues/9 </description>
+mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8645 public announcement: https://github.com/niteosoft/simplejobscript/issues/9 Description:
+An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is job_id. The function is getJobApplicationsByJobId(). The file is _lib/class.</description>
     </item>
     
     <item>
-      <title>Unauthenticated SQL injection in SimpleJobScript by Niteosoft</title>
+      <title>Unauthenticated SQL injection in SimpleJobScript</title>
       <link>https://10degres.net/cves/cve-2020-7229/</link>
       <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-7229/</guid>
       <description>An issue was discovered in Simplejobscript.com SJS before 1.65. There is unauthenticated SQL injection via the search engine. The parameter is landing_location. The function is countSearchedJobs(). The file is _lib/class.Job.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7229 public announcement: https://github.com/niteosoft/simplejobscript/issues/7 </description>
+mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7229 public announcement: https://github.com/niteosoft/simplejobscript/issues/7 Description:
+An issue was discovered in Simplejobscript.com SJS before 1.65. There is unauthenticated SQL injection via the search engine. The parameter is landing_location. The function is countSearchedJobs(). The file is _lib/class.Job.php.
+Details:
+File: /_lib/class.Job.php
+Function: countSearchedJobs()</description>
     </item>
     
     <item>
@@ -61,7 +72,7 @@ This could reveal more themes/plugins.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Unauthenticated SQL injection in Wordpress plugin “gallery-images” by Huge-IT</title>
+      <title>Unauthenticated SQL injection in Wordpress plugin “gallery-images”</title>
       <link>https://10degres.net/cves/cve-2016-11018/</link>
       <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
       
