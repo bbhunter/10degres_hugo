@@ -65,3 +65,11 @@ section.cves ul li .title, section.cves ul li .title:hover, section.cves ul li .
     display: block;
     margin-bottom: 10px;
 }
+
+#adsads {
+    border: 0px solid #ff0000;
+    position: absolute;
+    top: 100px;
+    right: -200px;
+    /* height: 100%; */
+}
