@@ -49,12 +49,19 @@ section.cves ul li .title, section.cves ul li .title:hover, section.cves ul li .
 .post {
     position: relative;
 }
-#share-buttons {
+#sharer {
+    border: 0px solid #ff0000;
     position: absolute;
-    top: 250px;
+    top: 0px;
     left: -100px;
+    height: 100%;
 }
-#share-buttons a {
+#sharer .sharer-buttons {
+    border: 0px solid #0000ff;
+    position: fixed;
+    top: 200px;
+}
+#sharer a {
     display: block;
     margin-bottom: 10px;
 }
