@@ -13,17 +13,7 @@
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-22154/</guid>
-      <description>Zenphoto 1.5.6 was discovered to contain a SQL injection via the postAlbumSort() function in /zp-core/admin-functions.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22154 Description:
-The function postAlbumSort() triggers a SQL query using the POST parameter order, unfortunately his value is not sanitized when building the query.
-Details:
-File: /zp-core/admin-functions.php
-Function: postAlbumSort()
-Parameter: order
-Payload:
-POST /zp-core/admin-edit.php?page=edit&amp;amp;action=savealbumorder XSRFToken=bfc6ec5b3fdffce396ca60b824b68e3eb18a5d4c&amp;amp;checkallaction=noaction&amp;amp;newtag_mass_tags_=&amp;amp;massownerselect=admin&amp;amp;order=id%5B2 and (select sleep(5))%23%5D%3Dnull%26id%5B1%5D%3Dnull&amp;amp;update=Save+Order Recommendation:
-Cast the value to integer.
-PoC:</description>
+      <description>&lt;p&gt;Zenphoto 1.5.6 was discovered to contain a SQL injection via the &lt;code&gt;postAlbumSort()&lt;/code&gt; function in &lt;code&gt;/zp-core/admin-functions.php&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,9 +22,7 @@ PoC:</description>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-8645/</guid>
-      <description>An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is job_id. The function is getJobApplicationsByJobId(). The file is _lib/class.JobApplication.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8645 public announcement: https://github.com/niteosoft/simplejobscript/issues/9 Description:
-An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is job_id. The function is getJobApplicationsByJobId(). The file is _lib/class.</description>
+      <description>&lt;p&gt;An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is &lt;code&gt;job_id&lt;/code&gt;. The function is &lt;code&gt;getJobApplicationsByJobId()&lt;/code&gt;. The file is &lt;code&gt;_lib/class.JobApplication.php&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,12 +31,7 @@ An issue was discovered in Simplejobscript.com SJS through 1.66. There is an una
       <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-7229/</guid>
-      <description>An issue was discovered in Simplejobscript.com SJS before 1.65. There is unauthenticated SQL injection via the search engine. The parameter is landing_location. The function is countSearchedJobs(). The file is _lib/class.Job.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7229 public announcement: https://github.com/niteosoft/simplejobscript/issues/7 Description:
-An issue was discovered in Simplejobscript.com SJS before 1.65. There is unauthenticated SQL injection via the search engine. The parameter is landing_location. The function is countSearchedJobs(). The file is _lib/class.Job.php.
-Details:
-File: /_lib/class.Job.php
-Function: countSearchedJobs()</description>
+      <description>&lt;p&gt;An issue was discovered in Simplejobscript.com SJS before 1.65. There is unauthenticated SQL injection via the search engine. The parameter is &lt;code&gt;landing_location&lt;/code&gt;. The function is &lt;code&gt;countSearchedJobs()&lt;/code&gt;. The file is &lt;code&gt;_lib/class.Job.php&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -77,37 +60,7 @@ This could reveal more themes/plugins.&lt;/p&gt;</description>
       <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2016-11018/</guid>
-      <description>&lt;p&gt;An issue was discovered in the Huge-IT gallery-images plugin before 1.9.0 for WordPress. The headers &lt;code&gt;Client-Ip&lt;/code&gt; and &lt;code&gt;X-Forwarded-For&lt;/code&gt; are prone to unauthenticated SQL injection. The affected file is &lt;code&gt;gallery-images.php&lt;/code&gt;. The affected function is &lt;code&gt;huge_it_image_gallery_ajax_callback()&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mitre: &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-11018&#34;&gt;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-11018&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;p&gt;While I was working on a famous bug bounty program, WPScan returns me the list of the plugins configured on the Wordpress install.
-Here is what I found in one of them: &lt;a href=&#34;https://wordpress.org/plugins/gallery-images/&#34;&gt;Image Gallery by Huge-IT&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;WPScan output, no issues known:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[+] Name: gallery-images - v1.8.6  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; |  Location: https://[REDACTED]/wp-content/plugins/gallery-images/  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; |  Readme: https://[REDACTED]/wp-content/plugins/gallery-images/readme.txt  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After a fast search on &lt;a href=&#34;https://www.exploit-db.com/&#34;&gt;exploit-db.com&lt;/a&gt; with no success, I finally decided to download it and read the code to find vulnerabilites by myself.
-Since the readme was available, I was able to confirm the version of the plugin.&lt;/p&gt;
-&lt;p&gt;I was looking for two kind of vulnerabilities: file upload and sql injection.
-First thing I did was to locate PHP files, and grepping the result to find &lt;code&gt;Content-Disposition&lt;/code&gt; header:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ find . -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*.php*&amp;#34;&lt;/span&gt; | xargs grep -i header
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:		/*HEIGHT FROM HEADER.PHP*/
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./admin/gallery_func.php:			header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Location: admin.php?page=gallerys_huge_it_gallery&amp;amp;id=&amp;#39;&lt;/span&gt;.$rowsldccs-&amp;gt;id.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;amp;task=apply&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./admin/gallery_view.php:	header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Location: admin.php?page=gallerys_huge_it_gallery&amp;amp;id=&amp;#39;&lt;/span&gt;.$row-&amp;gt;id.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;amp;task=apply&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./admin/gallery_view.php:	&amp;lt;div id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gallery-header&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;An issue was discovered in the Huge-IT gallery-images plugin before 1.9.0 for WordPress. The headers &lt;code&gt;Client-Ip&lt;/code&gt; and &lt;code&gt;X-Forwarded-For&lt;/code&gt; are prone to unauthenticated SQL injection. The affected file is &lt;code&gt;gallery-images.php&lt;/code&gt;. The affected function is &lt;code&gt;huge_it_image_gallery_ajax_callback()&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

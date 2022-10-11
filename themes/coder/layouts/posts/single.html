@@ -1,6 +1,7 @@
 {{ define "title" }}
-  {{ .Title }} · {{ .Site.Title }}
+    {{ .Title }} · {{ .Site.Title }}
 {{ end }}
+
 {{ define "content" }}
 <section class="container post">
     {{ partial "posts/sharer.html" . }}
@@ -13,7 +14,7 @@
             <div class="post-meta">
                 <div class="date">
                     <span class="posted-on">
-                      <i class="fas fa-calendar"></i>
+                        <i class="fas fa-calendar"></i>
                         <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
                             {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
                         </time>
@@ -26,7 +27,7 @@
                 {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
                 {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
             </div>
-          </header>
+        </header>
 
         <div>
             {{ .Content }}
@@ -41,5 +42,4 @@
 
     {{ partial "posts/math.html" . }}
 </section>
-
 {{ end }}

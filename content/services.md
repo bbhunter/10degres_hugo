@@ -2,7 +2,7 @@
 title: "Bug Bounty consulting"
 date: 2019-10-27T18:05:10+01:00
 ---
-With more than 3 years of experience, I had the opportunity to study several aspects of this industry:
+With more than 6 years of experience, I had the opportunity to study several aspects of this industry:
 
 - As a full time bug hunter, I am pretty familiar with their expectations:
 What they look for, what are their problems, what make them more involved...

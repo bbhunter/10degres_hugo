@@ -9,6 +9,7 @@ tags:
 - sqli
 ---
 Login form of Online Magazine Management System v1.0 is prone to SQL injection. An attacker could exploit parameters `username` and `password` to get administrator access.
+<!--more-->
 
 - mitre: https://cve.mitre.org/
 
