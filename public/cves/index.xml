@@ -6,7 +6,20 @@
     <description>Recent content in Cves on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/cves/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/cves/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Injection in Online Magazine Management System</title>
+      <link>https://10degres.net/cves/online_magazine_management_system-sqli/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/cves/online_magazine_management_system-sqli/</guid>
+      <description>Login form of Online Magazine Management System v1.0 is prone to SQL injection. An attacker could exploit parameters username and password to get administrator access.
+mitre: https://cve.mitre.org/ Description:
+The parameters username and password are not sanitized during the login process.
+An attacker could craft a payload to bypass the login form. No valid login or password are needed.
+The first user in the database will be returned, so usually the admin user.</description>
+    </item>
+    
     <item>
       <title>Unauthenticated SQL injection in SimpleJobScript by Niteosoft</title>
       <link>https://10degres.net/cves/cve-2020-8645/</link>

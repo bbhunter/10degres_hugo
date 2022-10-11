@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://10degres.net/</loc>
-    <lastmod>2022-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/sql-injection/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/online_magazine_management_system-sqli/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/sqli/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/one-takeover-to-rule-them-all/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
@@ -12,9 +27,6 @@
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/subdomain-takeover/</loc>
-    <lastmod>2022-09-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/tools/</loc>
@@ -34,12 +46,6 @@
   </url><url>
     <loc>https://10degres.net/how-to-keep-hackers-motivated-in-bug-bounty/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/cves/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/sql-injection/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/cves/cve-2020-8645/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
@@ -171,9 +177,6 @@
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/repository/</loc>
-    <lastmod>2018-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/sqli/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/subdomain/</loc>

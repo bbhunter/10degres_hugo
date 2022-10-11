@@ -6,7 +6,25 @@
     <description>Recent content in Tags on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sql injection</title>
+      <link>https://10degres.net/tags/sql-injection/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/sql-injection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sqli</title>
+      <link>https://10degres.net/tags/sqli/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/tags/sqli/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>subdomain takeover</title>
       <link>https://10degres.net/tags/subdomain-takeover/</link>
@@ -49,15 +67,6 @@
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/tags/hackers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sql injection</title>
-      <link>https://10degres.net/tags/sql-injection/</link>
-      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/sql-injection/</guid>
       <description></description>
     </item>
     
@@ -256,15 +265,6 @@
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/tags/repository/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sqli</title>
-      <link>https://10degres.net/tags/sqli/</link>
-      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://10degres.net/tags/sqli/</guid>
       <description></description>
     </item>
     
