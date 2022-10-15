@@ -1,6 +1,7 @@
 ---
 cve: "pending..."
 title: "SQL Injection in Online Magazine Management System"
+images: [/images/cve-mitre.png]
 date: 2022-10-10
 draft: yes
 tags:
