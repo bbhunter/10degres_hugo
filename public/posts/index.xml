@@ -6,7 +6,21 @@
     <description>Recent content in Posts on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CVE demystified</title>
+      <link>https://10degres.net/cve-demystified/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/cve-demystified/</guid>
+      <description>&lt;p&gt;As a security researcher, as a beginner, you maybe see the fact of having your own CVE as the Graal.&lt;/p&gt;
+&lt;p&gt;What are CVEs ?
+Who can request them ?
+Is it possible to get your own ?
+Where to search ? What products ?&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s demystify the legend.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>One takeover to rule them all</title>
       <link>https://10degres.net/one-takeover-to-rule-them-all/</link>
