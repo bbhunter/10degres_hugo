@@ -85,8 +85,6 @@
       {{ partial "footer.html" . }}
     </main>
 
-    {{ template "_internal/google_analytics.html" . }}
-
     {{ range .Site.Params.custom_js }}
       <script src="{{ . | relURL }}"></script>
     {{ end }}
