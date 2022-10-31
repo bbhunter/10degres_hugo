@@ -162,7 +162,8 @@ Remember that bug bounty is also about learning (for both parts).
 
 It's the job of the hacker to prove the criticity of the vulnerabilities he finds.
 Try to create a possible scenario showing the potential risks of the issue.
-But take care to not fall to the "Hollywood syndrom". there is only a few chance that a Full Path Disclosure leads to an earthquake followed by a tsunami, stamping out the human race. Seriously, it's not gonna happen.  
+But take care to not fall to the "Hollywood syndrom", there is only a few chance that a Full Path Disclosure leads to an earthquake followed by a tsunami, stamping out the human race.
+Seriously, it's not gonna happen.  
 
 ![2012 movie](/images/2012-movie.jpg)
 
