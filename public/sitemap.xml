@@ -17,6 +17,15 @@
     <loc>https://10degres.net/tags/</loc>
     <lastmod>2022-10-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://10degres.net/cves/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/tags/file-upload/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/cves/cve-2022-43265/</loc>
+    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://10degres.net/one-takeover-to-rule-them-all/</loc>
     <lastmod>2022-09-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -45,9 +54,6 @@
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/cves/cve-2020-22155/</loc>
-    <lastmod>2020-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/cves/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/rce/</loc>
@@ -411,9 +417,6 @@
     <lastmod>2015-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/dvwa-file-upload/</loc>
-    <lastmod>2015-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/tags/file-upload/</loc>
     <lastmod>2015-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/owasp/</loc>

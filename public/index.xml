@@ -22,6 +22,15 @@ Where to search ? What products ?&lt;/p&gt;
     </item>
     
     <item>
+      <title>Unrestricted File Upload in Canteen Management System</title>
+      <link>https://10degres.net/cves/cve-2022-43265/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://10degres.net/cves/cve-2022-43265/</guid>
+      <description>&lt;p&gt;An arbitrary file upload vulnerability in the component &lt;code&gt;/pages/save_user.php&lt;/code&gt; of Canteen Management System v1.0 allows attackers to execute arbitrary code via a crafted PHP file.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>One takeover to rule them all</title>
       <link>https://10degres.net/one-takeover-to-rule-them-all/</link>
       <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
