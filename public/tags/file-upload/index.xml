@@ -6,11 +6,11 @@
     <description>Recent content in file upload on 10degres</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/file-upload/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/tags/file-upload/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unrestricted File Upload in Canteen Management System</title>
       <link>https://10degres.net/cves/cve-2022-43265/</link>
-      <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://10degres.net/cves/cve-2022-43265/</guid>
       <description>&lt;p&gt;An arbitrary file upload vulnerability in the component &lt;code&gt;/pages/save_user.php&lt;/code&gt; of Canteen Management System v1.0 allows attackers to execute arbitrary code via a crafted PHP file.&lt;/p&gt;</description>
