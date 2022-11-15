@@ -77,7 +77,9 @@ In the following picture I decide to hide a mp3 sound, there is no way to figure
 <audio src="/images/lsb-dbz.mp3" controls="controls"></audio>
 
 In this test I used the three color components because of the size of the audio which was about 300Ko, the original picture was about 1.2Mo. 
-Finally, after the merge, the final picture is logically, about 1.5Mo.
+Finally, after the merge, the final picture is logically, about 1.5Mo.  
+
+[Check the script on GitHub](https://github.com/gwen001/php-stegano-lsb)
 
 
 ## External resources
