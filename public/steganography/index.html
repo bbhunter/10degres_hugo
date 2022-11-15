@@ -156,8 +156,8 @@ The hidden message can be clear text or encrypted and the container can be any
 The main benefit of steganography is that you can get the final message only if you know the technic used to hide it, because you&rsquo;ll need to use the same algorithm.
 As a second layer of protection, you can also encrypt the data with any algorithm you like or with a private key.</p>
 <h2 id="example">Example</h2>
-<p>A good old example of steganography is the famous letter of Georges Sand to Alfred de Musset.
-The original text looks like a lovely letter but you only read even lines, a porn text appears (see <a href="http://5ko.free.fr/fr/sand.html">this link</a> (FR)).
+<p>A good old example of steganography is the famous <a href="http://5ko.free.fr/fr/sand.html">letter of Georges Sand to Alfred de Musset</a>(FR).
+The original text looks like a lovely letter but you only read even lines, a porn text appears.
 If you don&rsquo;t know that you won&rsquo;t be able to see how Georges Sand was horny :)</p>
 <h2 id="least-significant-bit">Least Significant Bit</h2>
 <p>Our days, with new technologies, the container can be a media support: image (jpg, gif, bmp&hellip;), video (avi, mov, flv&hellip;), sound (wav, ogg&hellip;).
@@ -171,12 +171,11 @@ Who will notice the difference between a full black pixel with R=0, G=0, B=0 and
 <img src="https://10degres.net/images/lsb-black-010101.png" alt="lsb black 010101"></p>
 <p>Do you see the difference ? Of course not. Do you get the point now ?</p>
 <h2 id="real-case">Real case</h2>
-<p>Based on this technic, I wrote a little PHP script to put a secret message inside a png picture then I wrote another script for extraction:</p>
-<p><img src="https://10degres.net/images/lsb-mountain-message.png" alt="lsb mountain with message">
-<img src="https://10degres.net/images/lsb-mountain-empty.png" alt="lsb mountain original"></p>
+<p>Based on this technic, I wrote a little PHP script to put a secret message inside a PNG picture then I wrote another script for extraction:</p>
+<p><img src="https://10degres.net/images/lsb-mountain-empty.png" alt="lsb mountain original">
+<img src="https://10degres.net/images/lsb-mountain-message.png" alt="lsb mountain with message"></p>
 <p>The picture with the encoded message is the left one, obviously you cannot see the difference without an image editor, here is the extracted data:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>UXVlIGRldmllbnQgbGEgdmVydHUgcGVuZGFudCBjZXMgZMOpbGljaWV1eCB2b3lhZ2VzIG91IGxhIHBlbnPDqWU
-</span></span><span style="display:flex;"><span>gZnJhbmNoaXQgdG91cyBsZXMgb2JzdGFjbGVzID8=
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>UXVlIGRldmllbnQgbGEgdmVydHUgcGVuZGFudCBjZXMgZMOpbGljaWV1eCB2b3lhZ2VzIG91IGxhIHBlbnPDqWUgZnJhbmNoaXQgdG91cyBsZXMgb2JzdGFjbGVzID8K
 </span></span></code></pre></div><p>After a base64 decode, a text from Honoré De Balzac, a famous french writer, appears:</p>
 <p><code>Que devient la vertu pendant ces délicieux voyages ou la pensée franchit tous les obstacles ?</code></p>
 <p>In this test I only used the red component to store my message, that means I can only encode one bit of one character in one pixel.
@@ -187,11 +186,11 @@ compress your data or you can simply use a bigger picture :) The only thing you
 <h2 id="forfun">For fun</h2>
 <p>I improved my script to support every filetype in input.
 In the following picture I decide to hide a mp3 sound, there is no way to figure out the tricks:</p>
-<p><img src="https://10degres.net/images/lsb-dbz-message.png" alt="lsb dbz with audio">
-<img src="https://10degres.net/images/lsb-dbz-empty.png" alt="lsb dbz original"></p>
-<p><audio src="https://10degres.net/images/lsb_dbz.mp3" controls="controls"></audio></p>
-<p>In this test I used the three color components because of the size of the audio which was about 500Ko, the original picture was about 2Mo.
-Finally, after the merge, the final picture is logically, about 2.5Mo.</p>
+<img src="https://10degres.net/images/lsb-goku-empty.png" alt="lsb goku original" height="400" />
+<img src="https://10degres.net/images/lsb-goku-message.png" alt="lsb goku with audio" height="400" hspace="50" />
+<p><audio src="https://10degres.net/images/lsb-dbz.mp3" controls="controls"></audio></p>
+<p>In this test I used the three color components because of the size of the audio which was about 300Ko, the original picture was about 1.2Mo.
+Finally, after the merge, the final picture is logically, about 1.5Mo.</p>
 <h2 id="external-resources">External resources</h2>
 <ul>
 <li><a href="https://github.com/kzykhys/Steganography">A very nice Steganography project from Kazuyuki Hayashi written in PHP</a></li>
