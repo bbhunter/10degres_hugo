@@ -22,8 +22,8 @@ As a second layer of protection, you can also encrypt the data with any algorith
 
 ## Example
 
-A good old example of steganography is the famous letter of Georges Sand to Alfred de Musset. 
-The original text looks like a lovely letter but you only read even lines, a porn text appears (see [this link](http://5ko.free.fr/fr/sand.html) (FR)). 
+A good old example of steganography is the famous [letter of Georges Sand to Alfred de Musset](http://5ko.free.fr/fr/sand.html)(FR). 
+The original text looks like a lovely letter but you only read even lines, a porn text appears. 
 If you don't know that you won't be able to see how Georges Sand was horny :)
 
 ## Least Significant Bit
@@ -44,16 +44,15 @@ Do you see the difference ? Of course not. Do you get the point now ?
 
 ## Real case
 
-Based on this technic, I wrote a little PHP script to put a secret message inside a png picture then I wrote another script for extraction:
+Based on this technic, I wrote a little PHP script to put a secret message inside a PNG picture then I wrote another script for extraction:
 
-![lsb mountain with message](/images/lsb-mountain-message.png)
 ![lsb mountain original](/images/lsb-mountain-empty.png)
+![lsb mountain with message](/images/lsb-mountain-message.png)
 
 The picture with the encoded message is the left one, obviously you cannot see the difference without an image editor, here is the extracted data:
 
 ```none
-UXVlIGRldmllbnQgbGEgdmVydHUgcGVuZGFudCBjZXMgZMOpbGljaWV1eCB2b3lhZ2VzIG91IGxhIHBlbnPDqWU
-gZnJhbmNoaXQgdG91cyBsZXMgb2JzdGFjbGVzID8=
+UXVlIGRldmllbnQgbGEgdmVydHUgcGVuZGFudCBjZXMgZMOpbGljaWV1eCB2b3lhZ2VzIG91IGxhIHBlbnPDqWUgZnJhbmNoaXQgdG91cyBsZXMgb2JzdGFjbGVzID8K
 ```
 
 After a base64 decode, a text from Honoré De Balzac, a famous french writer, appears:
@@ -72,13 +71,13 @@ compress your data or you can simply use a bigger picture :) The only thing you
 I improved my script to support every filetype in input. 
 In the following picture I decide to hide a mp3 sound, there is no way to figure out the tricks:
 
-![lsb dbz with audio](/images/lsb-dbz-message.png)
-![lsb dbz original](/images/lsb-dbz-empty.png)
+<img src="/images/lsb-goku-empty.png" alt="lsb goku original" height="400" />
+<img src="/images/lsb-goku-message.png" alt="lsb goku with audio" height="400" hspace="50" />
 
-<audio src="/images/lsb_dbz.mp3" controls="controls"></audio>
+<audio src="/images/lsb-dbz.mp3" controls="controls"></audio>
 
-In this test I used the three color components because of the size of the audio which was about 500Ko, the original picture was about 2Mo. 
-Finally, after the merge, the final picture is logically, about 2.5Mo.
+In this test I used the three color components because of the size of the audio which was about 300Ko, the original picture was about 1.2Mo. 
+Finally, after the merge, the final picture is logically, about 1.5Mo.
 
 
 ## External resources
