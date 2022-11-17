@@ -316,6 +316,35 @@ Examples:
 ![github search](/images/github-search.jpg)
 
 
+## github-secrets.py
+
+Find secrets deployed on GitHub.
+
+```none
+usage: github-secrets.py [-h] [-t TOKEN] [-s SEARCH] [-e] [-r REGEXP] [-u] [-v]
+
+options:
+  -h, --help            show this help message and exit
+  -t TOKEN, --token TOKEN
+                        your github token (required)
+  -s SEARCH, --search SEARCH
+                        search term you are looking for (required)
+  -e, --extend          also look for <dummy>example.com
+  -r REGEXP, --regexp REGEXP
+                        regexp to search, default is SecLists secret-keywords list (can be a tomnomnom gf file)
+  -u, --url             display only url
+  -v, --verbose         verbose mode, for debugging purpose
+```
+
+Examples:
+```none
+	python3 github-secrets.py -s "AWS_KEY filename:.env" -r "AKIA[A-Z0-9]{16}"
+	python3 github-secrets.py -s "DB_PASSWORD filename:wp-config.php" -r "DB_PASSWORD',\s*'[^']{4,}"
+```
+
+![github secrets](/images/github-secrets.png)
+
+
 ## github-subdomains.py
 
 Find additional subdomains on GitHub.
@@ -400,6 +429,17 @@ optional arguments:
 ```
 
 ![github users](/images/github-users.jpg)
+
+
+## gsearch-reflog.sh
+
+This script downloads a given repository and performs searches in his logs in order to find secrets.
+
+```none
+Usage: ./gsearch-reflog.sh <repository url>
+```
+
+![github reflog](/images/gsearch-reflog.png)
 
 
 ## Conclusion
