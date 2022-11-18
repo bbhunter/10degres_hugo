@@ -34,7 +34,7 @@ I don't believe in licenses.
 You can do whatever you want with my scripts.  
 
 However, there is a simple way to support my work:  
-<a href="https://github.com/sponsors/gwen001" title="Sponsor gwen001"><img src="https://raw.githubusercontent.com/gwen001/pentest-tools/master/github-sponsor.jpg" alt="Sponsor gwen001" title="Sponsor gwen001"></a>
+<a href="https://github.com/sponsors/gwen001" title="Sponsor gwen001"><img src="/assets/img/github-sponsor.png" alt="Sponsor gwen001" title="Sponsor gwen001"></a>
 
 
 # Credits
