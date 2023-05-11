@@ -29,7 +29,7 @@ As we all know there are several ways to takeover a subdomain but the easiest wa
 
 <div style="float:left;width:420px">
     <b>Finding:</b><br>
-    Using my tool <a href="https://github.com/gwen001/dnspy">dnspy</a>, I found that <code>nuclaire.edf.fr</code> was an alias of <code>edf-linkbynet.com</code>.  
+    Using my tool <a href="https://github.com/gwen001/dnspy">dnspy</a>, I found that <code>nucleaire.edf.fr</code> was an alias of <code>edf-linkbynet.com</code>.  
     A quick search on Gandi and I realized that last one was available for purchase for about 12€/year.  
     Not knowing what would happen next, I bought the domain and configured it on my server to serve a nice PoC page.
 </div>
@@ -66,8 +66,8 @@ The tool, called [dnspy](https://github.com/gwen001/dnspy), is composed of 3 mod
 
 2/ the resolver performs DNS queries on all subdomains grabbed and generated using massdns, trying to detect dead hosts, cnames...
 
-3/ the interpreter reads the output of the resolver and look for possible takeover using the fingerprints file.
-It's inspired of subjack with some extra features like regexps support and the ignore list.
+3/ the interpreter reads the output of the resolver and looks for possible takeover using the fingerprint file.
+It's inspired of subjack with some extra features like regexps support and an ignore list.
 
 The whole thing is daemon based and can be independently launched. Below some good findings.
 
