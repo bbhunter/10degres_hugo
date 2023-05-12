@@ -63,6 +63,9 @@
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_256 | default "/images/favicon-256x256.png" | absURL }}" sizes="256x256">
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_128 | default "/images/favicon-128x128.png" | absURL }}" sizes="128x128">
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_64 | default "/images/favicon-64x64.png" | absURL }}" sizes="64x64">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
 
