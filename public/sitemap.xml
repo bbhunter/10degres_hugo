@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://10degres.net/</loc>
-    <lastmod>2022-11-11T00:00:00+00:00</lastmod>
+    <loc>https://10degres.net/about/</loc>
+    <lastmod>2023-05-08T16:06:21+02:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/services/</loc>
+    <lastmod>2023-05-05T18:05:10+01:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/projects/</loc>
+    <lastmod>2023-05-05T18:05:10+01:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/cve/</loc>
     <lastmod>2022-11-11T00:00:00+00:00</lastmod>
@@ -12,6 +18,9 @@
     <lastmod>2022-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/file-upload/</loc>
+    <lastmod>2022-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/</loc>
     <lastmod>2022-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/</loc>
@@ -107,14 +116,8 @@
     <loc>https://10degres.net/bug-bounty-management-a-great-example-zomato/</loc>
     <lastmod>2019-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://10degres.net/services/</loc>
-    <lastmod>2019-10-27T18:05:10+01:00</lastmod>
-  </url><url>
     <loc>https://10degres.net/press/</loc>
     <lastmod>2019-10-18T17:50:10+02:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/about/</loc>
-    <lastmod>2019-10-18T16:06:21+02:00</lastmod>
   </url><url>
     <loc>https://10degres.net/github-tools-collection/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>

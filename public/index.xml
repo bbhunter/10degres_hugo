@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>10degres</title>
+    <title>Gwendal Le Coguic</title>
     <link>https://10degres.net/</link>
-    <description>Recent content on 10degres</description>
+    <description>Recent content on Gwendal Le Coguic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://10degres.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://10degres.net/about/</link>
+      <pubDate>Mon, 08 May 2023 16:06:21 +0200</pubDate>
+      
+      <guid>https://10degres.net/about/</guid>
+      <description>After many years of web development, I finally decided to follow my dream: perform in the security industry. In october 2015, after 3 months of hard work, I successfully passed the famous Offensive Security Certified Professional exam.
+Since, Bug Bounty is my daily.
+As a hunter, I work on several platforms. As an active member of the community, I created many tools to automate the basics.
+In order to promote the Bug Bounty industry, I also help companies in this adventure.</description>
+    </item>
+    
+    <item>
+      <title>Bug Bounty consulting</title>
+      <link>https://10degres.net/services/</link>
+      <pubDate>Fri, 05 May 2023 18:05:10 +0100</pubDate>
+      
+      <guid>https://10degres.net/services/</guid>
+      <description>With more than 8 years of experience, I had the opportunity to study several aspects of this industry:
+As a bug hunter, I am pretty familiar with the expectations of hackers: What they look for, what are their problems, what make them more involved&amp;hellip;
+As a consultant, I help companies to manage their program. How to choose a scope, how to create a reward policy, what are SLAs, how to handle the reports, how to deal with hackers&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://10degres.net/projects/</link>
+      <pubDate>Fri, 05 May 2023 18:05:10 +0100</pubDate>
+      
+      <guid>https://10degres.net/projects/</guid>
+      <description>Below some of my projects Im really proud of. Mainly developed to help me in bug hunting, you can find them all and much more on my GitHub profile. Feel free to clone and update them as much as you want to fit your own needs.
+offsec.tools A vast collection of security tools for bug bounty, pentest and red teaming. Curated by the community, feel free to add your own tool and subscribe the newsletter.</description>
+    </item>
+    
     <item>
       <title>Unrestricted File Upload in Canteen Management System</title>
       <link>https://10degres.net/cves/cve-2022-43265/</link>
@@ -181,34 +214,12 @@ Let&amp;rsquo;s discover how Zomato became one of the best program, not only on 
     </item>
     
     <item>
-      <title>Bug Bounty consulting</title>
-      <link>https://10degres.net/services/</link>
-      <pubDate>Sun, 27 Oct 2019 18:05:10 +0100</pubDate>
-      
-      <guid>https://10degres.net/services/</guid>
-      <description>With more than 6 years of experience, I had the opportunity to study several aspects of this industry:
-As a full time bug hunter, I am pretty familiar with their expectations: What they look for, what are their problems, what make them more involved&amp;hellip;
-As a consultant, I work with platforms to solve the common problems in a relationship with hackers and handle the daily. Support the customers, manage the reports, keep hackers on the right track&amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>Press</title>
       <link>https://10degres.net/press/</link>
       <pubDate>Fri, 18 Oct 2019 17:50:10 +0200</pubDate>
       
       <guid>https://10degres.net/press/</guid>
       <description>Detectify blog - Bypassing Cloudflare WAF with the origin server IP address Pentester Land - How to think out of the box with @gwendallecoguic CANAL+ - Bonsoir! - Les chevaliers blancs du hacking BEHIND THE CODE Live Coding - Website Security Vulnerabilities France Inter - Hacking éthique</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://10degres.net/about/</link>
-      <pubDate>Fri, 18 Oct 2019 16:06:21 +0200</pubDate>
-      
-      <guid>https://10degres.net/about/</guid>
-      <description>After many years of web development, I finally decided to follow my dream: perform in the security industry. In october 2015, after 3 months of hard work, I successfully passed the famous Offensive Security Certified Professional exam.
-Since, Bug Bounty is my daily.
-As a hunter, I mainly work on HackerOne, the american leader in the field. As an active member of the community, I created many tools to automate the basics.</description>
     </item>
     
     <item>

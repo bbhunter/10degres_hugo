@@ -1,7 +1,7 @@
 baseURL = "https://10degres.net/"
 googleAnalytics = "UA-61485350-1"
 languageCode = "en-us"
-title = "10degres"
+title = "Gwendal Le Coguic"
 theme = "coder"
 
 defaultcontentlanguage = "en"
@@ -24,9 +24,9 @@ unsafe= true
 
 [params]
     author = "Gwendal Le Coguic"
-    title = "10degres"
+    title = "Gwendal Le Coguic"
     twitter = "gwendallecoguic"
-    info = "bug bounty professional"
+    info = "security professional"
     description = "Gwendal Le Coguic, developer and bug hunter"
     keywords = "developer,security,researcher,pentester,bugbounty,bughunter,tools,bash,php,python,golang"
     avatarurl = "/assets/img/me.jpg"
@@ -72,20 +72,24 @@ unsafe= true
     weight = 1
     url  = "/posts/"
 [[menu.main]]
-    name = "CVEs"
+    name = "Projects"
     weight = 2
+    url  = "/projects/"
+[[menu.main]]
+    name = "CVEs"
+    weight = 3
     url  = "/cves/"
 [[menu.main]]
     name = "Services"
-    weight = 3
+    weight = 4
     url  = "/services/"
 [[menu.main]]
     name = "Press"
-    weight = 4
+    weight = 5
     url  = "/press/"
 [[menu.main]]
     name = "About"
-    weight = 5
+    weight = 6
     url = "/about/"
 
 [permalinks]
