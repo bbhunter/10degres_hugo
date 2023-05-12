@@ -33,6 +33,9 @@ unsafe= true
 #    avatarurl = "/assets/img/avatar.jpg"
     images = ["/assets/img/header-background.jpg"]
 
+    favicon_256 = "/assets/img/favicon-256x256.png"
+    favicon_128 = "/assets/img/favicon-128x128.png"
+    favicon_64 = "/assets/img/favicon-64x64.png"
     favicon_32 = "/assets/img/favicon-32x32.png"
     favicon_16 = "/assets/img/favicon-16x16.png"
 
