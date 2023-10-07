@@ -18,7 +18,7 @@ g[at]10degres[dot]net
 
 # Resume
 
-<a href="/assets/glecoguic_cv_en.pdf" target="_blank">Download my resume</a>
+<a href="/assets/glecoguic-cv-en-2023.pdf" target="_blank">Download my resume</a>
 
 
 # Social networks
