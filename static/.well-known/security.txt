@@ -1,0 +1,5 @@
+# Our security address
+Contact: g@10degres.net
+
+# Our disclosure policy
+Disclosure: Full
