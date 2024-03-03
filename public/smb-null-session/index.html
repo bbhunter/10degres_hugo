@@ -96,7 +96,7 @@ rpcclient $&gt;
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.102.2" />
+    <meta name="generator" content="Hugo 0.121.2">
   </head>
 
   <body class=" ">
@@ -217,34 +217,34 @@ Below some examples of the most used.</p>
 </span></span><span style="display:flex;"><span>  os version      :  4.9
 </span></span><span style="display:flex;"><span>  server type     :  0x809a03
 </span></span></code></pre></div><p>Users enumeration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>rpcclient $&gt; enumdomusers
-</span></span><span style="display:flex;"><span>user:[admin] rid:[0x3ec]
-</span></span><span style="display:flex;"><span>user:[Administrator] rid:[0x1f4]
-</span></span><span style="display:flex;"><span>user:[Guest] rid:[0x1f5]
-</span></span><span style="display:flex;"><span>user:[lisa] rid:[0x3f1]
-</span></span><span style="display:flex;"><span>user:[mark] rid:[0x3f2]&lt;/pre&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>rpcclient <span style="color:#f92672">$&gt;</span> enumdomusers
+</span></span><span style="display:flex;"><span>user:[admin] rid:[<span style="color:#ae81ff">0x3ec</span>]
+</span></span><span style="display:flex;"><span>user:[Administrator] rid:[<span style="color:#ae81ff">0x1f4</span>]
+</span></span><span style="display:flex;"><span>user:[Guest] rid:[<span style="color:#ae81ff">0x1f5</span>]
+</span></span><span style="display:flex;"><span>user:[lisa] rid:[<span style="color:#ae81ff">0x3f1</span>]
+</span></span><span style="display:flex;"><span>user:[mark] rid:[<span style="color:#ae81ff">0x3f2</span>]<span style="color:#f92672">&lt;/</span>pre<span style="color:#f92672">&gt;</span>
 </span></span></code></pre></div><p>Groups enumeration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>rpcclient $&gt; enumalsgroups builtin
-</span></span><span style="display:flex;"><span>group:[Administrators] rid:[0x220]
-</span></span><span style="display:flex;"><span>group:[Backup Operators] rid:[0x227]
-</span></span><span style="display:flex;"><span>group:[Guests] rid:[0x222]
-</span></span><span style="display:flex;"><span>group:[Power Users] rid:[0x223]
-</span></span><span style="display:flex;"><span>group:[Users] rid:[0x221]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>rpcclient <span style="color:#f92672">$&gt;</span> enumalsgroups builtin
+</span></span><span style="display:flex;"><span>group:[Administrators] rid:[<span style="color:#ae81ff">0x220</span>]
+</span></span><span style="display:flex;"><span>group:[Backup Operators] rid:[<span style="color:#ae81ff">0x227</span>]
+</span></span><span style="display:flex;"><span>group:[Guests] rid:[<span style="color:#ae81ff">0x222</span>]
+</span></span><span style="display:flex;"><span>group:[Power Users] rid:[<span style="color:#ae81ff">0x223</span>]
+</span></span><span style="display:flex;"><span>group:[Users] rid:[<span style="color:#ae81ff">0x221</span>]
 </span></span></code></pre></div><p>Privileges of the connected user:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>rpcclient $&gt; enumprivs
-</span></span><span style="display:flex;"><span>found 8 privileges
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>rpcclient <span style="color:#f92672">$&gt;</span> enumprivs
+</span></span><span style="display:flex;"><span>found <span style="color:#ae81ff">8</span> privileges
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>SeMachineAccountPrivilege 		0:6 (0x0:0x6)
-</span></span><span style="display:flex;"><span>SeTakeOwnershipPrivilege 		0:9 (0x0:0x9)
-</span></span><span style="display:flex;"><span>SeBackupPrivilege 		0:17 (0x0:0x11)
-</span></span><span style="display:flex;"><span>SeRestorePrivilege 		0:18 (0x0:0x12)
-</span></span><span style="display:flex;"><span>SeRemoteShutdownPrivilege 		0:24 (0x0:0x18)
-</span></span><span style="display:flex;"><span>SePrintOperatorPrivilege 		0:4097 (0x0:0x1001)
-</span></span><span style="display:flex;"><span>SeAddUsersPrivilege 		0:4098 (0x0:0x1002)
-</span></span><span style="display:flex;"><span>SeDiskOperatorPrivilege 		0:4099 (0x0:0x1003)
+</span></span><span style="display:flex;"><span>SeMachineAccountPrivilege 		<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">6</span> (<span style="color:#ae81ff">0x0</span>:<span style="color:#ae81ff">0x6</span>)
+</span></span><span style="display:flex;"><span>SeTakeOwnershipPrivilege 		<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">9</span> (<span style="color:#ae81ff">0x0</span>:<span style="color:#ae81ff">0x9</span>)
+</span></span><span style="display:flex;"><span>SeBackupPrivilege 		<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">17</span> (<span style="color:#ae81ff">0x0</span>:<span style="color:#ae81ff">0x11</span>)
+</span></span><span style="display:flex;"><span>SeRestorePrivilege 		<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">18</span> (<span style="color:#ae81ff">0x0</span>:<span style="color:#ae81ff">0x12</span>)
+</span></span><span style="display:flex;"><span>SeRemoteShutdownPrivilege 		<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">24</span> (<span style="color:#ae81ff">0x0</span>:<span style="color:#ae81ff">0x18</span>)
+</span></span><span style="display:flex;"><span>SePrintOperatorPrivilege 		<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">4097</span> (<span style="color:#ae81ff">0x0</span>:<span style="color:#ae81ff">0x1001</span>)
+</span></span><span style="display:flex;"><span>SeAddUsersPrivilege 		<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">4098</span> (<span style="color:#ae81ff">0x0</span>:<span style="color:#ae81ff">0x1002</span>)
+</span></span><span style="display:flex;"><span>SeDiskOperatorPrivilege 		<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">4099</span> (<span style="color:#ae81ff">0x0</span>:<span style="color:#ae81ff">0x1003</span>)
 </span></span></code></pre></div><p>Shares enumeration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>rpcclient $&gt; netshareenum
-</span></span><span style="display:flex;"><span>netname: IPC$
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>rpcclient <span style="color:#f92672">$&gt;</span> netshareenum
+</span></span><span style="display:flex;"><span>netname: IPC<span style="color:#f92672">$</span>
 </span></span><span style="display:flex;"><span>  remark:	IPC Service
 </span></span><span style="display:flex;"><span>  path:	C:\tmp
 </span></span><span style="display:flex;"><span>  password:
@@ -280,7 +280,7 @@ According to the documentation : &ldquo;[&hellip;] this script is basically just
     </main>
 
     
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

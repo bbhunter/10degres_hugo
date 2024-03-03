@@ -62,7 +62,7 @@
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.102.2" />
+    <meta name="generator" content="Hugo 0.121.2">
   </head>
 
   <body class=" ">
@@ -213,22 +213,22 @@ Strongly inspired by <a href="https://twitter.com/tomnomnom/status/1133345832688
 <p><img src="https://10degres.net/images/git-history-sh.jpg" alt="git history bash"></p>
 <h2 id="git-pillagepy">git-pillage.py</h2>
 <p>Inspired by <a href="https://github.com/koto/gitpillage/blob/master/gitpillage.sh">gitpillage.sh</a>. I wanted to make it faster and more verbose, it was also a nice way to pratice that exercise on <a href="https://pentesterlab.com">Pentesterlab</a> about Git directory structure.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>usage: git-pillage.py [-h] [-u URL] [-t THREADS] [-e EXTENSION] [-x EXCLUDE]
-</span></span><span style="display:flex;"><span>                     [-v]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>usage: git<span style="color:#f92672">-</span>pillage<span style="color:#f92672">.</span>py [<span style="color:#f92672">-</span>h] [<span style="color:#f92672">-</span>u URL] [<span style="color:#f92672">-</span>t THREADS] [<span style="color:#f92672">-</span>e EXTENSION] [<span style="color:#f92672">-</span>x EXCLUDE]
+</span></span><span style="display:flex;"><span>                     [<span style="color:#f92672">-</span>v]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>optional arguments:
-</span></span><span style="display:flex;"><span>  -h, --help            show this help message and exit
-</span></span><span style="display:flex;"><span>  -u URL, --url URL     url of the .git, but without the .git directory
-</span></span><span style="display:flex;"><span>  -t THREADS, --threads THREADS
-</span></span><span style="display:flex;"><span>                        threads, default: 5
-</span></span><span style="display:flex;"><span>  -e EXTENSION, --extension EXTENSION
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>h, <span style="color:#f92672">--</span>help            show this help message <span style="color:#f92672">and</span> exit
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>u URL, <span style="color:#f92672">--</span>url URL     url of the <span style="color:#f92672">.</span>git, but without the <span style="color:#f92672">.</span>git directory
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>t THREADS, <span style="color:#f92672">--</span>threads THREADS
+</span></span><span style="display:flex;"><span>                        threads, default: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>e EXTENSION, <span style="color:#f92672">--</span>extension EXTENSION
 </span></span><span style="display:flex;"><span>                        extensions to download separated by comma, overwrite
-</span></span><span style="display:flex;"><span>                        --exclude, default: all but default exclude
-</span></span><span style="display:flex;"><span>  -x EXCLUDE, --exclude EXCLUDE
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">--</span>exclude, default: all but default exclude
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>x EXCLUDE, <span style="color:#f92672">--</span>exclude EXCLUDE
 </span></span><span style="display:flex;"><span>                        extensions to exclude separated by comma, default: png
 </span></span><span style="display:flex;"><span>                        ,gif,jpg,jpeg,ico,svg,eot,otf,ttf,woff,woff2,css,less,
 </span></span><span style="display:flex;"><span>                        po,mo,mp3,mp4,mpeg,avi
-</span></span><span style="display:flex;"><span>  -v, --verbose         verbose mode, default: off
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>v, <span style="color:#f92672">--</span>verbose         verbose mode, default: off
 </span></span></code></pre></div><p>Examples:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>git-pillage.py -u https://www.example.com -t 10 -v
 </span></span><span style="display:flex;"><span>git-pillage.py -u https://www.example.com/ -x pdf,doc,docx,txt,xls,xlsx
@@ -284,27 +284,27 @@ It&rsquo;s supposed to be much faster (and more stable) because of the multi thr
 <li>linkedin, Google dork is:  <code>site:linkedin.com/in [term]</code>, nicknames are generated by the script using firstname and lastname</li>
 </ul>
 <p>Since the script uses the magnificient <a href="https://github.com/s0md3v/goop">Goop</a> from <a href="https://twitter.com/s0md3v">s0md3v</a>, a facebook cookie is required to bypass Google rate limit (can be provided on the command line or environment variable).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-v" data-lang="v"><span style="display:flex;"><span>usage: github<span style="color:#f92672">-</span>employees.py [<span style="color:#f92672">-</span>h] [<span style="color:#f92672">-</span>m <span style="color:#a6e22e">MOD</span>] [<span style="color:#f92672">-</span>s <span style="color:#a6e22e">STARTPAGE</span>] [<span style="color:#f92672">-</span>f <span style="color:#a6e22e">FBCOOKIE</span>]
-</span></span><span style="display:flex;"><span>                           [<span style="color:#f92672">-</span>t <span style="color:#a6e22e">TERM</span>] [<span style="color:#f92672">-</span>p <span style="color:#a6e22e">PAGE</span>] [<span style="color:#f92672">-</span>r <span style="color:#a6e22e">RESUME</span>] [<span style="color:#f92672">-</span>i <span style="color:#a6e22e">INPUT</span>]
-</span></span><span style="display:flex;"><span>                           [<span style="color:#f92672">-</span>k <span style="color:#a6e22e">KEYWORD</span>] [<span style="color:#f92672">-</span>o <span style="color:#a6e22e">TOKEN</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>usage: github<span style="color:#f92672">-</span>employees<span style="color:#f92672">.</span>py [<span style="color:#f92672">-</span>h] [<span style="color:#f92672">-</span>m MOD] [<span style="color:#f92672">-</span>s STARTPAGE] [<span style="color:#f92672">-</span>f FBCOOKIE]
+</span></span><span style="display:flex;"><span>                           [<span style="color:#f92672">-</span>t TERM] [<span style="color:#f92672">-</span>p PAGE] [<span style="color:#f92672">-</span>r RESUME] [<span style="color:#f92672">-</span>i INPUT]
+</span></span><span style="display:flex;"><span>                           [<span style="color:#f92672">-</span>k KEYWORD] [<span style="color:#f92672">-</span>o TOKEN]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>optional arguments:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>h, <span style="color:#f92672">--</span>help            show this help message and exit
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>m <span style="color:#a6e22e">MOD</span>, <span style="color:#f92672">--</span>mod <span style="color:#a6e22e">MOD</span>     <span style="color:#f92672">module</span> to use to search employees on google,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>h, <span style="color:#f92672">--</span>help            show this help message <span style="color:#f92672">and</span> exit
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>m MOD, <span style="color:#f92672">--</span>mod MOD     module to use to search employees on google,
 </span></span><span style="display:flex;"><span>                        available: linkedin, github, default: github
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>s <span style="color:#a6e22e">STARTPAGE</span>, <span style="color:#f92672">--</span>startpage <span style="color:#a6e22e">STARTPAGE</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>s STARTPAGE, <span style="color:#f92672">--</span>startpage STARTPAGE
 </span></span><span style="display:flex;"><span>                        search start page, default <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>f <span style="color:#a6e22e">FBCOOKIE</span>, <span style="color:#f92672">--</span>fbcookie <span style="color:#a6e22e">FBCOOKIE</span>
-</span></span><span style="display:flex;"><span>                        your facebook cookie (<span style="color:#66d9ef">or</span> set env var <span style="color:#a6e22e">FACEBOOK_COOKIE</span>)
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>t <span style="color:#a6e22e">TERM</span>, <span style="color:#f92672">--</span>term <span style="color:#a6e22e">TERM</span>  term (usually company name)
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>p <span style="color:#a6e22e">PAGE</span>, <span style="color:#f92672">--</span>page <span style="color:#a6e22e">PAGE</span>  n page to grab, default <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>r <span style="color:#a6e22e">RESUME</span>, <span style="color:#f92672">--</span>resume <span style="color:#a6e22e">RESUME</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>f FBCOOKIE, <span style="color:#f92672">--</span>fbcookie FBCOOKIE
+</span></span><span style="display:flex;"><span>                        your facebook cookie (<span style="color:#f92672">or</span> set env <span style="color:#66d9ef">var</span> FACEBOOK_COOKIE)
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>t TERM, <span style="color:#f92672">--</span>term TERM  term (usually company name)
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>p PAGE, <span style="color:#f92672">--</span>page PAGE  n page to grab, default <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>r RESUME, <span style="color:#f92672">--</span>resume RESUME
 </span></span><span style="display:flex;"><span>                        resume previous session
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>i <span style="color:#a6e22e">INPUT</span>, <span style="color:#f92672">--</span>input <span style="color:#a6e22e">INPUT</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>i INPUT, <span style="color:#f92672">--</span>input INPUT
 </span></span><span style="display:flex;"><span>                        input datas source saved from previous search
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>k <span style="color:#a6e22e">KEYWORD</span>, <span style="color:#f92672">--</span>keyword <span style="color:#a6e22e">KEYWORD</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>k KEYWORD, <span style="color:#f92672">--</span>keyword KEYWORD
 </span></span><span style="display:flex;"><span>                        github keyword to search
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>o <span style="color:#a6e22e">TOKEN</span>, <span style="color:#f92672">--</span>token <span style="color:#a6e22e">TOKEN</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>o TOKEN, <span style="color:#f92672">--</span>token TOKEN
 </span></span><span style="display:flex;"><span>                        github token
 </span></span></code></pre></div><p>Examples:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>github-employees.py -m github -p 30 -t &#34;valvesoftware&#34;
@@ -477,7 +477,7 @@ I can now say that I am confortable with the basics, even if most of the code ab
     </main>
 
     
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

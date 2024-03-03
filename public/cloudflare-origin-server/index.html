@@ -68,7 +68,7 @@ But what if you can bypass all these protections in a second making the defense 
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.102.2" />
+    <meta name="generator" content="Hugo 0.121.2">
   </head>
 
   <body class=" ">
@@ -175,22 +175,22 @@ Working as a reverse proxy the WAF does not only offer a protection against DDOS
 But what if you can bypass all these protections in a second making the defense useless?</p>
 <p>&gt;&gt;&gt; <a href="https://blog.detectify.com/2019/07/31/bypassing-cloudflare-waf-with-the-origin-server-ip-address/">Read more on Detectify</a> &lt;&lt;&lt;</p>
 <p>At the same time I was redacting this article, I wrote a Python script to automate some tests.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>usage: cloudflare-origin-ip.py [-h] [-u URL] [-s SOURCE]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>usage: cloudflare<span style="color:#f92672">-</span>origin<span style="color:#f92672">-</span>ip<span style="color:#f92672">.</span>py [<span style="color:#f92672">-</span>h] [<span style="color:#f92672">-</span>u URL] [<span style="color:#f92672">-</span>s SOURCE]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>optional arguments:
-</span></span><span style="display:flex;"><span>  -h, --help            show this help message and exit
-</span></span><span style="display:flex;"><span>  -u URL, --url URL     url to test
-</span></span><span style="display:flex;"><span>  -s SOURCE, --source SOURCE
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>h, <span style="color:#f92672">--</span>help            show this help message <span style="color:#f92672">and</span> exit
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>u URL, <span style="color:#f92672">--</span>url URL     url to test
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>s SOURCE, <span style="color:#f92672">--</span>source SOURCE
 </span></span><span style="display:flex;"><span>                        datas sources separated by coma, can be:
 </span></span><span style="display:flex;"><span>                        censys,crtsh,local file
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Examples:
-</span></span><span style="display:flex;"><span>cloudflare-origin-ip.py -u https://xxx.xxxxxxxxxxxx.xxx
-</span></span><span style="display:flex;"><span>cloudflare-origin-ip.py -u https://xxx.xxxxxxxxxxxx.xxx -s censys,crtsh (default)
-</span></span><span style="display:flex;"><span>cloudflare-origin-ip.py -u https://xxx.xxxxxxxxxxxx.xxx -s /home/local/ips.txt
-</span></span><span style="display:flex;"><span>cloudflare-origin-ip.py -u https://xxx.xxxxxxxxxxxx.xxx -s censys,crtsh,/home/local/ips.txt,/home/local/subdomains.txt
+</span></span><span style="display:flex;"><span>cloudflare<span style="color:#f92672">-</span>origin<span style="color:#f92672">-</span>ip<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>u https:<span style="color:#f92672">//</span>xxx<span style="color:#f92672">.</span>xxxxxxxxxxxx<span style="color:#f92672">.</span>xxx
+</span></span><span style="display:flex;"><span>cloudflare<span style="color:#f92672">-</span>origin<span style="color:#f92672">-</span>ip<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>u https:<span style="color:#f92672">//</span>xxx<span style="color:#f92672">.</span>xxxxxxxxxxxx<span style="color:#f92672">.</span>xxx <span style="color:#f92672">-</span>s censys,crtsh (default)
+</span></span><span style="display:flex;"><span>cloudflare<span style="color:#f92672">-</span>origin<span style="color:#f92672">-</span>ip<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>u https:<span style="color:#f92672">//</span>xxx<span style="color:#f92672">.</span>xxxxxxxxxxxx<span style="color:#f92672">.</span>xxx <span style="color:#f92672">-</span>s <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>ips<span style="color:#f92672">.</span>txt
+</span></span><span style="display:flex;"><span>cloudflare<span style="color:#f92672">-</span>origin<span style="color:#f92672">-</span>ip<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>u https:<span style="color:#f92672">//</span>xxx<span style="color:#f92672">.</span>xxxxxxxxxxxx<span style="color:#f92672">.</span>xxx <span style="color:#f92672">-</span>s censys,crtsh,<span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>ips<span style="color:#f92672">.</span>txt,<span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>subdomains<span style="color:#f92672">.</span>txt
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Note that this is an automated tool, manual check is still required.
+</span></span><span style="display:flex;"><span>Note that this is an automated <span style="color:#66d9ef">tool</span>, manual check is still required<span style="color:#f92672">.</span>
 </span></span></code></pre></div><p>Basically the script compares some datas (HTML, headers, Content-Type&hellip;) of the host you provide with the HTTP response of an IPs list but using the host you provide as the header <code>Host</code>.
 IP sources can be: Censys, crt.sh or local files containing IPs and/or subdomains.</p>
 <p><img src="https://10degres.net/images/cloudflare-origin-ip-python.png" alt="cloudflare origin ip python"></p>
@@ -231,7 +231,7 @@ IP sources can be: Censys, crt.sh or local files containing IPs and/or subdomain
     </main>
 
     
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

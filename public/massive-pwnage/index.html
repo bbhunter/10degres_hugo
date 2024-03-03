@@ -78,7 +78,7 @@ Amazon S3 buckets theft
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.102.2" />
+    <meta name="generator" content="Hugo 0.121.2">
   </head>
 
   <body class=" ">
@@ -209,7 +209,7 @@ You could probably use Burp Suite but I&rsquo;m not sure it would be the best to
 @brutelogic created the magic extension <a href="https://knoxss.me/">Knoxss</a>, you can use the free version.
 However it becomes very complicated when you deal with thousands of urls, I already tried to script it but I was faced to the rate limit of the firewall.
 So I finally created my own script, it was originally based on string comparaison but I recently changed my mind and I implemented PhantomJS which is much more reliable.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ php testxss.php --prefix --suffix --sos --threads=10 --verbose=2 --phantom=/usr/local/bin/phantomjs --payload=brute-full.txt --urls=urls.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#f92672">$</span> php testxss<span style="color:#f92672">.</span>php <span style="color:#f92672">--</span>prefix <span style="color:#f92672">--</span>suffix <span style="color:#f92672">--</span>sos <span style="color:#f92672">--</span>threads<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">--</span>verbose<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">--</span>phantom<span style="color:#f92672">=/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>phantomjs <span style="color:#f92672">--</span>payload<span style="color:#f92672">=</span>brute<span style="color:#f92672">-</span>full<span style="color:#f92672">.</span>txt <span style="color:#f92672">--</span>urls<span style="color:#f92672">=</span>urls<span style="color:#f92672">.</span>txt
 </span></span></code></pre></div><p><img src="https://10degres.net/images/massive-xss.png" alt="massive XSS"></p>
 <h2 id="heroku-subdomain-takeover">Heroku subdomain takeover</h2>
 <p>I recently discovered <a href="https://dnstrails.com/">DNSTrails</a>, &ldquo;The World&rsquo;s Largest Repository of historical DNS data&rdquo;.
@@ -285,7 +285,7 @@ Sometimes a single &ldquo;Thank you&rdquo;, no matter if the issue is fixed or n
     </main>
 
     
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

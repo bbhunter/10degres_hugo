@@ -24,9 +24,8 @@ Did I say "job"? I don't really consider bug bounty/hacking as a "job", it's mor
 So let's say that bug bounty is my main source of income. 
 Below why I do this "job", why it fits perfectly to me and why I love it.  
 <!--more-->
-<br>
-![My Bug Bounty life](/images/bb-mybblife.png)
 
+![My Bug Bounty life](/images/bb-mybblife.png)
 
 ## # whoami
 

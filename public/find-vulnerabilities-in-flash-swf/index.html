@@ -68,7 +68,7 @@ I was close to the success as I quickly found 3 XSS, but unfortunately all my re
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://10degres.net/assets/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.102.2" />
+    <meta name="generator" content="Hugo 0.121.2">
   </head>
 
   <body class=" ">
@@ -187,17 +187,17 @@ I was close to the success as I quickly found 3 XSS, but unfortunately all my re
 <p>3/ Select all:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ctrl+a
 </span></span></code></pre></div><p>4/ Export:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>right click -&gt; export selection
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>right click <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">export</span> selection
 </span></span></code></pre></div><p>5/ Remove duplicate files:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>find &lt;export_dir&gt; -type f -name &#34;*_[0123456789]*&#34; -exec rm {} \;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>find <span style="color:#f92672">&lt;</span>export_dir<span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span>type f <span style="color:#f92672">-</span>name <span style="color:#e6db74">&#34;*_[0123456789]*&#34;</span> <span style="color:#f92672">-</span>exec rm {} \;
 </span></span></code></pre></div><p><img src="https://10degres.net/images/swf-testing-jpexs.png" alt="SWF testing JPEXS"></p>
 <h2 id="extract-datas">Extract datas</h2>
 <p>Find comments:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1 -c
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>extract<span style="color:#f92672">-</span>endpoints <span style="color:#f92672">-</span>d <span style="color:#f92672">&lt;</span>export_dir<span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span>n <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">-</span>r <span style="color:#f92672">-</span>e <span style="color:#e6db74">&#34;*&#34;</span> <span style="color:#f92672">-</span>v <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>c
 </span></span></code></pre></div><p>Find hash or interesting keywords:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1 -k
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>extract<span style="color:#f92672">-</span>endpoints <span style="color:#f92672">-</span>d <span style="color:#f92672">&lt;</span>export_dir<span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span>n <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">-</span>r <span style="color:#f92672">-</span>e <span style="color:#e6db74">&#34;*&#34;</span> <span style="color:#f92672">-</span>v <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>k
 </span></span></code></pre></div><p>Find endpoints:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>extract-endpoints -d &lt;export_dir&gt; -n &#34;&#34; -r -e &#34;*&#34; -v 1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>extract<span style="color:#f92672">-</span>endpoints <span style="color:#f92672">-</span>d <span style="color:#f92672">&lt;</span>export_dir<span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span>n <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">-</span>r <span style="color:#f92672">-</span>e <span style="color:#e6db74">&#34;*&#34;</span> <span style="color:#f92672">-</span>v <span style="color:#ae81ff">1</span>
 </span></span></code></pre></div><p>Find almost everything that could be interesting with <code>flash-regexp.sh</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
@@ -230,13 +230,13 @@ I was close to the success as I quickly found 3 XSS, but unfortunately all my re
 </span></span></code></pre></div><p>Locally run the SWF file with all parameters in the test page:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>firefox http://127.0.0.1/testflash/testflash.php?__swf=&lt;MYSWF_FILE&gt;.swf&amp;param1=value1&amp;param2=value2...
 </span></span></code></pre></div><p>Find parameters in JPEXS and track them one by one from the initialization to the final use:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ctrl+shift+F + Ignore case -&gt; flashvars
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>ctrl<span style="color:#f92672">+</span>shift<span style="color:#f92672">+</span>F <span style="color:#f92672">+</span> Ignore <span style="color:#66d9ef">case</span> <span style="color:#f92672">-&gt;</span> flashvars
 </span></span></code></pre></div><p>Find dangerous methods in JPEXS and reverse track the parameters:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ctrl+shift+F + Ignore case -&gt; geturl
 </span></span></code></pre></div><p><img src="https://10degres.net/images/swf-testing-flash-log.jpg" alt="SWF testing flash log"></p>
 <h2 id="take-care-of">Take care of</h2>
 <p>Unsafe methods in Actionscript:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>loadVariables()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>loadVariables()
 </span></span><span style="display:flex;"><span>getURL()
 </span></span><span style="display:flex;"><span>getURLBlankVar()
 </span></span><span style="display:flex;"><span>getURLParentVar()
@@ -244,33 +244,33 @@ I was close to the success as I quickly found 3 XSS, but unfortunately all my re
 </span></span><span style="display:flex;"><span>loadMovie()
 </span></span><span style="display:flex;"><span>loadMovieVar()
 </span></span><span style="display:flex;"><span>loadMovieNum()
-</span></span><span style="display:flex;"><span>FScrollPane.loadScrollContent()
-</span></span><span style="display:flex;"><span>LoadVars.load 
-</span></span><span style="display:flex;"><span>LoadVars.send 
-</span></span><span style="display:flex;"><span>XML.load ( &#39;url&#39; )
-</span></span><span style="display:flex;"><span>XML.sendAndLoad ( &#39;url&#39; )
-</span></span><span style="display:flex;"><span>LoadVars.load ( &#39;url&#39; )
-</span></span><span style="display:flex;"><span>LoadVars.send ( &#39;url&#39; ) 
-</span></span><span style="display:flex;"><span>Sound.loadSound( &#39;url&#39; , isStreaming );
-</span></span><span style="display:flex;"><span>NetStream.play( &#39;url&#39; );
-</span></span><span style="display:flex;"><span>flash.external.ExternalInterface.call(_root.callback)
-</span></span><span style="display:flex;"><span>externalInterface.addCallback
+</span></span><span style="display:flex;"><span>FScrollPane<span style="color:#f92672">.</span>loadScrollContent()
+</span></span><span style="display:flex;"><span>LoadVars<span style="color:#f92672">.</span>load 
+</span></span><span style="display:flex;"><span>LoadVars<span style="color:#f92672">.</span>send 
+</span></span><span style="display:flex;"><span>XML<span style="color:#f92672">.</span>load ( <span style="color:#e6db74">&#39;url&#39;</span> )
+</span></span><span style="display:flex;"><span>XML<span style="color:#f92672">.</span>sendAndLoad ( <span style="color:#e6db74">&#39;url&#39;</span> )
+</span></span><span style="display:flex;"><span>LoadVars<span style="color:#f92672">.</span>load ( <span style="color:#e6db74">&#39;url&#39;</span> )
+</span></span><span style="display:flex;"><span>LoadVars<span style="color:#f92672">.</span>send ( <span style="color:#e6db74">&#39;url&#39;</span> ) 
+</span></span><span style="display:flex;"><span>Sound<span style="color:#f92672">.</span>loadSound( <span style="color:#e6db74">&#39;url&#39;</span> , isStreaming );
+</span></span><span style="display:flex;"><span>NetStream<span style="color:#f92672">.</span>play( <span style="color:#e6db74">&#39;url&#39;</span> );
+</span></span><span style="display:flex;"><span>flash<span style="color:#f92672">.</span>external<span style="color:#f92672">.</span>ExternalInterface<span style="color:#f92672">.</span>call(_root<span style="color:#f92672">.</span>callback)
+</span></span><span style="display:flex;"><span>externalInterface<span style="color:#f92672">.</span>addCallback
 </span></span><span style="display:flex;"><span>htmlText
 </span></span><span style="display:flex;"><span>htmlVar
 </span></span><span style="display:flex;"><span>loadClip
 </span></span><span style="display:flex;"><span>AddDLL
 </span></span></code></pre></div><p>Functions that can load objects, or send/receive/store data:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>XMLLoader, AMFService, SWFLoader, loadVariables, loadMovie,
-</span></span><span style="display:flex;"><span>loadMovieNum, LoadVars.load, LoadVars.send, NetStream.play,
-</span></span><span style="display:flex;"><span>getDefinition, getDefinition, FScrollPane.loadScrollContent, XML.load,
-</span></span><span style="display:flex;"><span>Sound.loadSound, NetStream.play, URLRequest, URLLoader,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>XMLLoader, AMFService, SWFLoader, loadVariables, loadMovie,
+</span></span><span style="display:flex;"><span>loadMovieNum, LoadVars<span style="color:#f92672">.</span>load, LoadVars<span style="color:#f92672">.</span>send, NetStream<span style="color:#f92672">.</span>play,
+</span></span><span style="display:flex;"><span>getDefinition, getDefinition, FScrollPane<span style="color:#f92672">.</span>loadScrollContent, XML<span style="color:#f92672">.</span>load,
+</span></span><span style="display:flex;"><span>Sound<span style="color:#f92672">.</span>loadSound, NetStream<span style="color:#f92672">.</span>play, URLRequest, URLLoader,
 </span></span><span style="display:flex;"><span>URLStream, LocalConnection, SharedObject
 </span></span></code></pre></div><p>Uninitialized global vars (ActionScript 2):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>_root
 </span></span><span style="display:flex;"><span>_global
 </span></span><span style="display:flex;"><span>_level0
 </span></span></code></pre></div><p>Uninitialized global vars (ActionScript 3):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>root
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>root
 </span></span><span style="display:flex;"><span>loaderInfo
 </span></span><span style="display:flex;"><span>parameters
 </span></span></code></pre></div><h2 id="xss-payloads">XSS payloads</h2>
@@ -339,7 +339,7 @@ I was close to the success as I quickly found 3 XSS, but unfortunately all my re
     </main>
 
     
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -41,11 +41,6 @@ Here is a video that shows the web gui:
   
 Here is the git repository.
 [https://github.com/gwen001/actarus](https://github.com/gwen001/actarus)
-  
-<br>
-
-I also created a Virtual machine with VirtualBox for people who want to test the project but not install/configure it (yes, it's pain in the ass).  
-[Download the VM](/assets/actarus.ova)
 
 <br>
 

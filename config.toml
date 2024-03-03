@@ -16,6 +16,9 @@ pygmentsUseClassic = false
 
 disqusShortname = ""
 
+disableKinds = ['RSS']
+# disableKinds = ['RSS','sitemap','taxonomy','term']
+
 [markup.goldmark.renderer]
 unsafe= true
 
