@@ -3,14 +3,11 @@ title: "About"
 date: 2023-05-08T16:06:21+02:00
 ---
 After many years of web development, I finally decided to follow my dream: perform in the security industry.
-In october 2015, after 3 months of hard work, I successfully passed the famous Offensive Security Certified Professional exam.
+In 2015, after 3 months of hard work, I successfully passed the famous exam Penetration
+Testing with Kali Linux exam aka OSCP.
 
-Since, Bug Bounty is my daily.  
-As a hunter, I work on several platforms.
-As an active member of the community, I created many tools to automate the basics.
-
-In order to promote the Bug Bounty industry, I also help companies in this adventure.
-Whether for a first step or to improve the relationship with hackers, I can intervene on any part of a program.
+Since, security is my daily.  
+I perform security audits and I am an active member of the community, I created many tools to automate the basics of recon.
 
 If you want to get in touch, feel free to contact me through any social network listed below or by e-mail:
 g[at]10degres[dot]net

@@ -5,11 +5,17 @@
     <loc>https://10degres.net/about/</loc>
     <lastmod>2023-05-08T16:06:21+02:00</lastmod>
   </url><url>
-    <loc>https://10degres.net/services/</loc>
-    <lastmod>2023-05-05T18:05:10+01:00</lastmod>
+    <loc>https://10degres.net/</loc>
+    <lastmod>2023-05-08T16:06:21+02:00</lastmod>
   </url><url>
     <loc>https://10degres.net/projects/</loc>
     <lastmod>2023-05-05T18:05:10+01:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/services/</loc>
+    <lastmod>2023-05-05T18:05:10+01:00</lastmod>
+  </url><url>
+    <loc>https://10degres.net/posts/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/tags/cve/</loc>
     <lastmod>2022-11-11T00:00:00+00:00</lastmod>
@@ -20,9 +26,6 @@
     <loc>https://10degres.net/tags/file-upload/</loc>
     <lastmod>2022-11-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://10degres.net/</loc>
-    <lastmod>2022-11-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://10degres.net/tags/</loc>
     <lastmod>2022-11-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -30,9 +33,6 @@
     <lastmod>2022-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/cve-demystified/</loc>
-    <lastmod>2022-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://10degres.net/posts/</loc>
     <lastmod>2022-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://10degres.net/one-takeover-to-rule-them-all/</loc>

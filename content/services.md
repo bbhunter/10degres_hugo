@@ -1,7 +1,26 @@
 ---
-title: "Bug Bounty consulting"
+title: "Security audits"
 date: 2023-05-05T18:05:10+01:00
 ---
+
+
+Code reviews, pentest, system audit are my daily
+
+After the audit you get a report resuming the checks performed, the issues found and some recommendations.
+Because of my developer background, I am able to understand how to fix them and potentially help in this task.
+
+
+# Courses
+
+<b>Hacking & Web application security:</b> a 3 days course for tech peoples who want to  learn the basic vulnerabilities of modern webapps: input validation, xss, sqli, ssrf, passwords, cookies, tools and true stories..."								
+
+<b>Bug Bounty overview:</b> a presentation for companies who want to know more about bug bounty to take the good descision: actors, programs, reports, rewards, rules, evolution, case studies...								
+
+<b>PHP for beginners:</b> understand the basics of PHP: object-oriented programming, storage, data exfiltration, database and more...								
+
+
+# Bug bounty
+
 With more than 8 years of experience, I had the opportunity to study several aspects of this industry:
 
 - As a bug hunter, I am pretty familiar with the expectations of hackers:
@@ -14,25 +33,3 @@ How to choose a scope, how to create a reward policy, what are SLAs, how to hand
 Depending of some criterias (size, country, law...) some of them may fit better to your business.
 
 In a nutshell my goal is to help all actors in the bug bounty industry to be successful and develop the programs on the long term.
-
-
-# Security courses
-
-The following courses are currently available:  
-
-<b>Web application hacking and security:</b> the most common issues in web applications.
-XSS, SQLi, CSRF, SSRF, CORS... You'll learn how to find them, what's their impact and how to protect against them.
-This course mainly target developers.
-
-<b>Bug Bounty Overview:</b> for CISO/RSSI or any technical director who want to know more about bug bounty.
-Bug bounty is the next (and last) step in term of security audit but this world is full of traps.
-In this course you'll learn everything you need to avoid them.
-
-
-# Security audit
-
-Specialized in LAMP models, I perform security audits on websites using those technologies, on site or remotely.
-The time required mainly depends on the size of the perimeter of the test, basically how many pages/scripts/functionalities are concerned.
-
-After the audit you get a report resuming the checks performed and the issues found.
-Because of my developer background, I am able to understand how to fix them and potentially help in this task.
