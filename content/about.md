@@ -9,6 +9,9 @@ Testing with Kali Linux exam aka OSCP.
 Since, security is my daily.  
 I perform security audits and I am an active member of the community, I created many tools to automate the basics of recon.
 
+In order to promote the Bug Bounty industry, I also help companies in this adventure.
+Whether for a first step or to improve the relationship with hackers, I can intervene on any part of a program.
+
 If you want to get in touch, feel free to contact me through any social network listed below or by e-mail:
 g[at]10degres[dot]net
 
