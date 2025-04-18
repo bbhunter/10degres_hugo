@@ -1,29 +1,33 @@
+
 ErrorDocument 401 /404.html
 ErrorDocument 403 /404.html
 ErrorDocument 404 /404.html
 
 RewriteEngine On
-RedirectPermanent /bug-bounty-managment-a-great-example-zomato/ https://10degres.net/bug-bounty-management-a-great-example-zomato/
-RedirectPermanent /image-gallery-sql-injection/ https://10degres.net/cves/cve-2016-11018/
-RedirectPermanent /cve-2016-11018-image-gallery-sql-injection/ https://10degres.net/cves/cve-2016-11018/
-RedirectPermanent /a-simple-guide-to-your-first-cve/ https://10degres.net/cve-demystified/
+RedirectPermanent /bug-bounty-managment-a-great-example-zomato/ /bug-bounty-management-a-great-example-zomato/
+RedirectPermanent /image-gallery-sql-injection/ /cves/cve-2016-11018/
+RedirectPermanent /cve-2016-11018-image-gallery-sql-injection/ /cves/cve-2016-11018/
+RedirectPermanent /a-simple-guide-to-your-first-cve/ /cve-demystified/
 
 # fix 404
-RedirectPermanent /aaaagwen https://10degres.net/about/
-RedirectPermanent /aws-takeover-ssrf-javascript/ https://10degres.net/aws-takeover-through-ssrf-in-javascript/
-RedirectPermanent /interview-bugbounty-program/ https://10degres.net/interview-with-a-bug-bounty-program/
-RedirectPermanent /vuln-relative-path-overwrite/ https://10degres.net/vulnerability-relative-path-overwrite-aka-rpo-or-prssi/
-RedirectPermanent /vuln-subdomain-takeover/ https://10degres.net/vulnerability-subdomain-takeover/
-RedirectPermanent /vuln-clickjacking/ https://10degres.net/vulnerability-clickjacking/
-RedirectPermanent /vuln-cross-site-scripting/ https://10degres.net/vulnerability-cross-site-scripting-aka-xss/
-RedirectPermanent /vuln-cross-site-request-forgery/ https://10degres.net/vulnerability-cross-site-request-forgery-aka-csrf/
-RedirectPermanent /vuln-cross-origin-resource-sharing/ https://10degres.net/vulnerability-cross-origin-resource-sharing-aka-cors/
-RedirectPermanent /vuln-sql-injection/ https://10degres.net/vulnerability-sql-injection-aka-sqli/
-RedirectPermanent /vulnerabiliies-list/ https://10degres.net/vulnerabilities-list/
-RedirectPermanent /vulnerability-assessment-tools/ https://10degres.net/pentest-vulnerability-assessment-tools/
-RedirectPermanent /the-hunter-games/javascript;: https://10degres.net/the-hunter-games/
-RedirectPermanent /platform-tournament/ https://10degres.net/the-hunter-games/
-RedirectPermanent /platform-tournament/index.html https://10degres.net/the-hunter-games/
-RedirectPermanent /testing-flash-swf/4.Dell https://10degres.net/find-vulnerabilities-in-flash-swf/
-RedirectPermanent /the-bugbounty-program-that-changed-my-life/ https://10degres.net/the-bug-bounty-program-that-changed-my-life/
-RedirectPermanent /why-bugbounty/ https://10degres.net/why-bug-bounty/
+RedirectPermanent /favicon.ico /assets/img/favicon-256x256.png
+RedirectPermanent /aaaagwen /about/
+RedirectPermanent /aws-takeover-ssrf-javascript/ /aws-takeover-through-ssrf-in-javascript/
+RedirectPermanent /interview-bugbounty-program/ /interview-with-a-bug-bounty-program/
+RedirectPermanent /vuln-relative-path-overwrite/ /vulnerability-relative-path-overwrite-aka-rpo-or-prssi/
+RedirectPermanent /vuln-subdomain-takeover/ /vulnerability-subdomain-takeover/
+RedirectPermanent /vuln-clickjacking/ /vulnerability-clickjacking/
+RedirectPermanent /vuln-cross-site-scripting/ /vulnerability-cross-site-scripting-aka-xss/
+RedirectPermanent /vuln-cross-site-request-forgery/ /vulnerability-cross-site-request-forgery-aka-csrf/
+RedirectPermanent /vuln-cross-origin-resource-sharing/ /vulnerability-cross-origin-resource-sharing-aka-cors/
+RedirectPermanent /vuln-sql-injection/ /vulnerability-sql-injection-aka-sqli/
+RedirectPermanent /vulnerabiliies-list/ /vulnerabilities-list/
+RedirectPermanent /vulnerability-assessment-tools/ /pentest-vulnerability-assessment-tools/
+RedirectPermanent /the-hunter-games/javascript;: /the-hunter-games/
+RedirectPermanent /platform-tournament/ /the-hunter-games/
+RedirectPermanent /platform-tournament/index.html /the-hunter-games/
+RedirectPermanent /testing-flash-swf/4.Dell /find-vulnerabilities-in-flash-swf/
+RedirectPermanent /the-bugbounty-program-that-changed-my-life/ /the-bug-bounty-program-that-changed-my-life/
+RedirectPermanent /why-bugbounty/ /why-bug-bounty/
+RedirectPermanent /testing-flash-swf/ /find-vulnerabilities-in-flash-swf/
+RedirectPermanent /bugbounty-cons/ /cons-of-bug-bounty/
