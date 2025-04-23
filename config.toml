@@ -1,4 +1,5 @@
 baseURL = "https://10degres.net/"
+# baseURL = "http://10degres.net.local.net/"
 googleAnalytics = "UA-61485350-1"
 languageCode = "en-us"
 title = "Gwendal Le Coguic"
