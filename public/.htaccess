@@ -1,6 +1,6 @@
 
 RewriteEngine On
-RewriteRule ^(.*)$ http://glc.st/$1 [R=301,L]
+RewriteRule ^(.*)$ https://glc.st/$1 [R=301,L]
 
 
 # ErrorDocument 401 /404.html
